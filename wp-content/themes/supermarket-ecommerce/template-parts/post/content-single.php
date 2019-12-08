@@ -18,7 +18,7 @@
           <span class="entry-date"><i class="fas fa-calendar-alt"></i><?php the_time( get_option( 'date_format' ) ); ?></span>
           <span class="entry-comments"><i class="fas fa-comments"></i><?php comments_number( __('0 Comments','supermarket-ecommerce'), __('0 Comments','supermarket-ecommerce'), __('% Comments','supermarket-ecommerce') ); ?></span>
         </div>
-        <img src="<?php the_post_thumbnail_url('full'); ?>"/>
+        <?php the_post_thumbnail(); ?>
         <p><?php the_content(); ?></p>
       </div>
       <div class="clearfix"></div>

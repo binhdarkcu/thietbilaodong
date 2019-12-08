@@ -14,17 +14,17 @@ get_header(); ?>
 				<?php if( get_theme_mod('supermarket_ecommerce_slider_hide_show') != ''){ ?>
 					<section id="slider">
 					  	<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel"> 
-						    <?php $pages = array();
+						    <?php $slider_pages = array();
 						      	for ( $count = 1; $count <= 4; $count++ ) {
 							        $mod = intval( get_theme_mod( 'supermarket_ecommerce_slider' . $count ));
 							        if ( 'page-none-selected' != $mod ) {
-							          $pages[] = $mod;
+							          $slider_pages[] = $mod;
 							        }
 						      	}
-						      	if( !empty($pages) ) :
+						      	if( !empty($slider_pages) ) :
 						        $args = array(
 						          	'post_type' => 'page',
-						          	'post__in' => $pages,
+						          	'post__in' => $slider_pages,
 						          	'orderby' => 'post__in'
 						        );
 						        $query = new WP_Query( $args );
@@ -34,7 +34,7 @@ get_header(); ?>
 						    <div class="carousel-inner" role="listbox">
 						      	<?php  while ( $query->have_posts() ) : $query->the_post(); ?>
 						        <div <?php if($i == 1){echo 'class="carousel-item active"';} else{ echo 'class="carousel-item"';}?>>
-						          	<img src="<?php the_post_thumbnail_url('full'); ?>"/>
+						          	<?php the_post_thumbnail(); ?>
 						          	<div class="carousel-caption">
 							            <div class="inner_carousel">
 							              	<h2><?php the_title();?></h2>
@@ -125,15 +125,15 @@ get_header(); ?>
 		        endif;} ?>  
 			</div>
 			<div class="col-lg-9 col-md-9 p-0">
-				<?php $pages = array();
+				<?php $product_pages = array();
 			      	$mod = absint( get_theme_mod( 'supermarket_ecommerce_products'));
 			      	if ( 'page-none-selected' != $mod ) {
-			        	$pages[] = $mod;	
+			        	$product_pages[] = $mod;	
 			      	}
-				    if( !empty($pages) ) :
+				    if( !empty($product_pages) ) :
 				      $args = array(
 				        'post_type' => 'page',
-				        'post__in' => $pages,
+				        'post__in' => $product_pages,
 				        'orderby' => 'post__in'
 				      );
 				      $query = new WP_Query( $args );

@@ -151,36 +151,23 @@ get_header(); ?>
 						<section id="post_section">
 							<div class="row">
 								<?php
-								if ( have_posts() ) :
+								/* Start the Loop */
+								while ( have_posts() ) : the_post();
 
-									/* Start the Loop */
-									while ( have_posts() ) : the_post();
+									get_template_part( 'template-parts/post/content-single' );
 
-										/*
-										 * Include the Post-Format-specific template for the content.
-										 * If you want to override this in a child theme, then include a file
-										 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-										 */
-										get_template_part( 'template-parts/post/content-single' );
+									// If comments are open or we have at least one comment, load up the comment template.
+									if ( comments_open() || get_comments_number() ) :
+										comments_template();
+									endif;
 
-									endwhile;					
-								else :
+									the_post_navigation( array(
+										'prev_text' => '<span class="screen-reader-text">' . __( 'Previous Post', 'supermarket-ecommerce' ) . '</span><span aria-hidden="true" class="nav-subtitle">' . __( 'Previous', 'supermarket-ecommerce' ) . '</span>',
+										'next_text' => '<span class="screen-reader-text">' . __( 'Next Post', 'supermarket-ecommerce' ) . '</span><span aria-hidden="true" class="nav-subtitle">' . __( 'Next', 'supermarket-ecommerce' ) . '</span> ',
+									) );
 
-									get_template_part( 'template-parts/post/content', 'none' );
-
-								endif;
+								endwhile; // End of the loop.
 								?>
-								<div class="navigation">
-					                <?php
-					                    // Previous/next page navigation.
-					                    the_posts_pagination( array(
-					                        'prev_text'          => __( 'Previous page', 'supermarket-ecommerce' ),
-					                        'next_text'          => __( 'Next page', 'supermarket-ecommerce' ),
-					                        'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'supermarket-ecommerce' ) . ' </span>',
-					                    ) );
-					                ?>
-					                <div class="clearfix"></div>
-					            </div>
 							</div>
 						</section>
 					</div>

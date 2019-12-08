@@ -1,10 +1,10 @@
 === Supermarket Ecommerce ===
 Contributors: Luzuk
 Tags: one-column, two-columns, right-sidebar, left-sidebar, grid-layout, custom-colors, custom-background, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, rtl-language-support, full-width-template, threaded-comments, translation-ready, blog, e-commerce, portfolio
-Requires at least: 4.7
-Tested up to: 5.1
+Requires at least: 4.8
+Tested up to: 5.2.4
 Requires PHP: 7.2.14
-Stable tag: 0.1
+Stable tag: 0.2
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -17,7 +17,14 @@ Supermarket ecommerce is an exceptional WordPress theme and if you are intereste
 == Changelog ==
 
 = 0.1 =
-* Initial Version Released.
+	- Initial Version Released.
+
+= 0.2 =
+	- Changed Navigation style.
+	- Added keyboard Navigation.
+	- Added Skip to content part.
+	- Added post formats.
+	- Added language folder.
 
 == Resources ==
 Supermarket Ecommerce WordPress Theme, Copyright 2019 Luzuk

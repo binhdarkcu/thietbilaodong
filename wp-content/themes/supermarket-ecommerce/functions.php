@@ -29,6 +29,7 @@ function supermarket_ecommerce_setup() {
 	add_image_size( 'supermarket-ecommerce-thumbnail-avatar', 100, 100, true );
 
 	$GLOBALS['content_width'] = 525;
+	
 	register_nav_menus( array(
 		'primary' => __( 'Primary Menu', 'supermarket-ecommerce' ),
 	) );
@@ -51,13 +52,36 @@ function supermarket_ecommerce_setup() {
 	add_theme_support( 'customize-selective-refresh-widgets' );
 
 	/*
+	* Enable support for Post Formats.
+	*
+	* See: https://codex.wordpress.org/Post_Formats
+	*/
+	add_theme_support( 'post-formats', array('image','video','gallery','audio',) );
+
+	/*
 	 * This theme styles the visual editor to resemble the theme style,
 	 * specifically font, colors, and column width.
  	 */
 	add_editor_style( array( 'assets/css/editor-style.css', supermarket_ecommerce_fonts_url() ) );
+	
+	// Theme Activation Notice
+	global $pagenow;
+
+		if ( is_admin() && ('themes.php' == $pagenow) && isset( $_GET['activated'] ) ) {
+		add_action( 'admin_notices', 'supermarket_ecommerce_activation_notice' );
+	}
 
 }
 add_action( 'after_setup_theme', 'supermarket_ecommerce_setup' );
+
+// Notice after Theme Activation
+function supermarket_ecommerce_activation_notice() {
+	echo '<div class="notice notice-success is-dismissible start-notice">';
+		echo '<h3>'. esc_html__( 'Welcome to Luzuk!!', 'supermarket-ecommerce' ) .'</h3>';
+		echo '<p>'. esc_html__( 'Thank you for choosing Supermarket Ecommerce theme. It will be our pleasure to have you on our Welcome page to serve you better.', 'supermarket-ecommerce' ) .'</p>';
+		echo '<p><a href="'. esc_url( admin_url( 'themes.php?page=supermarket_ecommerce_guide' ) ) .'" class="button button-primary">'. esc_html__( 'GET STARTED', 'supermarket-ecommerce' ) .'</a></p>';
+	echo '</div>';
+}
 
 function supermarket_ecommerce_widgets_init() {
 	register_sidebar( array(
@@ -185,6 +209,7 @@ function supermarket_ecommerce_scripts() {
 	wp_enqueue_script( 'supermarket-ecommerce-navigation-jquery', get_theme_file_uri( '/assets/js/navigation.js' ), array( 'jquery' ), '2.1.2', true );
 	wp_enqueue_script( 'supermarket-ecommerce-skip-link-focus-fix', get_theme_file_uri( '/assets/js/skip-link-focus-fix.js' ), array(), '1.0', true );
 	wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/assets/js/bootstrap.js', array('jquery') );
+	wp_enqueue_script( 'jquery-superfish', get_template_directory_uri() . '/assets/js/jquery.superfish.js', array('jquery') ,'',true);
 
 	wp_localize_script( 'supermarket-ecommerce-skip-link-focus-fix', 'supermarket_ecommerceScreenReaderText', $supermarket_ecommerce_l10n );
 
@@ -217,11 +242,15 @@ function supermarket_ecommerce_sanitize_choices( $input, $setting ) {
 }
 
 //footer Link
-define('SUPERMARKET_ECOMMERCE_CREDIT','https://www.luzuk.com/','supermarket-ecommerce');
+define('SUPERMARKET_ECOMMERCE_LIVE_DEMO','https://www.luzuk.com/demo/supermarket-ecommerce/','supermarket-ecommerce');
+define('SUPERMARKET_ECOMMERCE_PRO_DOCS','https://www.luzuk.com/demo/supermarket-ecommerce/documentation/','supermarket-ecommerce');
+define('SUPERMARKET_ECOMMERCE_BUY_NOW','https://www.luzuk.com/themes/wordpress-ecommerce-theme/','supermarket-ecommerce');
+define('SUPERMARKET_ECOMMERCE_SUPPORT','https://wordpress.org/support/theme/supermarket-ecommerce/','supermarket-ecommerce');
+define('SUPERMARKET_ECOMMERCE_CREDIT','https://www.luzuk.com/themes/free-wordpress-ecommerce-theme/','supermarket-ecommerce');
 
 if ( ! function_exists( 'supermarket_ecommerce_credit' ) ) {
 	function supermarket_ecommerce_credit(){
-		echo "<a href=".esc_url(SUPERMARKET_ECOMMERCE_CREDIT)." target='_blank'>".esc_html__('Luzuk','supermarket-ecommerce')."</a>";
+		echo "<a href=".esc_url(SUPERMARKET_ECOMMERCE_CREDIT)." target='_blank'>".esc_html__('Ecommerce WordPress Theme','supermarket-ecommerce')."</a>";
 	}
 }
 
@@ -248,3 +277,5 @@ require get_parent_theme_file_path( '/inc/template-tags.php' );
 require get_parent_theme_file_path( '/inc/template-functions.php' );
 
 require get_parent_theme_file_path( '/inc/customizer.php' );
+
+require get_parent_theme_file_path( '/inc/getting-started/getting-started.php' );

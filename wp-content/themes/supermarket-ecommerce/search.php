@@ -33,7 +33,7 @@ get_header(); ?>
 									/* Start the Loop */
 									while ( have_posts() ) : the_post();
 
-										get_template_part( 'template-parts/post/content' );
+										get_template_part( 'template-parts/post/content', get_post_format() );
 
 									endwhile; // End of the loop.
 
@@ -69,7 +69,7 @@ get_header(); ?>
 								/* Start the Loop */
 								while ( have_posts() ) : the_post();
 
-									get_template_part( 'template-parts/post/content' );
+									get_template_part( 'template-parts/post/content', get_post_format() );
 
 								endwhile; // End of the loop.
 
@@ -106,7 +106,7 @@ get_header(); ?>
 								/* Start the Loop */
 								while ( have_posts() ) : the_post();
 
-									get_template_part( 'template-parts/post/content' );
+									get_template_part( 'template-parts/post/content', get_post_format() );
 
 								endwhile; // End of the loop.
 
@@ -141,7 +141,7 @@ get_header(); ?>
 									/* Start the Loop */
 									while ( have_posts() ) : the_post();
 
-										get_template_part( 'template-parts/post/content' );
+										get_template_part( 'template-parts/post/content', get_post_format() );
 
 									endwhile; // End of the loop.
 
@@ -180,7 +180,7 @@ get_header(); ?>
 								/* Start the Loop */
 								while ( have_posts() ) : the_post();
 
-									get_template_part( 'template-parts/post/content' );
+									get_template_part( 'template-parts/post/content', get_post_format() );
 
 								endwhile; // End of the loop.
 
@@ -219,7 +219,7 @@ get_header(); ?>
 										/* Start the Loop */
 										while ( have_posts() ) : the_post();
 
-											get_template_part( 'template-parts/post/grid-layout', get_post_format() );
+											get_template_part( 'template-parts/post/grid-layout' );
 
 										endwhile; // End of the loop.
 
@@ -258,12 +258,17 @@ get_header(); ?>
 								/* Start the Loop */
 								while ( have_posts() ) : the_post();
 
-									get_template_part( 'template-parts/post/content' );
-								endwhile;
-								else :
+									get_template_part( 'template-parts/post/content', get_post_format() );
 
-									get_template_part( 'template-parts/post/content', 'none' );
-								endif;
+								endwhile; // End of the loop.
+
+								else : ?>
+
+								<p><?php esc_html_e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'supermarket-ecommerce' ); ?></p>
+								<?php
+									get_search_form();
+
+							endif;
 							?>
 							<div class="navigation">
 				                <?php
@@ -279,7 +284,7 @@ get_header(); ?>
 						</section>
 					</div>
 					<div id="sidebar" class="col-lg-4 col-md-4">
-						<?php dynamic_sidebar('sidebar-1'); ?>
+						<?php dynamic_sidebar('sidebar-2'); ?>						
 					</div>
 				</div>
 			<?php } ?>

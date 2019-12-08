@@ -27,6 +27,7 @@ function supermarket_ecommerce_customize_register( $wp_customize ) {
         'default' => __('Right Sidebar','supermarket-ecommerce'),
         'sanitize_callback' => 'supermarket_ecommerce_sanitize_choices'	        
 	));
+
 	$wp_customize->add_control('supermarket_ecommerce_theme_options',array(
         'type' => 'radio',
         'label' => __('Do you want this section','supermarket-ecommerce'),
@@ -53,7 +54,7 @@ function supermarket_ecommerce_customize_register( $wp_customize ) {
 		'sanitize_callback'	=> 'sanitize_text_field'
 	));	
 	$wp_customize->add_control('supermarket_ecommerce_call',array(
-		'label'	=> __('Phone text','supermarket-ecommerce'),
+		'label'	=> __('Phone Number','supermarket-ecommerce'),
 		'section'=> 'supermarket_ecommerce_contact_details',
 		'setting'=> 'supermarket_ecommerce_call',
 		'type'=> 'text'
@@ -64,7 +65,7 @@ function supermarket_ecommerce_customize_register( $wp_customize ) {
 		'sanitize_callback'	=> 'sanitize_text_field'
 	));	
 	$wp_customize->add_control('supermarket_ecommerce_mail',array(
-		'label'	=> __('Email text','supermarket-ecommerce'),
+		'label'	=> __('Email Address','supermarket-ecommerce'),
 		'section'=> 'supermarket_ecommerce_contact_details',
 		'setting'=> 'supermarket_ecommerce_mail',
 		'type'=> 'text'

@@ -15,7 +15,7 @@
 		<?php supermarket_ecommerce_edit_link( get_the_ID() ); ?>
 	</header>
 	<div class="entry-content">
-		<img src="<?php the_post_thumbnail_url(); ?>">
+		<?php the_post_thumbnail(); ?>
 		<p><?php the_content();?></p>
 		<?php
 			wp_link_pages( array(
