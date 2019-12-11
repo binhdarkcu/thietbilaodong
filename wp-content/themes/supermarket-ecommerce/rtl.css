@@ -712,18 +712,18 @@ a:hover .nav-title,
 }
 #header .nav ul li a:hover,
 #header .nav ul li a:focus{
-	background: #605ca8;
+	background: #faa61a;
 }
 
 #header .nav ul.sub-menu li a:hover,
 #header .nav ul.children li a:hover{
-	background:#605ca8;
+	background:#faa61a;
 	border-color: #343748;
 }
 
 /* Top Header */
 .social-icons i:hover{
-	color: #605ca8;
+	color: #faa61a;
 }
 .social-icons i{
 	margin: 0 15px;
@@ -742,7 +742,7 @@ a:hover .nav-title,
 }
 .email i{
 	margin-left: 5px; 
-	color: #605ca8;
+	color: #faa61a;
 }
 .acc-btn {
     margin: 15px 0;
@@ -771,7 +771,7 @@ a:hover .nav-title,
     font-weight: bold;
 }
 .logo h1 a{
-color: #605ca8;
+color: #faa61a;
 }
 
 /* --------------------------search bar---------------------------- */
@@ -794,7 +794,7 @@ color: #605ca8;
 }
 .search-bar button[type="submit"]{
   padding: 10px 25px;
-  background: url(assets/images/search.png) no-repeat scroll 14px #605ca8;
+  background: url(assets/images/search.png) no-repeat scroll 14px #faa61a;
   text-indent: -9999px;
   border: none;
   border-radius: 5px;
@@ -804,7 +804,7 @@ color: #605ca8;
 button.product-btn {
   width: 100%;
   border: none;
-  background: #605ca8;
+  background: #faa61a;
   padding: 14px 0;
   cursor: pointer;
   font-size: 17px;
@@ -854,7 +854,7 @@ span.cart-value {
   top: 0;
   color: #fff;
   font-weight: bold;
-  background: #605ca8;
+  background: #faa61a;
   font-size: 15px;
   border-radius: 50%;
   width: 25px;
@@ -880,7 +880,7 @@ li.cart_box {
     text-align: center;
 }
 .article_content:hover{
-	border: 1px solid #605ca8;
+	border: 1px solid #faa61a;
 }
 .article_content:hover h3{
 	color: #343748;
@@ -901,7 +901,7 @@ li.cart_box {
 .metabox1{
    padding: 4px 10px;
    border: 4px double #fff;
-   background: #605ca8;
+   background: #faa61a;
 }
 .article_content .metabox i,
 .article_content .metabox span,
@@ -926,7 +926,7 @@ li.cart_box {
     font-weight: bold;
     font-size: 15px;
     padding: 12px 25px;
-    background: #605ca8;
+    background: #faa61a;
 }
 .article_content  .read-btn a:hover{
 	background: #343748;
@@ -945,8 +945,8 @@ li.cart_box {
 }
 #slider .carousel-control-next-icon i:hover,
 #slider .carousel-control-prev-icon i:hover{
-	background: #605ca8;
-	border-color:#605ca8;
+	background: #faa61a;
+	border-color:#faa61a;
 }
 #slider .carousel-item-next,#slider .carousel-item-prev,#slider .carousel-item.active {
   display: block !important;
@@ -998,7 +998,7 @@ li.cart_box {
     background: #ffc801;
 }
 #slider .read-btn a:hover{
-	background: #605ca8;
+	background: #faa61a;
 	color: #fff;
 }
 .slide-post{
@@ -1010,7 +1010,7 @@ li.cart_box {
 }
 .slide-post h4{
 	text-transform: uppercase;
-	color: #605ca8;
+	color: #faa61a;
 	letter-spacing: 0px;
 	font-weight: 600;
 }
@@ -1084,7 +1084,7 @@ a.showcoupon,
     border-top-color: #343748;
 }
 .woocommerce span.onsale{
-	background: #605ca8;
+	background: #faa61a;
 	color: #fff;
 	padding: 0;
 }
@@ -1095,7 +1095,7 @@ a.showcoupon,
     text-align: center;
 }
 .products li:hover{
-	border:1px solid #605ca8;
+	border:1px solid #faa61a;
 }
 h2.woocommerce-loop-product__title,
 .woocommerce div.product .product_title {
@@ -1105,13 +1105,13 @@ h2.woocommerce-loop-product__title,
 }
 .woocommerce ul.products li.product .price,
 .woocommerce div.product p.price, .woocommerce div.product span.price {
-    color: #605ca8;
+    color: #faa61a;
 }
 .woocommerce div.product .product_title,.woocommerce div.product p.price, .woocommerce div.product span.price{
 	margin-bottom: 5px;
 }
 .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button,.woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt{
-	background: #605ca8;
+	background: #faa61a;
 	border-radius: 0;
 	color: #fff;
 }
@@ -1134,7 +1134,7 @@ nav.woocommerce-MyAccount-navigation ul {
     list-style: none;
 }
 nav.woocommerce-MyAccount-navigation ul li {
-    background: #605ca8 !important;
+    background: #faa61a !important;
     padding: 12px;
     margin-bottom: 10px;
 }
@@ -1768,7 +1768,7 @@ header.page-header h2 {
 	color: #343748;
 }
 .site-footer button.search-submit{
-	background-color: #605ca8;
+	background-color: #faa61a;
     font-weight: normal;
     letter-spacing: 1px;
     left: 0;
@@ -1776,11 +1776,11 @@ header.page-header h2 {
     width: 100%;
 }
 .site-footer .tagcloud a:hover{
-	background-color:#605ca8 !important; 
+	background-color:#faa61a !important; 
 }
 .copyright {
    padding: 15px 0px;
-   border-top:2px solid #605ca8;
+   border-top:2px solid #faa61a;
    text-align: center;
 }
 .copyright p{
@@ -1915,7 +1915,7 @@ header.page-header h2 {
     border:1px dashed #e4e4e4;
 }
 #sidebar .widget:hover{
-	border:1px solid #605ca8;
+	border:1px solid #faa61a;
 }
 h2.widget-title {
     font-size: 24px;
@@ -1929,7 +1929,7 @@ h2.widget-title {
     font-size: 20px;
     font-weight: bold;
     text-align: center;
-    background: #605ca8;
+    background: #faa61a;
     color: #fff;
     letter-spacing: 1px;
     padding: 10px 0px 10px 0;
@@ -1945,11 +1945,11 @@ h2.widget-title {
     color: #3a3a3a;
 }
 #sidebar .tagcloud a:hover{
-	background-color:#605ca8; 
+	background-color:#faa61a; 
 	color: #fff;
 }
 #sidebar button.search-submit{
-	background-color: #605ca8;
+	background-color: #faa61a;
     background-image: none;
     color: #fff;
     font-size: 16px;
@@ -3031,7 +3031,7 @@ object {
 		margin-left: 5px;
 	}
 	.page-numbers:hover{
-		background: #605ca8;
+		background: #faa61a;
 		color: #fff !important;
 	}
 	.page-numbers.current{

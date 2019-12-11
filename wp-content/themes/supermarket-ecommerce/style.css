@@ -656,7 +656,7 @@ a .nav-title,
 /* --------- MENUS CSS --------- */
 #sidelong-menu {
   display: inline;
-  background: #605ca8;
+  background: #faa61a;
 }
 ul.list_nav {
   margin: 0 auto;
@@ -682,7 +682,7 @@ ul.list_nav {
 }
 .nav-menu ul li a:active,
 .nav-menu ul li a:hover{
-	background: #605ca8;
+	background: #faa61a;
 	color: #fff;
 }
 .nav-menu ul ul{
@@ -698,7 +698,7 @@ ul.list_nav {
 .nav-menu ul ul a{
   color: #fff;
   padding: 10px;
-  background: #605ca8;
+  background: #faa61a;
   transition: all 0.5s ease 0s;
 }
 .nav-menu ul ul a:hover{
@@ -741,7 +741,7 @@ ul.list_nav {
 
 /* Top Header */
 .social-icons i:hover{
-	color: #605ca8;
+	color: #faa61a;
 }
 .social-icons i{
 	margin: 0 15px;
@@ -760,7 +760,7 @@ ul.list_nav {
 }
 .email i{
 	margin-right: 5px; 
-	color: #605ca8;
+	color: #faa61a;
 }
 .acc-btn {
 	text-align: right;
@@ -791,7 +791,7 @@ ul.list_nav {
     font-weight: bold;
 }
 .logo h1 a{
-color: #605ca8;
+color: #faa61a;
 }
 
 /* --------------------------search bar---------------------------- */
@@ -814,7 +814,7 @@ color: #605ca8;
 }
 .search-bar button[type="submit"]{
   padding: 10px 25px;
-  background: url(assets/images/search.png) no-repeat scroll 14px #605ca8;
+  background: url(assets/images/search.png) no-repeat scroll 14px #faa61a;
   text-indent: -9999px;
   border: none;
   border-radius: 5px;
@@ -824,7 +824,7 @@ color: #605ca8;
 button.product-btn {
   width: 100%;
   border: none;
-  background: #605ca8;
+  background: #faa61a;
   padding: 14px 0;
   cursor: pointer;
   font-size: 17px;
@@ -874,7 +874,7 @@ span.cart-value {
   top: 0;
   color: #fff;
   font-weight: bold;
-  background: #605ca8;
+  background: #faa61a;
   font-size: 15px;
   border-radius: 50%;
   width: 25px;
@@ -900,7 +900,7 @@ li.cart_box {
     text-align: center;
 }
 .article_content:hover{
-	border: 1px solid #605ca8;
+	border: 1px solid #faa61a;
 }
 .article_content:hover h3{
 	color: #343748;
@@ -918,7 +918,7 @@ li.cart_box {
 .metabox1{
    padding: 4px 10px;
    border: 4px double #fff;
-   background: #605ca8;
+   background: #faa61a;
 }
 .article_content .metabox i,
 .article_content .metabox span,
@@ -942,7 +942,7 @@ li.cart_box {
     font-weight: bold;
     font-size: 15px;
     padding: 12px 25px;
-    background: #605ca8;
+    background: #faa61a;
 }
 .article_content  .read-btn a:hover{
 	background: #343748;
@@ -961,7 +961,7 @@ li.cart_box {
 }
 #slider .carousel-control-next-icon i:hover,
 #slider .carousel-control-prev-icon i:hover{
-	color:#605ca8;
+	color:#faa61a;
 }
 #slider .carousel-item-next,#slider .carousel-item-prev,#slider .carousel-item.active {
   display: block !important;
@@ -1014,7 +1014,7 @@ li.cart_box {
     background: #ffc801;
 }
 #slider .read-btn a:hover{
-	background: #605ca8;
+	background: #faa61a;
 	color: #fff;
 }
 .slide-post{
@@ -1026,7 +1026,7 @@ li.cart_box {
 }
 .slide-post h4{
 	text-transform: uppercase;
-	color: #605ca8;
+	color: #faa61a;
 	letter-spacing: 0px;
 	font-weight: 600;
 }
@@ -1113,7 +1113,7 @@ a.showcoupon,
     border-top-color: #343748;
 }
 .woocommerce span.onsale{
-	background: #605ca8;
+	background: #faa61a;
 	color: #fff;
 	padding: 0;
 }
@@ -1124,7 +1124,7 @@ a.showcoupon,
     text-align: center;
 }
 .products li:hover{
-	border:1px solid #605ca8;
+	border:1px solid #faa61a;
 }
 h2.woocommerce-loop-product__title,
 .woocommerce div.product .product_title {
@@ -1135,7 +1135,7 @@ h2.woocommerce-loop-product__title,
 }
 .woocommerce ul.products li.product .price,
 .woocommerce div.product p.price, .woocommerce div.product span.price {
-    color: #605ca8;
+    color: #faa61a;
     font-size: 15px;
     margin: 10px 0;
 }
@@ -1143,7 +1143,7 @@ h2.woocommerce-loop-product__title,
 	margin-bottom: 5px;
 }
 .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button,.woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt{
-	background: #605ca8;
+	background: #faa61a;
 	border-radius: 0;
 	color: #fff;
     font-size: 16px;
@@ -1167,7 +1167,7 @@ nav.woocommerce-MyAccount-navigation ul {
     list-style: none;
 }
 nav.woocommerce-MyAccount-navigation ul li {
-    background: #605ca8 !important;
+    background: #faa61a !important;
     padding: 12px;
     margin-bottom: 10px;
 }
@@ -1820,7 +1820,7 @@ body:not(.supermarket-ecommerce-front-page) .entry-header {
 	color: #343748;
 }
 .site-footer button.search-submit{
-	background-color: #605ca8;
+	background-color: #faa61a;
     font-weight: normal;
     letter-spacing: 1px;
     right: 0;
@@ -1828,11 +1828,11 @@ body:not(.supermarket-ecommerce-front-page) .entry-header {
     width: 100%;
 }
 .site-footer .tagcloud a:hover{
-	background-color:#605ca8 !important; 
+	background-color:#faa61a !important; 
 }
 .copyright {
    padding: 15px 0px;
-   border-top:2px solid #605ca8;
+   border-top:2px solid #faa61a;
    text-align: center;
 }
 .copyright p{
@@ -1960,7 +1960,7 @@ body:not(.supermarket-ecommerce-front-page) .entry-header {
     border:1px dashed #e4e4e4;
 }
 #sidebar .widget:hover{
-	border:1px solid #605ca8;
+	border:1px solid #faa61a;
 }
 h2.widget-title {
     font-size: 24px;
@@ -1974,7 +1974,7 @@ h2.widget-title {
     font-size: 20px;
     font-weight: bold;
     text-align: center;
-    background: #605ca8;
+    background: #faa61a;
     color: #fff;
     letter-spacing: 1px;
     padding: 10px 0 10px 0px;
@@ -1990,11 +1990,11 @@ h2.widget-title {
     color: #3a3a3a;
 }
 #sidebar .tagcloud a:hover{
-	background-color:#605ca8; 
+	background-color:#faa61a; 
 	color: #fff;
 }
 #sidebar button.search-submit{
-	background-color: #605ca8;
+	background-color: #faa61a;
     background-image: none;
     color: #fff;
     font-size: 16px;
@@ -2625,7 +2625,7 @@ object {
     background: none !important;
   }
   .nav-menu .current_page_item > a, .nav-menu .current-menu-item > a, .nav-menu .current_page_ancestor > a {
-    color: #605ca8;
+    color: #faa61a;
     background: #fff !important;
   }
   .sf-arrows .sf-with-ul:after{
@@ -2666,7 +2666,7 @@ object {
     border-bottom: 1px solid #fff;
   }
   .nav-menu ul li a:hover{
-	color: #605ca8;
+	color: #faa61a;
     background: #fff !important;
   }
   .sf-arrows .sf-with-ul:after:active ul{
@@ -3136,7 +3136,7 @@ object {
 		margin-right: 5px;
 	}
 	.page-numbers:hover{
-		background: #605ca8;
+		background: #faa61a;
 		color: #fff !important;
 	}
 	.page-numbers.current{
