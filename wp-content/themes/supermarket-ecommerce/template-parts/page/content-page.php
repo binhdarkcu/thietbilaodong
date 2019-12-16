@@ -32,9 +32,20 @@
 					$count = count($product_categories);
 					if ( $count > 0 ){
 						foreach ( $product_categories as $product_category ) {
-							echo "<script> console.log(",$$product_category,");</script>";
 							$product_cat_id   = $product_category->term_id;
 							$cat_link = get_category_link( $product_cat_id );
+							// print_r($product_category);
+							// $taxonomies = array( 
+							// 	'product_category',
+							// );
+							
+							// $args = array(
+							// 	'parent'         => $product_cat_id,
+							// 	// 'child_of'      => $parent_term_id, 
+							// ); 
+							
+							// $terms = get_terms($taxonomies, $args);
+							// print_r($terms);
 							if ($product_category->category_parent == 0) { ?>
 						<li class="drp_dwn_menu"><a href="<?php echo esc_url(get_term_link( $product_category ) ); ?>">
 						<?php
