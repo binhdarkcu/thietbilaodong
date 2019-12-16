@@ -109,7 +109,7 @@
 			<div class="container">
 				<div class="main-top">
 				   <div class="row">
-				    	<?php if(class_exists('woocommerce')){ ?>
+				    	<!-- <?php if(class_exists('woocommerce')){ ?>
 				      	<div class="col-lg-3 col-md-4">
 					        <button class="product-btn"><i class="fa fa-bars" aria-hidden="true"></i><?php echo esc_html_e('ALL CATEGORIES','supermarket-ecommerce'); ?></button>
 					        <div class="product-cat">
@@ -139,8 +139,8 @@
 					          ?>
 				        	</div>
 				      	</div>
-				      	<?php } ?>
-				      	<div class="col-lg-9 col-md-8">
+				      	<?php } ?> -->
+				      	<div class="col-lg-12 col-md-12">
 							<div class="toggle-menu responsive-menu">
 					            <button onclick="resMenu_open()" role="tab"><i class="fas fa-bars"></i><span class="screen-reader-text"><?php esc_html_e('Open Menu','supermarket-ecommerce'); ?></span></button>
 					        </div>
