@@ -1,0 +1,31 @@
+/**
+  * File css custom
+  */
+
+/**
+  * Dashboard menu
+  */
+.menu-categories {
+  list-style: none;
+  border: 1px solid #faa61a;
+  background-color: #faa61a;
+  padding: 5px;
+}
+
+.menu-categories > a {
+  display: block;
+  color: white;
+  padding: 5px;
+  border-bottom: 1px dashed white;
+}
+
+/**
+  * feature products
+  */
+a.wp-block-button__link.add_to_cart_button.ajax_add_to_cart, span.wc-block-grid__product-onsale {
+  background-color: #faa61a;
+}
+
+figure.wp-block-embed-wordpress.wp-block-embed.is-type-wp-embed.is-provider-thiết-bị-lao-dộng.post-on-dashboard {
+  display: inline-block;
+}

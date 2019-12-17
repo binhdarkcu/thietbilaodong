@@ -19,6 +19,7 @@
  */
 
 // ** MySQL settings - You can get this info from your web host ** //
+// define( 'WP_DEBUG', true );
 /** The name of the database for WordPress */
 define( 'DB_NAME', 'thietbilaodong' );
 

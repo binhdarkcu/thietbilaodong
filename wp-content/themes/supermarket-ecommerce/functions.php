@@ -175,6 +175,9 @@ function supermarket_ecommerce_scripts() {
 	// Add custom fonts, used in the main stylesheet.
 	wp_enqueue_style( 'supermarket-ecommerce-fonts', supermarket_ecommerce_fonts_url(), array(), null );
 	
+	// CUSTOM CSS
+	wp_enqueue_style( 'custom-style', get_template_directory_uri().'/assets/css/custom-style.css' );
+
 	//Bootstarp 
 	wp_enqueue_style( 'bootstrap', get_template_directory_uri().'/assets/css/bootstrap.css' );
 	
@@ -242,15 +245,15 @@ function supermarket_ecommerce_sanitize_choices( $input, $setting ) {
 }
 
 //footer Link
-define('SUPERMARKET_ECOMMERCE_LIVE_DEMO','https://www.luzuk.com/demo/supermarket-ecommerce/','supermarket-ecommerce');
-define('SUPERMARKET_ECOMMERCE_PRO_DOCS','https://www.luzuk.com/demo/supermarket-ecommerce/documentation/','supermarket-ecommerce');
-define('SUPERMARKET_ECOMMERCE_BUY_NOW','https://www.luzuk.com/themes/wordpress-ecommerce-theme/','supermarket-ecommerce');
-define('SUPERMARKET_ECOMMERCE_SUPPORT','https://wordpress.org/support/theme/supermarket-ecommerce/','supermarket-ecommerce');
-define('SUPERMARKET_ECOMMERCE_CREDIT','https://www.luzuk.com/themes/free-wordpress-ecommerce-theme/','supermarket-ecommerce');
+// define('SUPERMARKET_ECOMMERCE_LIVE_DEMO','https://www.luzuk.com/demo/supermarket-ecommerce/','supermarket-ecommerce');
+// define('SUPERMARKET_ECOMMERCE_PRO_DOCS','https://www.luzuk.com/demo/supermarket-ecommerce/documentation/','supermarket-ecommerce');
+// define('SUPERMARKET_ECOMMERCE_BUY_NOW','https://www.luzuk.com/themes/wordpress-ecommerce-theme/','supermarket-ecommerce');
+// define('SUPERMARKET_ECOMMERCE_SUPPORT','https://wordpress.org/support/theme/supermarket-ecommerce/','supermarket-ecommerce');
+// define('SUPERMARKET_ECOMMERCE_CREDIT','https://www.luzuk.com/themes/free-wordpress-ecommerce-theme/','supermarket-ecommerce');
 
 if ( ! function_exists( 'supermarket_ecommerce_credit' ) ) {
 	function supermarket_ecommerce_credit(){
-		echo "<a href=".esc_url(SUPERMARKET_ECOMMERCE_CREDIT)." target='_blank'>".esc_html__('Ecommerce WordPress Theme','supermarket-ecommerce')."</a>";
+		// echo "<a href=".esc_url(SUPERMARKET_ECOMMERCE_CREDIT)." target='_blank'>".esc_html__('Ecommerce WordPress Theme','supermarket-ecommerce')."</a>";
 	}
 }
 
