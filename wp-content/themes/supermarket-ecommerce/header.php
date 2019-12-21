@@ -85,10 +85,10 @@
 				      		<div class="acc-btn">
 					            <?php if(class_exists('woocommerce')){ ?>
 						            <?php if ( is_user_logged_in() ) { ?>
-						              <a href="<?php echo esc_url( get_permalink( get_option('woocommerce_myaccount_page_id') ) ); ?>" ><?php esc_html_e('MY ACCOUNT','supermarket-ecommerce'); ?></a>
+						              <a href="<?php echo esc_url( get_permalink( get_option('woocommerce_myaccount_page_id') ) ); ?>" ><?php esc_html_e('Tài khoản của tôi','supermarket-ecommerce'); ?></a>
 						            <?php } 
 						            else { ?>
-						              <a href="<?php echo esc_url( get_permalink( get_option('woocommerce_myaccount_page_id') ) ); ?>" ><?php esc_html_e('LOGIN / REGISTER','supermarket-ecommerce'); ?></a>
+						              <a href="<?php echo esc_url( get_permalink( get_option('woocommerce_myaccount_page_id') ) ); ?>" ><?php esc_html_e('Đăng nhập/Đăng ký','supermarket-ecommerce'); ?></a>
 						            <?php } ?>
 						        <?php }?>
 				        	</div>
@@ -109,37 +109,6 @@
 			<div class="container">
 				<div class="main-top">
 				   <div class="row">
-				    	<!-- <?php if(class_exists('woocommerce')){ ?>
-				      	<div class="col-lg-3 col-md-4">
-					        <button class="product-btn"><i class="fa fa-bars" aria-hidden="true"></i><?php echo esc_html_e('ALL CATEGORIES','supermarket-ecommerce'); ?></button>
-					        <div class="product-cat">
-					          <?php
-					            $args = array(
-					              //'number'     => $number,
-					              'orderby'    => 'title',
-					              'order'      => 'ASC',
-					              'hide_empty' => 0,
-					              'parent'  => 0
-					              //'include'    => $ids
-					            );
-					            $product_categories = get_terms( 'product_cat', $args );
-					            $count = count($product_categories);
-					            if ( $count > 0 ){
-					                foreach ( $product_categories as $product_category ) {
-					                  $product_cat_id   = $product_category->term_id;
-					                  $cat_link = get_category_link( $product_cat_id );
-					                  if ($product_category->category_parent == 0) { ?>
-					                <li class="drp_dwn_menu"><a href="<?php echo esc_url(get_term_link( $product_category ) ); ?>">
-					                <?php
-					              }
-					                echo esc_html( $product_category->name ); ?></a><i class="fas fa-chevron-right"></i></li>
-					                <?php
-					                }
-					              }
-					          ?>
-				        	</div>
-				      	</div>
-				      	<?php } ?> -->
 				      	<div class="col-lg-12 col-md-12">
 							<div class="toggle-menu responsive-menu">
 					            <button onclick="resMenu_open()" role="tab"><i class="fas fa-bars"></i><span class="screen-reader-text"><?php esc_html_e('Open Menu','supermarket-ecommerce'); ?></span></button>

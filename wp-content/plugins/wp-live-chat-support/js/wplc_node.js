@@ -144,7 +144,7 @@ function wplc_set_up_query_string() {
   query_string = wplc_query_cleanup(query_string);
 }
 
-jQuery(document).on('wplc_sockets_ready', function () {
+jQuery(document).on('wplc_sockets_ready', function() {
 
   /**
    * Run Query setup function
@@ -156,9 +156,9 @@ jQuery(document).on('wplc_sockets_ready', function () {
   /**
    * Setup an inactive timer
    */
-  tcx_inactive_timeout = setTimeout(function () {
-      tcx_inactive = true;
-    }, tcx_timeout_duration);
+  tcx_inactive_timeout = setTimeout(function() {
+    tcx_inactive = true;
+  }, tcx_timeout_duration);
 
   /*Find nifty object and check if online */
   if (wplc_test_localStorage()) {
@@ -195,7 +195,7 @@ jQuery(document).on('wplc_sockets_ready', function () {
   /**
    * Builds the socket delegates. This needs to be called everytime a connection is made (i.e. moving from a short poll to a long poll)
    */
-  wplc_chat_delegates = function (keepalive) {
+  wplc_chat_delegates = function(keepalive) {
     nifty_chat_status_temp = nc_getCookie("nc_status");
     if (typeof nifty_chat_status_temp !== "undefined" && nifty_chat_status_temp === "active") {
       /* leave the cookie untouched as we are already in ACTIVE state and should continue in this state until changed. */
@@ -213,16 +213,16 @@ jQuery(document).on('wplc_sockets_ready', function () {
     }
 
     // Socket events
-    socket.on('connect', function (data) {
+    socket.on('connect', function(data) {
       nc_add_user(socket, data);
 
       nifty_chat_status_temp = nc_getCookie("nc_status");
       if (typeof nifty_chat_status_temp !== "undefined" && nifty_chat_status_temp === "active") {
         if (typeof user_hearbeat === "undefined") {
-          user_hearbeat = setInterval(function () {
-              if (socket.connected)
-                socket.emit('heartbeat');
-            }, 5000);
+          user_hearbeat = setInterval(function() {
+            if (socket.connected)
+              socket.emit('heartbeat');
+          }, 5000);
         }
       }
       jQuery.event.trigger({
@@ -232,7 +232,7 @@ jQuery(document).on('wplc_sockets_ready', function () {
 
     });
 
-    socket.on("force_disconnect", function (data) {
+    socket.on("force_disconnect", function(data) {
 
       socket.disconnect({
         test: 'test'
@@ -242,13 +242,13 @@ jQuery(document).on('wplc_sockets_ready', function () {
         clearInterval(user_hearbeat);
       user_heartbeat = undefined;
       /* reconnect this socket in 7 seconds to check for a forced chat on the agents end */
-      setTimeout(function () {
+      setTimeout(function() {
         wplc_connect(false);
       }, 12000);
       /* its important that this number is less than the TTL of the variable in redis */
     });
 
-    socket.on("blacklisted", function (data) {
+    socket.on("blacklisted", function(data) {
 
       jQuery.event.trigger({
         type: "tcx_blacklisted",
@@ -257,7 +257,7 @@ jQuery(document).on('wplc_sockets_ready', function () {
 
     });
 
-    socket.on("user blocked", function (data) {
+    socket.on("user blocked", function(data) {
       socket.disconnect({
         blocked: 'blocked'
       });
@@ -271,7 +271,7 @@ jQuery(document).on('wplc_sockets_ready', function () {
       keepalive = false;
     });
 
-    socket.on("customerID", function (data) {
+    socket.on("customerID", function(data) {
       var CookieDate = new Date;
       CookieDate.setFullYear(CookieDate.getFullYear() + 1);
       Cookies.set('tcx_customerID', data.customerID, {
@@ -281,49 +281,46 @@ jQuery(document).on('wplc_sockets_ready', function () {
 
     });
 
-    socket.on("agent initiate", function (data) {
+    socket.on("agent initiate", function(data) {
       if (typeof user_hearbeat === "undefined") {
         socket.emit('initiate received', {
           chatid: wplc_cid
         });
-	
-	  // Start user's session	
-	  var anti_cache = Date.now();
-	  var sdata = {cid: wplc_cid, server_token:wplc_restapi_token,_wpnonce:wplc_restapi_nonce};
-	  wplc_send_url = wplc_restapi_endpoint + "/start_session?nocache="+anti_cache;
-	  jQuery.ajax({
-		  url  : wplc_send_url,
-		  data : sdata,
-		  type : "POST",
-		  timeout : 12000,
-		  success : function(response){
-			console.log(response);
-		  },
-		  error : function(error){
-			console.log(error);
-		  },
-	  });  
-		  	  
-        user_hearbeat = setInterval(function () {
-            if (socket.connected) {
-              socket.emit('heartbeat');
 
-            }
-          }, 5000);
+        // Start user's session	
+        var anti_cache = Date.now();
+        var sdata = { cid: wplc_cid, server_token: wplc_restapi_token, _wpnonce: wplc_restapi_nonce };
+        wplc_send_url = wplc_restapi_endpoint + "/start_session?nocache=" + anti_cache;
+        jQuery.ajax({
+          url: wplc_send_url,
+          data: sdata,
+          type: "POST",
+          timeout: 12000,
+          success: function(response) {
+            console.log(response);
+          },
+          error: function(error) {
+            console.log(error);
+          },
+        });
+
+        user_hearbeat = setInterval(function() {
+          if (socket.connected) {
+            socket.emit('heartbeat');
+
+          }
+        }, 5000);
       }
-				
+
       niftyUpdateStatusCookie('active');
       jQuery.event.trigger({
         type: "tcx_agent_initiated_chat",
         ndata: data
       });
-		
-		
-
     });
 
     /* Confirm that a message was saved to the db */
-    socket.on('message received', function (data) {
+    socket.on('message received', function(data) {
       if (typeof data !== 'undefined') {
         if (typeof data.msgID !== 'undefined' && typeof data.outcome !== 'undefined') {
           tcx_msg_confirmations[data.msgID] = data.outcome;
@@ -332,14 +329,14 @@ jQuery(document).on('wplc_sockets_ready', function () {
 
     });
 
-    socket.on('message read received', function (data) {
+    socket.on('message read received', function(data) {
       jQuery.event.trigger({
         type: "tcx_message_read_received",
         ndata: data
       });
     });
 
-    socket.on('agent to participant ping', function (data) {
+    socket.on('agent to participant ping', function(data) {
       socket.emit('agent to participant ping received', {
         fromsocket: socket.id,
         intendedsocket: data.fromsocket,
@@ -347,16 +344,16 @@ jQuery(document).on('wplc_sockets_ready', function () {
       });
     });
 
-    socket.on("chat ended", function (data) {
+    socket.on("chat ended", function(data) {
       jQuery.event.trigger({
         type: "tcx_chat_ended_notification",
         ndata: data
       });
 
-	  // End user's session
-	  var sdata = {cid: wplc_cid};
-	  wplc_rest_api('end_session', sdata , 12000, null);
-		
+      // End user's session
+      var sdata = { cid: wplc_cid };
+      wplc_rest_api('end_session', sdata, 12000, null);
+
       jQuery("#tcx_chat_ended").show();
       tcx_end_chat_div_create();
       //$("#wplc_user_message_div").hide();
@@ -372,9 +369,9 @@ jQuery(document).on('wplc_sockets_ready', function () {
       if (typeof io !== "undefined") {
         wplc_set_up_query_string();
         socket = io.connect(WPLC_SOCKET_URI, {
-            query: query_string,
-            transports: ['websocket']
-          });
+          query: query_string,
+          transports: ['websocket']
+        });
         wplc_chat_delegates();
       }
 
@@ -383,7 +380,7 @@ jQuery(document).on('wplc_sockets_ready', function () {
       }
     });
 
-    socket.on("averageResponse", function (data) {
+    socket.on("averageResponse", function(data) {
       jQuery.event.trigger({
         type: "tcx_average_response",
         ndata: data
@@ -391,13 +388,13 @@ jQuery(document).on('wplc_sockets_ready', function () {
 
     });
 
-    socket.on("recent_agents", function (data) {
+    socket.on("recent_agents", function(data) {
       if (typeof data !== "undefined" && typeof data.agents !== "undefined") {
         tcx_recent_agents = data.agents;
       }
     });
 
-    socket.on("agent_data", function (data) {
+    socket.on("agent_data", function(data) {
       if ((typeof data !== "undefined" && data !== null) && (typeof data.ndata !== "undefined" && data.ndata !== null) && (typeof data.ndata.aid !== 'undefined' && data.ndata.aid !== null)) {
         if (typeof tcx_recent_agents_data === "undefined") {
           tcx_recent_agents_data = {};
@@ -408,17 +405,17 @@ jQuery(document).on('wplc_sockets_ready', function () {
       }
     });
 
-    socket.on("transfer chat", function (data) {
+    socket.on("transfer chat", function(data) {
       addNotice({
         message: 'You are being transferred to another agent. Please be patient.'
       });
     });
 
-    socket.on("location found", function (data) {
+    socket.on("location found", function(data) {
       tcx_location_info = data; //Set the data
     });
 
-    socket.on('chat history', function (data) {
+    socket.on('chat history', function(data) {
       jQuery.event.trigger({
         type: "tcx_chat_history",
         ndata: data
@@ -427,7 +424,7 @@ jQuery(document).on('wplc_sockets_ready', function () {
     });
 
     // Whenever the server emits 'login', log the login message
-    socket.on('login', function (data) {
+    socket.on('login', function(data) {
 
       connected = true;
       // Display the welcome message
@@ -442,7 +439,7 @@ jQuery(document).on('wplc_sockets_ready', function () {
     });
 
     // Whenever the server emits 'new message', update the chat body
-    socket.on('new message', function (data) {
+    socket.on('new message', function(data) {
       socket.emit('message read', data);
       jQuery.event.trigger({
         type: "tcx_new_message",
@@ -455,14 +452,14 @@ jQuery(document).on('wplc_sockets_ready', function () {
       jQuery('#tcx_chat_ended').hide();
     });
 
-    socket.on('user chat notification', function (data) {
+    socket.on('user chat notification', function(data) {
       jQuery.event.trigger({
         type: "tcx_user_chat_notification",
         ndata: data
       });
     });
 
-    socket.on('custom data received', function (data) {
+    socket.on('custom data received', function(data) {
       jQuery.event.trigger({
         type: "tcx_custom_data_received",
         ndata: data
@@ -470,12 +467,12 @@ jQuery(document).on('wplc_sockets_ready', function () {
     });
 
     // Whenever the server emits 'new message', update the chat body
-    socket.on('socketid', function (socketid) {
+    socket.on('socketid', function(socketid) {
       document.cookie = "nc_sid=" + socketid.socketid;
       if (!wplc_online) {}
     });
 
-    socket.on('agent joined', function (data) {
+    socket.on('agent joined', function(data) {
       clearTimeout(agent_disc_timer[data.agent]);
       jQuery.event.trigger({
         type: "tcx_agent_joined",
@@ -485,9 +482,9 @@ jQuery(document).on('wplc_sockets_ready', function () {
       jQuery('.tmp-welcome-msg').remove();
     });
 
-    socket.on('new_socket', function (socketid) {});
+    socket.on('new_socket', function(socketid) {});
 
-    socket.on('agent left', function (data) {
+    socket.on('agent left', function(data) {
       jQuery.event.trigger({
         type: "tcx_agent_left",
         ndata: data
@@ -495,24 +492,24 @@ jQuery(document).on('wplc_sockets_ready', function () {
 
     });
 
-    socket.on('agent connected', function (data) {
+    socket.on('agent connected', function(data) {
       clearTimeout(agent_disc_timer[data.aid]);
     })
 
-    socket.on('agent disconnected', function (data) {
+    socket.on('agent disconnected', function(data) {
 
-      agent_disc_timer[data.aid] = setTimeout(function () {
-          jQuery.event.trigger({
-            type: "tcx_agent_disconnected",
-            ndata: data
-          });
-          removeChatTyping(data);
-        }, 8000);
+      agent_disc_timer[data.aid] = setTimeout(function() {
+        jQuery.event.trigger({
+          type: "tcx_agent_disconnected",
+          ndata: data
+        });
+        removeChatTyping(data);
+      }, 8000);
 
     });
 
     // Whenever the server emits 'typing', show the typing message
-    socket.on('typing', function (data) {
+    socket.on('typing', function(data) {
       jQuery.event.trigger({
         type: "tcx_typing",
         ndata: data
@@ -521,7 +518,7 @@ jQuery(document).on('wplc_sockets_ready', function () {
     });
 
     // Whenever the server emits 'stop typing', kill the typing message
-    socket.on('stop typing', function (data) {
+    socket.on('stop typing', function(data) {
       jQuery.event.trigger({
         type: "tcx_stop_typing",
         ndata: data
@@ -529,7 +526,7 @@ jQuery(document).on('wplc_sockets_ready', function () {
     });
 
     // Receive CHAT ID from server
-    socket.on('chatID', function (data) {
+    socket.on('chatID', function(data) {
       Cookies.set('wplc_cid', data.chatid, {
         expires: 1,
         path: '/'
@@ -543,14 +540,14 @@ jQuery(document).on('wplc_sockets_ready', function () {
       }
     });
 
-    socket.on("involved check returned", function (data) {
+    socket.on("involved check returned", function(data) {
       jQuery.event.trigger({
         type: 'tcx_build_involved_agents_header',
         ndata: data
       });
     });
 
-    socket.on('disconnect', function () {
+    socket.on('disconnect', function() {
       if (typeof user_heartbeat !== "undefined")
         clearInterval(user_heartbeat);
       user_heartbeat = undefined;
@@ -564,7 +561,7 @@ jQuery(document).on('wplc_sockets_ready', function () {
       }
     });
 
-    socket.on('reconnect', function () {
+    socket.on('reconnect', function() {
       /**
        * Only show if this was part of the keepalive session (i.e. an active chat)
        */
@@ -573,16 +570,16 @@ jQuery(document).on('wplc_sockets_ready', function () {
           type: "tcx_reconnect"
         });
       }
-      nc_add_user(socket, 'what the shizz');
+      nc_add_user(socket, '');
     });
 
-    socket.on('reconnect_error', function () {
+    socket.on('reconnect_error', function() {
       jQuery.event.trigger({
         type: "tcx_reconnect_error"
       });
     });
 
-    socket.on('a2vping', function (data) {
+    socket.on('a2vping', function(data) {
       socket.emit('a2vping return', {
         fromsocket: socket.id,
         intendedsocket: data.returnsocket,
@@ -594,7 +591,7 @@ jQuery(document).on('wplc_sockets_ready', function () {
   $messages = jQuery('#wplc_chatbox'); // Messages area
   $inputMessage = jQuery('#wplc_chatmsg'); // Input message input box
 
-  jQuery("#nifty_file_input").on("change", function () {
+  jQuery("#nifty_file_input").on("change", function() {
     var file = this.files[0]; //Last file in array
     wplcShareFile(file, '#nifty_attach_fail_icon', '#nifty_attach_success_icon', '#nifty_attach_uploading_icon', "#nifty_select_file");
     jQuery("#chat_drag_zone").fadeOut();
@@ -604,7 +601,7 @@ jQuery(document).on('wplc_sockets_ready', function () {
 
   /** Image pasting functionality */
   try {
-    document.getElementById('wplc_chatmsg').onpaste = function (event) {
+    document.getElementById('wplc_chatmsg').onpaste = function(event) {
       // use event.originalEvent.clipboard for newer chrome versions
       var items = (event.clipboardData || event.originalEvent.clipboardData).items;
       // find pasted image among pasted items
@@ -617,7 +614,7 @@ jQuery(document).on('wplc_sockets_ready', function () {
       // load image if there is a pasted image
       if (blob !== null) {
         var reader = new FileReader();
-        reader.onload = function (event) {
+        reader.onload = function(event) {
           document.getElementById("wplc_chatmsg").value = "####" + event.target.result + "####";
 
           jQuery("#wplc_send_msg").click();
@@ -627,31 +624,31 @@ jQuery(document).on('wplc_sockets_ready', function () {
     }
   } catch (ex) {}
 
-  jQuery("#nifty_tedit_b").click(function () {
+  jQuery("#nifty_tedit_b").click(function() {
     niftyTextEdit("b");
   });
-  jQuery("#nifty_tedit_i").click(function () {
+  jQuery("#nifty_tedit_i").click(function() {
     niftyTextEdit("i");
   });
-  jQuery("#nifty_tedit_u").click(function () {
+  jQuery("#nifty_tedit_u").click(function() {
     niftyTextEdit("u");
   });
-  jQuery("#nifty_tedit_strike").click(function () {
+  jQuery("#nifty_tedit_strike").click(function() {
     niftyTextEdit("strike");
   });
-  jQuery("#nifty_tedit_mark").click(function () {
+  jQuery("#nifty_tedit_mark").click(function() {
     niftyTextEdit("mark");
   });
-  jQuery("#nifty_tedit_sub").click(function () {
+  jQuery("#nifty_tedit_sub").click(function() {
     niftyTextEdit("sub");
   });
-  jQuery("#nifty_tedit_sup").click(function () {
+  jQuery("#nifty_tedit_sup").click(function() {
     niftyTextEdit("sup");
   });
-  jQuery("#nifty_tedit_link").click(function () {
+  jQuery("#nifty_tedit_link").click(function() {
     niftyTextEdit("link");
   });
-  setInterval(function () {
+  setInterval(function() {
     getText(document.getElementById("wplc_chatmsg"));
   }, 1000);
   /**
@@ -685,22 +682,22 @@ jQuery(document).on('wplc_sockets_ready', function () {
     if (typeof io !== "undefined") {
       wplc_set_up_query_string();
       socket = io.connect(WPLC_SOCKET_URI, {
-          query: query_string,
-          transports: ['websocket']
-        });
+        query: query_string,
+        transports: ['websocket']
+      });
 
     } else {
-      var socketchecker = setInterval(function () {
-          if (typeof io !== "undefined") {
-            clearInterval(socketchecker);
-            wplc_set_up_query_string();
-            socket = io.connect(WPLC_SOCKET_URI, {
-                query: query_string,
-                transports: ['websocket']
-              });
+      var socketchecker = setInterval(function() {
+        if (typeof io !== "undefined") {
+          clearInterval(socketchecker);
+          wplc_set_up_query_string();
+          socket = io.connect(WPLC_SOCKET_URI, {
+            query: query_string,
+            transports: ['websocket']
+          });
 
-          }
-        }, 1000);
+        }
+      }, 1000);
     }
 
     wplc_chat_delegates();
@@ -711,7 +708,7 @@ jQuery(document).on('wplc_sockets_ready', function () {
    *
    * @param {bool} keepalive Keep this connection alive?
    */
-  wplc_connect = function (keepalive) {
+  wplc_connect = function(keepalive) {
 
     if (tcx_inactive === false && wplc_online) {
       if (typeof socket !== "undefined") {
@@ -722,9 +719,9 @@ jQuery(document).on('wplc_sockets_ready', function () {
           //opening socket connection
           wplc_set_up_query_string();
           socket = io.connect(WPLC_SOCKET_URI, {
-              query: query_string,
-              transports: ['websocket']
-            });
+            query: query_string,
+            transports: ['websocket']
+          });
 
           wplc_chat_delegates(keepalive);
         }
@@ -732,18 +729,17 @@ jQuery(document).on('wplc_sockets_ready', function () {
         //opening socket connection2
         wplc_set_up_query_string();
         socket = io.connect(WPLC_SOCKET_URI, {
-            query: query_string,
-            transports: ['websocket']
-          });
+          query: query_string,
+          transports: ['websocket']
+        });
 
         wplc_chat_delegates(keepalive);
       }
     } else {
 
       /* try again in 7 seconds */
-      setTimeout(function () {
-        if (socket.connected) {}
-        else {
+      setTimeout(function() {
+        if (socket.connected) {} else {
           wplc_connect(false);
         }
       }, 7000);
@@ -763,16 +759,16 @@ jQuery(document).on('wplc_sockets_ready', function () {
    *
    * i.e. an inactive user will not send shortpolls.
    */
-  jQuery(document).on('mousemove', function () {
+  jQuery(document).on('mousemove', function() {
 
     clearTimeout(tcx_inactive_timeout);
     tcx_inactive = false;
-    tcx_inactive_timeout = setTimeout(function () {
-        tcx_inactive = true;
-      }, tcx_timeout_duration);
+    tcx_inactive_timeout = setTimeout(function() {
+      tcx_inactive = true;
+    }, tcx_timeout_duration);
   });
 
-  document.addEventListener('tcx_send_message', function (e) {
+  document.addEventListener('tcx_send_message', function(e) {
 
     if (typeof wplc_online !== 'undefined' && wplc_online === true) {
       socket.emit('stop typing', {
@@ -785,7 +781,7 @@ jQuery(document).on('wplc_sockets_ready', function () {
     niftyIsEditing = false;
   }, false);
 
-  jQuery(document).on("tcx_send_message", function (e) {
+  jQuery(document).on("tcx_send_message", function(e) {
     //sendMessage(e.message);
     if (typeof wplc_online !== 'undefined' && wplc_online === true) {
       socket.emit('stop typing', {
@@ -800,7 +796,7 @@ jQuery(document).on('wplc_sockets_ready', function () {
 
   // Keyboard events
 
-  jQuery(document).on("keydown", "#wplc_chatmsg", function (event) {
+  jQuery(document).on("keydown", "#wplc_chatmsg", function(event) {
     // When the client hits ENTER on their keyboard
     if (event.which === 13 && !event.shiftKey) {
 
@@ -815,12 +811,11 @@ jQuery(document).on('wplc_sockets_ready', function () {
 
   });
 
-  $inputMessage.keyup(function (event) {
+  $inputMessage.keyup(function(event) {
     // When the client hits ENTER on their keyboard
 
-    if (event.which === 13 && !event.shiftKey) {}
-    else {
-      if (config.enable_typing_preview==1 && typeof wplc_online !== 'undefined' && wplc_online === true) {
+    if (event.which === 13 && !event.shiftKey) {} else {
+      if (config.enable_typing_preview == 1 && typeof wplc_online !== 'undefined' && wplc_online === true) {
         socket.emit('typing_preview', {
           chatid: wplc_cid,
           tempmessage: $inputMessage.val()
@@ -829,14 +824,14 @@ jQuery(document).on('wplc_sockets_ready', function () {
     }
   });
 
-  $inputMessage.on('input', function () {
+  $inputMessage.on('input', function() {
     updateTyping();
   });
 
   // Click events
 
   // Focus input when clicking on the message input's border
-  $inputMessage.click(function () {
+  $inputMessage.click(function() {
     $inputMessage.focus();
   });
 
@@ -850,11 +845,11 @@ jQuery(document).on('wplc_sockets_ready', function () {
     jQuery(".message_" + tmid + " .tcx-edit-message").show();
   });*/
 
-  jQuery(document).on("click", ".tcx_restart_chat", function () {
+  jQuery(document).on("click", ".tcx_restart_chat", function() {
     jQuery("#wp-live-chat-header").click();
     jQuery(".wplc_agent_info").html('');
     // jQuery('#wplc_chatbox').html('');
-    setTimeout(function () {
+    setTimeout(function() {
       jQuery("#wp-live-chat-header").click();
     }, 100);
 
@@ -862,103 +857,116 @@ jQuery(document).on('wplc_sockets_ready', function () {
     jQuery('#wplc_end_chat_button').removeAttr('wplc_disable');
   });
 
-  jQuery(document).on("click", "#wplc_send_msg", function () {
+  jQuery(document).on("click", "#wplc_send_msg", function() {
     var message = $inputMessage.val();
-    if(message.length > 2000){
+    if (message.length > 2000) {
       message = message.substring(0, 2000);
     }
     sendMessage(message);
   });
 
-jQuery(document).on("nifty_trigger_open_chat", function (event) {
-  open_chat();
-  jQuery("#tcx_chat_ended").hide();
-});
-
-jQuery(document).on("tcx_socket_connected", function (e) {
-  if (typeof socket !== "undefined" && typeof nifty_chat_status !== "undefined") {
-    if (nifty_chat_status === "active") {
-      socket.emit('check involved agents', {
-        chatid: chatid
-      });
-    }
-  }
-});
-
-jQuery(document).on("wplc_animation_done", function (event) {
-  if (typeof wdtEmojiBundle !== "undefined") {
-    wdtEmojiBundle.defaults.emojiSheets = {
-      'apple'    : wplc_baseurl + 'js/vendor/wdt-emoji/sheets/sheet-apple-64-indexed-128.png',
-      'google'   : wplc_baseurl + 'js/vendor/wdt-emoji/sheets/sheet-google-64-indexed-128.png',
-      'twitter'  : wplc_baseurl + 'js/vendor/wdt-emoji/sheets/sheet-twitter-64-indexed-128.png',
-      'emojione' : wplc_baseurl + 'js/vendor/wdt-emoji/sheets/sheet-emojione-64-indexed-128.png',
-      'facebook' : wplc_baseurl + 'js/vendor/wdt-emoji/sheets/sheet-facebook-64-indexed-128.png',
-      'messenger': wplc_baseurl + 'js/vendor/wdt-emoji/sheets/sheet-messenger-64-indexed-128.png'
-    };
-    tcx_attempt_emoji_input_init(0);
-  }
-});
-
-/* Minimize chat window */
-jQuery("#wp-live-chat-minimize").on("click", function () {
-  jQuery.event.trigger({
-    type: "nifty_minimize_chat"
+  jQuery(document).on("nifty_trigger_open_chat", function(event) {
+    open_chat();
+    jQuery("#tcx_chat_ended").hide();
   });
-  Cookies.set('nifty_minimize', "yes", {
-    expires: 1,
-    path: '/'
-  });
-  nifty_is_minimized = true;
-});
 
-/**
- * Click handler for the start chat button
- */
-jQuery("#wplc_start_chat_btn").on("click", function () {
-  var wplc_is_gdpr_enabled = jQuery(this).attr('data-wplc-gdpr-enabled');
-  if (typeof wplc_is_gdpr_enabled !== "undefined" && (wplc_is_gdpr_enabled === 'true')) {
-    var wplc_gdpr_opt_in_checked = jQuery("#wplc_chat_gdpr_opt_in").is(':checked');
-    if (typeof wplc_gdpr_opt_in_checked === "undefined" || wplc_gdpr_opt_in_checked === false) {
-      /* GDPR requirements not met */
-      jQuery("#wplc_chat_gdpr_opt_in").addClass('incomplete');
-      return false;
+  jQuery(document).on("tcx_socket_connected", function(e) {
+    if (typeof socket !== "undefined" && typeof nifty_chat_status !== "undefined") {
+      if (nifty_chat_status === "active") {
+        socket.emit('check involved agents', {
+          chatid: chatid
+        });
+      }
     }
+  });
+
+  jQuery(document).on("wplc_animation_done", function(event) {
+    if (typeof wdtEmojiBundle !== "undefined") {
+      wdtEmojiBundle.defaults.emojiSheets = {
+        'apple': wplc_baseurl + 'js/vendor/wdt-emoji/sheets/sheet-apple-64-indexed-128.png',
+        'google': wplc_baseurl + 'js/vendor/wdt-emoji/sheets/sheet-google-64-indexed-128.png',
+        'twitter': wplc_baseurl + 'js/vendor/wdt-emoji/sheets/sheet-twitter-64-indexed-128.png',
+        'emojione': wplc_baseurl + 'js/vendor/wdt-emoji/sheets/sheet-emojione-64-indexed-128.png',
+        'facebook': wplc_baseurl + 'js/vendor/wdt-emoji/sheets/sheet-facebook-64-indexed-128.png',
+        'messenger': wplc_baseurl + 'js/vendor/wdt-emoji/sheets/sheet-messenger-64-indexed-128.png'
+      };
+      tcx_attempt_emoji_input_init(0);
+    }
+  });
+
+  /* Minimize chat window */
+  jQuery("#wp-live-chat-minimize").on("click", function() {
+    jQuery.event.trigger({
+      type: "nifty_minimize_chat"
+    });
+    Cookies.set('nifty_minimize', "yes", {
+      expires: 1,
+      path: '/'
+    });
+    nifty_is_minimized = true;
+  });
+
+  /**
+   * Click handler for the start chat button
+   */
+  jQuery("#wplc_start_chat_btn").on("click", function() {
+    jQuery("#wplc_name").removeClass('wplc_error_field');
+    jQuery("#wplc_email").removeClass('wplc_error_field');
     jQuery("#wplc_chat_gdpr_opt_in").removeClass('incomplete');
-  }
+    document.getElementById('wplc_name').title = '';
+    document.getElementById('wplc_email').title = '';
+    var formOk = true;
 
-  var wplc_name = jQuery("#wplc_name").val().replace(/(<([^>]+)>)/ig,"");
-  var wplc_email = jQuery("#wplc_email").val().replace(/(<([^>]+)>)/ig,"");
+    var wplc_is_gdpr_enabled = jQuery(this).attr('data-wplc-gdpr-enabled');
+    if (typeof wplc_is_gdpr_enabled !== "undefined" && (wplc_is_gdpr_enabled === 'true')) {
+      var wplc_gdpr_opt_in_checked = jQuery("#wplc_chat_gdpr_opt_in").is(':checked');
+      if (typeof wplc_gdpr_opt_in_checked === "undefined" || wplc_gdpr_opt_in_checked === false) {
+        /* GDPR requirements not met */
+        jQuery("#wplc_chat_gdpr_opt_in").addClass('incomplete');
+        formOk = false;
+      }
+    }
 
-  if (wplc_name.length <= 0) {
-    alert("Please Enter Your Name");
-    return false;
-  }
-  if (wplc_email.length <= 0) {
-    alert("Please Enter Your Email Address");
-    return false;
-  }
+    var wplc_name = jQuery("#wplc_name").val().replace(/(<([^>]+)>)/ig, "");
+    var wplc_email = jQuery("#wplc_email").val().replace(/(<([^>]+)>)/ig, "");
 
-  if (jQuery("#wplc_email").attr('wplc_hide') !== "1") {
-    var testEmail = /^[A-Z0-9._%+-]+@([A-Z0-9-]+\.)+[A-Z]{2,6}$/i;
-    if (!testEmail.test(wplc_email)) {
-      alert("Please Enter a Valid Email Address");
+    if (wplc_name.length <= 0) {
+      jQuery("#wplc_name").addClass('wplc_error_field');
+      document.getElementById('wplc_name').title = wplc_error_messages.please_enter_name;
+      formOk = false;
+    }
+    if (wplc_email.length <= 0) {
+      jQuery("#wplc_email").addClass('wplc_error_field');
+      document.getElementById('wplc_email').title = wplc_error_messages.please_enter_email;
+      formOk = false;
+    } else {
+      if (jQuery("#wplc_email").attr('wplc_hide') !== "1") {
+        var testEmail = /^[A-Z0-9._%+-]+@([A-Z0-9-]+\.)+[A-Z]{2,6}$/i;
+        if (!testEmail.test(wplc_email)) {
+          document.getElementById('wplc_email').title = wplc_error_messages.please_enter_valid_email;
+          jQuery("#wplc_email").addClass('wplc_error_field');
+          formOk = false;
+        }      
+      }
+    }
+
+    if (!formOk) {
       return false;
     }
-  }
 
-  jQuery.event.trigger({
-    type: "nifty_trigger_start_chat"
-  });
+    jQuery.event.trigger({
+      type: "nifty_trigger_start_chat"
+    });
 
-  var date = new Date();
-  date.setTime(date.getTime() + (2 * 60 * 1000));
+    var date = new Date();
+    date.setTime(date.getTime() + (2 * 60 * 1000));
 
-  niftyUpdateUserDataCookies(wplc_name, wplc_email);
-  niftyUpdateGravCookie(md5(wplc_email));
-  niftyUpdateStatusCookie("active");
+    niftyUpdateUserDataCookies(wplc_name, wplc_email);
+    niftyUpdateGravCookie(md5(wplc_email));
+    niftyUpdateStatusCookie("active");
 
-  wplc_connect(true);
-  var request_chat_checker = setInterval(function () {
+    wplc_connect(true);
+    var request_chat_checker = setInterval(function() {
       if (typeof socket !== "undefined" && typeof socket.connected !== "undefined" && socket.connected === true) {
         clearInterval(request_chat_checker);
         socket.emit("request chat", {
@@ -1010,7 +1018,7 @@ function addNotice(data, options) {
  * @param {object} data Data to check
  */
 function removeChatTyping(data) {
-  getTypingMessages(data).fadeOut(function () {
+  getTypingMessages(data).fadeOut(function() {
     jQuery(this).remove();
   });
 }
@@ -1061,7 +1069,7 @@ function updateTyping() {
       }
       lastTypingTime = (new Date()).getTime();
 
-      setTimeout(function () {
+      setTimeout(function() {
         var typingTimer = (new Date()).getTime();
         var timeDiff = typingTimer - lastTypingTime;
         if (timeDiff >= TYPING_TIMER_LENGTH && typing) {
@@ -1083,7 +1091,7 @@ function updateTyping() {
  * @param {object} data Packet to check
  */
 function getTypingMessages(data) {
-  return jQuery('.typing.message').filter(function (i) {
+  return jQuery('.typing.message').filter(function(i) {
     return jQuery(this).data('username') === data.username;
   });
 }
@@ -1188,7 +1196,7 @@ function niftyUpdateUserDataCookies(name, email) {
  *
  * @param {bool} force Force open regardless of state
  */
-var open_chat = function (force) {
+var open_chat = function(force) {
   var tmp_cookie_val = nc_getCookie('nifty_minimize');
   nifty_is_minimized = tmp_cookie_val == '' || tmp_cookie_val == 'false' || tmp_cookie_val == false ? false : true;
 
@@ -1208,7 +1216,7 @@ var open_chat = function (force) {
     }
     if (!jQuery("#wp-live-chat-header").hasClass("active")) {
       jQuery("#wp-live-chat-header").click();
-    }    
+    }
   } else if (nifty_chat_status_temp === "browsing" || wplc_chat_status_temp === "5") { //Added 11 here for usability
     if (jQuery("#wp-live-chat-2").is(":visible") === false && jQuery("#wp-live-chat-4").is(":visible") === false) {
       jQuery("#wp-live-chat-2").show();
@@ -1271,7 +1279,7 @@ function niftyTextEdit(insertContent) {
  * @param {string} originalID The id of the div to show when upload final div to show after evething is complete
  */
 function wplcShareFile(fileToUpload, failedID, successID, uploadingID, originalID) {
-  if(fileToUpload == undefined || fileToUpload == false || fileToUpload == null){
+  if (fileToUpload == undefined || fileToUpload == false || fileToUpload == null) {
     return;
   }
 
@@ -1287,7 +1295,7 @@ function wplcShareFile(fileToUpload, failedID, successID, uploadingID, originalI
   var uploadUrl = '';
   uploadUrl = (typeof tcx_override_upload_url !== "undefined" && tcx_override_upload_url !== "") ? tcx_override_upload_url : uploadUrl;
 
-  if (fileToUpload.name.match(new RegExp('^.*\\.(' + config.allowed_upload_extensions + ')$','i'))) {
+  if (fileToUpload.name.match(new RegExp('^.*\\.(' + config.allowed_upload_extensions + ')$', 'i'))) {
     //Files allowed - continue
     if (fileToUpload.size < 8000000) {
       jQuery.ajax({
@@ -1297,11 +1305,11 @@ function wplcShareFile(fileToUpload, failedID, successID, uploadingID, originalI
         cache: false,
         processData: false,
         contentType: false,
-        success: function (data) {
+        success: function(data) {
           if (parseInt(data) !== 0) {
             jQuery(uploadingID).hide();
             jQuery(successID).show();
-            setTimeout(function () {
+            setTimeout(function() {
               jQuery(successID).hide();
               jQuery(originalID).show();
             }, 2000);
@@ -1333,11 +1341,11 @@ function wplcShareFile(fileToUpload, failedID, successID, uploadingID, originalI
             }
 
             if (fileLinkUrl !== false) {
-              if(fileLinkUrl !== 'Security Violation'){
-                tag='link';
+              if (fileLinkUrl !== 'Security Violation') {
+                tag = 'link';
                 jQuery("#wplc_chatmsg").val(tag + ":" + fileLinkUrl + ":" + tag); //Add to input field
                 jQuery("#wplc_send_msg").trigger("click"); //Send message
-                setTimeout(function () {
+                setTimeout(function() {
                   $messages[0].scrollTop = $messages[0].scrollHeight;
                 }, 1000);
               } else {
@@ -1347,17 +1355,17 @@ function wplcShareFile(fileToUpload, failedID, successID, uploadingID, originalI
           } else {
             jQuery(uploadingID).hide();
             jQuery(failedID).show();
-            setTimeout(function () {
+            setTimeout(function() {
               jQuery(failedID).hide();
               jQuery(originalID).show();
             }, 2000);
 
           }
         },
-        error: function () {
+        error: function() {
           jQuery(uploadingID).hide();
           jQuery(failedID).show();
-          setTimeout(function () {
+          setTimeout(function() {
             jQuery(failedID).hide();
             jQuery(originalID).show();
           }, 2000);
@@ -1368,7 +1376,7 @@ function wplcShareFile(fileToUpload, failedID, successID, uploadingID, originalI
       alert("File limit is 8mb");
       jQuery(uploadingID).hide();
       jQuery(failedID).show();
-      setTimeout(function () {
+      setTimeout(function() {
         jQuery(failedID).hide();
         jQuery(originalID).show();
       }, 2000);
@@ -1377,7 +1385,7 @@ function wplcShareFile(fileToUpload, failedID, successID, uploadingID, originalI
     alert("File type not supported.");
     jQuery(uploadingID).hide();
     jQuery(failedID).show();
-    setTimeout(function () {
+    setTimeout(function() {
       jQuery(failedID).hide();
       jQuery(originalID).show();
     }, 2000);
@@ -1479,7 +1487,7 @@ function nc_add_user(socket, data) {
     data.timezoneUTC = tcx_get_timezone();
     data.device_in_use = tcx_get_device_in_use();
     data.operating_system = tcx_get_operating_system();
-    data.location_info = {code: config.country_code, name: config.country_name};
+    data.location_info = { code: config.country_code, name: config.country_name };
 
     if (typeof wplc_extra_data !== 'undefined' && typeof wplc_extra_data['wplc_user_selected_department'] !== 'undefined') {
       data.department = wplc_extra_data['wplc_user_selected_department'];
@@ -1524,7 +1532,7 @@ function nifty_init_chat_box_check(cid) {
     wplc_init_chat_box(cid);
   } else {
     if (typeof wplc_init_chat_box !== "undefined" && wplc_init_chat_box !== false) {
-      setTimeout(function () {
+      setTimeout(function() {
         /* keep checking every 500ms to see if that function exists */
         nifty_init_chat_box_check(cid);
       }, 500);
@@ -1615,85 +1623,84 @@ function tcx_get_operating_system() {
   if (tcx_user_current_os === false && typeof navigator !== "undefined" && navigator.userAgent !== "undefined") {
     var current_user_agent = navigator.userAgent;
     var possibleOsList = [{
-        s: 'Windows 10',
-        r: /(Windows 10.0|Windows NT 10.0)/
-      }, {
-        s: 'Windows 8.1',
-        r: /(Windows 8.1|Windows NT 6.3)/
-      }, {
-        s: 'Windows 8',
-        r: /(Windows 8|Windows NT 6.2)/
-      }, {
-        s: 'Windows 7',
-        r: /(Windows 7|Windows NT 6.1)/
-      }, {
-        s: 'Windows Vista',
-        r: /Windows NT 6.0/
-      }, {
-        s: 'Windows Server 2003',
-        r: /Windows NT 5.2/
-      }, {
-        s: 'Windows XP',
-        r: /(Windows NT 5.1|Windows XP)/
-      }, {
-        s: 'Windows 2000',
-        r: /(Windows NT 5.0|Windows 2000)/
-      }, {
-        s: 'Windows ME',
-        r: /(Win 9x 4.90|Windows ME)/
-      }, {
-        s: 'Windows 98',
-        r: /(Windows 98|Win98)/
-      }, {
-        s: 'Windows 95',
-        r: /(Windows 95|Win95|Windows_95)/
-      }, {
-        s: 'Windows NT 4.0',
-        r: /(Windows NT 4.0|WinNT4.0|WinNT|Windows NT)/
-      }, {
-        s: 'Windows CE',
-        r: /Windows CE/
-      }, {
-        s: 'Windows 3.11',
-        r: /Win16/
-      }, {
-        s: 'Android',
-        r: /Android/
-      }, {
-        s: 'Open BSD',
-        r: /OpenBSD/
-      }, {
-        s: 'Sun OS',
-        r: /SunOS/
-      }, {
-        s: 'Linux',
-        r: /(Linux|X11)/
-      }, {
-        s: 'iOS',
-        r: /(iPhone|iPad|iPod)/
-      }, {
-        s: 'Mac OS X',
-        r: /Mac OS X/
-      }, {
-        s: 'Mac OS',
-        r: /(MacPPC|MacIntel|Mac_PowerPC|Macintosh)/
-      }, {
-        s: 'QNX',
-        r: /QNX/
-      }, {
-        s: 'UNIX',
-        r: /UNIX/
-      }, {
-        s: 'BeOS',
-        r: /BeOS/
-      }, {
-        s: 'OS/2',
-        r: /OS\/2/
-      }, {
-        s: 'Search Bot',
-        r: /(nuhk|Googlebot|Yammybot|Openbot|Slurp|MSNBot|Ask Jeeves\/Teoma|ia_archiver)/
-      }
-    ];
+      s: 'Windows 10',
+      r: /(Windows 10.0|Windows NT 10.0)/
+    }, {
+      s: 'Windows 8.1',
+      r: /(Windows 8.1|Windows NT 6.3)/
+    }, {
+      s: 'Windows 8',
+      r: /(Windows 8|Windows NT 6.2)/
+    }, {
+      s: 'Windows 7',
+      r: /(Windows 7|Windows NT 6.1)/
+    }, {
+      s: 'Windows Vista',
+      r: /Windows NT 6.0/
+    }, {
+      s: 'Windows Server 2003',
+      r: /Windows NT 5.2/
+    }, {
+      s: 'Windows XP',
+      r: /(Windows NT 5.1|Windows XP)/
+    }, {
+      s: 'Windows 2000',
+      r: /(Windows NT 5.0|Windows 2000)/
+    }, {
+      s: 'Windows ME',
+      r: /(Win 9x 4.90|Windows ME)/
+    }, {
+      s: 'Windows 98',
+      r: /(Windows 98|Win98)/
+    }, {
+      s: 'Windows 95',
+      r: /(Windows 95|Win95|Windows_95)/
+    }, {
+      s: 'Windows NT 4.0',
+      r: /(Windows NT 4.0|WinNT4.0|WinNT|Windows NT)/
+    }, {
+      s: 'Windows CE',
+      r: /Windows CE/
+    }, {
+      s: 'Windows 3.11',
+      r: /Win16/
+    }, {
+      s: 'Android',
+      r: /Android/
+    }, {
+      s: 'Open BSD',
+      r: /OpenBSD/
+    }, {
+      s: 'Sun OS',
+      r: /SunOS/
+    }, {
+      s: 'Linux',
+      r: /(Linux|X11)/
+    }, {
+      s: 'iOS',
+      r: /(iPhone|iPad|iPod)/
+    }, {
+      s: 'Mac OS X',
+      r: /Mac OS X/
+    }, {
+      s: 'Mac OS',
+      r: /(MacPPC|MacIntel|Mac_PowerPC|Macintosh)/
+    }, {
+      s: 'QNX',
+      r: /QNX/
+    }, {
+      s: 'UNIX',
+      r: /UNIX/
+    }, {
+      s: 'BeOS',
+      r: /BeOS/
+    }, {
+      s: 'OS/2',
+      r: /OS\/2/
+    }, {
+      s: 'Search Bot',
+      r: /(nuhk|Googlebot|Yammybot|Openbot|Slurp|MSNBot|Ask Jeeves\/Teoma|ia_archiver)/
+    }];
 
     for (var id in possibleOsList) {
       var current_os = possibleOsList[id];
@@ -1751,7 +1758,7 @@ function tcx_attempt_emoji_input_init(attempt) {
   } catch (err) {
     if (attempt < 5) {
       attempt++;
-      setTimeout(function () {
+      setTimeout(function() {
         tcx_attempt_emoji_input_init(attempt);
       }, 1000);
     }

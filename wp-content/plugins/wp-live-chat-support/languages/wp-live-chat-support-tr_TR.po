@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: wplivechat\n"
-"POT-Creation-Date: 2019-11-06 09:19+0100\n"
-"PO-Revision-Date: 2019-11-06 09:19+0100\n"
+"POT-Creation-Date: 2019-12-17 14:44+0100\n"
+"PO-Revision-Date: 2019-12-17 14:44+0100\n"
 "Last-Translator: Salih Kunduz <salihk55@gmail.com>\n"
 "Language-Team: \n"
 "Language: tr\n"
@@ -16,320 +16,320 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#: ajax/agent.php:167 ajax/user.php:114 wp-live-chat-support.php:410
-#: wp-live-chat-support.php:4804
+#: ajax/agent.php:167 ajax/user.php:126 wp-live-chat-support.php:88
+#: wp-live-chat-support.php:4495
 msgid "Admin"
 msgstr "Yönetici"
 
-#: ajax/agent.php:262 ajax/user.php:218
+#: ajax/agent.php:262 ajax/user.php:230
 msgid "Admin has closed and ended the chat"
 msgstr "Yönetici sohbeti sonlandırdı ve kapattı"
 
-#: functions.php:400 functions.php:417
+#: functions.php:382 functions.php:399
 msgid "Accept Chat"
 msgstr "Sohbeti Kabul Et"
 
-#: functions.php:408 functions.php:423
+#: functions.php:390 functions.php:405
 msgid "Open Chat"
 msgstr "Sohbeti Aç"
 
 # PLEASE CHECK READ ME FILE LINE 2
-#: functions.php:410
+#: functions.php:392
 msgid "In progress with another agent"
 msgstr "Başka temsilciyle işlemde"
 
-#: functions.php:427
+#: functions.php:409
 msgid "Only chat agents can accept chats"
 msgstr "Sadece sohbet temsilcileri sohbetleri kabul edebilir"
 
-#: functions.php:491 modules/api/agent/wplc-api-functions.php:423
+#: functions.php:473 modules/api/agent/wplc-api-functions.php:413
 msgid "New"
 msgstr "Yeni"
 
-#: functions.php:493 modules/api/agent/wplc-api-functions.php:425
+#: functions.php:475 modules/api/agent/wplc-api-functions.php:415
 msgid "Returning"
 msgstr "Geri dönüyor"
 
-#: functions.php:584
+#: functions.php:566
 msgid "No agent was able to answer your chat request. Please try again."
 msgstr ""
 "Hiçbir temsilci sohbet isteğinizi yanıtlayamadı. Lütfen tekrar deneyin."
 
-#: functions.php:598 functions.php:4524 wp-live-chat-support.php:1897
+#: functions.php:580 functions.php:4323 wp-live-chat-support.php:1634
 msgid "End Chat"
 msgstr "Sohbeti Bitir"
 
-#: functions.php:985
+#: functions.php:966
 msgid "complete"
 msgstr "tamam"
 
-#: functions.php:988
+#: functions.php:969
 msgid "pending"
 msgstr "beklemede"
 
-#: functions.php:991
+#: functions.php:972
 msgid "active"
 msgstr "aktif"
 
-#: functions.php:994
+#: functions.php:975
 msgid "deleted"
 msgstr "silindi"
 
-#: functions.php:997
+#: functions.php:978
 msgid "browsing"
 msgstr "tarıyor"
 
-#: functions.php:1000
+#: functions.php:981
 msgid "requesting chat"
 msgstr "sohbet isteniyor"
 
-#: functions.php:1003
+#: functions.php:984
 msgid "Chat Ended - User still browsing"
 msgstr "Sohbet sonlandırıldı. Kullanıcı hala sitede"
 
-#: functions.php:1006
+#: functions.php:987
 msgid "User is browsing but doesn't want to chat"
 msgstr "Kullanıcı sitede fakat sohbet etmek istemiyor"
 
-#: functions.php:1145 includes/settings_page.php:835
+#: functions.php:1126 includes/settings_page.php:829
 msgid "WP Live Chat by 3CX - Offline Message from "
 msgstr "3CX WP Canlı Sohbet - Çevrimdışı Mesaj gönderen "
 
-#: functions.php:1146 functions.php:1470 includes/settings_page.php:181
-#: includes/settings_page.php:460 includes/wplc_custom_fields.php:79
-#: includes/wplc_data_triggers.php:456 includes/wplc_departments.php:175
-#: includes/wplc_roi.php:145 modules/node_server.php:82
-#: modules/node_server.php:128 wp-live-chat-support.php:1625
-#: wp-live-chat-support.php:1648 wp-live-chat-support.php:1809
-#: wp-live-chat-support.php:3335 wp-live-chat-support.php:3455
+#: functions.php:1127 functions.php:1451 includes/settings_page.php:181
+#: includes/settings_page.php:454 includes/wplc_custom_fields.php:79
+#: includes/wplc_data_triggers.php:455 includes/wplc_departments.php:175
+#: includes/wplc_roi.php:138 modules/node_server.php:82
+#: modules/node_server.php:128 wp-live-chat-support.php:1362
+#: wp-live-chat-support.php:1385 wp-live-chat-support.php:1546
+#: wp-live-chat-support.php:3043 wp-live-chat-support.php:3157
 msgid "Name"
 msgstr "İsim"
 
-#: functions.php:1147 functions.php:1471 includes/settings_page.php:177
-#: modules/node_server.php:129 wp-live-chat-support.php:1626
-#: wp-live-chat-support.php:1637 wp-live-chat-support.php:1810
-#: wp-live-chat-support.php:3336 wp-live-chat-support.php:3456
+#: functions.php:1128 functions.php:1452 includes/settings_page.php:177
+#: modules/node_server.php:129 wp-live-chat-support.php:1363
+#: wp-live-chat-support.php:1374 wp-live-chat-support.php:1547
+#: wp-live-chat-support.php:3044 wp-live-chat-support.php:3158
 msgid "Email"
 msgstr "Eposta"
 
-#: functions.php:1148 wp-live-chat-support.php:1811
-#: wp-live-chat-support.php:3457 wp-live-chat-support.php:4196
-#: wp-live-chat-support.php:4256
+#: functions.php:1129 wp-live-chat-support.php:1548
+#: wp-live-chat-support.php:3159 wp-live-chat-support.php:3912
+#: wp-live-chat-support.php:3972
 msgid "Message"
 msgstr "Mesaj"
 
-#: functions.php:1149
+#: functions.php:1130
 msgid "Via WP Live Chat by 3CX"
 msgstr "3CX WP Canlı Sohbet Aracılığıyla"
 
-#: functions.php:1448 wp-live-chat-support.php:3298
+#: functions.php:1429 wp-live-chat-support.php:3006
 msgid "Error: Could not delete chat"
 msgstr "Hata: Sohbet silinemedi"
 
-#: functions.php:1450 wp-live-chat-support.php:3300
+#: functions.php:1431 wp-live-chat-support.php:3008
 msgid "Chat Deleted"
 msgstr "Sohbet Silindi"
 
-#: functions.php:1453 includes/wplc_custom_fields.php:35
-#: includes/wplc_custom_fields.php:441 includes/wplc_custom_fields.php:462
-#: includes/wplc_data_triggers.php:252 includes/wplc_data_triggers.php:270
-#: includes/wplc_data_triggers.php:314 includes/wplc_data_triggers.php:502
+#: functions.php:1434 includes/wplc_custom_fields.php:35
+#: includes/wplc_custom_fields.php:453 includes/wplc_custom_fields.php:474
+#: includes/wplc_data_triggers.php:251 includes/wplc_data_triggers.php:269
+#: includes/wplc_data_triggers.php:313 includes/wplc_data_triggers.php:501
 #: includes/wplc_departments.php:303 includes/wplc_departments.php:323
-#: includes/wplc_departments.php:358 includes/wplc_roi.php:375
-#: includes/wplc_roi.php:394 includes/wplc_roi.php:431
+#: includes/wplc_departments.php:358 includes/wplc_roi.php:368
+#: includes/wplc_roi.php:387 includes/wplc_roi.php:424
 #: modules/advanced_tools.php:29 modules/advanced_tools.php:146
 #: modules/advanced_tools.php:244 modules/advanced_tools.php:252
 #: modules/advanced_tools.php:260 modules/advanced_tools.php:268
-#: modules/gdpr.php:223 modules/gdpr.php:237 modules/webhooks_manager.php:102
+#: modules/gdpr.php:244 modules/gdpr.php:258 modules/webhooks_manager.php:102
 #: modules/webhooks_manager.php:122 modules/webhooks_manager.php:149
-#: wp-live-chat-support.php:3263 wp-live-chat-support.php:3289
-#: wp-live-chat-support.php:4166
+#: wp-live-chat-support.php:2971 wp-live-chat-support.php:2997
+#: wp-live-chat-support.php:3882
 msgid "You do not have permission do perform this action"
 msgstr "Bu eylemi gerçekleştirme izniniz bulunmamaktadır"
 
-#: functions.php:1459 wp-live-chat-support.php:3305
+#: functions.php:1440 wp-live-chat-support.php:3013
 msgid "Are you sure you would like to delete this chat?"
 msgstr "Bu sohbeti silmek istediğinize emin misiniz?"
 
-#: functions.php:1460 includes/settings_page.php:159
-#: includes/wplc_custom_fields.php:263 wp-live-chat-support.php:3307
+#: functions.php:1441 includes/settings_page.php:159
+#: includes/wplc_custom_fields.php:275 wp-live-chat-support.php:3015
 msgid "Yes"
 msgstr "Evet"
 
-#: functions.php:1460 includes/settings_page.php:160
-#: includes/wplc_custom_fields.php:263 wp-live-chat-support.php:3308
+#: functions.php:1441 includes/settings_page.php:160
+#: includes/wplc_custom_fields.php:275 wp-live-chat-support.php:3016
 msgid "No"
 msgstr "Hayır"
 
-#: functions.php:1469 functions.php:2029 includes/settings_page.php:349
-#: includes/settings_page.php:494 wp-live-chat-support.php:3334
-#: wp-live-chat-support.php:3454
+#: functions.php:1450 functions.php:2008 includes/settings_page.php:340
+#: includes/settings_page.php:488 wp-live-chat-support.php:3042
+#: wp-live-chat-support.php:3156
 msgid "Date"
 msgstr "Tarih"
 
-#: functions.php:1472 functions.php:4026 wp-live-chat-support.php:3337
+#: functions.php:1453 functions.php:3835 wp-live-chat-support.php:3045
 msgid "URL"
 msgstr "URL"
 
-#: functions.php:1473 includes/wplc_custom_fields.php:83
-#: includes/wplc_data_triggers.php:461 includes/wplc_departments.php:176
-#: includes/wplc_roi.php:149 modules/webhooks_manager.php:251
-#: wp-live-chat-support.php:2383 wp-live-chat-support.php:3339
+#: functions.php:1454 includes/wplc_custom_fields.php:83
+#: includes/wplc_data_triggers.php:460 includes/wplc_departments.php:176
+#: includes/wplc_roi.php:142 modules/webhooks_manager.php:251
+#: wp-live-chat-support.php:2094 wp-live-chat-support.php:3047
 msgid "Action"
 msgstr "Hareket"
 
-#: functions.php:1487
+#: functions.php:1468
 msgid "You have not missed any chat requests."
 msgstr "Hiç sohbet isteği kaçırmadınız."
 
-#: functions.php:1494 wp-live-chat-support.php:3354
+#: functions.php:1475 wp-live-chat-support.php:3062
 msgid "View Chat History"
 msgstr "Sohbet Geçmişini Gör"
 
-#: functions.php:1494 wp-live-chat-support.php:3355
+#: functions.php:1475 wp-live-chat-support.php:3063
 msgid "Download Chat History"
 msgstr "Sohbet geçmişini indir"
 
-#: functions.php:1688
+#: functions.php:1669
 msgid "Open chat window via"
 msgstr "Sohbet penceresini şununla aç"
 
-#: functions.php:1692
+#: functions.php:1673
 msgid "Click"
 msgstr "Click"
 
-#: functions.php:1693
+#: functions.php:1674
 msgid "Hover"
 msgstr "Hover"
 
-#: functions.php:1695
+#: functions.php:1676
 msgid "element with"
 msgstr "şununla eleman"
 
-#: functions.php:1697
+#: functions.php:1678
 msgid "Class"
 msgstr "Sınıf"
 
-#: functions.php:1698 includes/wplc_custom_fields.php:78
-#: includes/wplc_data_triggers.php:455 includes/wplc_departments.php:174
-#: includes/wplc_roi.php:144
+#: functions.php:1679 includes/wplc_custom_fields.php:78
+#: includes/wplc_data_triggers.php:454 includes/wplc_departments.php:174
+#: includes/wplc_roi.php:137
 msgid "ID"
 msgstr "ID"
 
-#: functions.php:1941 functions.php:1947 functions.php:1952
+#: functions.php:1920 functions.php:1926 functions.php:1931
 #: includes/dashboard_page.php:58 modules/node_server.php:138
-#: modules/node_server.php:868 wp-live-chat-support.php:3937
+#: modules/node_server.php:866 wp-live-chat-support.php:3659
 msgid "Quick Responses"
 msgstr "Hızlı Yanıtlar"
 
-#: functions.php:1942 includes/settings_page.php:339
+#: functions.php:1921 includes/settings_page.php:330
 msgid "Quick Response"
 msgstr "Hızlı Yanıt"
 
-#: functions.php:1943 functions.php:1946
+#: functions.php:1922 functions.php:1925
 msgid "New Quick Response"
 msgstr "Yeni Hızlı Yanıt"
 
-#: functions.php:1944 modules/node_server.php:877
+#: functions.php:1923 modules/node_server.php:875
 msgid "Add New Quick Response"
 msgstr "Yeni Hızlı Yanıt Ekle"
 
-#: functions.php:1945
+#: functions.php:1924
 msgid "Edit Quick Response"
 msgstr "Hızlı Yanıt Düzenleyin"
 
-#: functions.php:1948
+#: functions.php:1927
 msgid "View Quick Responses"
 msgstr "Hızlı Yanıtları Gör"
 
-#: functions.php:1949
+#: functions.php:1928
 msgid "Search Quick Responses"
 msgstr "Hızlı Yanıtlar Ara"
 
-#: functions.php:1950
+#: functions.php:1929
 msgid "No Quick Responses found"
 msgstr "Hızlı Yanıt Bulunamadı"
 
-#: functions.php:1951
+#: functions.php:1930
 msgid "No Quick Responses found in the Trash"
 msgstr "Çöp Tenekesinde Hızlı Yanıtlar bulunamadı"
 
-#: functions.php:1956
+#: functions.php:1935
 msgid "Quick Responses for WP Live Chat by 3CX"
 msgstr "3CX WP Canlı Sohbet için Hızlı Yanıtlar"
 
-#: functions.php:1990
+#: functions.php:1969
 msgid "Sort Order"
 msgstr "Siparişi Sırala"
 
-#: functions.php:2026 includes/settings_page.php:348
+#: functions.php:2005 includes/settings_page.php:339
 msgid "Title"
 msgstr "Başlık"
 
-#: functions.php:2027
+#: functions.php:2006
 msgid "Order"
 msgstr "Sipariş"
 
-#: functions.php:2028 includes/settings_page.php:1234
+#: functions.php:2007 includes/settings_page.php:1227
 msgid "Author"
 msgstr "Yazar"
 
-#: functions.php:2071 wp-live-chat-support.php:504
+#: functions.php:2050 wp-live-chat-support.php:185
 msgid "Press ENTER to send your message"
 msgstr "Mesajınızı göndermek için ENTER tuşuna basın"
 
-#: functions.php:2110 functions.php:2114
+#: functions.php:2089 functions.php:2093
 msgid "Assign Quick Response"
 msgstr "Hızlı Yanıt Belirleyin"
 
-#: functions.php:2117 includes/settings_page.php:1219
+#: functions.php:2096 includes/settings_page.php:1212
 msgid "Select"
 msgstr "Seç"
 
-#: functions.php:2123
+#: functions.php:2102
 msgid "What is this?"
 msgstr "Bu nedir?"
 
-#: functions.php:2165
+#: functions.php:2144
 #, php-format
 msgid "Incoming chat from %s (%s) on %s"
 msgstr "%s tarihinde %s (%s) kişisinden gelen sohbet"
 
-#: functions.php:2171
+#: functions.php:2150
 #, php-format
 msgid "%s (%s) wants to chat with you."
 msgstr "%s (%s) sizinle sohbet etmek istiyor."
 
-#: functions.php:2176
+#: functions.php:2155
 #, php-format
 msgid "Log in: %s"
 msgstr "Giriş yap: %s"
 
-#: functions.php:2487
+#: functions.php:2449
 msgid "Status (Online)"
 msgstr "Durum (Çevrimiçi)"
 
-#: functions.php:2488 functions.php:3402
+#: functions.php:2450 functions.php:3275
 msgid "Online"
 msgstr "Çevrimiçi"
 
-#: functions.php:2489 functions.php:3402
+#: functions.php:2451 functions.php:3275
 msgid "Offline"
 msgstr "Çevrimdışı"
 
-#: functions.php:2490
+#: functions.php:2452
 msgid "Status (Offline)"
 msgstr "Durum (Çevrimdışı)"
 
-#: functions.php:2491 functions.php:3372
+#: functions.php:2453 functions.php:3245
 msgid "Chat Agent Online"
 msgstr "Sohbet Temsilcisi Çevrimiçi"
 
-#: functions.php:2492 functions.php:3374 functions.php:3378
+#: functions.php:2454 functions.php:3247 functions.php:3251
 msgid "Chat Agents Online"
 msgstr "Sohbet Temsilcileri Çevrimiçi"
 
-#: functions.php:2505
+#: functions.php:2467
 msgid ""
 "You have set your status to offline. To view visitors and accept chats "
 "please set your status to online using the switch above."
@@ -338,24 +338,24 @@ msgstr ""
 "sohbetleri kabul edebilmek için, yukarıdaki anahtarı kullanarak durumunuzu "
 "çevrimiçi olarak değiştirin.."
 
-#: functions.php:2575
+#: functions.php:2537
 msgid "Encryption"
 msgstr "Şifreleme"
 
-#: functions.php:2581 includes/settings_page.php:1277
-#: wp-live-chat-support.php:3952
+#: functions.php:2543 includes/settings_page.php:1269
+#: wp-live-chat-support.php:3674
 msgid "Business Hours"
 msgstr "İş Saatleri"
 
-#: functions.php:2760
+#: functions.php:2677
 msgid "Initiate Chat"
 msgstr "Sohbet Başlat"
 
-#: functions.php:2852
+#: functions.php:2765
 msgid "Attempting to open the chat window... Please be patient."
 msgstr "Sohbet penceresi açılıyor... Lütfen bekleyiniz."
 
-#: functions.php:2867
+#: functions.php:2780
 msgid ""
 "You are not a chat agent. Please make yourself a chat agent before trying to "
 "chat to visitors"
@@ -363,123 +363,125 @@ msgstr ""
 "Sohbet temsilcisi değilsiniz. Ziyaretçilerle sohbet edebilmek için kendinizi "
 "sohbet temsilcisi yapın"
 
-#: functions.php:3035 functions.php:3051 functions.php:3066
+#: functions.php:2937
 msgid "Chat Agent"
 msgstr "Sohbet Temsilcisi"
 
-#: functions.php:3040 functions.php:3056
+#: functions.php:2945
 msgid "Make this user a chat agent"
 msgstr "Bu kullanıcıyı sohbet temsilcisi yap"
 
-#: functions.php:3070
-msgid "Your user role does not allow you to make yourself a chat agent."
+#: functions.php:2948
+#, fuzzy
+#| msgid "Your user role does not allow you to make yourself a chat agent."
+msgid "Your user role does not allow you to set agent attribute."
 msgstr ""
 "Kullanıcı durumunuz kendinizi sohbet temsilcisi olarak tanımlamanıza izin "
 "vermiyor."
 
-#: functions.php:3071
+#: functions.php:2949
 msgid "Please contact the administrator of this website to change this."
 msgstr "Bu bölümü değiştirmek için lütfen site yöneticisine danışınız."
 
-#: functions.php:3090
+#: functions.php:2963
 msgid "This chat has already been answered by another agent."
 msgstr "Bu sohbet daha önce başka bir temsilci tarafından cevaplandı."
 
-#: functions.php:3323 wp-live-chat-support.php:2336
+#: functions.php:3196 wp-live-chat-support.php:2047
 msgid "Agent(s) online"
 msgstr "Temsilci(ler) çevrimiçi"
 
-#: functions.php:3481 includes/settings_page.php:1209
-#: wp-live-chat-support.php:2282
+#: functions.php:3325 includes/settings_page.php:1202
+#: wp-live-chat-support.php:1993
 msgid "Remove"
 msgstr "Kaldır"
 
-#: functions.php:3484 wp-live-chat-support.php:2285
+#: functions.php:3328 wp-live-chat-support.php:1996
 msgid "Typing..."
 msgstr "Yazıyor..."
 
-#: functions.php:3827
+#: functions.php:3636
 msgid "User Experience Ratings"
 msgstr "Kullanıcı Deneyimi Değerlendirmeleri"
 
-#: functions.php:3834
+#: functions.php:3643
 msgid "Agent Statistics"
 msgstr "Temsilci İstatistikleri"
 
-#: functions.php:3867 functions.php:3882
+#: functions.php:3676 functions.php:3691
 msgid "Satisfaction Rating"
 msgstr "Memnuniyet Değerlendirmesi"
 
-#: functions.php:3868 functions.php:3883
+#: functions.php:3677 functions.php:3692
 msgid "Rating Count"
 msgstr "Değerlendirme Sayısı"
 
-#: functions.php:3868 functions.php:3883
+#: functions.php:3677 functions.php:3692
 msgid "Good"
 msgstr "İyi"
 
-#: functions.php:3868 functions.php:3883
+#: functions.php:3677 functions.php:3692
 msgid "Bad"
 msgstr "Kötü"
 
-#: functions.php:3924 includes/dashboard_page.php:56
-#: wp-live-chat-support.php:1049
+#: functions.php:3733 includes/dashboard_page.php:56
+#: wp-live-chat-support.php:785
 msgid "Reports"
 msgstr "Raporlar"
 
-#: functions.php:3927 includes/wplc_roi.php:146
+#: functions.php:3736 includes/wplc_roi.php:139
 msgid "Overview"
 msgstr "Genel bakış"
 
-#: functions.php:3928
+#: functions.php:3737
 msgid "Popular Pages"
 msgstr "Popüler Sayfalar"
 
-#: functions.php:3946
+#: functions.php:3755
 msgid "Total Agents"
 msgstr "Toplam Temsilciler"
 
-#: functions.php:3946
+#: functions.php:3755
 msgid "Total number of agents that used the live chat"
 msgstr "Canlı sohbet kullanmış bütün temsilcilerin sayısı"
 
-#: functions.php:3947
+#: functions.php:3756
 msgid "Total Chats"
 msgstr "Toplan Sohbetler"
 
-#: functions.php:3947
+#: functions.php:3756
 msgid "Total number of chats received"
 msgstr "Alınan toplam sohbetler"
 
-#: functions.php:3948
+#: functions.php:3757
 msgid "Total URLs"
 msgstr "Toplam URLler"
 
-#: functions.php:3948
+#: functions.php:3757
 msgid "Total number of URLs a chat was initiated on"
 msgstr "Bir sohbetin başlatıldığı toplam URL sayısı"
 
-#: functions.php:3949
+#: functions.php:3758
 msgid "Chats per day"
 msgstr "Günlük toplam sohbetler"
 
-#: functions.php:3950
+#: functions.php:3759
 msgid "Popular pages a chat was initiated on"
 msgstr "Sohbetlerin başlatıldığı popüler sayfalar"
 
-#: functions.php:3980 includes/wplc_custom_fields.php:304
+#: functions.php:3789 includes/wplc_custom_fields.php:316
 msgid "Unknown"
 msgstr "Bilinmiyor"
 
-#: functions.php:4027
+#: functions.php:3836
 msgid "Count"
 msgstr "Sayı"
 
-#: functions.php:4053
+#: functions.php:3862
 msgid "Enable Manual Chat Initiation:"
 msgstr "Manuel Sohbet Başlatmayı Etkinleştir:"
 
-#: functions.php:4053
+#: functions.php:3862
 msgid ""
 "Enabling this feature will allow agents to start a chat with website "
 "visitors. This feature increases server load while enabled."
@@ -488,7 +490,7 @@ msgstr ""
 "sohbete başlamasını sağlar. Bu özellik etkinleştirildiğinde sunucu yükünü "
 "arttırır."
 
-#: functions.php:4057 modules/advanced_features.php:73
+#: functions.php:3866 modules/advanced_features.php:74
 msgid ""
 "This feature is only available when you select 3CX High Performance Cloud "
 "Servers in Advanced Features."
@@ -496,81 +498,81 @@ msgstr ""
 "Bu özellik yalnızca Gelişmiş Özellikler bölümündeki 3CX Yüksek Performanslı "
 "Bulut Sunucuları'nı seçtiğinizde kullanılabilir."
 
-#: functions.php:4144
+#: functions.php:3953
 msgid "Thank you for inquiry. We will get back to you shortly"
 msgstr "Soru için teşekkür ederiz. Sizinle yakında iletişime geçeceğiz"
 
-#: functions.php:4284 wp-live-chat-support.php:4505
+#: functions.php:4088
 msgid "The Live Chat box is currently disabled on your website due to:"
 msgstr "Canlı Sohbet kutusu web sitenizde şu anda devre dışıdır, sebebi:"
 
-#: functions.php:4285 wp-live-chat-support.php:4506
+#: functions.php:4089
 msgid "Business Hours Settings"
 msgstr "İş Saati Ayarları"
 
-#: functions.php:4336
+#: functions.php:4135
 msgid "Edit Profile"
 msgstr "Profili Düzenle"
 
-#: functions.php:4347 modules/node_server.php:98 modules/node_server.php:724
+#: functions.php:4146 modules/node_server.php:98 modules/node_server.php:722
 msgid "Drag Files Here"
 msgstr "Dosyaları Buraya Sürükle"
 
-#: functions.php:4370 functions.php:4415 includes/wplc_custom_fields.php:107
-#: includes/wplc_data_triggers.php:469 includes/wplc_data_triggers.php:607
+#: functions.php:4169 functions.php:4214 includes/wplc_custom_fields.php:107
+#: includes/wplc_data_triggers.php:468 includes/wplc_data_triggers.php:606
 #: includes/wplc_departments.php:184 includes/wplc_departments.php:474
-#: includes/wplc_roi.php:157 includes/wplc_roi.php:576
+#: includes/wplc_roi.php:150 includes/wplc_roi.php:569
 #: modules/webhooks_manager.php:263
 msgid "Delete"
 msgstr "Sil"
 
-#: functions.php:4371
+#: functions.php:4170
 msgid "Send..."
 msgstr "Gönder..."
 
-#: functions.php:4372 functions.php:4417
+#: functions.php:4171 functions.php:4216
 msgid "Play voice note"
 msgstr "Sesli notu oynat"
 
-#: functions.php:4416
+#: functions.php:4215
 msgid "Save..."
 msgstr "Kaydet..."
 
-#: functions.php:4518 wp-live-chat-support.php:1277
-#: wp-live-chat-support.php:2779
+#: functions.php:4317 wp-live-chat-support.php:1014
+#: wp-live-chat-support.php:2489
 msgid "is typing..."
 msgstr "yazıyor..."
 
-#: functions.php:4520
+#: functions.php:4319
 msgid "There are no visitors on your site at the moment"
 msgstr "Şu an sitenizde ziyaretçi bulunmamaktadır"
 
-#: functions.php:4521
+#: functions.php:4320
 msgid "Connection to the server lost, reconnecting..."
 msgstr "Sunucu bağlantısı kaybedildi, yeniden bağlanılıyor..."
 
-#: functions.php:4522
+#: functions.php:4321
 msgid "Agent offline - not accepting chats"
 msgstr "Temsilci çevrimdışı - sohbet kabul edemiyor"
 
-#: functions.php:4523 modules/node_server.php:103 wp-live-chat-support.php:1891
+#: functions.php:4322 modules/node_server.php:103 wp-live-chat-support.php:1628
 msgid "Minimize Chat"
 msgstr "Sohbeti Küçült"
 
-#: functions.php:4542
+#: functions.php:4341
 msgid "An error has occured while fetching the news feed."
 msgstr "Haber beslemesi alınırken bir hata oluştu."
 
-#: functions.php:4639
+#: functions.php:4438
 msgid "Default"
 msgstr "Varsayılan"
 
-#: functions.php:4940 functions.php:4943
+#: functions.php:4739
 msgid "You do not have permission to perform this action"
 msgstr "Bu eylemi gerçekleştirmek için izniniz bulunmuyor"
 
 #: includes/blocks/wplc-chat-box/index.php:30
-#: includes/blocks/wplc-chat-box/index.php:51 wp-live-chat-support.php:3953
+#: includes/blocks/wplc-chat-box/index.php:51 wp-live-chat-support.php:3675
 msgid "Gutenberg Blocks"
 msgstr "Gutenberg Blokları"
 
@@ -618,16 +620,16 @@ msgstr "Seçilen özel metni gösterir"
 msgid "Displays the chosen icon"
 msgstr "Seçilen simgeyi gösterir"
 
-#: includes/blocks/wplc-chat-box/index.php:218 wp-live-chat-support.php:1285
-#: wp-live-chat-support.php:1928
+#: includes/blocks/wplc-chat-box/index.php:218 wp-live-chat-support.php:1022
+#: wp-live-chat-support.php:1665
 msgid "Type here"
 msgstr "Buraya yazın"
 
-#: includes/blocks/wplc-chat-box/index.php:222 wp-live-chat-support.php:1020
+#: includes/blocks/wplc-chat-box/index.php:222 wp-live-chat-support.php:756
 msgid "Live Chat"
 msgstr "Canlı Sohbet"
 
-#: includes/dashboard_page.php:46 wp-live-chat-support.php:1021
+#: includes/dashboard_page.php:46 wp-live-chat-support.php:757
 msgid "Dashboard"
 msgstr "Kontrol Panosu"
 
@@ -644,15 +646,15 @@ msgstr "Sohbetler"
 msgid "Missed"
 msgstr "Cevapsız"
 
-#: includes/dashboard_page.php:55 wp-live-chat-support.php:1027
-#: wp-live-chat-support.php:3391
+#: includes/dashboard_page.php:55 wp-live-chat-support.php:763
+#: wp-live-chat-support.php:3099
 msgid "History"
 msgstr "Geçmiş"
 
 #: includes/dashboard_page.php:57 includes/settings_page.php:125
-#: includes/settings_page.php:765 modules/advanced_tools.php:84
-#: wp-live-chat-support.php:1029 wp-live-chat-support.php:3437
-#: wp-live-chat-support.php:3938
+#: includes/settings_page.php:759 modules/advanced_tools.php:84
+#: wp-live-chat-support.php:765 wp-live-chat-support.php:3139
+#: wp-live-chat-support.php:3660
 msgid "Offline Messages"
 msgstr "Çevrimdışı Mesajları"
 
@@ -662,7 +664,7 @@ msgid "Tools"
 msgstr "Araçlar"
 
 #: includes/dashboard_page.php:60 includes/settings_page.php:88
-#: wp-live-chat-support.php:1022
+#: wp-live-chat-support.php:758
 msgid "Settings"
 msgstr "Ayarlar"
 
@@ -695,7 +697,7 @@ msgid "Latest News"
 msgstr "Yeni Haberler"
 
 #: includes/modal_control.php:27 modules/node_server.php:60
-#: modules/node_server.php:717
+#: modules/node_server.php:715
 msgid "Please Confirm"
 msgstr "Lütfen onaylayın"
 
@@ -704,36 +706,36 @@ msgid "Are you sure?"
 msgstr "Emin misiniz?"
 
 #: includes/modal_control.php:39 includes/wplc_custom_fields.php:164
-#: includes/wplc_custom_fields.php:237 includes/wplc_data_triggers.php:608
+#: includes/wplc_custom_fields.php:249 includes/wplc_data_triggers.php:607
 #: includes/wplc_departments.php:251 includes/wplc_departments.php:475
-#: includes/wplc_roi.php:253 includes/wplc_roi.php:577
-#: modules/node_server.php:64 modules/node_server.php:719
+#: includes/wplc_roi.php:246 includes/wplc_roi.php:570
+#: modules/node_server.php:64 modules/node_server.php:717
 #: modules/webhooks_manager.php:342
 msgid "Cancel"
 msgstr "İptal"
 
 #: includes/modal_control.php:40 modules/node_server.php:63
-#: modules/node_server.php:718 modules/webhooks_manager.php:341
+#: modules/node_server.php:716 modules/webhooks_manager.php:341
 msgid "Confirm"
 msgstr "Onayla"
 
-#: includes/notification_control.php:27
+#: includes/notification_control.php:22
 msgid "User is browsing"
 msgstr "Kullanıcı arıyor"
 
-#: includes/notification_control.php:34 includes/notification_control.php:70
-#: includes/notification_control.php:114 includes/wplc_transfer_chats.php:472
+#: includes/notification_control.php:33 includes/notification_control.php:66
+#: includes/notification_control.php:111 includes/wplc_transfer_chats.php:472
 #: includes/wplc_transfer_chats.php:493 includes/wplc_transfer_chats.php:556
 #: includes/wplc_transfer_chats.php:592
 msgid "System notification"
 msgstr "Sistem bildirimi"
 
-#: includes/notification_control.php:109
+#: includes/notification_control.php:106
 msgid "has joined the chat."
 msgstr "sohbete katıldı."
 
 #: includes/settings_page.php:115 includes/settings_page.php:153
-#: wp-live-chat-support.php:3949
+#: wp-live-chat-support.php:3671
 msgid "General Settings"
 msgstr "Genel Ayarlar"
 
@@ -741,12 +743,12 @@ msgstr "Genel Ayarlar"
 msgid "Chat Box"
 msgstr "Sohbet Kutusu"
 
-#: includes/settings_page.php:130 includes/settings_page.php:941
+#: includes/settings_page.php:130 includes/settings_page.php:935
 msgid "Styling"
 msgstr "Stil"
 
 #: includes/settings_page.php:135 modules/node_server.php:89
-#: modules/node_server.php:723
+#: modules/node_server.php:721
 msgid "Agents"
 msgstr "Temsilciler"
 
@@ -782,10 +784,6 @@ msgstr "Varsayılan ziyaretçi adı"
 #: includes/settings_page.php:191
 msgid "This name will be displayed for all not logged in visitors"
 msgstr "Ziyaretçilerde oturum açmamış herkes için bu ad gösterilecektir"
-
-#: includes/settings_page.php:194 wp-live-chat-support.php:503
-msgid "Guest"
-msgstr "Misafir"
 
 #: includes/settings_page.php:199
 msgid "Input Field Replacement Text"
@@ -934,64 +932,51 @@ msgstr "Sohbet penceresini aşağıdaki gönderi türü sayfalarında gösterme.
 msgid "No post types found."
 msgstr "Gönderi türü bulunamadı."
 
-#: includes/settings_page.php:330
-msgid "Allow WP users to self-assign as a chat agent"
-msgstr ""
-"WP kullanıcıların kendilerini sohbet temsilcisi olarak atamasına izin ver"
-
-#: includes/settings_page.php:330
-msgid ""
-"Checking this will allow any of your users to make themselves a chat agent "
-"when editing their profile."
-msgstr ""
-"Bunu işaretlediğinizde kullanıcılar profillerini düzenlediklerinde "
-"kendilerini sohbet temsilcisi olarak atayabilirler."
-
-#: includes/settings_page.php:344
+#: includes/settings_page.php:335
 msgid "Order by"
 msgstr "Sırala"
 
-#: includes/settings_page.php:350
+#: includes/settings_page.php:341
 msgid "Number"
 msgstr "Sayı"
 
-#: includes/settings_page.php:356
+#: includes/settings_page.php:347
 msgid "Sort"
 msgstr "Sırala"
 
-#: includes/settings_page.php:360
+#: includes/settings_page.php:351
 msgid "Descending"
 msgstr "Azalan"
 
-#: includes/settings_page.php:361
+#: includes/settings_page.php:352
 msgid "Ascending"
 msgstr "Artan"
 
-#: includes/settings_page.php:368
+#: includes/settings_page.php:359
 #, fuzzy
 #| msgid "Localization"
 msgid "Geolocalization"
 msgstr "Lokalizasyon"
 
-#: includes/settings_page.php:372
+#: includes/settings_page.php:363
 #, fuzzy
 #| msgid "Visitors on site"
 msgid "Detect Visitors Country"
 msgstr "Sitedeki ziyaretçiler"
 
-#: includes/settings_page.php:376
+#: includes/settings_page.php:367
 #, php-format
 msgid ""
 "This feature requires the use of the GeoIP Detection plugin. Install it by "
 "going %s"
 msgstr ""
 
-#: includes/settings_page.php:376 includes/wplc_departments.php:585
-#: modules/node_server.php:501 wp-live-chat-support.php:2319
+#: includes/settings_page.php:367 includes/wplc_departments.php:585
+#: modules/node_server.php:501 wp-live-chat-support.php:2030
 msgid "here"
 msgstr "burada"
 
-#: includes/settings_page.php:377
+#: includes/settings_page.php:368
 #, fuzzy
 #| msgid ""
 #| "This feature is only available when you select 3CX High Performance Cloud "
@@ -1003,15 +988,15 @@ msgstr ""
 "Bu özellik yalnızca Gelişmiş Özellikler bölümündeki 3CX Yüksek Performanslı "
 "Bulut Sunucuları'nı seçtiğinizde kullanılabilir."
 
-#: includes/settings_page.php:383
+#: includes/settings_page.php:374
 msgid "Voice Notes"
 msgstr "Sesli Notlar"
 
-#: includes/settings_page.php:387
+#: includes/settings_page.php:378
 msgid "Enable Voice Notes on admin side"
 msgstr "Yönetici tarafında Sesli Notları etkinleştir"
 
-#: includes/settings_page.php:389
+#: includes/settings_page.php:380
 msgid ""
 "Enabling this will allow you to record the voice during the chat and send it "
 "to visitor once you hold on CTRL + SPACEBAR in main chat window"
@@ -1020,11 +1005,11 @@ msgstr ""
 "penceresinde CTRL + BOŞLUK tuşunu basılı tutarak ziyaretçiye göndermenizi "
 "sağlar"
 
-#: includes/settings_page.php:397
+#: includes/settings_page.php:388
 msgid "Enable Voice Notes on visitor side"
 msgstr "Ziyaretçi tarafında Sesli Notları etkinleştir"
 
-#: includes/settings_page.php:399
+#: includes/settings_page.php:390
 msgid ""
 "Enabling this will allow the visitors to record the voice during the chat "
 "and send it to agent once they hold on CTRL + SPACEBAR"
@@ -1032,39 +1017,43 @@ msgstr ""
 "Bunun etkinleştirilmesi ziyaretçilerin sohbet sırasında sesi kaydetmesini ve "
 "CTRL + BOŞLUK tuşunu basılı tutarak temsilciye göndermesini sağlar"
 
-#: includes/settings_page.php:413 wp-live-chat-support.php:3950
+#: includes/settings_page.php:404 wp-live-chat-support.php:3672
 msgid "Chat Box Settings"
 msgstr "Sohbet Kutusu Ayarları"
 
-#: includes/settings_page.php:416
+#: includes/settings_page.php:407
 msgid "Alignment"
 msgstr "Hizalama"
 
-#: includes/settings_page.php:419
+#: includes/settings_page.php:410
 msgid "Bottom left"
 msgstr "Sol alt"
 
-#: includes/settings_page.php:420
+#: includes/settings_page.php:411
 msgid "Bottom right"
 msgstr "Sağ alt"
 
-#: includes/settings_page.php:421
+#: includes/settings_page.php:412
 msgid "Left"
 msgstr "Sol"
 
-#: includes/settings_page.php:422
+#: includes/settings_page.php:413
 msgid "Right"
 msgstr "Sağ"
 
-#: includes/settings_page.php:429
+#: includes/settings_page.php:420
 msgid "Chat box height (percent of the page)"
 msgstr ""
 
-#: includes/settings_page.php:443
+#: includes/settings_page.php:425
+msgid "Use absolute height"
+msgstr ""
+
+#: includes/settings_page.php:436
 msgid "Automatic Chatbox Pop-Up"
 msgstr ""
 
-#: includes/settings_page.php:443
+#: includes/settings_page.php:436
 msgid ""
 "Expand the chat box automatically (prompts the user to enter their name and "
 "email address)."
@@ -1072,39 +1061,43 @@ msgstr ""
 "Sohbet kutusunu otomatik olarak genişlet (kullanıcıların isim ve "
 "epostalarını girmelerini teşvik eder)."
 
-#: includes/settings_page.php:447
+#: includes/settings_page.php:440
 #, fuzzy
 #| msgid "Disable Emojis"
 msgid "Disabled"
 msgstr "Emojileri Devre Dışı Bırak"
 
-#: includes/settings_page.php:448
+#: includes/settings_page.php:441
 msgid "No Forms - Only show 'Start Chat' button"
 msgstr ""
 
-#: includes/settings_page.php:449
+#: includes/settings_page.php:442
 msgid "All Forms - Show chatbox forms and fields"
 msgstr ""
 
-#: includes/settings_page.php:451
+#: includes/settings_page.php:444
 #, fuzzy
 #| msgid "Choose when I want to be online"
 msgid "Pop-up only when agents are online"
 msgstr "Ne zaman çevrimiçi olacağımı seç"
 
-#: includes/settings_page.php:457
+#: includes/settings_page.php:445
+msgid "Pop-up for mobile users"
+msgstr ""
+
+#: includes/settings_page.php:451
 msgid "Display for chat message:"
 msgstr "Sohbet mesajı için göster:"
 
-#: includes/settings_page.php:461
+#: includes/settings_page.php:455
 msgid "Avatar"
 msgstr "Avatar"
 
-#: includes/settings_page.php:466
+#: includes/settings_page.php:460
 msgid "Display typing indicator"
 msgstr "Yazıyor uyarısını göster"
 
-#: includes/settings_page.php:466
+#: includes/settings_page.php:460
 msgid ""
 "Display the 'typing...' animation in the chat window as soon as an agent or "
 "visitor is typing."
@@ -1112,7 +1105,7 @@ msgstr ""
 "Temsilci ya da ziyaretçi yazmaya başlar başlamaz, sohbet  penceresinde "
 "'yazıyor' animasyonunu gösterin."
 
-#: includes/settings_page.php:470
+#: includes/settings_page.php:464
 #, fuzzy
 #| msgid ""
 #| "For non-cloud server users, please note that this will increase the "
@@ -1124,22 +1117,22 @@ msgstr ""
 "Bulut olmayan sunucu kullanıcıları için lütfen bunun gerekli sunucu "
 "kaynakları miktarını arttıracağına dikkat edin."
 
-#: includes/settings_page.php:475
+#: includes/settings_page.php:469
 msgid "Chat box for logged in users only:"
 msgstr "Yalnızca oturum açmış kullanıcılar için sohbet kutusu:"
 
-#: includes/settings_page.php:475
+#: includes/settings_page.php:469
 msgid ""
 "By checking this, only users that are logged in will be able to chat with "
 "you."
 msgstr ""
 "Bunu işaretlerseniz sadece giriş yapmış kullanıcılar sizinle sohbet edebilir."
 
-#: includes/settings_page.php:483
+#: includes/settings_page.php:477
 msgid "Use Logged In User Details"
 msgstr "Giriş Yapan Kullanıcı Bilgilerini Kullan"
 
-#: includes/settings_page.php:483
+#: includes/settings_page.php:477
 msgid ""
 "A user's Name and Email Address will be used by default if they are logged "
 "in."
@@ -1147,19 +1140,19 @@ msgstr ""
 "Kullanıcı Adı ve Eposta Adresi giriş yaptıklarında varsayılan olarak "
 "kullanılacaktır."
 
-#: includes/settings_page.php:491
+#: includes/settings_page.php:485
 msgid "Display a timestamp in the chat window:"
 msgstr "Sohbet penceresinde bir zaman damgası göster:"
 
-#: includes/settings_page.php:495 wp-live-chat-support.php:2378
+#: includes/settings_page.php:489 wp-live-chat-support.php:2089
 msgid "Time"
 msgstr "Zaman"
 
-#: includes/settings_page.php:500
+#: includes/settings_page.php:494
 msgid "Redirect to “Thank You” page on chat end:"
 msgstr "Sohbet sonunda \"Teşekkürler\" sayfasına yönlendir:"
 
-#: includes/settings_page.php:500
+#: includes/settings_page.php:494
 msgid ""
 "By checking this, users will be redirected to your thank you page when a "
 "chat is completed."
@@ -1167,161 +1160,161 @@ msgstr ""
 "Bunu kontrol ederek kullanıcılar, bir sohbet tamamlandığında teşekkürler "
 "sayfanıza yönlendirilecektir."
 
-#: includes/settings_page.php:504
+#: includes/settings_page.php:498
 msgid "Thank You Page URL"
 msgstr "Teşekkürler Sayfası URL'si"
 
-#: includes/settings_page.php:514
+#: includes/settings_page.php:508
 msgid "Disable Emojis"
 msgstr "Emojileri Devre Dışı Bırak"
 
-#: includes/settings_page.php:531
+#: includes/settings_page.php:525
 msgid "User / Agent name"
 msgstr "Kullanıcı / Temsilci adı"
 
-#: includes/settings_page.php:539
+#: includes/settings_page.php:533
 msgid "Use WordPress name"
 msgstr "WordPress adını kullan"
 
-#: includes/settings_page.php:542
+#: includes/settings_page.php:536
 msgid "Note: 'Name' field will be ignored"
 msgstr "Not: 'Name' alanı yoksayılacak"
 
-#: includes/settings_page.php:574
+#: includes/settings_page.php:568
 msgid "Incoming chat ring tone"
 msgstr "Gelen sohbet zil sesi"
 
-#: includes/settings_page.php:590
+#: includes/settings_page.php:584
 msgid "Incoming message tone"
 msgstr "Gelen mesaj tonu"
 
-#: includes/settings_page.php:607
+#: includes/settings_page.php:601
 msgid "Icon"
 msgstr "Simge"
 
-#: includes/settings_page.php:615
+#: includes/settings_page.php:609
 msgid "Upload Icon"
 msgstr "Simge Yükle"
 
-#: includes/settings_page.php:616 includes/settings_page.php:621
+#: includes/settings_page.php:610 includes/settings_page.php:615
 msgid "Select Default Icon"
 msgstr "Varsayılan Simge Seç"
 
-#: includes/settings_page.php:618
+#: includes/settings_page.php:612
 msgid "Recommended Size 50px x 50px"
 msgstr "Önerilen Ölçü 50px x 50px"
 
-#: includes/settings_page.php:661
+#: includes/settings_page.php:655
 msgid "Picture"
 msgstr "Fotoğraf"
 
-#: includes/settings_page.php:669
+#: includes/settings_page.php:663
 msgid "Upload Image"
 msgstr "Fotoğraf Yükle"
 
-#: includes/settings_page.php:670
+#: includes/settings_page.php:664
 #, fuzzy
 #| msgid "Select Default Icon"
 msgid "Select Default Image"
 msgstr "Varsayılan Simge Seç"
 
-#: includes/settings_page.php:673
+#: includes/settings_page.php:667
 msgid "Remove Image"
 msgstr "Fotoğraf Kaldır"
 
-#: includes/settings_page.php:674
+#: includes/settings_page.php:668
 msgid "Recommended Size 60px x 60px"
 msgstr "Önerilen Boyut 60px x 60px"
 
-#: includes/settings_page.php:681
+#: includes/settings_page.php:675
 msgid "Logo"
 msgstr "Logo"
 
-#: includes/settings_page.php:689
+#: includes/settings_page.php:683
 msgid "Upload Logo"
 msgstr "Logo Yükle"
 
-#: includes/settings_page.php:691
+#: includes/settings_page.php:685
 msgid "Remove Logo"
 msgstr "Logo Kaldır"
 
-#: includes/settings_page.php:692
+#: includes/settings_page.php:686
 msgid "Recommended Size 250px x 40px"
 msgstr "Önerilen Ölçü 250px x 40px"
 
-#: includes/settings_page.php:698
+#: includes/settings_page.php:692
 msgid "Chat button delayed startup (seconds)"
 msgstr "Sohbet butonu gecikmiş başlama (saniye)"
 
-#: includes/settings_page.php:698
+#: includes/settings_page.php:692
 msgid "How long to delay showing the Live Chat button on a page"
 msgstr "Bir sayfada Canlı Sohbet butonunun gösterimi ne kadar gecikebilir"
 
-#: includes/settings_page.php:707
+#: includes/settings_page.php:701
 msgid "Chat notifications"
 msgstr "Sohbet Bildirimleri"
 
-#: includes/settings_page.php:707
+#: includes/settings_page.php:701
 msgid "Alert me via email as soon as someone wants to chat (while online only)"
 msgstr ""
 "Birisi sohbet etmek istediğinde beni eposta ile hemen uyar (sadece "
 "çevrimiçiyken)"
 
-#: includes/settings_page.php:716
+#: includes/settings_page.php:710
 msgid "User Experience"
 msgstr "Kullanıcı Deneyimi"
 
-#: includes/settings_page.php:720
+#: includes/settings_page.php:714
 msgid "Share files"
 msgstr "Dosyaları paylaş"
 
-#: includes/settings_page.php:720
+#: includes/settings_page.php:714
 msgid "Adds file sharing to your chat box!"
 msgstr "Sohbet kutunuza dosya paylaşımı ekler!"
 
-#: includes/settings_page.php:724
+#: includes/settings_page.php:718
 msgid "Visitor experience ratings"
 msgstr "Ziyaretçi deneyimi puanları"
 
-#: includes/settings_page.php:724
+#: includes/settings_page.php:718
 msgid "Allows users to rate the chat experience with an agent."
 msgstr ""
 "Kullanıcıların temsilci ile yaptıkları sohbet deneyimini puanlamalarını "
 "sağlar."
 
-#: includes/settings_page.php:730 includes/settings_page.php:1057
+#: includes/settings_page.php:724 includes/settings_page.php:1050
 msgid "Social"
 msgstr "Sosyal"
 
-#: includes/settings_page.php:734
+#: includes/settings_page.php:728
 msgid "Facebook URL"
 msgstr "Facebook URL"
 
-#: includes/settings_page.php:734
+#: includes/settings_page.php:728
 msgid "Link your Facebook page here. Leave blank to hide"
 msgstr "Facebook sayfanızı buraya bağlayın. Gizlemek için boş bırakın"
 
-#: includes/settings_page.php:735
+#: includes/settings_page.php:729
 msgid "Facebook URL..."
 msgstr "Facebook URL..."
 
-#: includes/settings_page.php:746
+#: includes/settings_page.php:740
 msgid "Twitter URL"
 msgstr "Twitter URL"
 
-#: includes/settings_page.php:746
+#: includes/settings_page.php:740
 msgid "Link your Twitter page here. Leave blank to hide"
 msgstr "Twitter sayfanızı buraya bağlayın. Gizlemek için boş bırakın"
 
-#: includes/settings_page.php:747
+#: includes/settings_page.php:741
 msgid "Twitter URL..."
 msgstr "Twitter URL..."
 
-#: includes/settings_page.php:769
+#: includes/settings_page.php:763
 msgid "Disable offline messages"
 msgstr "Çevrimdışı mesajları devre dışı bırak"
 
-#: includes/settings_page.php:769
+#: includes/settings_page.php:763
 msgid ""
 "The chat window will be hidden when it is offline. Users will not be able to "
 "send offline messages to you"
@@ -1329,39 +1322,39 @@ msgstr ""
 "Sohbet penceresi çevrimdışıyken gizlenecektir. Kullanıcılar size çevrimdışı "
 "mesaj gönderemeyecek"
 
-#: includes/settings_page.php:776
+#: includes/settings_page.php:770
 msgid "Offline Form Title"
 msgstr "Çevrimdışı Form Başlığı"
 
-#: includes/settings_page.php:784
+#: includes/settings_page.php:778
 msgid "Offline form initial message"
 msgstr "Çevrimdışı form başlangıç mesajı"
 
-#: includes/settings_page.php:790
+#: includes/settings_page.php:784
 msgid "Offline form message on send"
 msgstr "Çevrimdışı form mesajı gönderimde"
 
-#: includes/settings_page.php:796
+#: includes/settings_page.php:790
 msgid "Offline form finish message"
 msgstr "Çevrimdışı form bitirme mesajı"
 
-#: includes/settings_page.php:802
+#: includes/settings_page.php:796
 msgid "Offline Button Text"
 msgstr "Çevrimdışı Buton Metni"
 
-#: includes/settings_page.php:808
+#: includes/settings_page.php:802
 msgid "Offline Send Button Text"
 msgstr "Çevrimdışı Gönder Butonu Metni"
 
-#: includes/settings_page.php:816
+#: includes/settings_page.php:810
 msgid "Email settings"
 msgstr "E-posta ayarları"
 
-#: includes/settings_page.php:822
+#: includes/settings_page.php:816
 msgid "Send to agent(s)"
 msgstr "Temsilci(ler)e gönder"
 
-#: includes/settings_page.php:822
+#: includes/settings_page.php:816
 msgid ""
 "Email address where offline messages are delivered to. Use comma separated "
 "email addresses to send to more than one email address"
@@ -1369,102 +1362,102 @@ msgstr ""
 "Çevrimdışı mesajların gönderildiği e-posta adresi. Birden fazla e-posta "
 "adresine göndermek için virgülle ayrılmış e-posta adresleri kullanın"
 
-#: includes/settings_page.php:832
+#: includes/settings_page.php:826
 msgid "Subject"
 msgstr "Konu"
 
-#: includes/settings_page.php:832
+#: includes/settings_page.php:826
 msgid "User name will be appended to the end of the subject."
 msgstr "Kullanıcı adı, konunun sonuna eklenecektir."
 
-#: includes/settings_page.php:845
+#: includes/settings_page.php:839
 msgid "Auto-respond to visitor"
 msgstr "Ziyaretçiye otomatik yanıt"
 
-#: includes/settings_page.php:845
+#: includes/settings_page.php:839
 msgid "Send your visitors an email as soon as they send you an offline message"
 msgstr ""
 "Ziyaretçileriniz size çevrimdışı bir mesaj gönderdiğinde onlara bir e-posta "
 "gönderin"
 
-#: includes/settings_page.php:851
+#: includes/settings_page.php:845
 msgid "Auto-responder 'From' name"
 msgstr "Otomatik yanıtlayıcı 'Gönderen' adı"
 
-#: includes/settings_page.php:857
+#: includes/settings_page.php:851
 msgid "Auto-responder 'From' email"
 msgstr "Otomatik yanıtlayıcı 'Gönderen' e-posta"
 
-#: includes/settings_page.php:863
+#: includes/settings_page.php:857
 msgid "Auto-responder subject"
 msgstr "Otomatik yanıtlayıcı konusu"
 
-#: includes/settings_page.php:869
+#: includes/settings_page.php:863
 msgid "Auto-responder body"
 msgstr "Otomatik yanıtlayıcı gövdesi"
 
-#: includes/settings_page.php:872
+#: includes/settings_page.php:866
 msgid "HTML and the following shortcodes can be used"
 msgstr "HTML ve aşağıdaki kısa kodlar kullanılabilir"
 
-#: includes/settings_page.php:872
+#: includes/settings_page.php:866
 msgid "User's name"
 msgstr "Kullanıcı adı"
 
-#: includes/settings_page.php:872
+#: includes/settings_page.php:866
 msgid "User's email address"
 msgstr "Eposta Adresi"
 
-#: includes/settings_page.php:948
+#: includes/settings_page.php:942
 msgid "Color scheme"
 msgstr "Renk düzeni"
 
-#: includes/settings_page.php:1004
+#: includes/settings_page.php:998
 msgid "Custom Scheme"
 msgstr "Özel Düzen"
 
-#: includes/settings_page.php:1025
+#: includes/settings_page.php:1018
 msgid "Palette Color 1"
 msgstr "Renk Paleti 1"
 
-#: includes/settings_page.php:1031
+#: includes/settings_page.php:1024
 msgid "Palette Color 2"
 msgstr "Renk Paleti 2"
 
-#: includes/settings_page.php:1037
+#: includes/settings_page.php:1030
 msgid "Palette Color 3"
 msgstr "Renk Paleti 3"
 
-#: includes/settings_page.php:1043
+#: includes/settings_page.php:1036
 msgid "Palette Color 4"
 msgstr "Renk Paleti 4"
 
-#: includes/settings_page.php:1050
+#: includes/settings_page.php:1043
 msgid "Chat background"
 msgstr "Sohbet arkaplanı"
 
-#: includes/settings_page.php:1054
+#: includes/settings_page.php:1047
 msgid "Cloudy"
 msgstr "Bulutlu"
 
-#: includes/settings_page.php:1055
+#: includes/settings_page.php:1048
 msgid "Geometry"
 msgstr "Geometri"
 
-#: includes/settings_page.php:1056
+#: includes/settings_page.php:1049
 msgid "Tech"
 msgstr "Teknoloji"
 
-#: includes/settings_page.php:1058 includes/wplc_roi.php:163
-#: modules/node_server.php:773
+#: includes/settings_page.php:1051 includes/wplc_roi.php:156
+#: modules/node_server.php:771
 msgid "None"
 msgstr "Hiçbiri"
 
-#: includes/settings_page.php:1064
+#: includes/settings_page.php:1057
 msgid "Use localization plugin"
 msgstr "Lokalizasyon eklentisi kullan"
 
-#: includes/settings_page.php:1067
+#: includes/settings_page.php:1060
 #, php-format
 msgid ""
 "Enable this if you are using a localization plugin. Should you wish to "
@@ -1475,35 +1468,35 @@ msgstr ""
 "etkinleştirilmiş halde aşağıdaki dizileri değiştirmek isterseniz lütfen "
 "%sdokümentasyonunu%s ziyaret edin"
 
-#: includes/settings_page.php:1073
+#: includes/settings_page.php:1066
 msgid "Chat box title"
 msgstr "Sohbet kutusu başlığı"
 
-#: includes/settings_page.php:1079
+#: includes/settings_page.php:1072
 msgid "Chat box sub-title"
 msgstr "Sohbet kutusu alt başlığı"
 
-#: includes/settings_page.php:1085
+#: includes/settings_page.php:1078
 msgid "Chat box intro"
 msgstr "Sohbet kutusu girişi"
 
-#: includes/settings_page.php:1091
+#: includes/settings_page.php:1084
 msgid "Start chat button label"
 msgstr "Sohbet butonu etiketini başlat"
 
-#: includes/settings_page.php:1097
+#: includes/settings_page.php:1090
 msgid "Start chat status message"
 msgstr "Sohbet durumu mesajını başlat"
 
-#: includes/settings_page.php:1103
+#: includes/settings_page.php:1096
 msgid "Re-activate chat message"
 msgstr "Sohbet mesajını yeniden etkinleştir"
 
-#: includes/settings_page.php:1111
+#: includes/settings_page.php:1104
 msgid "Welcome message"
 msgstr "Hoş geldiniz mesajı"
 
-#: includes/settings_page.php:1113
+#: includes/settings_page.php:1106
 msgid ""
 "This text is shown as soon as a user starts a chat and waits for an agent to "
 "join"
@@ -1511,50 +1504,50 @@ msgstr ""
 "Bir kullanıcı sohbete başladığında ve bir temsilcinin katılmasını "
 "beklediğinde bu metin gösterilir"
 
-#: includes/settings_page.php:1117
+#: includes/settings_page.php:1110
 msgid "Agent no answer message"
 msgstr "Temsilci yanıt yok mesajı"
 
-#: includes/settings_page.php:1119
+#: includes/settings_page.php:1112
 msgid ""
 "This text is shown to the user when an agent has failed to answer a chat"
 msgstr ""
 "Bir temsilci sohbeti yanıtlayamadığında kullanıcıya bu metin gösterilir"
 
-#: includes/settings_page.php:1123
+#: includes/settings_page.php:1116
 msgid "Other text"
 msgstr "Diğer Metin"
 
-#: includes/settings_page.php:1126 wp-live-chat-support.php:496
-#: wp-live-chat-support.php:1231
+#: includes/settings_page.php:1119 wp-live-chat-support.php:177
+#: wp-live-chat-support.php:968
 msgid "The chat has been ended by the agent."
 msgstr "Sohbet temsilci tarafından sona erdirildi."
 
-#: includes/settings_page.php:1131
+#: includes/settings_page.php:1124
 msgid "Chat box animation"
 msgstr "Sohbet kutusu animasyonu"
 
-#: includes/settings_page.php:1139
+#: includes/settings_page.php:1132
 msgid "Slide Up"
 msgstr "Sunum Üst"
 
-#: includes/settings_page.php:1145
+#: includes/settings_page.php:1138
 msgid "Slide From The Side"
 msgstr "Sunum yandan"
 
-#: includes/settings_page.php:1151
+#: includes/settings_page.php:1144
 msgid "Fade In"
 msgstr "Solma"
 
-#: includes/settings_page.php:1157
+#: includes/settings_page.php:1150
 msgid "No Animation"
 msgstr "Animasyon Yok"
 
-#: includes/settings_page.php:1175
+#: includes/settings_page.php:1168
 msgid "Auto-response to first message"
 msgstr "İlk mesaja otomatik yanıt"
 
-#: includes/settings_page.php:1178
+#: includes/settings_page.php:1171
 msgid ""
 "This message will be sent automatically after the first message is sent from "
 "the user side. Leave empty to disable."
@@ -1562,31 +1555,31 @@ msgstr ""
 "Kullanıcı tarafından ilk mesaj gönderildikten sonra, bu mesaj otomatik "
 "olarak gönderilecektir. Devre dışı yapmak için boş bırakın."
 
-#: includes/settings_page.php:1190
+#: includes/settings_page.php:1183
 msgid "Chat Agents"
 msgstr "Sohbet Temsilcileri"
 
-#: includes/settings_page.php:1199
+#: includes/settings_page.php:1192
 msgid "Logged In"
 msgstr "Giriş Yapıldı"
 
-#: includes/settings_page.php:1217
+#: includes/settings_page.php:1210
 msgid "Add New Agent"
 msgstr "Yeni Temsilci Ekle"
 
-#: includes/settings_page.php:1224
+#: includes/settings_page.php:1217
 msgid "Administrator"
 msgstr "Yönetici"
 
-#: includes/settings_page.php:1229
+#: includes/settings_page.php:1222
 msgid "Editor"
 msgstr "Editör"
 
-#: includes/settings_page.php:1238
+#: includes/settings_page.php:1231
 msgid "Add Agent"
 msgstr "Temsilci Ekle"
 
-#: includes/settings_page.php:1244
+#: includes/settings_page.php:1237
 #, php-format
 msgid ""
 "Should you wish to add a user that has a role less than 'Author', please go "
@@ -1597,25 +1590,25 @@ msgstr ""
 "sayfasına gidip ilgili kullanıcıyı seçin, Düzenle'ye tıklayın ve sayfanın "
 "altına gelerek 'Sohbet Temsilcisi' onay kutusunu etkinleştirin."
 
-#: includes/settings_page.php:1244
+#: includes/settings_page.php:1237
 msgid "Users"
 msgstr "Kullanıcılar"
 
-#: includes/settings_page.php:1245
+#: includes/settings_page.php:1238
 msgid "If there are no chat agents online, the chat will show as offline"
 msgstr ""
 "Eğer çevrimiçi sohbet temsilcisi yoksa, sohbet çevrimdışı olarak görünecektir"
 
-#: includes/settings_page.php:1250
+#: includes/settings_page.php:1243
 msgid "Blocked Visitors / IP Addresses"
 msgstr "Engellenmiş Ziyaretçiler / IP Adresleri"
 
-#: includes/settings_page.php:1254
+#: includes/settings_page.php:1247
 msgid "Enter each IP Address you would like to block on a new line"
 msgstr ""
 "Her seferinde yeni bir satırda engellemek istediğiniz IP adresini Girin"
 
-#: includes/settings_page.php:1265
+#: includes/settings_page.php:1258
 msgid ""
 "Blocking a user's IP Address here will hide the chat window from them, "
 "preventing them from chatting with you. Each IP Address must be on a new line"
@@ -1624,53 +1617,61 @@ msgstr ""
 "gizlenir, bu onların sizinle sohbet etmelerini engeller. Her IP Adresi yeni "
 "bir satırda olmalıdır"
 
-#: includes/settings_page.php:1281
+#: includes/settings_page.php:1272
 msgid "Enable Business Hours"
 msgstr "İş Saatlerini Etkinleştir"
 
-#: includes/settings_page.php:1286
+#: includes/settings_page.php:1276
 msgid "Working days"
 msgstr ""
 
-#: includes/settings_page.php:1294
+#: includes/settings_page.php:1278
+#, fuzzy
+#| msgid "Week Days"
+msgid "Week Day"
+msgstr "Haftanın Günleri"
+
+#: includes/settings_page.php:1278
 #, fuzzy
 #| msgid "Active schedule"
-msgid "Morning schedule"
+msgid "Morning Schedule"
 msgstr "Aktif program"
 
-#: includes/settings_page.php:1295 includes/settings_page.php:1302
-msgid "Between"
-msgstr "Arasında"
-
-#: includes/settings_page.php:1298 includes/settings_page.php:1304
-msgid "and"
-msgstr "ve"
-
-#: includes/settings_page.php:1301
+#: includes/settings_page.php:1278
 #, fuzzy
 #| msgid "Active schedule"
-msgid "Afternoon schedule"
+msgid "Afternoon Schedule"
 msgstr "Aktif program"
 
-#: includes/settings_page.php:1315
+#: includes/settings_page.php:1281 includes/settings_page.php:1286
+#: wp-live-chat-support.php:3911 wp-live-chat-support.php:3971
+msgid "From"
+msgstr "Kimden"
+
+#: includes/settings_page.php:1283 includes/settings_page.php:1288
+#: includes/wplc_transfer_chats.php:582
+msgid "to"
+msgstr "şuna"
+
+#: includes/settings_page.php:1298
 msgid ""
 "Time intervals are incorrect or overlapping. Please fix your settings or you "
 "might get unexpected behavior."
 msgstr ""
 
-#: includes/settings_page.php:1319
+#: includes/settings_page.php:1308
 msgid "Current Site Time"
 msgstr "Güncel Site Saati"
 
-#: includes/settings_page.php:1332
+#: includes/settings_page.php:1323
 msgid "Chat Encryption"
 msgstr "Sohbet Şifreleme"
 
-#: includes/settings_page.php:1335
+#: includes/settings_page.php:1326
 msgid "Enable Encryption"
 msgstr "Şifrelemeyi Etkinleştir"
 
-#: includes/settings_page.php:1335
+#: includes/settings_page.php:1326
 msgid ""
 "All messages will be encrypted when being sent to and from the user and "
 "agent."
@@ -1678,9 +1679,29 @@ msgstr ""
 "Kullanıcı ve temsilcinin birbirine gönderip aldığı mesajların hepsi "
 "şifrelenecektir."
 
-#: includes/settings_page.php:1344
+#: includes/settings_page.php:1330
 msgid ""
 "Once enabled, all messages sent will be encrypted. This cannot be undone."
+msgstr "Aktif edildiğinde tüm mesaj şifrelenecektir. Bu süreç geri alınamaz."
+
+#: includes/settings_page.php:1336
+#, fuzzy
+#| msgid "Encryption"
+msgid "Encryption key"
+msgstr "Şifreleme"
+
+#: includes/settings_page.php:1341 modules/advanced_features.php:59
+#: modules/api/public/wplc-api.php:84
+msgid "Generate New"
+msgstr "Yeni Oluştur"
+
+#: includes/settings_page.php:1344
+#, fuzzy
+#| msgid ""
+#| "Once enabled, all messages sent will be encrypted. This cannot be undone."
+msgid ""
+"If you change encryption key, all previously encrypted messages will be "
+"lost. This cannot be undone."
 msgstr "Aktif edildiğinde tüm mesaj şifrelenecektir. Bu süreç geri alınamaz."
 
 #: includes/settings_page.php:1354
@@ -1701,30 +1722,30 @@ msgstr ""
 "Sohbet kutusunun üstünde görünecektir - Devre dışı yapmak için boş bırakın."
 
 #: includes/wplc_custom_fields.php:67 includes/wplc_data_triggers.php:8
-#: includes/wplc_departments.php:139 includes/wplc_roi.php:112
+#: includes/wplc_departments.php:139 includes/wplc_roi.php:105
 #: modules/webhooks_manager.php:60 modules/webhooks_manager.php:321
 msgid "Add New"
 msgstr "Yeni Ekle"
 
-#: includes/wplc_custom_fields.php:71 wp-live-chat-support.php:1051
+#: includes/wplc_custom_fields.php:71 wp-live-chat-support.php:787
 msgid "Custom Fields"
 msgstr "Özel Alanlar"
 
-#: includes/wplc_custom_fields.php:80 includes/wplc_data_triggers.php:457
-#: wp-live-chat-support.php:2379
+#: includes/wplc_custom_fields.php:80 includes/wplc_data_triggers.php:456
+#: wp-live-chat-support.php:2090
 msgid "Type"
 msgstr "Tür"
 
-#: includes/wplc_custom_fields.php:81 includes/wplc_data_triggers.php:459
+#: includes/wplc_custom_fields.php:81 includes/wplc_data_triggers.php:458
 msgid "Content"
 msgstr "İçerik"
 
-#: includes/wplc_custom_fields.php:82 includes/wplc_data_triggers.php:460
-#: wp-live-chat-support.php:2382 wp-live-chat-support.php:3338
+#: includes/wplc_custom_fields.php:82 includes/wplc_data_triggers.php:459
+#: wp-live-chat-support.php:2093 wp-live-chat-support.php:3046
 msgid "Status"
 msgstr "Durum"
 
-#: includes/wplc_custom_fields.php:99 wp-live-chat-support.php:2563
+#: includes/wplc_custom_fields.php:99 wp-live-chat-support.php:2273
 msgid "Active"
 msgstr "Aktif"
 
@@ -1732,8 +1753,8 @@ msgstr "Aktif"
 msgid "Inactive"
 msgstr "İnaktif"
 
-#: includes/wplc_custom_fields.php:106 includes/wplc_data_triggers.php:468
-#: includes/wplc_departments.php:183 includes/wplc_roi.php:156
+#: includes/wplc_custom_fields.php:106 includes/wplc_data_triggers.php:467
+#: includes/wplc_departments.php:183 includes/wplc_roi.php:149
 #: modules/webhooks_manager.php:262
 msgid "Edit"
 msgstr "Düzenle"
@@ -1746,31 +1767,31 @@ msgstr "İlk özel alanınızı oluşturun"
 msgid "Create a Custom Field"
 msgstr "Özel Alan Oluştur"
 
-#: includes/wplc_custom_fields.php:142 includes/wplc_custom_fields.php:213
+#: includes/wplc_custom_fields.php:142 includes/wplc_custom_fields.php:225
 msgid "Field Name"
 msgstr "Alan Adı"
 
-#: includes/wplc_custom_fields.php:146 includes/wplc_custom_fields.php:217
+#: includes/wplc_custom_fields.php:146 includes/wplc_custom_fields.php:229
 msgid "Field Type"
 msgstr "Alan Türü"
 
-#: includes/wplc_custom_fields.php:149 includes/wplc_custom_fields.php:222
+#: includes/wplc_custom_fields.php:149 includes/wplc_custom_fields.php:234
 msgid "Text"
 msgstr "Metin"
 
-#: includes/wplc_custom_fields.php:150 includes/wplc_custom_fields.php:223
+#: includes/wplc_custom_fields.php:150 includes/wplc_custom_fields.php:235
 msgid "Drop Down"
 msgstr "Açılır"
 
-#: includes/wplc_custom_fields.php:155 includes/wplc_custom_fields.php:228
+#: includes/wplc_custom_fields.php:155 includes/wplc_custom_fields.php:240
 msgid "Default Field Value"
 msgstr "Varsayılan Alan Değeri"
 
-#: includes/wplc_custom_fields.php:159 includes/wplc_custom_fields.php:232
+#: includes/wplc_custom_fields.php:159 includes/wplc_custom_fields.php:244
 msgid "Drop Down Contents"
 msgstr "Açılır İçerikler"
 
-#: includes/wplc_custom_fields.php:160 includes/wplc_custom_fields.php:233
+#: includes/wplc_custom_fields.php:160 includes/wplc_custom_fields.php:245
 msgid "Enter each option on a new line"
 msgstr "Her seçeneği yeni bir satıra girin"
 
@@ -1778,40 +1799,40 @@ msgstr "Her seçeneği yeni bir satıra girin"
 msgid "Create Custom Field"
 msgstr "Özel Alan Oluştur"
 
-#: includes/wplc_custom_fields.php:208
+#: includes/wplc_custom_fields.php:220
 msgid "Edit a Custom Field"
 msgstr "Özel Alanı Düzenle"
 
-#: includes/wplc_custom_fields.php:237
+#: includes/wplc_custom_fields.php:249
 msgid "Update Custom Field"
 msgstr "Özel Alanı Güncelle"
 
-#: includes/wplc_custom_fields.php:247
+#: includes/wplc_custom_fields.php:259
 msgid "Custom Field Not Found"
 msgstr "Özel Alan Bulunamadı"
 
-#: includes/wplc_custom_fields.php:248
+#: includes/wplc_custom_fields.php:260
 msgid "Back"
 msgstr "Geri"
 
-#: includes/wplc_custom_fields.php:262
+#: includes/wplc_custom_fields.php:274
 msgid "Are you sure you want to delete this custom field?"
 msgstr "Bu özel alanı silmek istediğinize emin misiniz?"
 
-#: includes/wplc_custom_fields.php:298
+#: includes/wplc_custom_fields.php:310
 msgid "Text Field"
 msgstr "Metin Alanı"
 
-#: includes/wplc_custom_fields.php:301
+#: includes/wplc_custom_fields.php:313
 msgid "Dropdown"
 msgstr "Açılır"
 
-#: includes/wplc_custom_fields.php:367
+#: includes/wplc_custom_fields.php:379
 msgid "Custom Field Data"
 msgstr "Özel Alan Verileri"
 
-#: includes/wplc_data_triggers.php:11 wp-live-chat-support.php:1050
-#: wp-live-chat-support.php:3924
+#: includes/wplc_data_triggers.php:11 wp-live-chat-support.php:786
+#: wp-live-chat-support.php:3646
 msgid "Triggers"
 msgstr "Başlatıcılar"
 
@@ -1875,37 +1896,37 @@ msgstr "Sayfa yüksekliği yüzdesi (%)"
 msgid "Content Replacement"
 msgstr "İçerik Değiştirme"
 
-#: includes/wplc_data_triggers.php:108
+#: includes/wplc_data_triggers.php:107
 msgid "Replace Content"
 msgstr "İçeriği Değiştir"
 
-#: includes/wplc_data_triggers.php:113
+#: includes/wplc_data_triggers.php:112
 msgid "Enable Trigger"
 msgstr "Başlatıcıyı Etkinleştir"
 
-#: includes/wplc_data_triggers.php:119 modules/node_server.php:445
-#: wp-live-chat-support.php:4617
+#: includes/wplc_data_triggers.php:118 modules/node_server.php:445
+#: wp-live-chat-support.php:4319
 msgid "Close"
 msgstr "Kapat"
 
-#: includes/wplc_data_triggers.php:129 includes/wplc_departments.php:261
-#: includes/wplc_roi.php:263
+#: includes/wplc_data_triggers.php:128 includes/wplc_departments.php:261
+#: includes/wplc_roi.php:256
 msgid "Please review your submission"
 msgstr "Lütfen gönderiminizi değerlendirin"
 
-#: includes/wplc_data_triggers.php:277
+#: includes/wplc_data_triggers.php:276
 msgid "Trigger has been edited."
 msgstr "Başlatıcı düzenlendi."
 
-#: includes/wplc_data_triggers.php:442
+#: includes/wplc_data_triggers.php:441
 msgid "Conflict with page"
 msgstr "Sayfa ile çakışma"
 
-#: includes/wplc_data_triggers.php:444
+#: includes/wplc_data_triggers.php:443
 msgid "Trigger ID: "
 msgstr "Başlatıcı kimliği: "
 
-#: includes/wplc_data_triggers.php:445
+#: includes/wplc_data_triggers.php:444
 msgid ""
 "It is possible that this trigger may override another trigger, or be "
 "overridden by another trigger."
@@ -1913,24 +1934,24 @@ msgstr ""
 "Bu başlatıcının başka bir başlatıcıyı geçersiz kılması veya başka bir "
 "başlatıcı tarafından geçersiz kılınması mümkündür."
 
-#: includes/wplc_data_triggers.php:458 includes/wplc_roi.php:147
-#: modules/node_server.php:191 modules/node_server.php:741
+#: includes/wplc_data_triggers.php:457 includes/wplc_roi.php:140
+#: modules/node_server.php:191 modules/node_server.php:739
 msgid "Page"
 msgstr "Sayfa"
 
-#: includes/wplc_data_triggers.php:477 includes/wplc_roi.php:698
+#: includes/wplc_data_triggers.php:476 includes/wplc_roi.php:691
 msgid "All"
 msgstr "Tümü"
 
-#: includes/wplc_data_triggers.php:481
+#: includes/wplc_data_triggers.php:480
 msgid "Click to change trigger status"
 msgstr "Başlatıcı durumunu değiştirmek için tıkla"
 
-#: includes/wplc_data_triggers.php:491
+#: includes/wplc_data_triggers.php:490
 msgid "No Triggers Found..."
 msgstr "Başlatıcı Bulunamadı..."
 
-#: includes/wplc_data_triggers.php:602
+#: includes/wplc_data_triggers.php:601
 msgid "Are you sure you would like to delete trigger"
 msgstr "Başlatıcıyı silmek istediğinizden emin misiniz"
 
@@ -2012,7 +2033,7 @@ msgid "Department you have been assigned to as an agent"
 msgstr "Temsilci olarak atandığınız departman"
 
 #: includes/wplc_departments.php:631 includes/wplc_transfer_chats.php:48
-#: modules/node_server.php:194 modules/node_server.php:743
+#: modules/node_server.php:194 modules/node_server.php:741
 msgid "Department"
 msgstr "Departman"
 
@@ -2020,100 +2041,100 @@ msgstr "Departman"
 msgid "Select Department"
 msgstr "Departman Seç"
 
-#: includes/wplc_roi.php:104 includes/wplc_roi.php:116
-#: wp-live-chat-support.php:3926
+#: includes/wplc_roi.php:97 includes/wplc_roi.php:109
+#: wp-live-chat-support.php:3648
 msgid "ROI Goals"
 msgstr "ROI Hedefleri"
 
-#: includes/wplc_roi.php:113
+#: includes/wplc_roi.php:106
 msgid "View Reports"
 msgstr "Raporları Görüntüle"
 
-#: includes/wplc_roi.php:148
+#: includes/wplc_roi.php:141
 msgid "Value"
 msgstr "Değer"
 
-#: includes/wplc_roi.php:170
+#: includes/wplc_roi.php:163
 msgid "No ROI Goals Found..."
 msgstr "ROI Hedefi Bulunamadı..."
 
-#: includes/wplc_roi.php:228
+#: includes/wplc_roi.php:221
 msgid "Goal Name"
 msgstr "Hedef Adı"
 
-#: includes/wplc_roi.php:233
+#: includes/wplc_roi.php:226
 msgid "Goal Overview"
 msgstr "Hedefe Genel Bakış"
 
-#: includes/wplc_roi.php:238
+#: includes/wplc_roi.php:231
 msgid "Goal Page"
 msgstr "Hedef Sayfası"
 
-#: includes/wplc_roi.php:247
+#: includes/wplc_roi.php:240
 msgid "Goal Value"
 msgstr "Hedef Değeri"
 
-#: includes/wplc_roi.php:400
+#: includes/wplc_roi.php:393
 msgid "Goal has been edited."
 msgstr "Hedef düzenlendi."
 
-#: includes/wplc_roi.php:571
+#: includes/wplc_roi.php:564
 msgid "Are you sure you would like to delete goal"
 msgstr "Hedefi silmek istediğinizden emin misiniz"
 
-#: includes/wplc_roi.php:658
+#: includes/wplc_roi.php:651
 msgid "ROI Reports"
 msgstr "ROI Raporları"
 
-#: includes/wplc_roi.php:677
+#: includes/wplc_roi.php:670
 msgid "Goal Statistics"
 msgstr "Hedef İstatistikleri"
 
-#: includes/wplc_roi.php:689
+#: includes/wplc_roi.php:682
 msgid "No Goals Found"
 msgstr "Hedef Bulunamadı"
 
-#: includes/wplc_roi.php:699
+#: includes/wplc_roi.php:692
 msgid "Last 30 Days"
 msgstr "Son 30 Gün"
 
-#: includes/wplc_roi.php:700
+#: includes/wplc_roi.php:693
 msgid "Last 15 Days"
 msgstr "Son 15 Gün"
 
-#: includes/wplc_roi.php:701
+#: includes/wplc_roi.php:694
 msgid "Last 7 Days"
 msgstr "Son 1 Hafta"
 
-#: includes/wplc_roi.php:702
+#: includes/wplc_roi.php:695
 msgid "Last 24 Hours"
 msgstr "Son 24 Saat"
 
-#: includes/wplc_roi.php:754
+#: includes/wplc_roi.php:747
 msgid "Value Per Conversion"
 msgstr "Konuşma Başına Değer"
 
-#: includes/wplc_roi.php:760
+#: includes/wplc_roi.php:753
 msgid "Total Value"
 msgstr "Toplam Değer"
 
-#: includes/wplc_roi.php:765
+#: includes/wplc_roi.php:758
 msgid "Total Conversions"
 msgstr "Toplam Konuşmalar"
 
-#: includes/wplc_roi.php:797
+#: includes/wplc_roi.php:790
 msgid "Value By Date"
 msgstr "Tarihe Göre Değer"
 
-#: includes/wplc_roi.php:800
+#: includes/wplc_roi.php:793
 msgid "Value By Agent"
 msgstr "Temsilciye Göre Değer"
 
-#: includes/wplc_roi.php:806
+#: includes/wplc_roi.php:799
 msgid "No data available yet..."
 msgstr "Henüz veri yok..."
 
-#: includes/wplc_transfer_chats.php:18 modules/node_server.php:730
+#: includes/wplc_transfer_chats.php:18 modules/node_server.php:728
 msgid "Transfer"
 msgstr "Yönlendir"
 
@@ -2235,10 +2256,6 @@ msgstr "Kullanıcı şundan yönlendirildi"
 msgid "department"
 msgstr "departman"
 
-#: includes/wplc_transfer_chats.php:582
-msgid "to"
-msgstr "şuna"
-
 #: includes/wplc_transfer_chats.php:585
 msgid "as there were no agents online"
 msgstr "çevrimiçi temsilci bulunmadığı için"
@@ -2297,15 +2314,11 @@ msgstr ""
 "Düğüm sunucu üzerinden sohbetlere erişim için güvenlik tokenı. Bunun "
 "değiştirilmesi şu anda aktif olan sohbet oturumlarınızı kapatacaktır."
 
-#: modules/advanced_features.php:59 modules/api/public/wplc-api.php:84
-msgid "Generate New"
-msgstr "Yeni Oluştur"
-
-#: modules/advanced_features.php:64
+#: modules/advanced_features.php:65
 msgid "Enable typing preview"
 msgstr "Yazma ön izlemesini etkinleştir"
 
-#: modules/advanced_features.php:64
+#: modules/advanced_features.php:65
 msgid ""
 "This option enables the typing preview, which means agents will be able to "
 "see what the user is typing in realtime."
@@ -2313,15 +2326,15 @@ msgstr ""
 "Bu seçenek temsilcilerin, kullanıcının gerçek zamanda ne yazdığını görmesi "
 "anlamına gelen yazma ön izlemesini etkinleştirir."
 
-#: modules/advanced_features.php:70
+#: modules/advanced_features.php:71
 msgid "Typing preview is not available when GDPR is enabled"
 msgstr "GDPR etkinleştirildiğinde yazma ön izlemesi kullanılamaz"
 
-#: modules/advanced_features.php:80
+#: modules/advanced_features.php:81
 msgid "Number of chat rings"
 msgstr "Alınan sohbet çalma sayısı"
 
-#: modules/advanced_features.php:80
+#: modules/advanced_features.php:81
 msgid "Limit the amount of time the new chat ringer will play"
 msgstr "Yeni sohbet zil devresinin çalacağı süre miktarını sınırla"
 
@@ -2341,8 +2354,8 @@ msgstr "Dışa Aktarım Ayarları"
 msgid "Import Settings"
 msgstr "İçe Aktarım Ayarları"
 
-#: modules/advanced_tools.php:62 modules/node_server.php:722
-#: wp-live-chat-support.php:3939
+#: modules/advanced_tools.php:62 modules/node_server.php:720
+#: wp-live-chat-support.php:3661
 msgid "Chat History"
 msgstr "Sohbet Geçmişi"
 
@@ -2396,21 +2409,21 @@ msgstr "İçe Aktarım Tamamlandı"
 msgid "Thank you, all settings have been updated"
 msgstr "Teşekkürler, tüm ayarlarınız güncellendi"
 
-#: modules/api/agent/wplc-api-functions.php:212
-#: modules/api/agent/wplc-api-functions.php:542
-#: modules/api/public/wplc-api-functions.php:156
+#: modules/api/agent/wplc-api-functions.php:202
+#: modules/api/agent/wplc-api-functions.php:532
+#: modules/api/public/wplc-api-functions.php:158
 msgid "Action not set"
 msgstr "Eylem ayarlanmadı"
 
-#: modules/api/agent/wplc-api-functions.php:403
+#: modules/api/agent/wplc-api-functions.php:393
 msgid "IP Address not recorded"
 msgstr "IP Adresi kayıt edilmedi"
 
-#: modules/api/agent/wplc-api-functions.php:1045
+#: modules/api/agent/wplc-api-functions.php:1018
 msgid "Upload error"
 msgstr "Yükleme hatası"
 
-#: modules/api/agent/wplc-api-functions.php:1048
+#: modules/api/agent/wplc-api-functions.php:1021
 msgid "Security Violation - File unsafe"
 msgstr "Güvenlik İhlali - Dosya güvenli değil"
 
@@ -2444,45 +2457,45 @@ msgstr "Gizli token bulunamadı"
 msgid "Call To Action Animation"
 msgstr "Eyleme Çağrı Animasyonu"
 
-#: modules/gdpr.php:22
+#: modules/gdpr.php:26
 msgid "Enable privacy controls"
 msgstr "Gizlilik kontrollerini etkinleştir"
 
-#: modules/gdpr.php:22
+#: modules/gdpr.php:26
 msgid "Disabling will disable all GDPR related options, this is not advised."
 msgstr ""
 "Devre dışı bırakmak tüm GDPR ile ilgili seçeneklerini devre dışı "
 "bırakacaktır, bu tavsiye edilmez."
 
-#: modules/gdpr.php:26
+#: modules/gdpr.php:30
 msgid "Importance of GDPR Compliance"
 msgstr "GDPR Uyumluluğunun Önemi"
 
-#: modules/gdpr.php:32
+#: modules/gdpr.php:36
 msgid "Organization name"
 msgstr "Kuruluş adı"
 
-#: modules/gdpr.php:41
+#: modules/gdpr.php:45
 msgid "Data retention purpose"
 msgstr "Veri saklama amacı"
 
-#: modules/gdpr.php:44 modules/gdpr.php:345 wp-live-chat-support.php:443
+#: modules/gdpr.php:48 modules/gdpr.php:373 wp-live-chat-support.php:124
 msgid "Chat/Support"
 msgstr "Sohbet/Destek"
 
-#: modules/gdpr.php:50
+#: modules/gdpr.php:54
 msgid "Data retention period"
 msgstr "Veri saklama dönemi"
 
-#: modules/gdpr.php:53
+#: modules/gdpr.php:57
 msgid "days"
 msgstr "gün"
 
-#: modules/gdpr.php:59
+#: modules/gdpr.php:63
 msgid "GDPR notice to visitors"
 msgstr "Ziyaretçilere GDPR bildirimi"
 
-#: modules/gdpr.php:60
+#: modules/gdpr.php:64
 msgid ""
 "Users will be asked to accept the notice shown here, in the form of a check "
 "box."
@@ -2490,11 +2503,21 @@ msgstr ""
 "Kullanıcılardan kontrol kutusu şeklinde burada gösterilen bildirimi kabul "
 "etmesi istenecektir."
 
-#: modules/gdpr.php:90 modules/gdpr.php:101
+#: modules/gdpr.php:81
+msgid "Use a custom text for GDPR notice"
+msgstr ""
+
+#: modules/gdpr.php:82
+msgid ""
+"You can display a custom GDPR notice to your website visitors. Be sure to "
+"include all relevant informations according to GDPR directives."
+msgstr ""
+
+#: modules/gdpr.php:108 modules/gdpr.php:120
 msgid "GDPR Control"
 msgstr "GDPR Kontrolü"
 
-#: modules/gdpr.php:103
+#: modules/gdpr.php:122
 msgid ""
 "Search is performed on chat sessions, messages, and offline messages. Data "
 "will also be deleted automatically per your retention policy."
@@ -2503,43 +2526,43 @@ msgstr ""
 "gerçekleştirilir. Veriler de saklama politikanıza göre otomatik olarak "
 "silinecektir."
 
-#: modules/gdpr.php:112
+#: modules/gdpr.php:131
 msgid "Name, Email, Message"
 msgstr "Adı, E-posta, Mesaj"
 
-#: modules/gdpr.php:116 modules/node_server.php:222
+#: modules/gdpr.php:135 modules/node_server.php:222
 msgid "Search"
 msgstr "Arama"
 
-#: modules/gdpr.php:129
+#: modules/gdpr.php:148
 #, php-format
 msgid "Search Results in %%TABLE%%"
 msgstr "Arama Sonuçları: %%TABLE%%"
 
-#: modules/gdpr.php:157
+#: modules/gdpr.php:176
 #, php-format
 msgid "Delete Chat (%%CID%%)"
 msgstr "Sohbeti Sil (%%CID%%)"
 
-#: modules/gdpr.php:158
+#: modules/gdpr.php:177
 #, php-format
 msgid "Download Chat (%%CID%%)"
 msgstr "Sohbeti İndir (%%CID%%)"
 
-#: modules/gdpr.php:162 wp-live-chat-support.php:4194
-#: wp-live-chat-support.php:4254
+#: modules/gdpr.php:181 wp-live-chat-support.php:3910
+#: wp-live-chat-support.php:3970
 msgid "Chat ID"
 msgstr "Sohbet ID"
 
-#: modules/gdpr.php:183
+#: modules/gdpr.php:202
 msgid "Please perform a search using the input field above"
 msgstr "Lütfen yukarıdaki giriş alanını kullanarak bir arama gerçekleştirin"
 
-#: modules/gdpr.php:257
+#: modules/gdpr.php:279
 msgid "Data Deleted"
 msgstr "Veriler Silindi"
 
-#: modules/gdpr.php:343
+#: modules/gdpr.php:371
 #, php-format
 msgid ""
 "I agree for my personal data to be processed and for the use of cookies in "
@@ -2550,11 +2573,11 @@ msgstr ""
 "işlenen bir sohbete katılmak üzere kişisel verilerimin işlenmesini ve "
 "çerezlerin kullanımını kabul ediyorum."
 
-#: modules/gdpr.php:365 modules/gdpr.php:563 modules/gdpr.php:584
+#: modules/gdpr.php:398 modules/gdpr.php:609 modules/gdpr.php:631
 msgid "Privacy Policy"
 msgstr "Gizlilik Politikası"
 
-#: modules/gdpr.php:366
+#: modules/gdpr.php:399
 #, php-format
 msgid ""
 "We use WP Live Chat by 3CX as our live chat platform. By clicking below to "
@@ -2567,7 +2590,7 @@ msgstr ""
 "olarak işlenmesi için 3CX WP Canlı Sohbet'e şu anda ve sohbet boyunca "
 "sağladığınız bilgileri doğrulamaktasınız."
 
-#: modules/gdpr.php:388
+#: modules/gdpr.php:423
 #, php-format
 msgid ""
 "Please note as per the GDPR settings you have selected, all chat data will "
@@ -2576,7 +2599,7 @@ msgstr ""
 "Seçmiş olduğunuz GDPR ayarlarına göre tüm sohbet verilerinin %%PERIOD%% gün "
 "boyunca saklanacağına lütfen dikkat edin."
 
-#: modules/gdpr.php:391
+#: modules/gdpr.php:426
 #, php-format
 msgid ""
 "After this period of time, all chat data older than %%PERIOD%% day(s), will "
@@ -2585,23 +2608,23 @@ msgstr ""
 "Bu süreden sonra %%PERIOD%% günden eski tüm sohbet verileri sunucunuzdan "
 "kalıcı olarak silinecektir."
 
-#: modules/gdpr.php:395
+#: modules/gdpr.php:430
 msgid "GDPR - Data Retention"
 msgstr "GDPR - Veri Saklama"
 
-#: modules/gdpr.php:398 modules/gdpr.php:565
+#: modules/gdpr.php:433 modules/gdpr.php:611
 msgid "Privacy Settings"
 msgstr "Gizlilik Ayarları"
 
-#: modules/gdpr.php:413
+#: modules/gdpr.php:448
 msgid "Once every 6 hours"
 msgstr "Her 6 saatte bir"
 
-#: modules/gdpr.php:531
+#: modules/gdpr.php:577
 msgid "Chat Ended"
 msgstr "Sohbet Sona Erdi"
 
-#: modules/gdpr.php:556
+#: modules/gdpr.php:602
 msgid ""
 "GDPR compliance has been disabled, read more about the implications of this "
 "here"
@@ -2609,11 +2632,11 @@ msgstr ""
 "GDPR uyumluluğu devre dışı bırakıldı, bunun çıkarımları hakkında buradan "
 "daha fazla bilgi alabilirsiniz"
 
-#: modules/gdpr.php:557
+#: modules/gdpr.php:603
 msgid "Additionally please take a look at WP Live Chat by 3CX"
 msgstr "Lütfen 3CX WP Canlı Sohbet'e de bir göz atın"
 
-#: modules/gdpr.php:558
+#: modules/gdpr.php:604
 msgid ""
 "It is highly recommended that you enable GDPR compliance to ensure your user "
 "data is regulated."
@@ -2621,19 +2644,19 @@ msgstr ""
 "Kullanıcı verilerinizin düzenlendiğinden emin olmak üzere GDPR uyumluluğunu "
 "etkinleştirmeniz şiddetle önerilir."
 
-#: modules/gdpr.php:561
+#: modules/gdpr.php:607
 msgid "Warning - GDPR Compliance Disabled - Action Required"
 msgstr "Uyarı - GDPR Uyumluluğu Devre Dışı Bırakıldı - Eylem Gerekli"
 
-#: modules/gdpr.php:562
+#: modules/gdpr.php:608
 msgid "EU GDPR"
 msgstr "AB GDPR"
 
-#: modules/gdpr.php:566
+#: modules/gdpr.php:612
 msgid "Dismiss & Accept Responsibility"
 msgstr "Çıkar ve Sorumluluğu Kabul Et"
 
-#: modules/gdpr.php:583
+#: modules/gdpr.php:630
 #, php-format
 msgid "Please refer to our %%PRIVACY_LINK%% for information on Data Processing"
 msgstr ""
@@ -2656,20 +2679,20 @@ msgid "Toggle WordPress Menu for a full screen experience"
 msgstr "Tam ekran deneyimi için WordPress Menüsünü değiştir"
 
 #: modules/node_server.php:79 modules/node_server.php:186
-#: modules/node_server.php:720 modules/node_server.php:738
+#: modules/node_server.php:718 modules/node_server.php:736
 msgid "Active visitors"
 msgstr "Aktif ziyaretçiler"
 
-#: modules/node_server.php:113 modules/node_server.php:725
+#: modules/node_server.php:113 modules/node_server.php:723
 msgid "Invite Agent"
 msgstr "Temsilci Davet Et"
 
-#: modules/node_server.php:114 modules/node_server.php:726
+#: modules/node_server.php:114 modules/node_server.php:724
 msgid "Invite Department"
 msgstr "Departmanı Davet Et"
 
-#: modules/node_server.php:115 modules/node_server.php:727
-#: modules/node_server.php:731 wp-live-chat-support.php:3996
+#: modules/node_server.php:115 modules/node_server.php:725
+#: modules/node_server.php:729 wp-live-chat-support.php:3718
 msgid "Direct User To Page"
 msgstr "Kullanıcıyı Sayfaya Yönelt"
 
@@ -2677,12 +2700,12 @@ msgstr "Kullanıcıyı Sayfaya Yönelt"
 msgid "Transcript"
 msgstr "Transkript"
 
-#: modules/node_server.php:118 modules/node_server.php:728
+#: modules/node_server.php:118 modules/node_server.php:726
 msgid "Leave chat"
 msgstr "Sohbetten ayrıl"
 
-#: modules/node_server.php:119 modules/node_server.php:729
-#: wp-live-chat-support.php:2575
+#: modules/node_server.php:119 modules/node_server.php:727
+#: wp-live-chat-support.php:2285
 msgid "End chat"
 msgstr "Sohbeti Bitir"
 
@@ -2690,7 +2713,7 @@ msgstr "Sohbeti Bitir"
 msgid "Something"
 msgstr "Bir şey"
 
-#: modules/node_server.php:141 modules/node_server.php:733
+#: modules/node_server.php:141 modules/node_server.php:731
 msgid "Join chat"
 msgstr "Sohbete katıl"
 
@@ -2718,11 +2741,11 @@ msgstr "önceden biçimlendirilmiş"
 msgid "Filter the user list based on activity."
 msgstr "Kullanıcı listesini aktiviteye göre filtreleyin."
 
-#: modules/node_server.php:168 modules/node_server.php:735
+#: modules/node_server.php:168 modules/node_server.php:733
 msgid "New Visitors (3 Min)"
 msgstr "Yeni Ziyaretçiler (3 dk)"
 
-#: modules/node_server.php:169 modules/node_server.php:736
+#: modules/node_server.php:169 modules/node_server.php:734
 msgid "Active Chats"
 msgstr "Aktif Sohbetler"
 
@@ -2730,7 +2753,7 @@ msgstr "Aktif Sohbetler"
 msgid "Page URL"
 msgstr "Sayfa URL'si"
 
-#: modules/node_server.php:171 modules/node_server.php:737
+#: modules/node_server.php:171 modules/node_server.php:735
 msgid "Clear Filters"
 msgstr "Filtreleri Temizle"
 
@@ -2738,24 +2761,24 @@ msgstr "Filtreleri Temizle"
 msgid "Contains"
 msgstr "İçindekiler"
 
-#: modules/node_server.php:189 modules/node_server.php:739
-#: wp-live-chat-support.php:2377
+#: modules/node_server.php:189 modules/node_server.php:737
+#: wp-live-chat-support.php:2088
 msgid "Visitor"
 msgstr "Ziyaretçi"
 
-#: modules/node_server.php:190 modules/node_server.php:740
+#: modules/node_server.php:190 modules/node_server.php:738
 msgid "Info"
 msgstr "Bilgiler"
 
-#: modules/node_server.php:192 modules/node_server.php:742
+#: modules/node_server.php:192 modules/node_server.php:740
 msgid "Chat Status"
 msgstr "Sohbet Durumu"
 
-#: modules/node_server.php:223 modules/node_server.php:744
+#: modules/node_server.php:223 modules/node_server.php:742
 msgid "Search Results"
 msgstr "Arama Sonuçları"
 
-#: modules/node_server.php:225 modules/node_server.php:745
+#: modules/node_server.php:225 modules/node_server.php:743
 msgid "No emoji found"
 msgstr "Emoji bulunamadı"
 
@@ -2767,7 +2790,7 @@ msgstr "Hata"
 msgid "Only chat agents can access this page."
 msgstr "Sadece sohbet temsilcileri bu sayfaya ulaşabilir."
 
-#: modules/node_server.php:443 wp-live-chat-support.php:4615
+#: modules/node_server.php:443 wp-live-chat-support.php:4317
 msgid "Sending transcript..."
 msgstr "Transkript gönderiliyor..."
 
@@ -2775,11 +2798,11 @@ msgstr "Transkript gönderiliyor..."
 msgid "Chat Transcript"
 msgstr "Sohbet Transkripti"
 
-#: modules/node_server.php:446 wp-live-chat-support.php:4618
+#: modules/node_server.php:446 wp-live-chat-support.php:4320
 msgid "The chat transcript has been emailed."
 msgstr "Sohbet sureti e-postayla gönderildi."
 
-#: modules/node_server.php:447 wp-live-chat-support.php:4619
+#: modules/node_server.php:447 wp-live-chat-support.php:4321
 msgid "There was a problem emailing the chat."
 msgstr "Sohbet e-postayla gönderilirken bir sorun oluştu."
 
@@ -2802,11 +2825,11 @@ msgstr "Sohbet ayarlar alanında devre dışı bırakıldı, tekrar etkinleştir
 msgid "User received notification:"
 msgstr "Kullanıcı tarafından alınan bildirim:"
 
-#: modules/node_server.php:532 wp-live-chat-support.php:2214
+#: modules/node_server.php:532 wp-live-chat-support.php:1925
 msgid "New chat received"
 msgstr "Yeni sohbet alındı"
 
-#: modules/node_server.php:533 wp-live-chat-support.php:2216
+#: modules/node_server.php:533 wp-live-chat-support.php:1927
 msgid ""
 "A new chat has been received. Please go the 'Live Chat' page to accept the "
 "chat"
@@ -2814,11 +2837,11 @@ msgstr ""
 "Yeni bir sohbet alındı. Lütfen sohbeti kabul etmek için 'Canlı Sohbet' "
 "sayfasına gidiniz"
 
-#: modules/node_server.php:643
+#: modules/node_server.php:641
 msgid "Welcome to V8 of WP Live Chat by 3CX"
 msgstr "3CX WP Canlı Sohbet V8'e Hoş Geldiniz"
 
-#: modules/node_server.php:644
+#: modules/node_server.php:642
 msgid ""
 "Did you know, this version features high speed message delivery, agent to "
 "agent chat, and a single window layout?"
@@ -2826,7 +2849,7 @@ msgstr ""
 "Bu sürümün yüksek hızda mesaj teslimi, temsilciler arası sohbet ve tek "
 "pencere düzeni özelliklerine sahip olduğunu biliyor muydunuz?"
 
-#: modules/node_server.php:645
+#: modules/node_server.php:643
 msgid ""
 "To activate this functionality please navigate to Live Chat -> Settings -> "
 "Advanced Features -> And enable 3CX High Performance Chat Cloud Servers."
@@ -2835,31 +2858,31 @@ msgstr ""
 "Gelişmiş Özellikler -> 3CX Yüksek Performanslı Sohbet Bulut Sunucularını "
 "etkinleştirin sırasını takip edin."
 
-#: modules/node_server.php:648
+#: modules/node_server.php:646
 msgid "Show me!"
 msgstr "Bana göster!"
 
-#: modules/node_server.php:649 wp-live-chat-support.php:4586
+#: modules/node_server.php:647 wp-live-chat-support.php:4288
 msgid "Don't Show This Again"
 msgstr "Bunu Tekrar Gösterme"
 
-#: modules/node_server.php:716 wp-live-chat-support.php:470
+#: modules/node_server.php:714 wp-live-chat-support.php:151
 msgid "Connecting..."
 msgstr "Bağlanıyor..."
 
-#: modules/node_server.php:721
+#: modules/node_server.php:719
 msgid "Agent(s) Online"
 msgstr "Temsilci(ler) Çevrimiçi"
 
-#: modules/node_server.php:732
+#: modules/node_server.php:730
 msgid "Events"
 msgstr "Etkinlikler"
 
-#: modules/node_server.php:734
+#: modules/node_server.php:732
 msgid "Filters"
 msgstr "Filtreler"
 
-#: modules/node_server.php:819
+#: modules/node_server.php:817
 msgid ""
 "You can transfer chats from within a chat by clicking on the in chat menu, "
 "and selecting Transfer Chat or Transfer Department"
@@ -2867,7 +2890,7 @@ msgstr ""
 "Sohbet menüsüne tıklayıp Sohbeti Yönlendir veya Departmanı Yönlendir'i "
 "seçerek sohbetleri bir sohbetin içerisinde yönlendirebilirsiniz"
 
-#: modules/node_server.php:820
+#: modules/node_server.php:818
 msgid ""
 "You can share files quickly when in a chat, by simply dragging a file into "
 "the chat window!"
@@ -2875,13 +2898,13 @@ msgstr ""
 "Bir dosyayı basitçe sohbet penceresine sürükleyerek bir sohbet "
 "içerisindeyken hızla dosya paylaşabilirsiniz!"
 
-#: modules/node_server.php:821
+#: modules/node_server.php:819
 msgid "You can now move between chats without ending/closing an open chat"
 msgstr ""
 "Artık açık bir sohbeti sona erdirmeden/kapatmadan sohbetler arasında geçiş "
 "yapabilirsiniz"
 
-#: modules/node_server.php:877
+#: modules/node_server.php:875
 msgid "No quick responses found"
 msgstr "Hızlı yanıt bulunamadı"
 
@@ -2913,7 +2936,7 @@ msgstr "Ayarlar Değiştirildi"
 msgid "Webhooks"
 msgstr "Web Kancaları"
 
-#: modules/webhooks_manager.php:63 wp-live-chat-support.php:3925
+#: modules/webhooks_manager.php:63 wp-live-chat-support.php:3647
 msgid "Web Hooks"
 msgstr "Web Kancaları"
 
@@ -2973,35 +2996,35 @@ msgstr "Değişiklikleri Kaydet"
 msgid "Are you sure you want to delete this webhook?"
 msgstr "Bu web kancasını silmek istediğinize emin misiniz?"
 
-#: wp-live-chat-support.php:413
+#: wp-live-chat-support.php:92
 msgid "close"
 msgstr "kapat"
 
-#: wp-live-chat-support.php:434
+#: wp-live-chat-support.php:114
 msgid "Thank you for chatting with us."
 msgstr "Bizimle sohbet etiğiniz için teşekkür ederiz."
 
-#: wp-live-chat-support.php:459
+#: wp-live-chat-support.php:140
 msgid "Questions?"
 msgstr "Sorunuz?"
 
-#: wp-live-chat-support.php:460
+#: wp-live-chat-support.php:141
 msgid "Chat with us"
 msgstr "Bizimle sohbet edin"
 
-#: wp-live-chat-support.php:461
+#: wp-live-chat-support.php:142
 msgid "Start live chat"
 msgstr "Canlı sohbet başlat"
 
-#: wp-live-chat-support.php:462
+#: wp-live-chat-support.php:143
 msgid "Complete the fields below to proceed."
 msgstr "İlerlemek için aşağıdaki alanları tamamlayın."
 
-#: wp-live-chat-support.php:463 wp-live-chat-support.php:467
+#: wp-live-chat-support.php:144 wp-live-chat-support.php:148
 msgid "Leave a message"
 msgstr "Mesaj bırakın"
 
-#: wp-live-chat-support.php:464
+#: wp-live-chat-support.php:145
 #, fuzzy
 #| msgid ""
 #| "We are currently offline. Please leave a message and we'll get back to "
@@ -3010,44 +3033,48 @@ msgid "Please leave a message and we'll get back to you as soon as possible."
 msgstr ""
 "Şu an çevrimdışıyız. Lütfen bir mesaj bırakınız, size tekrar döneceğiz."
 
-#: wp-live-chat-support.php:465
+#: wp-live-chat-support.php:146
 msgid "Sending message..."
 msgstr "Mesaj gönderiyor..."
 
-#: wp-live-chat-support.php:466
+#: wp-live-chat-support.php:147
 msgid "Thank you for your message. We will be in contact soon."
 msgstr "Mesajınız için teşekkürler. Yakında sizinle iletişime geçeceğiz."
 
-#: wp-live-chat-support.php:468
+#: wp-live-chat-support.php:149
 msgid "Send message"
 msgstr "Mesaj Gönder"
 
-#: wp-live-chat-support.php:469
+#: wp-live-chat-support.php:150
 msgid "Start Chat"
 msgstr "Sohbet Başlat"
 
-#: wp-live-chat-support.php:471 wp-live-chat-support.php:2096
-#: wp-live-chat-support.php:2143
+#: wp-live-chat-support.php:152 wp-live-chat-support.php:1807
+#: wp-live-chat-support.php:1854
 msgid "Reactivating your previous chat..."
 msgstr "Önceki sohbetinizi aktif ediyor..."
 
-#: wp-live-chat-support.php:502
+#: wp-live-chat-support.php:183
 msgid "Please click 'Start Chat' to initiate a chat with an agent"
 msgstr "Bir temsilciyle sohbet etmek için lütfen 'Sohbet Başlat' ı tıklayınız"
 
-#: wp-live-chat-support.php:505
+#: wp-live-chat-support.php:184
+msgid "Guest"
+msgstr "Misafir"
+
+#: wp-live-chat-support.php:186
 msgid "No answer. Try again later."
 msgstr "Yanıt alınamadı. Lütfen daha sonra tekrar deneyin."
 
-#: wp-live-chat-support.php:506
+#: wp-live-chat-support.php:187
 msgid "Welcome. How may I help you?"
 msgstr "Hoşgeldiniz. Nasıl yardımcı olabilirim?"
 
-#: wp-live-chat-support.php:510
+#: wp-live-chat-support.php:191
 msgid "Please standby for an agent. Send your message while you wait."
 msgstr "Lütfen bir temsilci bekleyin. Beklerken mesajınızı gönderin."
 
-#: wp-live-chat-support.php:741
+#: wp-live-chat-support.php:497
 msgid ""
 "The additional WP Live Chat Support PRO plugin which you have installed is "
 "no longer needed, please uninstall it."
@@ -3055,208 +3082,218 @@ msgstr ""
 "Yüklemiş olduğunuz ek WP Canlı Sohbet Desteği PRO eklentisine artık ihtiyaç "
 "duyulmuyor, lütfen kaldırın."
 
-#: wp-live-chat-support.php:1028 wp-live-chat-support.php:3418
+#: wp-live-chat-support.php:764 wp-live-chat-support.php:3120
 msgid "Missed Chats"
 msgstr "Cevaplanmayan Sohbetler"
 
-#: wp-live-chat-support.php:1031 wp-live-chat-support.php:3914
+#: wp-live-chat-support.php:767 wp-live-chat-support.php:3636
 msgid "Support"
 msgstr "Destek"
 
-#: wp-live-chat-support.php:1228
-msgid "Please Enter Your Name"
+#: wp-live-chat-support.php:964
+#, fuzzy
+#| msgid "Please Enter Your Name"
+msgid "Please enter your name"
 msgstr "Lütfen Adınızı Girin"
 
-#: wp-live-chat-support.php:1229
-msgid "Please Enter Your Email Address"
+#: wp-live-chat-support.php:965
+#, fuzzy
+#| msgid "Please Enter Your Email Address"
+msgid "Please enter your email address"
 msgstr "Lütfen E-Posta Adresinizi Girin"
 
-#: wp-live-chat-support.php:1230
+#: wp-live-chat-support.php:966
+#, fuzzy
+#| msgid "Please Enter Your Email Address"
+msgid "Please enter a valid email address"
+msgstr "Lütfen E-Posta Adresinizi Girin"
+
+#: wp-live-chat-support.php:967
 msgid "Connection to Server Lost. Please Reload This Page. Error:"
 msgstr ""
 "Sunucu Bağlantısı Kaybedildi. Lütfen Bu Sayfayı Yeniden Yükleyin. Hata:"
 
-#: wp-live-chat-support.php:1232
+#: wp-live-chat-support.php:969
 msgid "Please Enter a Message"
 msgstr "Lütfen Bir Mesaj Bırakın"
 
-#: wp-live-chat-support.php:1233
+#: wp-live-chat-support.php:970
 msgid "Disconnected, Attempting to Reconnect..."
 msgstr "Bağlantı Kesildi, Yeniden Bağlanmaya Çalışılıyor..."
 
-#: wp-live-chat-support.php:1280
+#: wp-live-chat-support.php:1017
 msgid "has joined."
 msgstr "katıldı."
 
-#: wp-live-chat-support.php:1281
+#: wp-live-chat-support.php:1018
 msgid "has left."
 msgstr "kaldı."
 
-#: wp-live-chat-support.php:1282
+#: wp-live-chat-support.php:1019
 msgid "has ended the chat."
 msgstr "sohbeti sonlandırdı."
 
-#: wp-live-chat-support.php:1283
+#: wp-live-chat-support.php:1020
 msgid "has disconnected."
 msgstr "bağlantı kesildi."
 
-#: wp-live-chat-support.php:1284
+#: wp-live-chat-support.php:1021
 msgid "(edited)"
 msgstr "(düzenlendi)"
 
-#: wp-live-chat-support.php:1679 wp-live-chat-support.php:1698
+#: wp-live-chat-support.php:1416 wp-live-chat-support.php:1435
 msgid "Start chat"
 msgstr "Sohbete başla"
 
-#: wp-live-chat-support.php:1940 wp-live-chat-support.php:2646
+#: wp-live-chat-support.php:1677 wp-live-chat-support.php:2356
 msgid "Send"
 msgstr "Gönder"
 
-#: wp-live-chat-support.php:2315
+#: wp-live-chat-support.php:2026
 msgid "Congratulations"
 msgstr "Tebrikler"
 
-#: wp-live-chat-support.php:2316
+#: wp-live-chat-support.php:2027
 msgid "You are now accepting live chat requests on your site."
 msgstr "Artık sitenizde canlı sohbetleri kabul ediyorsunuz."
 
-#: wp-live-chat-support.php:2317
+#: wp-live-chat-support.php:2028
 msgid "The live chat box has automatically been enabled."
 msgstr "Canlı sohbet kutusu otomatik olarak etkinleştirildi."
 
-#: wp-live-chat-support.php:2318
+#: wp-live-chat-support.php:2029
 msgid "Chat notifications will start appearing once visitors send a request."
 msgstr ""
 "Sohbet bildirimleri, ziyaretçiler istek gönderdiğinde görünmeye "
 "başlayacaktır."
 
-#: wp-live-chat-support.php:2319
+#: wp-live-chat-support.php:2030
 #, php-format
 msgid "You may modify your chat box settings %s"
 msgstr "Sohbet kutusu ayarlarınızı değiştirebilirsiniz %s"
 
-#: wp-live-chat-support.php:2320
+#: wp-live-chat-support.php:2031
 msgid "Experiencing issues?"
 msgstr "Sorun mu yaşıyorsunuz?"
 
-#: wp-live-chat-support.php:2320
+#: wp-live-chat-support.php:2031
 msgid "Take a look at our how-to guides."
 msgstr "El kılavuzlarımıza göz atın."
 
-#: wp-live-chat-support.php:2321
+#: wp-live-chat-support.php:2032
 msgid "Hide"
 msgstr "Gizle"
 
-#: wp-live-chat-support.php:2360
+#: wp-live-chat-support.php:2071
 msgid "Keep this window open to get notified of new chats."
 msgstr "Yeni sohbetler hakkında bildirim almak için bu pencereyi açık tutun."
 
-#: wp-live-chat-support.php:2365
+#: wp-live-chat-support.php:2076
 msgid "Visitor(s) online"
 msgstr "Ziyaretçi çevrimiçi"
 
-#: wp-live-chat-support.php:2380
+#: wp-live-chat-support.php:2091
 msgid "Device"
 msgstr "Cihaz"
 
-#: wp-live-chat-support.php:2381
+#: wp-live-chat-support.php:2092
 msgid "Data"
 msgstr "Veri"
 
-#: wp-live-chat-support.php:2402
+#: wp-live-chat-support.php:2113
 msgid "Chat Dashboard"
 msgstr "Sohbet Panosu"
 
-#: wp-live-chat-support.php:2405
+#: wp-live-chat-support.php:2116
 msgid "Oh no!"
 msgstr "Hay aksi!"
 
-#: wp-live-chat-support.php:2407
+#: wp-live-chat-support.php:2118
 #, php-format
 msgid "You do not have access to this page as %s."
 msgstr "Bu sayfaya %s olarak erişiminiz bulunmamaktadır."
 
-#: wp-live-chat-support.php:2407
+#: wp-live-chat-support.php:2118
 msgid "you are not a chat agent"
 msgstr "bir sohbet temsilcisi değilsiniz"
 
-#: wp-live-chat-support.php:2561
+#: wp-live-chat-support.php:2271
 msgid "Previous"
 msgstr "Önceki"
 
-#: wp-live-chat-support.php:2568
+#: wp-live-chat-support.php:2278
 msgid "Chat with"
 msgstr "...... ile sohbet edin"
 
-#: wp-live-chat-support.php:2585
+#: wp-live-chat-support.php:2295
 msgid "Starting Time:"
 msgstr "Başlangıç Saati:"
 
-#: wp-live-chat-support.php:2586
+#: wp-live-chat-support.php:2296
 msgid "Ending Time:"
 msgstr "Bitiş Saati:"
 
-#: wp-live-chat-support.php:2606
+#: wp-live-chat-support.php:2316
 msgid "Chat initiated on:"
 msgstr "Sohbet başlatma:"
 
-#: wp-live-chat-support.php:2607
+#: wp-live-chat-support.php:2317
 msgid "Browser:"
 msgstr "Tarayıcı:"
 
-#: wp-live-chat-support.php:2633 wp-live-chat-support.php:2672
+#: wp-live-chat-support.php:2343 wp-live-chat-support.php:2382
 msgid "Invalid Chat ID"
 msgstr "Geçersiz Sohbet Kimliği"
 
-#: wp-live-chat-support.php:2641
+#: wp-live-chat-support.php:2351
 msgid "type here..."
 msgstr "buraya yazın..."
 
-#: wp-live-chat-support.php:2794
+#: wp-live-chat-support.php:2504
 msgid "User has opened the chat window"
 msgstr "Kullanıcı sohbet penceresini açtı"
 
-#: wp-live-chat-support.php:2795
+#: wp-live-chat-support.php:2505
 msgid "User has minimized the chat window"
 msgstr "Kullanıcı sohbet penceresini küçülttü"
 
-#: wp-live-chat-support.php:2796
+#: wp-live-chat-support.php:2506
 msgid "User has maximized the chat window"
 msgstr "Kullanıcı sohbet penceresini büyüttü"
 
-#: wp-live-chat-support.php:2797
+#: wp-live-chat-support.php:2507
 msgid "The chat has been ended"
 msgstr "Sohbet sona erdi"
 
-#: wp-live-chat-support.php:3328
+#: wp-live-chat-support.php:3036
 msgid "Delete History"
 msgstr "Geçmişi Sil"
 
-#: wp-live-chat-support.php:3344
+#: wp-live-chat-support.php:3052
 msgid "No chats available at the moment"
 msgstr "Şu an bir sohbet bulunmamaktadır"
 
-#: wp-live-chat-support.php:3458
+#: wp-live-chat-support.php:3160
 msgid "Actions"
 msgstr "Eylemler"
 
-#: wp-live-chat-support.php:3472
+#: wp-live-chat-support.php:3174
 msgid "You have not received any offline messages."
 msgstr "Çevrimdışı mesajınız bulunmamaktadır."
 
-#: wp-live-chat-support.php:3480
+#: wp-live-chat-support.php:3182
 msgid "Delete Message"
 msgstr "Mesajı Sil"
 
-#: wp-live-chat-support.php:3599
+#: wp-live-chat-support.php:3308
 msgid "You do not have permission to save settings."
 msgstr "Ayarları kaydetme izniniz bulunmamaktadır."
 
-#: wp-live-chat-support.php:3861
+#: wp-live-chat-support.php:3592
 msgid "Your settings have been saved."
 msgstr "Ayarlarınız kaydedildi."
 
-#: wp-live-chat-support.php:3888
+#: wp-live-chat-support.php:3610
 msgid ""
 "WPLC: set_time_limit() is not enabled on this server. You may experience "
 "issues while using WP Live Chat by 3CX as a result of this. Please get in "
@@ -3266,7 +3303,7 @@ msgstr ""
 "Canlı Sohbet'i kullanırken sorun yaşayabilirsiniz. Lütfen bu fonksiyonun "
 "etkinleştirilmesi için hostunuzla iletişim kurun."
 
-#: wp-live-chat-support.php:3894
+#: wp-live-chat-support.php:3616
 msgid ""
 "WPLC: Safe mode is enabled on this server. You may experience issues while "
 "using WP Live Chat by 3CX as a result of this. Please contact your host to "
@@ -3276,11 +3313,11 @@ msgstr ""
 "Sohbet'i kullanırken sorun yaşayabilirsiniz. Güvenli modu devre dışı "
 "bırakmak için hostunuzla iletişim kurun."
 
-#: wp-live-chat-support.php:3917 wp-live-chat-support.php:3921
+#: wp-live-chat-support.php:3639 wp-live-chat-support.php:3643
 msgid "Plugin Features"
 msgstr "Eklenti Özellikleri"
 
-#: wp-live-chat-support.php:3919
+#: wp-live-chat-support.php:3641
 msgid ""
 "Check out these features and get up to speed with what you can do with WP "
 "Live Chat:"
@@ -3288,19 +3325,19 @@ msgstr ""
 "Bu özelliklere göz atın ve WP Canlı Sohbet ile neler yapabileceklerinizi "
 "görerek hızı yakalayın:"
 
-#: wp-live-chat-support.php:3922
+#: wp-live-chat-support.php:3644
 msgid "Reporting"
 msgstr "Raporlama"
 
-#: wp-live-chat-support.php:3923
+#: wp-live-chat-support.php:3645
 msgid "Localization"
 msgstr "Lokalizasyon"
 
-#: wp-live-chat-support.php:3931
+#: wp-live-chat-support.php:3653
 msgid "Chat FAQs"
 msgstr "Sohbet SSS"
 
-#: wp-live-chat-support.php:3933
+#: wp-live-chat-support.php:3655
 msgid ""
 "Learn quickly the ins and outs of Chat and start chatting with visitors and "
 "agents:"
@@ -3308,37 +3345,37 @@ msgstr ""
 "Sohbetin ayrıntılarını hızla öğrenip ziyaretçi ve temsilcilerle sohbete "
 "başlayın:"
 
-#: wp-live-chat-support.php:3935
+#: wp-live-chat-support.php:3657
 msgid "Chat with Visitors"
 msgstr "Ziyaretçilerle Sohbet"
 
-#: wp-live-chat-support.php:3936
+#: wp-live-chat-support.php:3658
 msgid "Chat with Agents"
 msgstr "Temsilcilerle Sohbet"
 
-#: wp-live-chat-support.php:3940
+#: wp-live-chat-support.php:3662
 msgid "Chat Invites"
 msgstr "Sohbet Davetleri"
 
-#: wp-live-chat-support.php:3945
+#: wp-live-chat-support.php:3667
 msgid "Settings & Customization"
 msgstr "Ayarlar ve Kişiselleştirme"
 
-#: wp-live-chat-support.php:3947
+#: wp-live-chat-support.php:3669
 msgid "Use these guides to learn how to configure and customize WP Live Chat:"
 msgstr ""
 "WP Canlı Sohbetin nasıl yapılandırılacağını ve kişiselleştirilebileceğini "
 "öğrenmek için bu kılavuzları kullanın:"
 
-#: wp-live-chat-support.php:3951
+#: wp-live-chat-support.php:3673
 msgid "Agent Settings"
 msgstr "Temsilci Ayarları"
 
-#: wp-live-chat-support.php:3958
+#: wp-live-chat-support.php:3680
 msgid "Troubleshooting"
 msgstr "Sorun Giderme"
 
-#: wp-live-chat-support.php:3960
+#: wp-live-chat-support.php:3682
 msgid ""
 "Reference these troubleshooting guides to quickly resolve any WP Live Chat "
 "issues:"
@@ -3346,100 +3383,96 @@ msgstr ""
 "WP Canlı Sohbet sorunlarını hızla çözümlemek üzere bu sorun giderme "
 "kılavuzlarını referans alın:"
 
-#: wp-live-chat-support.php:3962
+#: wp-live-chat-support.php:3684
 msgid "My Chat Box Is Not Showing"
 msgstr "Sohbet Kutum Göstermiyor"
 
-#: wp-live-chat-support.php:3963
+#: wp-live-chat-support.php:3685
 msgid "Not Receiving Notifications of New Chats"
 msgstr "Yeni Sohbet Bildirimlerini Almıyorum"
 
-#: wp-live-chat-support.php:3964
+#: wp-live-chat-support.php:3686
 msgid "Check for JavaScript Errors"
 msgstr "JavaScript Hataları Ara"
 
-#: wp-live-chat-support.php:3992
+#: wp-live-chat-support.php:3714
 msgid "Initiate Chats"
 msgstr "Sohbet başlatın"
 
-#: wp-live-chat-support.php:3993
+#: wp-live-chat-support.php:3715
 msgid "Multiple Chats"
 msgstr "Birden çok sohbet"
 
-#: wp-live-chat-support.php:3994
+#: wp-live-chat-support.php:3716
 msgid "Add unlimited agents"
 msgstr "Sınırsız sayıda temslici ekleyin"
 
-#: wp-live-chat-support.php:3995
+#: wp-live-chat-support.php:3717
 msgid "Transfer Chats"
 msgstr "Sohbetleri Yönlendir"
 
-#: wp-live-chat-support.php:4014
+#: wp-live-chat-support.php:3736
 #, php-format
 msgid "Thank you for using %s! Please %s on %s"
 msgstr "%s kullandığınız için teşekkürler! Lütfen %s tarihinde %s"
 
-#: wp-live-chat-support.php:4014
+#: wp-live-chat-support.php:3736
 msgid "rate us"
 msgstr "bizi puanlayın"
 
-#: wp-live-chat-support.php:4195 wp-live-chat-support.php:4255
-msgid "From"
-msgstr "Kimden"
-
-#: wp-live-chat-support.php:4197 wp-live-chat-support.php:4257
+#: wp-live-chat-support.php:3913 wp-live-chat-support.php:3973
 msgid "Timestamp"
 msgstr "Zaman bilgisi"
 
-#: wp-live-chat-support.php:4198 wp-live-chat-support.php:4258
+#: wp-live-chat-support.php:3914 wp-live-chat-support.php:3974
 msgid "Origin"
 msgstr "Origin"
 
-#: wp-live-chat-support.php:4203 wp-live-chat-support.php:4263
+#: wp-live-chat-support.php:3919 wp-live-chat-support.php:3979
 msgid "user"
 msgstr "kullanıcı"
 
-#: wp-live-chat-support.php:4205 wp-live-chat-support.php:4265
+#: wp-live-chat-support.php:3921 wp-live-chat-support.php:3981
 msgid "agent"
 msgstr "temsilci"
 
-#: wp-live-chat-support.php:4340
+#: wp-live-chat-support.php:4056
 msgid "Advanced settings"
 msgstr "Gelişmiş ayarlar"
 
-#: wp-live-chat-support.php:4347
+#: wp-live-chat-support.php:4063
 msgid "Only change these settings if you are experiencing performance issues."
 msgstr "Bu seçenekleri, sadece performans sorunları yaşıyorsanız değiştirin."
 
-#: wp-live-chat-support.php:4354
+#: wp-live-chat-support.php:4070
 msgid "Website hosting type:"
 msgstr "Web sitesi hosting türü:"
 
-#: wp-live-chat-support.php:4358
+#: wp-live-chat-support.php:4074
 msgid "Custom parameters"
 msgstr "Özel parametreler"
 
-#: wp-live-chat-support.php:4359
+#: wp-live-chat-support.php:4075
 msgid "Shared hosting - low level plan"
 msgstr "Paylaşımlı hosting - düşük seviye plan"
 
-#: wp-live-chat-support.php:4360
+#: wp-live-chat-support.php:4076
 msgid "Shared hosting - normal plan"
 msgstr "Paylaşımlı hosting - normal plan"
 
-#: wp-live-chat-support.php:4361
+#: wp-live-chat-support.php:4077
 msgid "VPS"
 msgstr "VPS"
 
-#: wp-live-chat-support.php:4362
+#: wp-live-chat-support.php:4078
 msgid "Dedicated server"
 msgstr "Dedicated server"
 
-#: wp-live-chat-support.php:4368
+#: wp-live-chat-support.php:4084
 msgid "Long poll setup"
 msgstr "Uzun anket kurulumu"
 
-#: wp-live-chat-support.php:4368
+#: wp-live-chat-support.php:4084
 msgid ""
 "Only change these if you are an experienced developer or if you have "
 "received these figures from the WP Live Chat by 3CX team."
@@ -3447,23 +3480,23 @@ msgstr ""
 "Bunları yalnızca deneyimli bir geliştirici iseniz veya 3CX ekibinden WP "
 "Canlı Sohbet ile ilgili bu rakamları aldıysanız değiştirin."
 
-#: wp-live-chat-support.php:4373
+#: wp-live-chat-support.php:4089
 msgid "Iterations"
 msgstr "Arttırımlar"
 
-#: wp-live-chat-support.php:4377
+#: wp-live-chat-support.php:4093
 msgid "Sleep between loops"
 msgstr "Döngüler arasında uyu"
 
-#: wp-live-chat-support.php:4380
+#: wp-live-chat-support.php:4096
 msgid "milliseconds"
 msgstr "milisaniye"
 
-#: wp-live-chat-support.php:4403
+#: wp-live-chat-support.php:4119
 msgid "Show 'Powered by' in chat box"
 msgstr "Sohbet kutusunda 'Tarafından çalıştırılır'ı göster"
 
-#: wp-live-chat-support.php:4403
+#: wp-live-chat-support.php:4119
 msgid ""
 "Checking this will display a 'Powered by WP Live Chat by 3CX' caption at the "
 "bottom of your chatbox."
@@ -3471,18 +3504,18 @@ msgstr ""
 "Bunun işaretlenmesiyle sohbet kutunuzun altında '3CX WP Canlı Sohbet "
 "tarafından çalıştırılır' yazısı gösterilir."
 
-#: wp-live-chat-support.php:4445
+#: wp-live-chat-support.php:4161
 msgid "Powered by WP Live Chat by 3CX"
 msgstr "3CX WP Canlı Sohbet Tarafından Çalıştırılır"
 
-#: wp-live-chat-support.php:4584
+#: wp-live-chat-support.php:4286
 msgid ""
 "Browser notifications will no longer function on insecure (non-SSL) sites."
 msgstr ""
 "Tarama bildirimleri güvenli olmayan (SSL olmayan) sitelerde artık "
 "işlemeyecektir."
 
-#: wp-live-chat-support.php:4585
+#: wp-live-chat-support.php:4287
 msgid ""
 "Please add an SSL certificate to your site to continue receiving chat "
 "notifications in your browser."
@@ -3490,7 +3523,7 @@ msgstr ""
 "Tarayıcınızda sohbet bildirimleri almaya devam etmek için lütfen sitenize "
 "bir SSL sertifikası ekleyin."
 
-#: wp-live-chat-support.php:4598
+#: wp-live-chat-support.php:4300
 msgid ""
 "Please deactivate WP Live Chat Suport - Email Transcript plugin. Since WP "
 "Live Chat Support 8.0.05 there is build in support for Email Transcript."
@@ -3499,52 +3532,52 @@ msgstr ""
 "eklentisi. WP Canlı Sohbet Desteği 8.0.05 sürümünden beri E-posta "
 "Transkripti için dahili destek bulunmaktadır."
 
-#: wp-live-chat-support.php:4605
+#: wp-live-chat-support.php:4307
 msgid "Email transcript to user"
 msgstr "Kullanıcıya e-posta transkripti"
 
-#: wp-live-chat-support.php:4616
+#: wp-live-chat-support.php:4318
 msgid "Sending Transcript"
 msgstr "Transkript Gönderiliyor"
 
-#: wp-live-chat-support.php:4690
+#: wp-live-chat-support.php:4381
 #, php-format
 msgid "Your chat transcript from %1$s"
 msgstr "%1$s adresinden sohbet transkriptiniz"
 
-#: wp-live-chat-support.php:4781
+#: wp-live-chat-support.php:4472
 msgid "Chat Transcript Settings"
 msgstr "Sohbet Transkripti Ayarları"
 
-#: wp-live-chat-support.php:4784
+#: wp-live-chat-support.php:4475
 msgid "Enable chat transcripts:"
 msgstr "Sohbet transkriptlerini etkinleştir:"
 
-#: wp-live-chat-support.php:4792
+#: wp-live-chat-support.php:4483
 msgid "Send transcripts to:"
 msgstr "Transkriptleri şuna gönder:"
 
-#: wp-live-chat-support.php:4799
+#: wp-live-chat-support.php:4490
 msgid "User"
 msgstr "Kullanıcı"
 
-#: wp-live-chat-support.php:4810
+#: wp-live-chat-support.php:4501
 msgid "Send transcripts when chat ends:"
 msgstr "Sohbet sona erdiğinde transkriptleri gönder:"
 
-#: wp-live-chat-support.php:4818
+#: wp-live-chat-support.php:4509
 msgid "Email body"
 msgstr "E-posta gövdesi"
 
-#: wp-live-chat-support.php:4828
+#: wp-live-chat-support.php:4519
 msgid "Email header"
 msgstr "E-posta başlığı"
 
-#: wp-live-chat-support.php:4837
+#: wp-live-chat-support.php:4528
 msgid "Email footer"
 msgstr "E-posta alt başlığı"
 
-#: wp-live-chat-support.php:4913
+#: wp-live-chat-support.php:4604
 msgid ""
 "Please note, local message encryption and local server options will be "
 "deprecated in the next major release. All encryption and message delivery "
@@ -3554,13 +3587,30 @@ msgstr ""
 "sonraki ana sürümde onaylanmayacaktır. Tüm şifreleme ve mesaj iletimi "
 "gelecekte harici sunucularımız tarafından gerçekleştirilecektir."
 
-#: wp-live-chat-support.php:4916
+#: wp-live-chat-support.php:4607
 msgid "Deprecation Notice - Message Encryption & Local Server"
 msgstr "Onaylanmama Bildirimi - Mesaj Şifrelemesi ve Yerel Sunucu"
 
-#: wp-live-chat-support.php:4918
+#: wp-live-chat-support.php:4609
 msgid "Dismiss"
 msgstr "Son Ver"
+
+#~ msgid "Allow WP users to self-assign as a chat agent"
+#~ msgstr ""
+#~ "WP kullanıcıların kendilerini sohbet temsilcisi olarak atamasına izin ver"
+
+#~ msgid ""
+#~ "Checking this will allow any of your users to make themselves a chat "
+#~ "agent when editing their profile."
+#~ msgstr ""
+#~ "Bunu işaretlediğinizde kullanıcılar profillerini düzenlediklerinde "
+#~ "kendilerini sohbet temsilcisi olarak atayabilirler."
+
+#~ msgid "Between"
+#~ msgstr "Arasında"
+
+#~ msgid "and"
+#~ msgstr "ve"
 
 #~ msgid "Auto Pop-up"
 #~ msgstr "Otomatik Açılış"
@@ -3570,9 +3620,6 @@ msgstr "Son Ver"
 
 #~ msgid "Daily"
 #~ msgstr "Günlük"
-
-#~ msgid "Week Days"
-#~ msgstr "Haftanın Günleri"
 
 #~ msgid "Weekends"
 #~ msgstr "Haftasonları"

@@ -44,17 +44,10 @@ add_action('wplc_log_roi_conversion', 'wplc_mrg_roi_goal_log_conversion', 10, 2)
 function wplc_mrg_roi_goal_log_conversion($cid, $page_url){
 	$post_id = url_to_postid($page_url);
 	$goal_id = wplc_mrg_roi_check_page_id($post_id);
-	if($goal_id){
-		if(!filter_var($cid, FILTER_VALIDATE_INT) ) {
-	        /*  We need to identify if this CID is a node CID, and if so, return the WP CID */
-	        $cid = wplc_return_chat_id_by_rel($cid);
-	    }
-
-	    $cid = intval($cid);
-	    $goal_id = intval($goal_id);
-	    if(wplc_mrg_roi_conversion($cid, $goal_id)){
-			//Added
-		}
+	if ($goal_id) {
+    $cid = wplc_return_chat_id_by_rel_or_id($cid);
+    $goal_id = intval($goal_id);
+    wplc_mrg_roi_conversion($cid, $goal_id);
 	}
 }
 
@@ -245,7 +238,7 @@ function wplc_mrg_get_add_goal_content(){
 
     $content .= 	"<tr>";
     $content .= 		"<td>".__("Goal Value", "wp-livechat").":</td>";
-    $content .= 		"<td><input type='text' name='wplc_goal_value' value='".esc_attr($goal_value)."'></td>";
+    $content .= 		"<td><input type='number' name='wplc_goal_value' value='".esc_attr($goal_value)."'></td>";
     $content .= 	"</tr>";
 
     $content .= 	"<tr>";

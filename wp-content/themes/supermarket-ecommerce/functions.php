@@ -177,6 +177,8 @@ function supermarket_ecommerce_scripts() {
 	
 	// CUSTOM CSS
 	wp_enqueue_style( 'custom-style', get_template_directory_uri().'/assets/css/custom-style.css' );
+	wp_enqueue_style( 'custom-login', get_template_directory_uri().'/assets/css/custom-login.css' );
+	wp_enqueue_style( 'login-style', get_template_directory_uri().'/assets/css/login-style.scss' );
 
 	//Bootstarp 
 	wp_enqueue_style( 'bootstrap', get_template_directory_uri().'/assets/css/bootstrap.css' );
@@ -213,6 +215,11 @@ function supermarket_ecommerce_scripts() {
 	wp_enqueue_script( 'supermarket-ecommerce-skip-link-focus-fix', get_theme_file_uri( '/assets/js/skip-link-focus-fix.js' ), array(), '1.0', true );
 	wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/assets/js/bootstrap.js', array('jquery') );
 	wp_enqueue_script( 'jquery-superfish', get_template_directory_uri() . '/assets/js/jquery.superfish.js', array('jquery') ,'',true);
+
+	/**
+	 * Login
+	 */
+	wp_enqueue_script( 'custom-login', get_template_directory_uri() . '/assets/js/custom.login.js', array('jquery') ,'',true);
 
 	wp_localize_script( 'supermarket-ecommerce-skip-link-focus-fix', 'supermarket_ecommerceScreenReaderText', $supermarket_ecommerce_l10n );
 
@@ -282,3 +289,7 @@ require get_parent_theme_file_path( '/inc/template-functions.php' );
 require get_parent_theme_file_path( '/inc/customizer.php' );
 
 require get_parent_theme_file_path( '/inc/getting-started/getting-started.php' );
+
+function is_login_page() {
+    return in_array($GLOBALS['pagenow'], array('wp-login.php', 'wp-register.php', 'my-account.php'));
+}

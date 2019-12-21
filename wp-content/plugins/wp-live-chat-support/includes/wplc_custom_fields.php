@@ -91,9 +91,9 @@ function wplc_custom_fields_display_page_mrg(){
 
   			$content .= "<tr>";
   			$content .= "<td>".$result->id."</td>";
-  			$content .= "<td>".esc_html($result->field_name)."</td>";
+  			$content .= "<td>".stripslashes(esc_html($result->field_name))."</td>";
   			$content .= "<td>".esc_html(wplc_return_custom_field_type_mrg( $result->field_type ))."</td>";
-        $content .= "<td>".esc_html($result->field_content)."</td>";
+        	$content .= "<td>".wplc_custom_fields_render_j($result->field_content,$result->field_type)."</td>";
 
   			if( $result->status ){  			
   				$status_string = __("Active", 'wp-live-chat-support');  		
@@ -171,6 +171,25 @@ function wplc_custom_fields_add_page_mrg(){
 	echo $content;
 }	
 
+function wplc_custom_fields_render_j($content,$type,$escape="esc_html"){
+	if( intval($type) === 1 ) {
+		$field_content="";
+		$delimiter = ($escape==="esc_html")?'<br>':"\n";
+		$n_field_content = json_decode($content);
+		if(is_array($n_field_content)) {
+			foreach($n_field_content as $line) {
+				$field_content.= stripslashes($escape($line));
+				if($line !== end($n_field_content)) {
+					$field_content.= $delimiter;
+				}
+			}
+		}
+	}else {
+		$field_content = esc_html($content);
+	}
+	return $field_content;
+}
+
 function wplc_custom_fields_edit_page_mrg( $id ){
 
 	global $wpdb;
@@ -188,14 +207,7 @@ function wplc_custom_fields_edit_page_mrg( $id ){
 
 	if($result){
 		$field_content = $result->field_content;
-		if( intval($result->field_type) == 1) {
-			$field_content = str_replace("[", "", $field_content);
-			$field_content = str_replace("\\r", "\n", $field_content);
-			$field_content = str_replace("\\n", "\n", $field_content);
-			$field_content = str_replace("\"", "", $field_content);
-			$field_content = str_replace(",", "\n", $field_content);
-			$field_content = str_replace("]", "", $field_content);
-		}
+
 		
 		if( intval($result->field_type) != 1) { 
 			 echo "<style>#wplc_field_value_dropdown_row{display:none}#wplc_field_value_row{display:table-row}</style>"; 
@@ -211,7 +223,7 @@ function wplc_custom_fields_edit_page_mrg( $id ){
 		$content .= "		<tbody>";
 		$content .= "			<tr>";
 		$content .= "				<td>".__('Field Name', 'wp-live-chat-support')."</td>";
-		$content .= "				<td><input type='text' name='wplc_field_name' id='wplc_field_name' style='width: 250px;' value='".esc_html($result->field_name)."'/></td>";
+		$content .= "				<td><input type='text' name='wplc_field_name' id='wplc_field_name' style='width: 250px;' value='".stripslashes(esc_html($result->field_name))."'/></td>";
 		$content .= "			</tr>";
 		$content .= "			<tr>";
 		$content .= "				<td>".__('Field Type', 'wp-live-chat-support')."</td>";
@@ -226,11 +238,11 @@ function wplc_custom_fields_edit_page_mrg( $id ){
 		$content .= "			</tr>";	
 		$content .= "			<tr id='wplc_field_value_row'>";
 		$content .= "				<td>".__('Default Field Value', 'wp-live-chat-support')."</td>";
-		$content .= "				<td><input type='text' name='wplc_field_value' id='wplc_field_value' style='width: 250px;' value='".esc_attr($field_content)."'/></td>";
+		$content .= "				<td><input type='text' name='wplc_field_value' id='wplc_field_value' style='width: 250px;' value='".stripslashes(esc_attr($field_content))."'/></td>";
 		$content .= "			</tr>";
 		$content .= "			<tr id='wplc_field_value_dropdown_row'>";
 		$content .= "				<td>".__('Drop Down Contents', 'wp-live-chat-support')."</td>";
-		$content .= "				<td><textarea name='wplc_drop_down_values' id='wplc_drop_down_values' rows='6' style='width: 250px;'>".esc_textarea($field_content)."</textarea><br/><small>".__("Enter each option on a new line", 'wp-live-chat-support')."</small></td>";
+		$content .= "				<td><textarea name='wplc_drop_down_values' id='wplc_drop_down_values' rows='6' style='width: 250px;'>".wplc_custom_fields_render_j($field_content,$result->field_type,"esc_textarea")."</textarea><br/><small>".__("Enter each option on a new line", 'wp-live-chat-support')."</small></td>";
 		$content .= "			</tr>";
 		$content .= "			<tr>";
 		$content .= "				<td></td>";
@@ -331,11 +343,11 @@ function wplc_display_custom_fields_in_chatbox_mrg( $string ){
 				$content = str_replace("\\r", "", $content);
 				$options = json_decode( $content );				
 
-				$ret .= "	<option value='". esc_attr($field->field_name)."' wplc-holder='true'>".trim( esc_html($field->field_name) )."</option>";
+				$ret .= "	<option value='". stripslashes(esc_attr($field->field_name))."' wplc-holder='true'>".trim( stripslashes(esc_html($field->field_name)) )."</option>";
 
 				if( $options ){
 					foreach( $options as $key => $val ){
-						$ret .= "	<option value='".esc_attr($val)."'>".trim( esc_html($val) )."</option>";
+						$ret .= "	<option value='".stripslashes(esc_attr($val))."'>".trim( stripslashes(esc_html($val)) )."</option>";
 					}
 				}
 
@@ -371,7 +383,7 @@ function wplc_advanced_info_custom_fields_mrg( $string, $cid, $name, $chat_data 
             if( $the_extra_data ){
                 foreach( $the_extra_data as $data ){
                     $atleast_one_field = true;
-                    $content .= "<span class='part1'>".htmlentities($data->{0}).":</span> <span class='part2'>".htmlentities($data->{1})."</span><br/>";
+                    $content .= "<span class='part1'>".stripslashes(htmlentities($data->{0})).":</span> <span class='part2'>".stripslashes(htmlentities($data->{1}))."</span><br/>";
                 }
             }
 
@@ -513,10 +525,7 @@ function wplc_custom_field_rest_get_info_mrg(WP_REST_Request $request){
       if ($check_token !== false && $request['server_token'] === $check_token) {
         if (isset($request['cid'])) {
           if (wplc_user_is_agent()) {
-            $cid = $request['cid'];
-            if (!filter_var($cid, FILTER_VALIDATE_INT)) {
-              $cid = wplc_return_chat_id_by_rel($cid);
-            }
+            $cid = wplc_return_chat_id_by_rel_or_id($request['cid']);
             $html = wplc_advanced_info_custom_fields_mrg("", $cid, "", false);
             $return_array['response'] = "Success";
             $return_array['code'] = "200";

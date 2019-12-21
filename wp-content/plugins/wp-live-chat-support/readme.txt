@@ -2,7 +2,7 @@
 Contributors: WP-LiveChat, wordpress3cx, wp3cx
 Tags: live chat, live support, chat plugin, live help, wordpress live chat, chat, live chat plugin, live support plugin, live chat support plugin, chat plugin, support plugin, live help
 Requires at least: 4.6
-Tested up to: 5.2.4
+Tested up to: 5.3.1
 Requires PHP: 5.3
 Stable tag: 8.1.4
 License: GPLv2
@@ -184,45 +184,24 @@ Huge update with over 300 changes that include: Bugfixes, Vulnerability Fixes & 
 
 == Changelog ==
 
-/*
-= 8.1.4 - 2019-11-08
-* Bugfix: logo not displayed properly on chat box top bar
-* Bugfix: resolved issues reported by "Health Check & Troubleshooting" plugin
-* Bugfix: timezone issue in business hours when PHP timezone is different from wordpress timezone
-* Improvement: added single day configuration and two time intervals in business hours setting
-* Improvement: performance boost in session management
-
-= 8.1.3 - 2019-10-31
-* Bugfix: Admin detected as an agent - doesn't show offline messages form
-* Bugfix: Remove picture from chat box doesn't work properly
-* Bugfix: Edge JS compatibility issue in dashboard has been fixed
-* Bugfix: The page will no longer refresh upon ending a chat with an agent.
-* New feature: Agent online/offline switch in Wordpress admin bar
-* New feature: Adjustable chatbox height 30% - 80% of page size
-* Improvement: Cleaned up async_storage functions
-* Improvement: Better alignment for chat popup with no picture
-* Improvement: Reworked agent online/offline functions
-* Improvement: Default business hours are now 9:00 - 18:00 instead of 00:00 - 00:00
-* Improvement: The 'Use Logged In User Details' feature has been moved to the 'Chat Box' settings page.
-
-= 8.1.2 - 2019-10-24
-* New feature: improved auto pop-up feature, now 3 options to choose from
-* New feature: Pop-up only when agents are online
-* New feature: reimplemented visitor country detection using external plugin GeoIP Detection
-* Bugfix: readded mobile detect and option to disable on mobile devices
-* Bugfix: "Use Logged In User Details" displays username instead of display name
-* Bugfix: Cannot empty facebook and twitter urls
-* Bugfix: "Exclude chat window on selected post types" settings do not work properly
-* Bugfix: "text-align: center" in dashboard main element causing issues to some plugins
-* Bugfix: multisite installation issue may block website
-* Improvement: updated Font Awesome to v5 for better theme compatibility
-* Improvement: removed page refresh when user ends chat session
-
-= 8.1.1 - 2019-10-17
-* Fixed js error in "Open chat window via" feature
-* Fixed escaping issue in agent history
-* Fixed wrong behaviour in "Open chat window via" feature, chat does not re-open if user minimized it
-* Changed translation domain to plugin slug wp-live-chat-support for wordpress translator compatibility
-* Fixed some double slashes in image urls
-* Added some missing translation strings
-* Fixed some invalid z-index values
+= 8.1.5 - 2019-12-18 =
+* Bugfix: edit trigger adds extra quotes and alters html code
+* Bugfix: default visitor name cannot be empty
+* Bugfix: message encryption not working properly
+* Bugfix: added missing numeric validation for ROI goals
+* Bugfix: better validation for custom fields
+* Bugfix: cannot enable sunday in working hour schedule
+* Bugfix: in some cases offline agents are displayed as online - timeout issues fixed
+* Bugfix: "User is browsing" notifications removed from user side - agent side only
+* Bugfix: custom fields default are not sent to agents
+* Bugfix: fixed issue with encrypted chats not displayed in history in some cases
+* Bugfix: some Webhooks were not working properly
+* Bugfix: fixed custom trigger URL parsing
+* Improvement: 3CX Privacy Policy is hidden when on-premise server is selected
+* Improvement: added separated encryption key configuration - encrypted chats are preserved for backup/restore and migration on other servers
+* Improvement: added absolute height for Chatbox
+* Improvement: added option to disable auto popup for mobile users
+* Improvement: removed jscolor color picker, using browser integrated
+* Improvement: removed "self assign chat agent" not working feature, because of lack of Wordpress privileges to work correctly
+* Improvement: stop polling requests when PHP agent session expires, should decrease 403 errors on WordPress server
+* Improvement: session handling optimizations

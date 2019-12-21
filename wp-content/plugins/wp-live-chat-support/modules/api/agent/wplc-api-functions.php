@@ -22,13 +22,9 @@ function wplc_api_accept_chat(WP_REST_Request $request) {
       if ($check_token !== false && $request['token'] === $check_token) {
         if (isset($request['chat_id'])) {
           if (isset($request['agent_id'])) {
-
-            $cid = wplc_return_chat_id_by_rel($request['chat_id']);
+            $cid = wplc_return_chat_id_by_rel_or_id($request['chat_id']);
             if (wplc_change_chat_status($cid, 3, intval($request['agent_id']))) {
-
-
               do_action("wplc_hook_update_agent_id", sanitize_text_field($request['cid']), intval($request['agent_id']));
-
               $return_array['response'] = "Chat accepted successfully";
               $return_array['code'] = "200";
               $return_array['data'] = array(
@@ -99,13 +95,7 @@ function wplc_api_agent_end_chat(WP_REST_Request $request) {
       if ($check_token !== false && $request['token'] === $check_token) {
         if (isset($request['chat_id'])) {
           if (isset($request['agent_id'])) {
-
-            $cid = $request['chat_id'];
-            if (!filter_var($request['chat_id'], FILTER_VALIDATE_INT)) {
-              /*  We need to identify if this CID is a node CID, and if so, return the WP CID */
-              $cid = wplc_return_chat_id_by_rel($cid);
-            }
-
+            $cid = wplc_return_chat_id_by_rel_or_id($request['chat_id']);
             if (wplc_change_chat_status($cid, 1, intval($request['agent_id']))) {
 
               do_action('wplc_send_transcript_hook', $cid);
@@ -376,7 +366,7 @@ function wplc_api_agent_record_admin_message($cid, $msg) {
  * Returns messages from server
 */
 function wplc_api_agent_return_messages($cid, $limit, $offset, $received_via = 'u') {
-  $cid = wplc_return_chat_id_by_rel($cid);
+  $cid = wplc_return_chat_id_by_rel_or_id($cid);
   $messages = wplc_return_chat_messages($cid, false, true, false, false, 'array', false);
   if ($received_via === 'u') {
     wplc_mark_as_read_user_chat_messages($cid);
@@ -661,7 +651,7 @@ function wplc_api_initiate_chat_mrg(WP_REST_REQUEST $request) {
                 array(
                   'status' => 3,
                   'timestamp' => current_time('mysql'),
-                  'name' => $wplc_settings['wplc_user_default_visitor_name'],
+                  'name' => wplc_get_user_name('', $wplc_settings),
                   'email' => 'none',
                   'session' => '1',
                   'ip' => wplc_get_user_ip(),
@@ -883,16 +873,7 @@ function wplc_api_record_agent_chat_msg_mrg($from, $cid, $msg, $rest_check = fal
   global $wpdb;
   global $wplc_tblname_msgs;
 
-
-
-  if (!filter_var($cid, FILTER_VALIDATE_INT)) {
-
-    /**
-     * We need to identify if this CID is a node CID, and if so, return the WP CID from the wplc_chat_msgs table
-     */
-    $cid = wplc_return_chat_id_by_rel($cid);
-  }
-
+  $cid = wplc_return_chat_id_by_rel_or_id($cid);
   /**
    * check if this CID even exists, if not, create it
    *
@@ -1014,22 +995,14 @@ function wplc_api_agent_remote_upload_handler_mrg($return_array, $request) {
     $user_dirname = $upload_dir['basedir'];
     $cid = 0;
     if (isset($request['cid'])) {
-      $cid = sanitize_text_field($request['cid']);
-      if (!filter_var($cid, FILTER_VALIDATE_INT)) {
-        /*  We need to identify if this CID is a node CID, and if so, return the WP CID */
-        $cid = wplc_return_chat_id_by_rel($cid);
-      }
-      $cid = intval($cid);
+      $cid = wplc_return_chat_id_by_rel_or_id($request['cid']);
     }
-
     if (!file_exists($user_dirname . "/wp_live_chat/")) {
       @mkdir($user_dirname . '/wp_live_chat/');
     }
-
     if (!realpath($user_dirname . "/wp_live_chat/" . $cid)) {
       @mkdir($user_dirname . '/wp_live_chat/' . $cid);
     }
-
     if (isset($remote_files['file'])) {
       $file_name = strtolower(sanitize_file_name($remote_files['file']['name']));
       $file_name = basename($file_name); //This prevents traversal

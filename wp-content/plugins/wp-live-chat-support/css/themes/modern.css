@@ -321,6 +321,7 @@
   margin-bottom: 10px;
   border: 0;
   border-radius: 5px;
+  box-sizing: border-box;
 }
 
 .wplc-clear-float-message {
@@ -1261,4 +1262,8 @@ span.wplc_char_counter {
 
 .wplc_social_icon_link {
   float: right;
+}
+
+.wplc_error_field {
+  border: 1px solid red !important;
 }

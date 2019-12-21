@@ -7,7 +7,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define('WPLC_PLUGIN_VERSION', "8.1.4");
+define('WPLC_PLUGIN_VERSION', "8.1.5");
 define('WPLC_PLUGIN_DIR', dirname(__FILE__));
 define('WPLC_PLUGIN_URL', plugins_url( '/', __FILE__ ) );
 define('WPLC_PLUGIN', plugin_basename( __FILE__ ) );	

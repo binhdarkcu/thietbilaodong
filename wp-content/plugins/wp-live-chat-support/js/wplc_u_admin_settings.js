@@ -27,6 +27,14 @@ jQuery("body").on("change","#wplc_environment", function() {
 
 
 jQuery(document).ready(function($) {
+
+
+  $("#wplc_chatbox_height").change(function(){
+    $("#wplc_chatbox_absolute_height_span").hide();
+    if ($(this).val()==0) {
+      $("#wplc_chatbox_absolute_height_span").show();
+    }
+  });
 	$("#wplc_new_server_token_btn").on("click",function(){
 		$(this).addClass("disabled");
 		var extText = $(this).text();
@@ -34,26 +42,82 @@ jQuery(document).ready(function($) {
 		var data = {
 			'action' : 'wplc_generate_new_node_token',
 			'nonce': $("#wplc_new_server_token_nonce").val()      
-		};
-
+    };
+    
 		jQuery.post(ajax_object.ajax_url, data, function(response) {
-			$("#wplc_node_token_input").val(response);
+      if (response) {
+        try {
+          var res=JSON.parse(response);
+          if (res.error) {
+            $("#wplc_server_token_error").text(res.error);
+          } else {
+            $("#wplc_node_token_input").val(res.key);
+          }
+        } catch (error) {
+          $("#wplc_server_token_error").text(error.message);
+        }
+      } else {
+        $("#wplc_server_token_error").text('Request failed');
+      }
 			$("#wplc_new_server_token_btn").removeClass("disabled");
 			$("#wplc_new_server_token_btn").text(extText);
+		});    
+  });
+  
+	$("#wplc_new_encryption_key_btn").on("click",function(){
+		$(this).addClass("disabled");
+		var extText = $(this).text();
+    $(this).text("Generating...");
+    $("#wplc_new_encryption_key_error").text('');
+		var data = {
+			'action' : 'wplc_generate_new_encryption_key',
+			'nonce': $("#wplc_encryption_key_nonce").val()      
+    };
+    jQuery.post(ajax_object.ajax_url, data, function(response) {
+      if (response) {
+        try {
+          var res=JSON.parse(response);
+          if (res.error) {
+            $("#wplc_new_encryption_key_error").text(res.error);
+          } else {
+            $("#wplc_encryption_key").val(res.key);
+          }
+        } catch (error) {
+          $("#wplc_new_encryption_key_error").text(error.message);
+        }
+      } else {
+        $("#wplc_new_encryption_key_error").text('Request failed');
+      }
+			$("#wplc_new_encryption_key_btn").removeClass("disabled");
+			$("#wplc_new_encryption_key_btn").text(extText);
 		});
-	});
+	});  
 
 	$("#wplc_new_secret_token_btn").on("click",function(){
 		$(this).addClass("disabled");
 		var extText = $(this).text();
-		$(this).text("Generating...");
+    $(this).text("Generating...");
+    $("#wplc_secret_token_error").text('');
 		var data = {
 			'action' : 'wplc_new_secret_key',
 			'nonce': $("#wplc_new_secret_token_nonce").val()      
 		};
 
 		jQuery.post(ajax_object.ajax_url, data, function(response) {
-			$("#wplc_secret_token_input").val(response);
+      if (response) {
+        try {
+          var res=JSON.parse(response);
+          if (res.error) {
+            $("#wplc_secret_token_error").text(res.error);
+          } else {
+            $("#wplc_secret_token_input").val(res.key);
+          }
+        } catch (error) {
+          $("#wplc_secret_token_error").text(error.message);
+        }
+      } else {
+        $("#wplc_secret_token_error").text('Request failed');
+      }
 			$("#wplc_new_secret_token_btn").removeClass("disabled");
 			$("#wplc_new_secret_token_btn").text(extText);
 		});

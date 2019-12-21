@@ -392,9 +392,13 @@ add_filter('wplc_gdpr_create_opt_in_checkbox_filter', 'wplc_gdpr_add_wplc_privac
  */
 function wplc_gdpr_add_wplc_privacy_notice($content)
 {
-  $link = '<a href="https://www.3cx.com/wp-live-chat/privacy-policy/" target="_blank">' . __('Privacy Policy', 'wp-live-chat-support') . '</a>';
-  $localized_content = __('We use WP Live Chat by 3CX as our live chat platform. By clicking below to submit this form, you acknowledge that the information you provide now and during the chat will be transferred to WP Live Chat by 3CX for processing in accordance with their %%POLICY_LINK%%.', 'wp-live-chat-support');
-  $localized_content = str_replace("%%POLICY_LINK%%", $link, htmlentities($localized_content));
+  $wplc_settings = wplc_get_options();
+  $localized_content = '';
+  if ($wplc_settings['wplc_use_node_server']) {
+    $link = '<a href="https://www.3cx.com/wp-live-chat/privacy-policy/" target="_blank">' . __('Privacy Policy', 'wp-live-chat-support') . '</a>';
+    $localized_content = __('We use WP Live Chat by 3CX as our live chat platform. By clicking below to submit this form, you acknowledge that the information you provide now and during the chat will be transferred to WP Live Chat by 3CX for processing in accordance with their %%POLICY_LINK%%.', 'wp-live-chat-support');
+    $localized_content = str_replace("%%POLICY_LINK%%", $link, htmlentities($localized_content));
+  }
   $html = "<div class='wplc_gdpr_privacy_notice'>$localized_content</div>";
   return $content.$html;
 }

@@ -57,6 +57,7 @@ function wplc_beta_settings_tab_content() {
              <input type="text" value="<?php echo $wplc_node_token; ?>" id="wplc_node_token_input" name="wplc_node_token_input" disabled>
 			 <input type="hidden" name="wplc_new_server_token_nonce" id="wplc_new_server_token_nonce" value="<?php echo $new_token_nonce; ?>">
              <div class="button button-secondary" id="wplc_new_server_token_btn"><?php _e("Generate New", 'wp-live-chat-support'); ?></div>
+             <p class="wplc_error_message" id="wplc_server_token_error"></p>
            </td>
          </tr>
         <tr>

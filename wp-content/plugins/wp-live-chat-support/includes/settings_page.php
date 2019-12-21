@@ -191,7 +191,7 @@ $wplc_settings = wplc_get_options();
 		              <?php _e("Default visitor name",'wp-live-chat-support'); ?>: <i class="fa fa-question-circle wplc_light_grey wplc_settings_tooltip" title="<?php _e("This name will be displayed for all not logged in visitors", 'wp-live-chat-support') ?>"></i>
                   </td>
                   <td valign='top'>
-                      <input type="text" name="wplc_user_default_visitor_name" maxlength="25" id="wplc_user_default_visitor_name" value="<?php if ( isset( $wplc_settings['wplc_user_default_visitor_name'] ) ) { echo esc_attr( $wplc_settings['wplc_user_default_visitor_name'] ); } else { echo __( "Guest", 'wp-live-chat-support'); } ?>" />
+                      <input type="text" name="wplc_user_default_visitor_name" maxlength="25" id="wplc_user_default_visitor_name" value="<?php echo esc_attr( $wplc_settings['wplc_user_default_visitor_name']); ?>" />
                   </td>
               </tr>
               <tr>
@@ -325,15 +325,6 @@ $wplc_settings = wplc_get_options();
                     } ?>
                 </td>
             </tr>
-	        <tr>
-                <td width='300' valign='top'>
-            		<?php _e("Allow WP users to self-assign as a chat agent", 'wp-live-chat-support') ?>: <i class="fa fa-question-circle wplc_light_grey wplc_settings_tooltip" title="<?php _e('Checking this will allow any of your users to make themselves a chat agent when editing their profile.', 'wp-live-chat-support'); ?>"></i>
-                </td>
-                <td>
-                    <input type="checkbox" value="1" name="wplc_make_agent"<?php echo ($wplc_settings['wplc_make_agent'] ? ' checked' : ''); ?>  />                                          
-                </td>
-            </tr>
-
 	    </table>
 		  
 		<h4><?php _e( "Quick Response", 'wp-live-chat-support'); ?></h4>
@@ -431,12 +422,14 @@ $wplc_settings = wplc_get_options();
               </td>
               <td>
                 <select id='wplc_chatbox_height' name='wplc_chatbox_height'>
+                  <option value="0"><?php _e('Use absolute height','wp-live-chat-support');?></option>
                   <?php
                     for($i=30;$i<90;$i=$i+10) {
                       echo '<option value="'.$i.'" '.($wplc_settings['wplc_chatbox_height']==$i ? 'selected' : '').'>'.$i.'%</option>';
                     }
                   ?>
                 </select>        
+                <span <?php echo ($wplc_settings['wplc_chatbox_height']>0) ? 'style="display:none" ': '' ?>id="wplc_chatbox_absolute_height_span"><input type="number" id="wplc_chatbox_absolute_height" style="width:70px" name="wplc_chatbox_absolute_height" min="100" max="1000" value="<?php echo $wplc_settings['wplc_chatbox_absolute_height'];?>" />px</span>
               </tr>          
               <tr>
                   <td width='300'>
@@ -448,7 +441,8 @@ $wplc_settings = wplc_get_options();
                           <option value="1" <?php if ($wplc_settings['wplc_auto_pop_up']==1) {echo 'selected'; } ?>><?php _e("No Forms - Only show 'Start Chat' button",'wp-live-chat-support'); ?></option>
                           <option value="2" <?php if ($wplc_settings['wplc_auto_pop_up']==2) {echo 'selected'; } ?>><?php _e("All Forms - Show chatbox forms and fields",'wp-live-chat-support'); ?></option>
                       </select>         
-                      &nbsp;&nbsp;&nbsp;<input type="checkbox" name="wplc_auto_pop_up_online" value="1"<?php echo ($wplc_settings['wplc_auto_pop_up_online'] ? ' checked' : '');?>/> <label><?php _e("Pop-up only when agents are online", 'wp-live-chat-support'); ?></label><br/>
+                      &nbsp;&nbsp;&nbsp;<input type="checkbox" name="wplc_auto_pop_up_online" value="1"<?php echo ($wplc_settings['wplc_auto_pop_up_online'] ? ' checked' : '');?>/> <label><?php _e("Pop-up only when agents are online", 'wp-live-chat-support'); ?></label>
+                      &nbsp;&nbsp;&nbsp;<input type="checkbox" name="wplc_auto_pop_up_mobile" value="1"<?php echo ($wplc_settings['wplc_auto_pop_up_mobile'] ? ' checked' : '');?>/> <label><?php _e("Pop-up for mobile users", 'wp-live-chat-support'); ?></label><br/>
                   </td>
               </tr>
              
@@ -1020,29 +1014,28 @@ $wplc_settings = wplc_get_options();
                 </td>
               </tr>
 
-                          
               <tr class='wplc_custom_pall_rows' style='<?php echo (($wplc_theme == 'theme-6') ? '' : 'display:none;'); ?>' >
                   <td width='200' valign='top'><?php _e("Palette Color 1",'wp-live-chat-support')?>:</td>
                   <td>
-                      <input id="wplc_settings_color1" name="wplc_settings_color1" type="text" class="color" value="<?php if (isset($wplc_settings_color1)) { echo $wplc_settings_color1; } else { echo '0596d4'; } ?>" />
+                      <input id="wplc_settings_color1" name="wplc_settings_color1" type="color" value="<?php if (isset($wplc_settings_color1)) { echo $wplc_settings_color1; } else { echo '0596d4'; } ?>" />
                   </td>
               </tr>
               <tr class='wplc_custom_pall_rows' style='<?php echo (($wplc_theme == 'theme-6') ? '' : 'display:none;'); ?>' >
                   <td width='200' valign='top'><?php _e("Palette Color 2",'wp-live-chat-support')?>:</td>
                   <td>
-                      <input id="wplc_settings_color2" name="wplc_settings_color2" type="text" class="color" value="<?php if (isset($wplc_settings_color2)) { echo $wplc_settings_color2; } else { echo 'FFFFFF'; } ?>" />
+                      <input id="wplc_settings_color2" name="wplc_settings_color2" type="color" value="<?php if (isset($wplc_settings_color2)) { echo $wplc_settings_color2; } else { echo 'FFFFFF'; } ?>" />
                   </td>
               </tr>
               <tr class='wplc_custom_pall_rows' style='<?php echo (($wplc_theme == 'theme-6') ? '' : 'display:none;'); ?>' >
                   <td width='200' valign='top'><?php _e("Palette Color 3",'wp-live-chat-support')?>:</td>
                   <td>
-                      <input id="wplc_settings_color3" name="wplc_settings_color3" type="text" class="color" value="<?php if (isset($wplc_settings_color3)) { echo $wplc_settings_color3; } else { echo 'EEEEEE'; } ?>" />
+                      <input id="wplc_settings_color3" name="wplc_settings_color3" type="color" value="<?php if (isset($wplc_settings_color3)) { echo $wplc_settings_color3; } else { echo 'EEEEEE'; } ?>" />
                   </td>
               </tr>
               <tr class='wplc_custom_pall_rows' style='<?php echo (($wplc_theme == 'theme-6') ? '' : 'display:none;'); ?>' >
                   <td width='200' valign='top'><?php _e("Palette Color 4",'wp-live-chat-support')?>:</td>
                   <td>
-                      <input id="wplc_settings_color4" name="wplc_settings_color4" type="text" class="color" value="<?php if (isset($wplc_settings_color4)) { echo $wplc_settings_color4; } else { echo '373737'; } ?>" />
+                      <input id="wplc_settings_color4" name="wplc_settings_color4" type="color" value="<?php if (isset($wplc_settings_color4)) { echo $wplc_settings_color4; } else { echo '373737'; } ?>" />
                   </td>
               </tr>
 
@@ -1321,8 +1314,10 @@ $wplc_settings = wplc_get_options();
 	$content .= "</table>";
 	$content .= "</div>";
 
-	echo $content;
-		?>
+  echo $content;
+  $new_key_nonce = wp_create_nonce('generate_new_encryption_key');
+
+  ?>
 
     <div id="tabs-9">            
       <h3><?php _e("Chat Encryption", 'wp-live-chat-support') ?></h3>
@@ -1331,16 +1326,25 @@ $wplc_settings = wplc_get_options();
               <td width='300' valign='top'><?php _e("Enable Encryption", 'wp-live-chat-support') ?>: <i class="fa fa-question-circle wplc_light_grey wplc_settings_tooltip" title="<?php _e('All messages will be encrypted when being sent to and from the user and agent.', 'wp-live-chat-support'); ?>"></i></td> 
               <td>
                   <input type="checkbox" name="wplc_enable_encryption" id="wplc_enable_encryption" value="1"<?php echo ($wplc_settings['wplc_enable_encryption'] ? ' checked' : ''); ?>/>
-              </td>
-          </tr>
-          <tr>
-              <td width='300'></td>
-              <td>
-                  <p class='notice notice-error'>
+                  <p class='notice notice-error' style="margin-top:24px">
                       <?php _e('Once enabled, all messages sent will be encrypted. This cannot be undone.', 'wp-live-chat-support'); ?>
                   </p>
               </td>
           </tr>
+          <tr>
+           <td width="250" valign="top">
+             <label for="wplc_encryption_key"><?php _e("Encryption key",'wp-live-chat-support'); ?></label>
+           </td>
+           <td valign="top">
+             <input type="text" value="<?php echo $wplc_settings['wplc_encryption_key']; ?>" id="wplc_encryption_key" name="wplc_encryption_key" disabled>
+			 <input type="hidden" name="wplc_encryption_key_nonce" id="wplc_encryption_key_nonce" value="<?php echo $new_key_nonce; ?>">
+             <div class="button button-secondary" id="wplc_new_encryption_key_btn"><?php _e("Generate New", 'wp-live-chat-support'); ?></div>
+             <p class="wplc_error_message" id="wplc_new_encryption_key_error"></p>
+             <p class='notice notice-warning' style="margin-top:24px">
+                      <?php _e('If you change encryption key, all previously encrypted messages will be lost. This cannot be undone.', 'wp-live-chat-support'); ?>
+                  </p>
+           </td>
+         </tr>          
       </table>
   </div>
 

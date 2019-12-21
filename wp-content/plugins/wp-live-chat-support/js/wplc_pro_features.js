@@ -252,7 +252,10 @@ function wplc_start_chat_pro_custom_fields_filter( wplc_extra_data_tmp, rest_act
       var field_name = jQuery(this).attr( "fname" );
       custom_field_array[cnt] = {};
       custom_field_array[cnt][0] = field_name;
-      custom_field_array[cnt][1] = jQuery(this).val();
+      custom_field_array[cnt][1] = jQuery(this).val().trim();
+      if (custom_field_array[cnt][1]=='') {
+        custom_field_array[cnt][1] = jQuery(this).attr('placeholder');
+      }
       cnt++;
     });
 

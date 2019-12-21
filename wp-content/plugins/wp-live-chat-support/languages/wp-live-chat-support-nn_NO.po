@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WP-Live Chat by 3CX\n"
-"POT-Creation-Date: 2019-10-17 11:34+0200\n"
-"PO-Revision-Date: 2019-10-17 11:34+0200\n"
+"POT-Creation-Date: 2019-12-17 14:44+0100\n"
+"PO-Revision-Date: 2019-12-17 14:44+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: nn_NO\n"
@@ -21,543 +21,547 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#: ajax/agent.php:167 ajax/user.php:114 wp-live-chat-support.php:370
-#: wp-live-chat-support.php:4864
+#: ajax/agent.php:167 ajax/user.php:126 wp-live-chat-support.php:88
+#: wp-live-chat-support.php:4495
 msgid "Admin"
 msgstr ""
 
-#: ajax/agent.php:262 ajax/user.php:218
+#: ajax/agent.php:262 ajax/user.php:230
 msgid "Admin has closed and ended the chat"
 msgstr ""
 
-#: functions.php:417 functions.php:431
+#: functions.php:382 functions.php:399
 msgid "Accept Chat"
 msgstr ""
 
-#: functions.php:423 functions.php:436
+#: functions.php:390 functions.php:405
 msgid "Open Chat"
 msgstr ""
 
-#: functions.php:425
+#: functions.php:392
 msgid "In progress with another agent"
 msgstr ""
 
-#: functions.php:439
+#: functions.php:409
 msgid "Only chat agents can accept chats"
 msgstr ""
 
-#: functions.php:503 modules/api/agent/wplc-api-functions.php:395
+#: functions.php:473 modules/api/agent/wplc-api-functions.php:413
 msgid "New"
 msgstr ""
 
-#: functions.php:505 modules/api/agent/wplc-api-functions.php:397
+#: functions.php:475 modules/api/agent/wplc-api-functions.php:415
 msgid "Returning"
 msgstr ""
 
-#: functions.php:596
+#: functions.php:566
 msgid "No agent was able to answer your chat request. Please try again."
 msgstr ""
 
-#: functions.php:610 modules/advanced_features.php:113
+#: functions.php:580 functions.php:4323 wp-live-chat-support.php:1634
 msgid "End Chat"
 msgstr ""
 
-#: functions.php:1021
+#: functions.php:966
 msgid "complete"
 msgstr ""
 
-#: functions.php:1024
+#: functions.php:969
 msgid "pending"
 msgstr ""
 
-#: functions.php:1027
+#: functions.php:972
 msgid "active"
 msgstr ""
 
-#: functions.php:1030
+#: functions.php:975
 msgid "deleted"
 msgstr ""
 
-#: functions.php:1033
+#: functions.php:978
 msgid "browsing"
 msgstr ""
 
-#: functions.php:1036
+#: functions.php:981
 msgid "requesting chat"
 msgstr ""
 
-#: functions.php:1039
+#: functions.php:984
 msgid "Chat Ended - User still browsing"
 msgstr ""
 
-#: functions.php:1042
+#: functions.php:987
 msgid "User is browsing but doesn't want to chat"
 msgstr ""
 
-#: functions.php:1181 includes/settings_page.php:774
+#: functions.php:1126 includes/settings_page.php:829
 msgid "WP Live Chat by 3CX - Offline Message from "
 msgstr ""
 
-#: functions.php:1182 functions.php:1506 includes/settings_page.php:164
-#: includes/settings_page.php:408 includes/wplc_custom_fields.php:79
-#: includes/wplc_data_triggers.php:465 includes/wplc_departments.php:176
-#: includes/wplc_roi.php:160 modules/node_server.php:81
-#: modules/node_server.php:124 wp-live-chat-support.php:1592
-#: wp-live-chat-support.php:1615 wp-live-chat-support.php:1780
-#: wp-live-chat-support.php:3357 wp-live-chat-support.php:3484
+#: functions.php:1127 functions.php:1451 includes/settings_page.php:181
+#: includes/settings_page.php:454 includes/wplc_custom_fields.php:79
+#: includes/wplc_data_triggers.php:455 includes/wplc_departments.php:175
+#: includes/wplc_roi.php:138 modules/node_server.php:82
+#: modules/node_server.php:128 wp-live-chat-support.php:1362
+#: wp-live-chat-support.php:1385 wp-live-chat-support.php:1546
+#: wp-live-chat-support.php:3043 wp-live-chat-support.php:3157
 msgid "Name"
 msgstr ""
 
-#: functions.php:1183 functions.php:1507 includes/settings_page.php:160
-#: modules/node_server.php:125 wp-live-chat-support.php:1593
-#: wp-live-chat-support.php:1604 wp-live-chat-support.php:1781
-#: wp-live-chat-support.php:3358 wp-live-chat-support.php:3485
+#: functions.php:1128 functions.php:1452 includes/settings_page.php:177
+#: modules/node_server.php:129 wp-live-chat-support.php:1363
+#: wp-live-chat-support.php:1374 wp-live-chat-support.php:1547
+#: wp-live-chat-support.php:3044 wp-live-chat-support.php:3158
 msgid "Email"
 msgstr ""
 
-#: functions.php:1184 wp-live-chat-support.php:1782
-#: wp-live-chat-support.php:3486 wp-live-chat-support.php:4221
-#: wp-live-chat-support.php:4281
+#: functions.php:1129 wp-live-chat-support.php:1548
+#: wp-live-chat-support.php:3159 wp-live-chat-support.php:3912
+#: wp-live-chat-support.php:3972
 msgid "Message"
 msgstr ""
 
-#: functions.php:1185
+#: functions.php:1130
 msgid "Via WP Live Chat by 3CX"
 msgstr ""
 
-#: functions.php:1484 wp-live-chat-support.php:3313
+#: functions.php:1429 wp-live-chat-support.php:3006
 msgid "Error: Could not delete chat"
 msgstr ""
 
-#: functions.php:1486 wp-live-chat-support.php:3317
+#: functions.php:1431 wp-live-chat-support.php:3008
 msgid "Chat Deleted"
 msgstr ""
 
-#: functions.php:1489 includes/wplc_custom_fields.php:35
-#: includes/wplc_custom_fields.php:441 includes/wplc_custom_fields.php:462
-#: includes/wplc_data_triggers.php:261 includes/wplc_data_triggers.php:279
-#: includes/wplc_data_triggers.php:323 includes/wplc_data_triggers.php:511
-#: includes/wplc_departments.php:304 includes/wplc_departments.php:324
-#: includes/wplc_departments.php:359 includes/wplc_roi.php:390
-#: includes/wplc_roi.php:409 includes/wplc_roi.php:446
+#: functions.php:1434 includes/wplc_custom_fields.php:35
+#: includes/wplc_custom_fields.php:453 includes/wplc_custom_fields.php:474
+#: includes/wplc_data_triggers.php:251 includes/wplc_data_triggers.php:269
+#: includes/wplc_data_triggers.php:313 includes/wplc_data_triggers.php:501
+#: includes/wplc_departments.php:303 includes/wplc_departments.php:323
+#: includes/wplc_departments.php:358 includes/wplc_roi.php:368
+#: includes/wplc_roi.php:387 includes/wplc_roi.php:424
 #: modules/advanced_tools.php:29 modules/advanced_tools.php:146
 #: modules/advanced_tools.php:244 modules/advanced_tools.php:252
 #: modules/advanced_tools.php:260 modules/advanced_tools.php:268
-#: modules/gdpr.php:223 modules/gdpr.php:237 modules/webhooks_manager.php:102
+#: modules/gdpr.php:244 modules/gdpr.php:258 modules/webhooks_manager.php:102
 #: modules/webhooks_manager.php:122 modules/webhooks_manager.php:149
-#: wp-live-chat-support.php:3272 wp-live-chat-support.php:3302
-#: wp-live-chat-support.php:4191
+#: wp-live-chat-support.php:2971 wp-live-chat-support.php:2997
+#: wp-live-chat-support.php:3882
 msgid "You do not have permission do perform this action"
 msgstr ""
 
-#: functions.php:1495 wp-live-chat-support.php:3326
+#: functions.php:1440 wp-live-chat-support.php:3013
 msgid "Are you sure you would like to delete this chat?"
 msgstr ""
 
-#: functions.php:1496 includes/settings_page.php:142
-#: includes/wplc_custom_fields.php:263 wp-live-chat-support.php:3327
+#: functions.php:1441 includes/settings_page.php:159
+#: includes/wplc_custom_fields.php:275 wp-live-chat-support.php:3015
 msgid "Yes"
 msgstr ""
 
-#: functions.php:1496 includes/settings_page.php:143
-#: includes/wplc_custom_fields.php:263 wp-live-chat-support.php:3327
+#: functions.php:1441 includes/settings_page.php:160
+#: includes/wplc_custom_fields.php:275 wp-live-chat-support.php:3016
 msgid "No"
 msgstr ""
 
-#: functions.php:1505 functions.php:2093 includes/settings_page.php:332
-#: includes/settings_page.php:434 wp-live-chat-support.php:3356
-#: wp-live-chat-support.php:3483
+#: functions.php:1450 functions.php:2008 includes/settings_page.php:340
+#: includes/settings_page.php:488 wp-live-chat-support.php:3042
+#: wp-live-chat-support.php:3156
 msgid "Date"
 msgstr ""
 
-#: functions.php:1508 functions.php:4264 wp-live-chat-support.php:3359
+#: functions.php:1453 functions.php:3835 wp-live-chat-support.php:3045
 msgid "URL"
 msgstr ""
 
-#: functions.php:1509 includes/wplc_custom_fields.php:83
-#: includes/wplc_data_triggers.php:470 includes/wplc_departments.php:177
-#: includes/wplc_roi.php:164 modules/webhooks_manager.php:251
-#: wp-live-chat-support.php:2378 wp-live-chat-support.php:3361
+#: functions.php:1454 includes/wplc_custom_fields.php:83
+#: includes/wplc_data_triggers.php:460 includes/wplc_departments.php:176
+#: includes/wplc_roi.php:142 modules/webhooks_manager.php:251
+#: wp-live-chat-support.php:2094 wp-live-chat-support.php:3047
 msgid "Action"
 msgstr ""
 
-#: functions.php:1523
+#: functions.php:1468
 msgid "You have not missed any chat requests."
 msgstr ""
 
-#: functions.php:1530 wp-live-chat-support.php:3381
+#: functions.php:1475 wp-live-chat-support.php:3062
 msgid "View Chat History"
 msgstr ""
 
-#: functions.php:1530 wp-live-chat-support.php:3381
+#: functions.php:1475 wp-live-chat-support.php:3063
 msgid "Download Chat History"
 msgstr ""
 
-#: functions.php:1724
+#: functions.php:1669
 msgid "Open chat window via"
 msgstr ""
 
-#: functions.php:1728
+#: functions.php:1673
 msgid "Click"
 msgstr ""
 
-#: functions.php:1729
+#: functions.php:1674
 msgid "Hover"
 msgstr ""
 
-#: functions.php:1731
+#: functions.php:1676
 msgid "element with"
 msgstr ""
 
-#: functions.php:1733
+#: functions.php:1678
 msgid "Class"
 msgstr ""
 
-#: functions.php:1734 includes/wplc_custom_fields.php:78
-#: includes/wplc_data_triggers.php:464 includes/wplc_departments.php:175
-#: includes/wplc_roi.php:159
+#: functions.php:1679 includes/wplc_custom_fields.php:78
+#: includes/wplc_data_triggers.php:454 includes/wplc_departments.php:174
+#: includes/wplc_roi.php:137
 msgid "ID"
 msgstr ""
 
-#: functions.php:2005 functions.php:2011 functions.php:2016
-#: includes/dashboard_page.php:58 modules/node_server.php:134
-#: modules/node_server.php:1022 wp-live-chat-support.php:3962
+#: functions.php:1920 functions.php:1926 functions.php:1931
+#: includes/dashboard_page.php:58 modules/node_server.php:138
+#: modules/node_server.php:866 wp-live-chat-support.php:3659
 msgid "Quick Responses"
 msgstr ""
 
-#: functions.php:2006 includes/settings_page.php:322
+#: functions.php:1921 includes/settings_page.php:330
 msgid "Quick Response"
 msgstr ""
 
-#: functions.php:2007 functions.php:2010
+#: functions.php:1922 functions.php:1925
 msgid "New Quick Response"
 msgstr ""
 
-#: functions.php:2008 modules/node_server.php:1031
+#: functions.php:1923 modules/node_server.php:875
 msgid "Add New Quick Response"
 msgstr ""
 
-#: functions.php:2009
+#: functions.php:1924
 msgid "Edit Quick Response"
 msgstr ""
 
-#: functions.php:2012
+#: functions.php:1927
 msgid "View Quick Responses"
 msgstr ""
 
-#: functions.php:2013
+#: functions.php:1928
 msgid "Search Quick Responses"
 msgstr ""
 
-#: functions.php:2014
+#: functions.php:1929
 msgid "No Quick Responses found"
 msgstr ""
 
-#: functions.php:2015
+#: functions.php:1930
 msgid "No Quick Responses found in the Trash"
 msgstr ""
 
-#: functions.php:2020
+#: functions.php:1935
 msgid "Quick Responses for WP Live Chat by 3CX"
 msgstr ""
 
-#: functions.php:2054
+#: functions.php:1969
 msgid "Sort Order"
 msgstr ""
 
-#: functions.php:2090 includes/settings_page.php:331
+#: functions.php:2005 includes/settings_page.php:339
 msgid "Title"
 msgstr ""
 
-#: functions.php:2091
+#: functions.php:2006
 msgid "Order"
 msgstr ""
 
-#: functions.php:2092 includes/settings_page.php:1182
+#: functions.php:2007 includes/settings_page.php:1227
 msgid "Author"
 msgstr ""
 
-#: functions.php:2135 wp-live-chat-support.php:461
+#: functions.php:2050 wp-live-chat-support.php:185
 msgid "Press ENTER to send your message"
 msgstr ""
 
-#: functions.php:2174 functions.php:2178
+#: functions.php:2089 functions.php:2093
 msgid "Assign Quick Response"
 msgstr ""
 
-#: functions.php:2181 includes/settings_page.php:1164
+#: functions.php:2096 includes/settings_page.php:1212
 msgid "Select"
 msgstr ""
 
-#: functions.php:2187
+#: functions.php:2102
 msgid "What is this?"
 msgstr ""
 
-#: functions.php:2229
+#: functions.php:2144
 #, php-format
 msgid "Incoming chat from %s (%s) on %s"
 msgstr ""
 
-#: functions.php:2235
+#: functions.php:2150
 #, php-format
 msgid "%s (%s) wants to chat with you."
 msgstr ""
 
-#: functions.php:2240
+#: functions.php:2155
 #, php-format
 msgid "Log in: %s"
 msgstr ""
 
-#: functions.php:2567
+#: functions.php:2449
 msgid "Status (Online)"
 msgstr ""
 
-#: functions.php:2568
+#: functions.php:2450 functions.php:3275
 msgid "Online"
 msgstr ""
 
-#: functions.php:2569
+#: functions.php:2451 functions.php:3275
 msgid "Offline"
 msgstr ""
 
-#: functions.php:2570
+#: functions.php:2452
 msgid "Status (Offline)"
 msgstr ""
 
-#: functions.php:2581
+#: functions.php:2453 functions.php:3245
+msgid "Chat Agent Online"
+msgstr ""
+
+#: functions.php:2454 functions.php:3247 functions.php:3251
+msgid "Chat Agents Online"
+msgstr ""
+
+#: functions.php:2467
 msgid ""
 "You have set your status to offline. To view visitors and accept chats "
 "please set your status to online using the switch above."
 msgstr ""
 
-#: functions.php:2651
+#: functions.php:2537
 msgid "Encryption"
 msgstr ""
 
-#: functions.php:2657 includes/settings_page.php:1225
-#: wp-live-chat-support.php:3977
+#: functions.php:2543 includes/settings_page.php:1269
+#: wp-live-chat-support.php:3674
 msgid "Business Hours"
 msgstr ""
 
-#: functions.php:2859
+#: functions.php:2677
 msgid "Initiate Chat"
 msgstr ""
 
-#: functions.php:2951
+#: functions.php:2765
 msgid "Attempting to open the chat window... Please be patient."
 msgstr ""
 
-#: functions.php:2968
+#: functions.php:2780
 msgid ""
 "You are not a chat agent. Please make yourself a chat agent before trying to "
 "chat to visitors"
 msgstr ""
 
-#: functions.php:3163 functions.php:3179 functions.php:3194
+#: functions.php:2937
 msgid "Chat Agent"
 msgstr ""
 
-#: functions.php:3168 functions.php:3184
+#: functions.php:2945
 msgid "Make this user a chat agent"
 msgstr ""
 
-#: functions.php:3198
-msgid "Your user role does not allow you to make yourself a chat agent."
+#: functions.php:2948
+msgid "Your user role does not allow you to set agent attribute."
 msgstr ""
 
-#: functions.php:3199
+#: functions.php:2949
 msgid "Please contact the administrator of this website to change this."
 msgstr ""
 
-#: functions.php:3218
+#: functions.php:2963
 msgid "This chat has already been answered by another agent."
 msgstr ""
 
-#: functions.php:3460 wp-live-chat-support.php:2314
+#: functions.php:3196 wp-live-chat-support.php:2047
 msgid "Agent(s) online"
 msgstr ""
 
-#: functions.php:3514
-msgid "Chat Agent Online"
-msgstr ""
-
-#: functions.php:3516 functions.php:3520
-msgid "Chat Agents Online"
-msgstr ""
-
-#: functions.php:3628 includes/settings_page.php:1153
-#: wp-live-chat-support.php:2260
+#: functions.php:3325 includes/settings_page.php:1202
+#: wp-live-chat-support.php:1993
 msgid "Remove"
 msgstr ""
 
-#: functions.php:3631 wp-live-chat-support.php:2263
+#: functions.php:3328 wp-live-chat-support.php:1996
 msgid "Typing..."
 msgstr ""
 
-#: functions.php:4001
+#: functions.php:3636
 msgid "User Experience Ratings"
 msgstr ""
 
-#: functions.php:4008
+#: functions.php:3643
 msgid "Agent Statistics"
 msgstr ""
 
-#: functions.php:4051 functions.php:4090
+#: functions.php:3676 functions.php:3691
 msgid "Satisfaction Rating"
 msgstr ""
 
-#: functions.php:4052 functions.php:4091
+#: functions.php:3677 functions.php:3692
 msgid "Rating Count"
 msgstr ""
 
-#: functions.php:4052 functions.php:4091
+#: functions.php:3677 functions.php:3692
 msgid "Good"
 msgstr ""
 
-#: functions.php:4052 functions.php:4091
+#: functions.php:3677 functions.php:3692
 msgid "Bad"
 msgstr ""
 
-#: functions.php:4162 includes/dashboard_page.php:56
-#: wp-live-chat-support.php:1015
+#: functions.php:3733 includes/dashboard_page.php:56
+#: wp-live-chat-support.php:785
 msgid "Reports"
 msgstr ""
 
-#: functions.php:4165 includes/wplc_roi.php:161
+#: functions.php:3736 includes/wplc_roi.php:139
 msgid "Overview"
 msgstr ""
 
-#: functions.php:4166
+#: functions.php:3737
 msgid "Popular Pages"
 msgstr ""
 
-#: functions.php:4184
+#: functions.php:3755
 msgid "Total Agents"
 msgstr ""
 
-#: functions.php:4184
+#: functions.php:3755
 msgid "Total number of agents that used the live chat"
 msgstr ""
 
-#: functions.php:4185
+#: functions.php:3756
 msgid "Total Chats"
 msgstr ""
 
-#: functions.php:4185
+#: functions.php:3756
 msgid "Total number of chats received"
 msgstr ""
 
-#: functions.php:4186
+#: functions.php:3757
 msgid "Total URLs"
 msgstr ""
 
-#: functions.php:4186
+#: functions.php:3757
 msgid "Total number of URLs a chat was initiated on"
 msgstr ""
 
-#: functions.php:4187
+#: functions.php:3758
 msgid "Chats per day"
 msgstr ""
 
-#: functions.php:4188
+#: functions.php:3759
 msgid "Popular pages a chat was initiated on"
 msgstr ""
 
-#: functions.php:4218 includes/wplc_custom_fields.php:304
+#: functions.php:3789 includes/wplc_custom_fields.php:316
 msgid "Unknown"
 msgstr ""
 
-#: functions.php:4265
+#: functions.php:3836
 msgid "Count"
 msgstr ""
 
-#: functions.php:4291
+#: functions.php:3862
 msgid "Enable Manual Chat Initiation:"
 msgstr ""
 
-#: functions.php:4291
+#: functions.php:3862
 msgid ""
 "Enabling this feature will allow agents to start a chat with website "
 "visitors. This feature increases server load while enabled."
 msgstr ""
 
-#: functions.php:4295 modules/advanced_features.php:73
+#: functions.php:3866 modules/advanced_features.php:74
 msgid ""
 "This feature is only available when you select 3CX High Performance Cloud "
 "Servers in Advanced Features."
 msgstr ""
 
-#: functions.php:4382
+#: functions.php:3953
 msgid "Thank you for inquiry. We will get back to you shortly"
 msgstr ""
 
-#: functions.php:4560 wp-live-chat-support.php:4550
+#: functions.php:4088
 msgid "The Live Chat box is currently disabled on your website due to:"
 msgstr ""
 
-#: functions.php:4561 wp-live-chat-support.php:4551
+#: functions.php:4089
 msgid "Business Hours Settings"
 msgstr ""
 
-#: functions.php:4612
+#: functions.php:4135
 msgid "Edit Profile"
 msgstr ""
 
-#: functions.php:4623 modules/node_server.php:96 modules/node_server.php:878
+#: functions.php:4146 modules/node_server.php:98 modules/node_server.php:722
 msgid "Drag Files Here"
 msgstr ""
 
-#: functions.php:4646 functions.php:4691 includes/wplc_custom_fields.php:107
-#: includes/wplc_data_triggers.php:478 includes/wplc_data_triggers.php:616
-#: includes/wplc_departments.php:185 includes/wplc_departments.php:475
-#: includes/wplc_roi.php:172 includes/wplc_roi.php:591
+#: functions.php:4169 functions.php:4214 includes/wplc_custom_fields.php:107
+#: includes/wplc_data_triggers.php:468 includes/wplc_data_triggers.php:606
+#: includes/wplc_departments.php:184 includes/wplc_departments.php:474
+#: includes/wplc_roi.php:150 includes/wplc_roi.php:569
 #: modules/webhooks_manager.php:263
 msgid "Delete"
 msgstr ""
 
-#: functions.php:4647
+#: functions.php:4170
 msgid "Send..."
 msgstr ""
 
-#: functions.php:4648 functions.php:4693
+#: functions.php:4171 functions.php:4216
 msgid "Play voice note"
 msgstr ""
 
-#: functions.php:4692
+#: functions.php:4215
 msgid "Save..."
 msgstr ""
 
-#: functions.php:4780 wp-live-chat-support.php:1248
-#: wp-live-chat-support.php:2791
+#: functions.php:4317 wp-live-chat-support.php:1014
+#: wp-live-chat-support.php:2489
 msgid "is typing..."
 msgstr ""
 
-#: functions.php:4782
+#: functions.php:4319
 msgid "There are no visitors on your site at the moment"
 msgstr ""
 
-#: functions.php:4783
+#: functions.php:4320
 msgid "Connection to the server lost, reconnecting..."
 msgstr ""
 
-#: functions.php:4784
+#: functions.php:4321
 msgid "Agent offline - not accepting chats"
 msgstr ""
 
-#: functions.php:4800
+#: functions.php:4322 modules/node_server.php:103 wp-live-chat-support.php:1628
+msgid "Minimize Chat"
+msgstr ""
+
+#: functions.php:4341
 msgid "An error has occured while fetching the news feed."
 msgstr ""
 
-#: functions.php:4897
+#: functions.php:4438
 msgid "Default"
 msgstr ""
 
-#: functions.php:5200 functions.php:5204
+#: functions.php:4739
 msgid "You do not have permission to perform this action"
 msgstr ""
 
 #: includes/blocks/wplc-chat-box/index.php:30
-#: includes/blocks/wplc-chat-box/index.php:51 wp-live-chat-support.php:3978
+#: includes/blocks/wplc-chat-box/index.php:51 wp-live-chat-support.php:3675
 msgid "Gutenberg Blocks"
 msgstr ""
 
@@ -605,16 +609,16 @@ msgstr ""
 msgid "Displays the chosen icon"
 msgstr ""
 
-#: includes/blocks/wplc-chat-box/index.php:218 wp-live-chat-support.php:1256
-#: wp-live-chat-support.php:1899
+#: includes/blocks/wplc-chat-box/index.php:218 wp-live-chat-support.php:1022
+#: wp-live-chat-support.php:1665
 msgid "Type here"
 msgstr ""
 
-#: includes/blocks/wplc-chat-box/index.php:222 wp-live-chat-support.php:979
+#: includes/blocks/wplc-chat-box/index.php:222 wp-live-chat-support.php:756
 msgid "Live Chat"
 msgstr ""
 
-#: includes/dashboard_page.php:46 wp-live-chat-support.php:980
+#: includes/dashboard_page.php:46 wp-live-chat-support.php:757
 msgid "Dashboard"
 msgstr ""
 
@@ -631,15 +635,15 @@ msgstr ""
 msgid "Missed"
 msgstr ""
 
-#: includes/dashboard_page.php:55 wp-live-chat-support.php:988
-#: wp-live-chat-support.php:3420
+#: includes/dashboard_page.php:55 wp-live-chat-support.php:763
+#: wp-live-chat-support.php:3099
 msgid "History"
 msgstr ""
 
-#: includes/dashboard_page.php:57 includes/settings_page.php:108
-#: includes/settings_page.php:704 modules/advanced_tools.php:84
-#: wp-live-chat-support.php:992 wp-live-chat-support.php:3466
-#: wp-live-chat-support.php:3963
+#: includes/dashboard_page.php:57 includes/settings_page.php:125
+#: includes/settings_page.php:759 modules/advanced_tools.php:84
+#: wp-live-chat-support.php:765 wp-live-chat-support.php:3139
+#: wp-live-chat-support.php:3660
 msgid "Offline Messages"
 msgstr ""
 
@@ -648,8 +652,8 @@ msgstr ""
 msgid "Tools"
 msgstr ""
 
-#: includes/dashboard_page.php:60 includes/settings_page.php:71
-#: wp-live-chat-support.php:981
+#: includes/dashboard_page.php:60 includes/settings_page.php:88
+#: wp-live-chat-support.php:758
 msgid "Settings"
 msgstr ""
 
@@ -681,8 +685,8 @@ msgstr ""
 msgid "Latest News"
 msgstr ""
 
-#: includes/modal_control.php:27 modules/node_server.php:59
-#: modules/node_server.php:871
+#: includes/modal_control.php:27 modules/node_server.php:60
+#: modules/node_server.php:715
 msgid "Please Confirm"
 msgstr ""
 
@@ -691,762 +695,807 @@ msgid "Are you sure?"
 msgstr ""
 
 #: includes/modal_control.php:39 includes/wplc_custom_fields.php:164
-#: includes/wplc_custom_fields.php:237 includes/wplc_data_triggers.php:617
-#: includes/wplc_departments.php:252 includes/wplc_departments.php:476
-#: includes/wplc_roi.php:268 includes/wplc_roi.php:592
-#: modules/node_server.php:63 modules/node_server.php:873
+#: includes/wplc_custom_fields.php:249 includes/wplc_data_triggers.php:607
+#: includes/wplc_departments.php:251 includes/wplc_departments.php:475
+#: includes/wplc_roi.php:246 includes/wplc_roi.php:570
+#: modules/node_server.php:64 modules/node_server.php:717
 #: modules/webhooks_manager.php:342
 msgid "Cancel"
 msgstr ""
 
-#: includes/modal_control.php:40 modules/node_server.php:62
-#: modules/node_server.php:872 modules/webhooks_manager.php:341
+#: includes/modal_control.php:40 modules/node_server.php:63
+#: modules/node_server.php:716 modules/webhooks_manager.php:341
 msgid "Confirm"
 msgstr ""
 
-#: includes/notification_control.php:27
+#: includes/notification_control.php:22
 msgid "User is browsing"
 msgstr ""
 
-#: includes/notification_control.php:34 includes/notification_control.php:70
-#: includes/notification_control.php:114 includes/wplc_transfer_chats.php:468
-#: includes/wplc_transfer_chats.php:489 includes/wplc_transfer_chats.php:551
-#: includes/wplc_transfer_chats.php:587
+#: includes/notification_control.php:33 includes/notification_control.php:66
+#: includes/notification_control.php:111 includes/wplc_transfer_chats.php:472
+#: includes/wplc_transfer_chats.php:493 includes/wplc_transfer_chats.php:556
+#: includes/wplc_transfer_chats.php:592
 msgid "System notification"
 msgstr ""
 
-#: includes/notification_control.php:109
+#: includes/notification_control.php:106
 msgid "has joined the chat."
 msgstr ""
 
-#: includes/settings_page.php:98 includes/settings_page.php:136
-#: wp-live-chat-support.php:3974
+#: includes/settings_page.php:115 includes/settings_page.php:153
+#: wp-live-chat-support.php:3671
 msgid "General Settings"
 msgstr ""
 
-#: includes/settings_page.php:103
+#: includes/settings_page.php:120
 msgid "Chat Box"
 msgstr ""
 
-#: includes/settings_page.php:113 includes/settings_page.php:880
+#: includes/settings_page.php:130 includes/settings_page.php:935
 msgid "Styling"
 msgstr ""
 
-#: includes/settings_page.php:118 modules/node_server.php:88
-#: modules/node_server.php:877
+#: includes/settings_page.php:135 modules/node_server.php:89
+#: modules/node_server.php:721
 msgid "Agents"
 msgstr ""
 
-#: includes/settings_page.php:123
+#: includes/settings_page.php:140
 msgid "Blocked Visitors"
 msgstr ""
 
-#: includes/settings_page.php:139
+#: includes/settings_page.php:156
 msgid "Chat enabled"
 msgstr ""
 
-#: includes/settings_page.php:151
+#: includes/settings_page.php:168
 msgid "Required Chat Box Fields"
 msgstr ""
 
-#: includes/settings_page.php:151
+#: includes/settings_page.php:168
 msgid "Set default fields that will be displayed when users starting a chat"
 msgstr ""
 
-#: includes/settings_page.php:156
+#: includes/settings_page.php:173
 msgid "Name and email"
 msgstr ""
 
-#: includes/settings_page.php:168
+#: includes/settings_page.php:185
 msgid "No fields"
 msgstr ""
 
-#: includes/settings_page.php:174
+#: includes/settings_page.php:191
 msgid "Default visitor name"
 msgstr ""
 
-#: includes/settings_page.php:174
+#: includes/settings_page.php:191
 msgid "This name will be displayed for all not logged in visitors"
 msgstr ""
 
-#: includes/settings_page.php:177 wp-live-chat-support.php:460
-msgid "Guest"
-msgstr ""
-
-#: includes/settings_page.php:182
+#: includes/settings_page.php:199
 msgid "Input Field Replacement Text"
 msgstr ""
 
-#: includes/settings_page.php:182
+#: includes/settings_page.php:199
 msgid "This is the text that will show in place of the Name And Email fields"
 msgstr ""
 
-#: includes/settings_page.php:190
-msgid "Use Logged In User Details"
+#: includes/settings_page.php:207
+msgid "Enable On Mobile Devices"
 msgstr ""
 
-#: includes/settings_page.php:190
+#: includes/settings_page.php:207
 msgid ""
-"A user's Name and Email Address will be used by default if they are logged "
-"in."
+"Disabling this will mean that the Chat Box will not be displayed on mobile "
+"devices. (Smartphones and Tablets)"
 msgstr ""
 
-#: includes/settings_page.php:200
+#: includes/settings_page.php:217
 msgid "Play a sound when there is a new visitor"
 msgstr ""
 
-#: includes/settings_page.php:200
+#: includes/settings_page.php:217
 msgid ""
 "Disable this to mute the sound that is played when a new visitor arrives"
 msgstr ""
 
-#: includes/settings_page.php:209
+#: includes/settings_page.php:226
 msgid "Play a sound when a new message is received"
 msgstr ""
 
-#: includes/settings_page.php:209
+#: includes/settings_page.php:226
 msgid ""
 "Disable this to mute the sound that is played when a new chat message is "
 "received"
 msgstr ""
 
-#: includes/settings_page.php:218
+#: includes/settings_page.php:235
 msgid "Enable Font Awesome set"
 msgstr ""
 
-#: includes/settings_page.php:218
+#: includes/settings_page.php:235
 msgid "Disable this if you have Font Awesome set included with your theme"
 msgstr ""
 
-#: includes/settings_page.php:226
+#: includes/settings_page.php:243
 msgid "Enable chat dashboard and notifications on all admin pages"
 msgstr ""
 
-#: includes/settings_page.php:226
+#: includes/settings_page.php:243
 msgid "This will load the chat dashboard on every admin page."
 msgstr ""
 
-#: includes/settings_page.php:234
+#: includes/settings_page.php:251
 msgid "Delete database entries on uninstall"
 msgstr ""
 
-#: includes/settings_page.php:234
+#: includes/settings_page.php:251
 msgid ""
 "This will delete all WP Live Chat by 3CX related database entries such as "
 "options and chats on uninstall."
 msgstr ""
 
-#: includes/settings_page.php:245
+#: includes/settings_page.php:262
 msgid "Agents can set their online status"
 msgstr ""
 
-#: includes/settings_page.php:245
+#: includes/settings_page.php:262
 msgid ""
 "Checking this will allow you to change your status to Online or Offline on "
 "the Live Chat page."
 msgstr ""
 
-#: includes/settings_page.php:245
+#: includes/settings_page.php:262
 msgid "If this option is disabled, agents will be always automatically online."
 msgstr ""
 
-#: includes/settings_page.php:256
+#: includes/settings_page.php:273
 msgid "Exclude chat from 'Home' page:"
 msgstr ""
 
-#: includes/settings_page.php:256
+#: includes/settings_page.php:273
 msgid ""
 "Leaving this unchecked will allow the chat window to display on your home "
 "page."
 msgstr ""
 
-#: includes/settings_page.php:264
+#: includes/settings_page.php:281
 msgid "Exclude chat from 'Archive' pages:"
 msgstr ""
 
-#: includes/settings_page.php:264
+#: includes/settings_page.php:281
 msgid ""
 "Leaving this unchecked will allow the chat window to display on your archive "
 "pages."
 msgstr ""
 
-#: includes/settings_page.php:272
+#: includes/settings_page.php:289
 msgid "Include chat window on the following pages:"
 msgstr ""
 
-#: includes/settings_page.php:272
+#: includes/settings_page.php:289
 msgid ""
 "Show the chat window on the following pages. Leave blank to show on all. "
 "(Use comma-separated Page ID's)"
 msgstr ""
 
-#: includes/settings_page.php:280
+#: includes/settings_page.php:297
 msgid "Exclude chat window on the following pages:"
 msgstr ""
 
-#: includes/settings_page.php:280
+#: includes/settings_page.php:297
 msgid ""
 "Do not show the chat window on the following pages. Leave blank to show on "
 "all. (Use comma-separated Page ID's)"
 msgstr ""
 
-#: includes/settings_page.php:288
+#: includes/settings_page.php:305
 msgid "Exclude chat window on selected post types"
 msgstr ""
 
-#: includes/settings_page.php:288
+#: includes/settings_page.php:305
 msgid "Do not show the chat window on the following post types pages."
 msgstr ""
 
-#: includes/settings_page.php:307
+#: includes/settings_page.php:324
 msgid "No post types found."
 msgstr ""
 
-#: includes/settings_page.php:313
-msgid "Allow WP users to self-assign as a chat agent"
-msgstr ""
-
-#: includes/settings_page.php:313
-msgid ""
-"Checking this will allow any of your users to make themselves a chat agent "
-"when editing their profile."
-msgstr ""
-
-#: includes/settings_page.php:327
+#: includes/settings_page.php:335
 msgid "Order by"
 msgstr ""
 
-#: includes/settings_page.php:333
+#: includes/settings_page.php:341
 msgid "Number"
 msgstr ""
 
-#: includes/settings_page.php:339
+#: includes/settings_page.php:347
 msgid "Sort"
 msgstr ""
 
-#: includes/settings_page.php:343
+#: includes/settings_page.php:351
 msgid "Descending"
 msgstr ""
 
-#: includes/settings_page.php:344
+#: includes/settings_page.php:352
 msgid "Ascending"
 msgstr ""
 
-#: includes/settings_page.php:351
+#: includes/settings_page.php:359
+msgid "Geolocalization"
+msgstr ""
+
+#: includes/settings_page.php:363
+msgid "Detect Visitors Country"
+msgstr ""
+
+#: includes/settings_page.php:367
+#, php-format
+msgid ""
+"This feature requires the use of the GeoIP Detection plugin. Install it by "
+"going %s"
+msgstr ""
+
+#: includes/settings_page.php:367 includes/wplc_departments.php:585
+#: modules/node_server.php:501 wp-live-chat-support.php:2030
+msgid "here"
+msgstr ""
+
+#: includes/settings_page.php:368
+msgid ""
+"This feature is only available when '3CX High Performance Cloud Servers' is "
+"ticked in the 'Settings > Advanced Features section'."
+msgstr ""
+
+#: includes/settings_page.php:374
 msgid "Voice Notes"
 msgstr ""
 
-#: includes/settings_page.php:355
+#: includes/settings_page.php:378
 msgid "Enable Voice Notes on admin side"
 msgstr ""
 
-#: includes/settings_page.php:357
+#: includes/settings_page.php:380
 msgid ""
 "Enabling this will allow you to record the voice during the chat and send it "
 "to visitor once you hold on CTRL + SPACEBAR in main chat window"
 msgstr ""
 
-#: includes/settings_page.php:365
+#: includes/settings_page.php:388
 msgid "Enable Voice Notes on visitor side"
 msgstr ""
 
-#: includes/settings_page.php:367
+#: includes/settings_page.php:390
 msgid ""
 "Enabling this will allow the visitors to record the voice during the chat "
 "and send it to agent once they hold on CTRL + SPACEBAR"
 msgstr ""
 
-#: includes/settings_page.php:381 wp-live-chat-support.php:3975
+#: includes/settings_page.php:404 wp-live-chat-support.php:3672
 msgid "Chat Box Settings"
 msgstr ""
 
-#: includes/settings_page.php:384
+#: includes/settings_page.php:407
 msgid "Alignment"
 msgstr ""
 
-#: includes/settings_page.php:387
+#: includes/settings_page.php:410
 msgid "Bottom left"
 msgstr ""
 
-#: includes/settings_page.php:388
+#: includes/settings_page.php:411
 msgid "Bottom right"
 msgstr ""
 
-#: includes/settings_page.php:389
+#: includes/settings_page.php:412
 msgid "Left"
 msgstr ""
 
-#: includes/settings_page.php:390
+#: includes/settings_page.php:413
 msgid "Right"
 msgstr ""
 
-#: includes/settings_page.php:396
-msgid "Auto Pop-up"
+#: includes/settings_page.php:420
+msgid "Chat box height (percent of the page)"
 msgstr ""
 
-#: includes/settings_page.php:396
+#: includes/settings_page.php:425
+msgid "Use absolute height"
+msgstr ""
+
+#: includes/settings_page.php:436
+msgid "Automatic Chatbox Pop-Up"
+msgstr ""
+
+#: includes/settings_page.php:436
 msgid ""
 "Expand the chat box automatically (prompts the user to enter their name and "
 "email address)."
 msgstr ""
 
-#: includes/settings_page.php:405
+#: includes/settings_page.php:440
+msgid "Disabled"
+msgstr ""
+
+#: includes/settings_page.php:441
+msgid "No Forms - Only show 'Start Chat' button"
+msgstr ""
+
+#: includes/settings_page.php:442
+msgid "All Forms - Show chatbox forms and fields"
+msgstr ""
+
+#: includes/settings_page.php:444
+msgid "Pop-up only when agents are online"
+msgstr ""
+
+#: includes/settings_page.php:445
+msgid "Pop-up for mobile users"
+msgstr ""
+
+#: includes/settings_page.php:451
 msgid "Display for chat message:"
 msgstr ""
 
-#: includes/settings_page.php:409
+#: includes/settings_page.php:455
 msgid "Avatar"
 msgstr ""
 
-#: includes/settings_page.php:414
+#: includes/settings_page.php:460
 msgid "Display typing indicator"
 msgstr ""
 
-#: includes/settings_page.php:414
+#: includes/settings_page.php:460
 msgid ""
 "Display the 'typing...' animation in the chat window as soon as an agent or "
 "visitor is typing."
 msgstr ""
 
-#: includes/settings_page.php:418
+#: includes/settings_page.php:464
 msgid ""
-"For non-cloud server users, please note that this will increase the amount "
-"of server resources required."
+"For on premise server chat users, please note that this will increase the "
+"amount of resources required on your server."
 msgstr ""
 
-#: includes/settings_page.php:423
+#: includes/settings_page.php:469
 msgid "Chat box for logged in users only:"
 msgstr ""
 
-#: includes/settings_page.php:423
+#: includes/settings_page.php:469
 msgid ""
 "By checking this, only users that are logged in will be able to chat with "
 "you."
 msgstr ""
 
-#: includes/settings_page.php:431
+#: includes/settings_page.php:477
+msgid "Use Logged In User Details"
+msgstr ""
+
+#: includes/settings_page.php:477
+msgid ""
+"A user's Name and Email Address will be used by default if they are logged "
+"in."
+msgstr ""
+
+#: includes/settings_page.php:485
 msgid "Display a timestamp in the chat window:"
 msgstr ""
 
-#: includes/settings_page.php:435 wp-live-chat-support.php:2373
+#: includes/settings_page.php:489 wp-live-chat-support.php:2089
 msgid "Time"
 msgstr ""
 
-#: includes/settings_page.php:440
+#: includes/settings_page.php:494
 msgid "Redirect to “Thank You” page on chat end:"
 msgstr ""
 
-#: includes/settings_page.php:440
+#: includes/settings_page.php:494
 msgid ""
 "By checking this, users will be redirected to your thank you page when a "
 "chat is completed."
 msgstr ""
 
-#: includes/settings_page.php:444
+#: includes/settings_page.php:498
 msgid "Thank You Page URL"
 msgstr ""
 
-#: includes/settings_page.php:454
+#: includes/settings_page.php:508
 msgid "Disable Emojis"
 msgstr ""
 
-#: includes/settings_page.php:471
+#: includes/settings_page.php:525
 msgid "User / Agent name"
 msgstr ""
 
-#: includes/settings_page.php:479
+#: includes/settings_page.php:533
 msgid "Use WordPress name"
 msgstr ""
 
-#: includes/settings_page.php:482
+#: includes/settings_page.php:536
 msgid "Note: 'Name' field will be ignored"
 msgstr ""
 
-#: includes/settings_page.php:514
+#: includes/settings_page.php:568
 msgid "Incoming chat ring tone"
 msgstr ""
 
-#: includes/settings_page.php:530
+#: includes/settings_page.php:584
 msgid "Incoming message tone"
 msgstr ""
 
-#: includes/settings_page.php:547
+#: includes/settings_page.php:601
 msgid "Icon"
 msgstr ""
 
-#: includes/settings_page.php:555
+#: includes/settings_page.php:609
 msgid "Upload Icon"
 msgstr ""
 
-#: includes/settings_page.php:556 includes/settings_page.php:562
+#: includes/settings_page.php:610 includes/settings_page.php:615
 msgid "Select Default Icon"
 msgstr ""
 
-#: includes/settings_page.php:558
-msgid "Remove Icon"
-msgstr ""
-
-#: includes/settings_page.php:559
+#: includes/settings_page.php:612
 msgid "Recommended Size 50px x 50px"
 msgstr ""
 
-#: includes/settings_page.php:602
+#: includes/settings_page.php:655
 msgid "Picture"
 msgstr ""
 
-#: includes/settings_page.php:610
+#: includes/settings_page.php:663
 msgid "Upload Image"
 msgstr ""
 
-#: includes/settings_page.php:612
+#: includes/settings_page.php:664
+msgid "Select Default Image"
+msgstr ""
+
+#: includes/settings_page.php:667
 msgid "Remove Image"
 msgstr ""
 
-#: includes/settings_page.php:613
+#: includes/settings_page.php:668
 msgid "Recommended Size 60px x 60px"
 msgstr ""
 
-#: includes/settings_page.php:620
+#: includes/settings_page.php:675
 msgid "Logo"
 msgstr ""
 
-#: includes/settings_page.php:628
+#: includes/settings_page.php:683
 msgid "Upload Logo"
 msgstr ""
 
-#: includes/settings_page.php:630
+#: includes/settings_page.php:685
 msgid "Remove Logo"
 msgstr ""
 
-#: includes/settings_page.php:631
+#: includes/settings_page.php:686
 msgid "Recommended Size 250px x 40px"
 msgstr ""
 
-#: includes/settings_page.php:637
+#: includes/settings_page.php:692
 msgid "Chat button delayed startup (seconds)"
 msgstr ""
 
-#: includes/settings_page.php:637
+#: includes/settings_page.php:692
 msgid "How long to delay showing the Live Chat button on a page"
 msgstr ""
 
-#: includes/settings_page.php:646
+#: includes/settings_page.php:701
 msgid "Chat notifications"
 msgstr ""
 
-#: includes/settings_page.php:646
+#: includes/settings_page.php:701
 msgid "Alert me via email as soon as someone wants to chat (while online only)"
 msgstr ""
 
-#: includes/settings_page.php:655
+#: includes/settings_page.php:710
 msgid "User Experience"
 msgstr ""
 
-#: includes/settings_page.php:659
+#: includes/settings_page.php:714
 msgid "Share files"
 msgstr ""
 
-#: includes/settings_page.php:659
+#: includes/settings_page.php:714
 msgid "Adds file sharing to your chat box!"
 msgstr ""
 
-#: includes/settings_page.php:663
+#: includes/settings_page.php:718
 msgid "Visitor experience ratings"
 msgstr ""
 
-#: includes/settings_page.php:663
+#: includes/settings_page.php:718
 msgid "Allows users to rate the chat experience with an agent."
 msgstr ""
 
-#: includes/settings_page.php:669 includes/settings_page.php:996
+#: includes/settings_page.php:724 includes/settings_page.php:1050
 msgid "Social"
 msgstr ""
 
-#: includes/settings_page.php:673
+#: includes/settings_page.php:728
 msgid "Facebook URL"
 msgstr ""
 
-#: includes/settings_page.php:673
+#: includes/settings_page.php:728
 msgid "Link your Facebook page here. Leave blank to hide"
 msgstr ""
 
-#: includes/settings_page.php:674
+#: includes/settings_page.php:729
 msgid "Facebook URL..."
 msgstr ""
 
-#: includes/settings_page.php:685
+#: includes/settings_page.php:740
 msgid "Twitter URL"
 msgstr ""
 
-#: includes/settings_page.php:685
+#: includes/settings_page.php:740
 msgid "Link your Twitter page here. Leave blank to hide"
 msgstr ""
 
-#: includes/settings_page.php:686
+#: includes/settings_page.php:741
 msgid "Twitter URL..."
 msgstr ""
 
-#: includes/settings_page.php:708
+#: includes/settings_page.php:763
 msgid "Disable offline messages"
 msgstr ""
 
-#: includes/settings_page.php:708
+#: includes/settings_page.php:763
 msgid ""
 "The chat window will be hidden when it is offline. Users will not be able to "
 "send offline messages to you"
 msgstr ""
 
-#: includes/settings_page.php:715
+#: includes/settings_page.php:770
 msgid "Offline Form Title"
 msgstr ""
 
-#: includes/settings_page.php:723
+#: includes/settings_page.php:778
 msgid "Offline form initial message"
 msgstr ""
 
-#: includes/settings_page.php:729
+#: includes/settings_page.php:784
 msgid "Offline form message on send"
 msgstr ""
 
-#: includes/settings_page.php:735
+#: includes/settings_page.php:790
 msgid "Offline form finish message"
 msgstr ""
 
-#: includes/settings_page.php:741
+#: includes/settings_page.php:796
 msgid "Offline Button Text"
 msgstr ""
 
-#: includes/settings_page.php:747
+#: includes/settings_page.php:802
 msgid "Offline Send Button Text"
 msgstr ""
 
-#: includes/settings_page.php:755
+#: includes/settings_page.php:810
 msgid "Email settings"
 msgstr ""
 
-#: includes/settings_page.php:761
+#: includes/settings_page.php:816
 msgid "Send to agent(s)"
 msgstr ""
 
-#: includes/settings_page.php:761
+#: includes/settings_page.php:816
 msgid ""
 "Email address where offline messages are delivered to. Use comma separated "
 "email addresses to send to more than one email address"
 msgstr ""
 
-#: includes/settings_page.php:771
+#: includes/settings_page.php:826
 msgid "Subject"
 msgstr ""
 
-#: includes/settings_page.php:771
+#: includes/settings_page.php:826
 msgid "User name will be appended to the end of the subject."
 msgstr ""
 
-#: includes/settings_page.php:784
+#: includes/settings_page.php:839
 msgid "Auto-respond to visitor"
 msgstr ""
 
-#: includes/settings_page.php:784
+#: includes/settings_page.php:839
 msgid "Send your visitors an email as soon as they send you an offline message"
 msgstr ""
 
-#: includes/settings_page.php:790
+#: includes/settings_page.php:845
 msgid "Auto-responder 'From' name"
 msgstr ""
 
-#: includes/settings_page.php:796
+#: includes/settings_page.php:851
 msgid "Auto-responder 'From' email"
 msgstr ""
 
-#: includes/settings_page.php:802
+#: includes/settings_page.php:857
 msgid "Auto-responder subject"
 msgstr ""
 
-#: includes/settings_page.php:808
+#: includes/settings_page.php:863
 msgid "Auto-responder body"
 msgstr ""
 
-#: includes/settings_page.php:811
+#: includes/settings_page.php:866
 msgid "HTML and the following shortcodes can be used"
 msgstr ""
 
-#: includes/settings_page.php:811
+#: includes/settings_page.php:866
 msgid "User's name"
 msgstr ""
 
-#: includes/settings_page.php:811
+#: includes/settings_page.php:866
 msgid "User's email address"
 msgstr ""
 
-#: includes/settings_page.php:887
+#: includes/settings_page.php:942
 msgid "Color scheme"
 msgstr ""
 
-#: includes/settings_page.php:943
+#: includes/settings_page.php:998
 msgid "Custom Scheme"
 msgstr ""
 
-#: includes/settings_page.php:964
+#: includes/settings_page.php:1018
 msgid "Palette Color 1"
 msgstr ""
 
-#: includes/settings_page.php:970
+#: includes/settings_page.php:1024
 msgid "Palette Color 2"
 msgstr ""
 
-#: includes/settings_page.php:976
+#: includes/settings_page.php:1030
 msgid "Palette Color 3"
 msgstr ""
 
-#: includes/settings_page.php:982
+#: includes/settings_page.php:1036
 msgid "Palette Color 4"
 msgstr ""
 
-#: includes/settings_page.php:989
+#: includes/settings_page.php:1043
 msgid "Chat background"
 msgstr ""
 
-#: includes/settings_page.php:993
+#: includes/settings_page.php:1047
 msgid "Cloudy"
 msgstr ""
 
-#: includes/settings_page.php:994
+#: includes/settings_page.php:1048
 msgid "Geometry"
 msgstr ""
 
-#: includes/settings_page.php:995
+#: includes/settings_page.php:1049
 msgid "Tech"
 msgstr ""
 
-#: includes/settings_page.php:997 includes/wplc_roi.php:178
-#: modules/node_server.php:928
+#: includes/settings_page.php:1051 includes/wplc_roi.php:156
+#: modules/node_server.php:771
 msgid "None"
 msgstr ""
 
-#: includes/settings_page.php:1003
+#: includes/settings_page.php:1057
 msgid "Use localization plugin"
 msgstr ""
 
-#: includes/settings_page.php:1006
+#: includes/settings_page.php:1060
 #, php-format
 msgid ""
 "Enable this if you are using a localization plugin. Should you wish to "
-"change the below strings with this option enabled, please visit the "
-"documentation %s"
+"change the below strings with this option enabled, please visit %sthe "
+"documentation%s"
 msgstr ""
 
-#: includes/settings_page.php:1006 includes/wplc_departments.php:586
-#: modules/node_server.php:652 wp-live-chat-support.php:2297
-msgid "here"
-msgstr ""
-
-#: includes/settings_page.php:1012
+#: includes/settings_page.php:1066
 msgid "Chat box title"
 msgstr ""
 
-#: includes/settings_page.php:1018
+#: includes/settings_page.php:1072
 msgid "Chat box sub-title"
 msgstr ""
 
-#: includes/settings_page.php:1024
+#: includes/settings_page.php:1078
 msgid "Chat box intro"
 msgstr ""
 
-#: includes/settings_page.php:1030
+#: includes/settings_page.php:1084
 msgid "Start chat button label"
 msgstr ""
 
-#: includes/settings_page.php:1036
+#: includes/settings_page.php:1090
 msgid "Start chat status message"
 msgstr ""
 
-#: includes/settings_page.php:1042
+#: includes/settings_page.php:1096
 msgid "Re-activate chat message"
 msgstr ""
 
-#: includes/settings_page.php:1050
+#: includes/settings_page.php:1104
 msgid "Welcome message"
 msgstr ""
 
-#: includes/settings_page.php:1052
+#: includes/settings_page.php:1106
 msgid ""
 "This text is shown as soon as a user starts a chat and waits for an agent to "
 "join"
 msgstr ""
 
-#: includes/settings_page.php:1056
+#: includes/settings_page.php:1110
 msgid "Agent no answer message"
 msgstr ""
 
-#: includes/settings_page.php:1058
+#: includes/settings_page.php:1112
 msgid ""
 "This text is shown to the user when an agent has failed to answer a chat"
 msgstr ""
 
-#: includes/settings_page.php:1062
+#: includes/settings_page.php:1116
 msgid "Other text"
 msgstr ""
 
-#: includes/settings_page.php:1065 wp-live-chat-support.php:454
-#: wp-live-chat-support.php:1202
+#: includes/settings_page.php:1119 wp-live-chat-support.php:177
+#: wp-live-chat-support.php:968
 msgid "The chat has been ended by the agent."
 msgstr ""
 
-#: includes/settings_page.php:1070
+#: includes/settings_page.php:1124
 msgid "Chat box animation"
 msgstr ""
 
-#: includes/settings_page.php:1078
+#: includes/settings_page.php:1132
 msgid "Slide Up"
 msgstr ""
 
-#: includes/settings_page.php:1084
+#: includes/settings_page.php:1138
 msgid "Slide From The Side"
 msgstr ""
 
-#: includes/settings_page.php:1090
+#: includes/settings_page.php:1144
 msgid "Fade In"
 msgstr ""
 
-#: includes/settings_page.php:1096
+#: includes/settings_page.php:1150
 msgid "No Animation"
 msgstr ""
 
-#: includes/settings_page.php:1114
+#: includes/settings_page.php:1168
 msgid "Auto-response to first message"
 msgstr ""
 
-#: includes/settings_page.php:1117
+#: includes/settings_page.php:1171
 msgid ""
 "This message will be sent automatically after the first message is sent from "
 "the user side. Leave empty to disable."
 msgstr ""
 
-#: includes/settings_page.php:1132
+#: includes/settings_page.php:1183
 msgid "Chat Agents"
 msgstr ""
 
-#: includes/settings_page.php:1143
+#: includes/settings_page.php:1192
 msgid "Logged In"
 msgstr ""
 
-#: includes/settings_page.php:1162
+#: includes/settings_page.php:1210
 msgid "Add New Agent"
 msgstr ""
 
-#: includes/settings_page.php:1170
+#: includes/settings_page.php:1217
 msgid "Administrator"
 msgstr ""
 
-#: includes/settings_page.php:1176
+#: includes/settings_page.php:1222
 msgid "Editor"
 msgstr ""
 
-#: includes/settings_page.php:1186
+#: includes/settings_page.php:1231
 msgid "Add Agent"
 msgstr ""
 
-#: includes/settings_page.php:1192
+#: includes/settings_page.php:1237
 #, php-format
 msgid ""
 "Should you wish to add a user that has a role less than 'Author', please go "
@@ -1454,80 +1503,103 @@ msgid ""
 "bottom of the page and enable the 'Chat Agent' checkbox."
 msgstr ""
 
-#: includes/settings_page.php:1192
+#: includes/settings_page.php:1237
 msgid "Users"
 msgstr ""
 
-#: includes/settings_page.php:1193
+#: includes/settings_page.php:1238
 msgid "If there are no chat agents online, the chat will show as offline"
 msgstr ""
 
-#: includes/settings_page.php:1198
+#: includes/settings_page.php:1243
 msgid "Blocked Visitors / IP Addresses"
 msgstr ""
 
-#: includes/settings_page.php:1202
+#: includes/settings_page.php:1247
 msgid "Enter each IP Address you would like to block on a new line"
 msgstr ""
 
-#: includes/settings_page.php:1213
+#: includes/settings_page.php:1258
 msgid ""
 "Blocking a user's IP Address here will hide the chat window from them, "
 "preventing them from chatting with you. Each IP Address must be on a new line"
 msgstr ""
 
-#: includes/settings_page.php:1229
+#: includes/settings_page.php:1272
 msgid "Enable Business Hours"
 msgstr ""
 
-#: includes/settings_page.php:1234
-msgid "Active schedule"
+#: includes/settings_page.php:1276
+msgid "Working days"
 msgstr ""
 
-#: includes/settings_page.php:1238
-msgid "Daily"
+#: includes/settings_page.php:1278
+msgid "Week Day"
 msgstr ""
 
-#: includes/settings_page.php:1239
-msgid "Week Days"
+#: includes/settings_page.php:1278
+msgid "Morning Schedule"
 msgstr ""
 
-#: includes/settings_page.php:1240
-msgid "Weekends"
+#: includes/settings_page.php:1278
+msgid "Afternoon Schedule"
 msgstr ""
 
-#: includes/settings_page.php:1252
-msgid "Between"
+#: includes/settings_page.php:1281 includes/settings_page.php:1286
+#: wp-live-chat-support.php:3911 wp-live-chat-support.php:3971
+msgid "From"
 msgstr ""
 
-#: includes/settings_page.php:1263
-msgid "and"
+#: includes/settings_page.php:1283 includes/settings_page.php:1288
+#: includes/wplc_transfer_chats.php:582
+msgid "to"
 msgstr ""
 
-#: includes/settings_page.php:1280
+#: includes/settings_page.php:1298
+msgid ""
+"Time intervals are incorrect or overlapping. Please fix your settings or you "
+"might get unexpected behavior."
+msgstr ""
+
+#: includes/settings_page.php:1308
 msgid "Current Site Time"
 msgstr ""
 
-#: includes/settings_page.php:1293
+#: includes/settings_page.php:1323
 msgid "Chat Encryption"
 msgstr ""
 
-#: includes/settings_page.php:1296
+#: includes/settings_page.php:1326
 msgid "Enable Encryption"
 msgstr ""
 
-#: includes/settings_page.php:1296
+#: includes/settings_page.php:1326
 msgid ""
 "All messages will be encrypted when being sent to and from the user and "
 "agent."
 msgstr ""
 
-#: includes/settings_page.php:1305
+#: includes/settings_page.php:1330
 msgid ""
 "Once enabled, all messages sent will be encrypted. This cannot be undone."
 msgstr ""
 
-#: includes/settings_page.php:1315
+#: includes/settings_page.php:1336
+msgid "Encryption key"
+msgstr ""
+
+#: includes/settings_page.php:1341 modules/advanced_features.php:59
+#: modules/api/public/wplc-api.php:84
+msgid "Generate New"
+msgstr ""
+
+#: includes/settings_page.php:1344
+msgid ""
+"If you change encryption key, all previously encrypted messages will be "
+"lost. This cannot be undone."
+msgstr ""
+
+#: includes/settings_page.php:1354
 msgid "Save Settings"
 msgstr ""
 
@@ -1544,30 +1616,30 @@ msgid "This will show up at the top of the chatbox - Leave blank to disable."
 msgstr ""
 
 #: includes/wplc_custom_fields.php:67 includes/wplc_data_triggers.php:8
-#: includes/wplc_departments.php:140 includes/wplc_roi.php:115
+#: includes/wplc_departments.php:139 includes/wplc_roi.php:105
 #: modules/webhooks_manager.php:60 modules/webhooks_manager.php:321
 msgid "Add New"
 msgstr ""
 
-#: includes/wplc_custom_fields.php:71 wp-live-chat-support.php:1017
+#: includes/wplc_custom_fields.php:71 wp-live-chat-support.php:787
 msgid "Custom Fields"
 msgstr ""
 
-#: includes/wplc_custom_fields.php:80 includes/wplc_data_triggers.php:466
-#: wp-live-chat-support.php:2374
+#: includes/wplc_custom_fields.php:80 includes/wplc_data_triggers.php:456
+#: wp-live-chat-support.php:2090
 msgid "Type"
 msgstr ""
 
-#: includes/wplc_custom_fields.php:81 includes/wplc_data_triggers.php:468
+#: includes/wplc_custom_fields.php:81 includes/wplc_data_triggers.php:458
 msgid "Content"
 msgstr ""
 
-#: includes/wplc_custom_fields.php:82 includes/wplc_data_triggers.php:469
-#: wp-live-chat-support.php:2377 wp-live-chat-support.php:3360
+#: includes/wplc_custom_fields.php:82 includes/wplc_data_triggers.php:459
+#: wp-live-chat-support.php:2093 wp-live-chat-support.php:3046
 msgid "Status"
 msgstr ""
 
-#: includes/wplc_custom_fields.php:99 wp-live-chat-support.php:2570
+#: includes/wplc_custom_fields.php:99 wp-live-chat-support.php:2273
 msgid "Active"
 msgstr ""
 
@@ -1575,8 +1647,8 @@ msgstr ""
 msgid "Inactive"
 msgstr ""
 
-#: includes/wplc_custom_fields.php:106 includes/wplc_data_triggers.php:477
-#: includes/wplc_departments.php:184 includes/wplc_roi.php:171
+#: includes/wplc_custom_fields.php:106 includes/wplc_data_triggers.php:467
+#: includes/wplc_departments.php:183 includes/wplc_roi.php:149
 #: modules/webhooks_manager.php:262
 msgid "Edit"
 msgstr ""
@@ -1589,31 +1661,31 @@ msgstr ""
 msgid "Create a Custom Field"
 msgstr ""
 
-#: includes/wplc_custom_fields.php:142 includes/wplc_custom_fields.php:213
+#: includes/wplc_custom_fields.php:142 includes/wplc_custom_fields.php:225
 msgid "Field Name"
 msgstr ""
 
-#: includes/wplc_custom_fields.php:146 includes/wplc_custom_fields.php:217
+#: includes/wplc_custom_fields.php:146 includes/wplc_custom_fields.php:229
 msgid "Field Type"
 msgstr ""
 
-#: includes/wplc_custom_fields.php:149 includes/wplc_custom_fields.php:222
+#: includes/wplc_custom_fields.php:149 includes/wplc_custom_fields.php:234
 msgid "Text"
 msgstr ""
 
-#: includes/wplc_custom_fields.php:150 includes/wplc_custom_fields.php:223
+#: includes/wplc_custom_fields.php:150 includes/wplc_custom_fields.php:235
 msgid "Drop Down"
 msgstr ""
 
-#: includes/wplc_custom_fields.php:155 includes/wplc_custom_fields.php:228
+#: includes/wplc_custom_fields.php:155 includes/wplc_custom_fields.php:240
 msgid "Default Field Value"
 msgstr ""
 
-#: includes/wplc_custom_fields.php:159 includes/wplc_custom_fields.php:232
+#: includes/wplc_custom_fields.php:159 includes/wplc_custom_fields.php:244
 msgid "Drop Down Contents"
 msgstr ""
 
-#: includes/wplc_custom_fields.php:160 includes/wplc_custom_fields.php:233
+#: includes/wplc_custom_fields.php:160 includes/wplc_custom_fields.php:245
 msgid "Enter each option on a new line"
 msgstr ""
 
@@ -1621,457 +1693,449 @@ msgstr ""
 msgid "Create Custom Field"
 msgstr ""
 
-#: includes/wplc_custom_fields.php:208
+#: includes/wplc_custom_fields.php:220
 msgid "Edit a Custom Field"
 msgstr ""
 
-#: includes/wplc_custom_fields.php:237
+#: includes/wplc_custom_fields.php:249
 msgid "Update Custom Field"
 msgstr ""
 
-#: includes/wplc_custom_fields.php:247
+#: includes/wplc_custom_fields.php:259
 msgid "Custom Field Not Found"
 msgstr ""
 
-#: includes/wplc_custom_fields.php:248
+#: includes/wplc_custom_fields.php:260
 msgid "Back"
 msgstr ""
 
-#: includes/wplc_custom_fields.php:262
+#: includes/wplc_custom_fields.php:274
 msgid "Are you sure you want to delete this custom field?"
 msgstr ""
 
-#: includes/wplc_custom_fields.php:298
+#: includes/wplc_custom_fields.php:310
 msgid "Text Field"
 msgstr ""
 
-#: includes/wplc_custom_fields.php:301
+#: includes/wplc_custom_fields.php:313
 msgid "Dropdown"
 msgstr ""
 
-#: includes/wplc_custom_fields.php:367
+#: includes/wplc_custom_fields.php:379
 msgid "Custom Field Data"
 msgstr ""
 
-#: includes/wplc_data_triggers.php:11 wp-live-chat-support.php:1016
-#: wp-live-chat-support.php:3949
+#: includes/wplc_data_triggers.php:11 wp-live-chat-support.php:786
+#: wp-live-chat-support.php:3646
 msgid "Triggers"
 msgstr ""
 
-#: includes/wplc_data_triggers.php:18 includes/wplc_roi.php:142
-msgid "Update now"
-msgstr ""
-
-#: includes/wplc_data_triggers.php:72
+#: includes/wplc_data_triggers.php:63
 msgid "Trigger Name"
 msgstr ""
 
-#: includes/wplc_data_triggers.php:77
+#: includes/wplc_data_triggers.php:68
 msgid "Trigger Type"
 msgstr ""
 
-#: includes/wplc_data_triggers.php:81
+#: includes/wplc_data_triggers.php:72
 msgid "Page Trigger"
 msgstr ""
 
-#: includes/wplc_data_triggers.php:82
+#: includes/wplc_data_triggers.php:73
 msgid "Time Trigger"
 msgstr ""
 
-#: includes/wplc_data_triggers.php:83
+#: includes/wplc_data_triggers.php:74
 msgid "Scroll Trigger"
 msgstr ""
 
-#: includes/wplc_data_triggers.php:84
+#: includes/wplc_data_triggers.php:75
 msgid "Page Leave Trigger"
 msgstr ""
 
-#: includes/wplc_data_triggers.php:85
+#: includes/wplc_data_triggers.php:76
 msgid ""
 "Note: When using page trigger with a the basic theme, no hovercard is shown "
 "by default. We suggest using the time trigger for this instead."
 msgstr ""
 
-#: includes/wplc_data_triggers.php:91
+#: includes/wplc_data_triggers.php:82
 msgid "Page ID"
 msgstr ""
 
-#: includes/wplc_data_triggers.php:92
+#: includes/wplc_data_triggers.php:83
 msgid "Note: Leave empty for 'all' pages"
 msgstr ""
 
-#: includes/wplc_data_triggers.php:96
+#: includes/wplc_data_triggers.php:87
 msgid "Show After"
 msgstr ""
 
-#: includes/wplc_data_triggers.php:97
+#: includes/wplc_data_triggers.php:88
 msgid "Seconds"
 msgstr ""
 
-#: includes/wplc_data_triggers.php:101
+#: includes/wplc_data_triggers.php:92
 msgid "Show After Scrolled"
 msgstr ""
 
-#: includes/wplc_data_triggers.php:102
+#: includes/wplc_data_triggers.php:93
 msgid "(%) Percent of page height"
 msgstr ""
 
-#: includes/wplc_data_triggers.php:106
+#: includes/wplc_data_triggers.php:97
 msgid "Content Replacement"
 msgstr ""
 
-#: includes/wplc_data_triggers.php:117
+#: includes/wplc_data_triggers.php:107
 msgid "Replace Content"
 msgstr ""
 
-#: includes/wplc_data_triggers.php:122
+#: includes/wplc_data_triggers.php:112
 msgid "Enable Trigger"
 msgstr ""
 
-#: includes/wplc_data_triggers.php:128 modules/node_server.php:596
-#: wp-live-chat-support.php:4677
+#: includes/wplc_data_triggers.php:118 modules/node_server.php:445
+#: wp-live-chat-support.php:4319
 msgid "Close"
 msgstr ""
 
-#: includes/wplc_data_triggers.php:138 includes/wplc_departments.php:262
-#: includes/wplc_roi.php:278
+#: includes/wplc_data_triggers.php:128 includes/wplc_departments.php:261
+#: includes/wplc_roi.php:256
 msgid "Please review your submission"
 msgstr ""
 
-#: includes/wplc_data_triggers.php:286
+#: includes/wplc_data_triggers.php:276
 msgid "Trigger has been edited."
 msgstr ""
 
-#: includes/wplc_data_triggers.php:451
+#: includes/wplc_data_triggers.php:441
 msgid "Conflict with page"
 msgstr ""
 
-#: includes/wplc_data_triggers.php:453
+#: includes/wplc_data_triggers.php:443
 msgid "Trigger ID: "
 msgstr ""
 
-#: includes/wplc_data_triggers.php:454
+#: includes/wplc_data_triggers.php:444
 msgid ""
 "It is possible that this trigger may override another trigger, or be "
 "overridden by another trigger."
 msgstr ""
 
-#: includes/wplc_data_triggers.php:467 includes/wplc_roi.php:162
-#: modules/node_server.php:187 modules/node_server.php:895
+#: includes/wplc_data_triggers.php:457 includes/wplc_roi.php:140
+#: modules/node_server.php:191 modules/node_server.php:739
 msgid "Page"
 msgstr ""
 
-#: includes/wplc_data_triggers.php:486 includes/wplc_roi.php:713
+#: includes/wplc_data_triggers.php:476 includes/wplc_roi.php:691
 msgid "All"
 msgstr ""
 
-#: includes/wplc_data_triggers.php:490
+#: includes/wplc_data_triggers.php:480
 msgid "Click to change trigger status"
 msgstr ""
 
-#: includes/wplc_data_triggers.php:500
+#: includes/wplc_data_triggers.php:490
 msgid "No Triggers Found..."
 msgstr ""
 
-#: includes/wplc_data_triggers.php:611
+#: includes/wplc_data_triggers.php:601
 msgid "Are you sure you would like to delete trigger"
 msgstr ""
 
 #: includes/wplc_departments.php:60 includes/wplc_departments.php:64
-#: includes/wplc_departments.php:88 includes/wplc_departments.php:548
-#: includes/wplc_departments.php:653 includes/wplc_transfer_chats.php:96
+#: includes/wplc_departments.php:87 includes/wplc_departments.php:547
+#: includes/wplc_departments.php:652 includes/wplc_transfer_chats.php:98
 msgid "No Department"
 msgstr ""
 
-#: includes/wplc_departments.php:84
+#: includes/wplc_departments.php:83
 msgid "Chat Department"
 msgstr ""
 
-#: includes/wplc_departments.php:129 includes/wplc_departments.php:145
-#: includes/wplc_departments.php:522 includes/wplc_departments.php:538
+#: includes/wplc_departments.php:128 includes/wplc_departments.php:144
+#: includes/wplc_departments.php:521 includes/wplc_departments.php:537
 msgid "Departments"
 msgstr ""
 
-#: includes/wplc_departments.php:129
+#: includes/wplc_departments.php:128
 msgid "beta"
 msgstr ""
 
-#: includes/wplc_departments.php:142
+#: includes/wplc_departments.php:141
 msgid "Department Settings"
 msgstr ""
 
-#: includes/wplc_departments.php:195
+#: includes/wplc_departments.php:194
 msgid "No Departments Found..."
 msgstr ""
 
-#: includes/wplc_departments.php:246
+#: includes/wplc_departments.php:245
 msgid "Department Name"
 msgstr ""
 
-#: includes/wplc_departments.php:331
+#: includes/wplc_departments.php:330
 msgid "Department has been edited."
 msgstr ""
 
-#: includes/wplc_departments.php:470
+#: includes/wplc_departments.php:469
 msgid "Are you sure you would like to delete department"
 msgstr ""
 
-#: includes/wplc_departments.php:543
+#: includes/wplc_departments.php:542
 msgid "Default Department"
 msgstr ""
 
-#: includes/wplc_departments.php:544
+#: includes/wplc_departments.php:543
 msgid "Default department a new chat is assigned to"
 msgstr ""
 
-#: includes/wplc_departments.php:559
+#: includes/wplc_departments.php:558
 msgid "Create or Edit Departments"
 msgstr ""
 
-#: includes/wplc_departments.php:565
+#: includes/wplc_departments.php:564
 msgid "User Department Selection"
 msgstr ""
 
-#: includes/wplc_departments.php:566
+#: includes/wplc_departments.php:565
 msgid "Allow user to select a department before starting a chat?"
 msgstr ""
 
-#: includes/wplc_departments.php:575
+#: includes/wplc_departments.php:574
 msgid ""
 "Note: Chats will be transferred in the event that agents are not available "
 "within the selected department"
 msgstr ""
 
-#: includes/wplc_departments.php:586
+#: includes/wplc_departments.php:585
 #, php-format
 msgid "Create departments %s."
 msgstr ""
 
-#: includes/wplc_departments.php:632
+#: includes/wplc_departments.php:631
 msgid "Department you have been assigned to as an agent"
 msgstr ""
 
-#: includes/wplc_departments.php:632 includes/wplc_transfer_chats.php:45
-#: modules/node_server.php:190 modules/node_server.php:897
+#: includes/wplc_departments.php:631 includes/wplc_transfer_chats.php:48
+#: modules/node_server.php:194 modules/node_server.php:741
 msgid "Department"
 msgstr ""
 
-#: includes/wplc_departments.php:739
+#: includes/wplc_departments.php:738
 msgid "Select Department"
 msgstr ""
 
-#: includes/wplc_roi.php:104 includes/wplc_roi.php:119
-#: wp-live-chat-support.php:3951
+#: includes/wplc_roi.php:97 includes/wplc_roi.php:109
+#: wp-live-chat-support.php:3648
 msgid "ROI Goals"
 msgstr ""
 
-#: includes/wplc_roi.php:116
+#: includes/wplc_roi.php:106
 msgid "View Reports"
 msgstr ""
 
-#: includes/wplc_roi.php:163
+#: includes/wplc_roi.php:141
 msgid "Value"
 msgstr ""
 
-#: includes/wplc_roi.php:185
+#: includes/wplc_roi.php:163
 msgid "No ROI Goals Found..."
 msgstr ""
 
-#: includes/wplc_roi.php:243
+#: includes/wplc_roi.php:221
 msgid "Goal Name"
 msgstr ""
 
-#: includes/wplc_roi.php:248
+#: includes/wplc_roi.php:226
 msgid "Goal Overview"
 msgstr ""
 
-#: includes/wplc_roi.php:253
+#: includes/wplc_roi.php:231
 msgid "Goal Page"
 msgstr ""
 
-#: includes/wplc_roi.php:262
+#: includes/wplc_roi.php:240
 msgid "Goal Value"
 msgstr ""
 
-#: includes/wplc_roi.php:415
+#: includes/wplc_roi.php:393
 msgid "Goal has been edited."
 msgstr ""
 
-#: includes/wplc_roi.php:586
+#: includes/wplc_roi.php:564
 msgid "Are you sure you would like to delete goal"
 msgstr ""
 
-#: includes/wplc_roi.php:673
+#: includes/wplc_roi.php:651
 msgid "ROI Reports"
 msgstr ""
 
-#: includes/wplc_roi.php:692
+#: includes/wplc_roi.php:670
 msgid "Goal Statistics"
 msgstr ""
 
-#: includes/wplc_roi.php:704
+#: includes/wplc_roi.php:682
 msgid "No Goals Found"
 msgstr ""
 
-#: includes/wplc_roi.php:714
+#: includes/wplc_roi.php:692
 msgid "Last 30 Days"
 msgstr ""
 
-#: includes/wplc_roi.php:715
+#: includes/wplc_roi.php:693
 msgid "Last 15 Days"
 msgstr ""
 
-#: includes/wplc_roi.php:716
+#: includes/wplc_roi.php:694
 msgid "Last 7 Days"
 msgstr ""
 
-#: includes/wplc_roi.php:717
+#: includes/wplc_roi.php:695
 msgid "Last 24 Hours"
 msgstr ""
 
-#: includes/wplc_roi.php:769
+#: includes/wplc_roi.php:747
 msgid "Value Per Conversion"
 msgstr ""
 
-#: includes/wplc_roi.php:775
+#: includes/wplc_roi.php:753
 msgid "Total Value"
 msgstr ""
 
-#: includes/wplc_roi.php:780
+#: includes/wplc_roi.php:758
 msgid "Total Conversions"
 msgstr ""
 
-#: includes/wplc_roi.php:812
+#: includes/wplc_roi.php:790
 msgid "Value By Date"
 msgstr ""
 
-#: includes/wplc_roi.php:815
+#: includes/wplc_roi.php:793
 msgid "Value By Agent"
 msgstr ""
 
-#: includes/wplc_roi.php:821
+#: includes/wplc_roi.php:799
 msgid "No data available yet..."
 msgstr ""
 
-#: includes/wplc_transfer_chats.php:17 modules/node_server.php:884
+#: includes/wplc_transfer_chats.php:18 modules/node_server.php:728
 msgid "Transfer"
 msgstr ""
 
-#: includes/wplc_transfer_chats.php:29
+#: includes/wplc_transfer_chats.php:31
 msgid "Transfer Chat"
 msgstr ""
 
-#: includes/wplc_transfer_chats.php:43
+#: includes/wplc_transfer_chats.php:46
 msgid "Would you like to transfer this chat to"
 msgstr ""
 
-#: includes/wplc_transfer_chats.php:44 modules/node_server.php:82
+#: includes/wplc_transfer_chats.php:47 modules/node_server.php:83
 msgid "Agent"
 msgstr ""
 
-#: includes/wplc_transfer_chats.php:50
+#: includes/wplc_transfer_chats.php:53
 msgid "Please select an agent to transfer to"
 msgstr ""
 
-#: includes/wplc_transfer_chats.php:57
+#: includes/wplc_transfer_chats.php:60
 msgid "Please select a department to transfer to"
 msgstr ""
 
-#: includes/wplc_transfer_chats.php:75
+#: includes/wplc_transfer_chats.php:79
 msgid "No Agent"
 msgstr ""
 
-#: includes/wplc_transfer_chats.php:81
+#: includes/wplc_transfer_chats.php:83
 msgid "You"
 msgstr ""
 
-#: includes/wplc_transfer_chats.php:122
+#: includes/wplc_transfer_chats.php:125
 msgid "Checking if agent is online"
 msgstr ""
 
-#: includes/wplc_transfer_chats.php:123
+#: includes/wplc_transfer_chats.php:126
 msgid "Agent is not online, transfer cannot be made"
 msgstr ""
 
-#: includes/wplc_transfer_chats.php:125
+#: includes/wplc_transfer_chats.php:128
 msgid "Checking if agents in department are online"
 msgstr ""
 
-#: includes/wplc_transfer_chats.php:126
+#: includes/wplc_transfer_chats.php:129
 msgid ""
 "No agent within the department are available to accept the transfer, "
 "transfer cannot be made"
 msgstr ""
 
-#: includes/wplc_transfer_chats.php:128
+#: includes/wplc_transfer_chats.php:131
 msgid "Agent(s) available, safe to transfer"
 msgstr ""
 
-#: includes/wplc_transfer_chats.php:130
+#: includes/wplc_transfer_chats.php:133
 msgid "Transfer Complete. Closing Window..."
 msgstr ""
 
-#: includes/wplc_transfer_chats.php:131
+#: includes/wplc_transfer_chats.php:134
 msgid "Transfer Failed. Please try again later..."
 msgstr ""
 
-#: includes/wplc_transfer_chats.php:374
+#: includes/wplc_transfer_chats.php:380
 msgid "Transfer for"
 msgstr ""
 
-#: includes/wplc_transfer_chats.php:377
+#: includes/wplc_transfer_chats.php:383
 msgid "Accept Transfer"
 msgstr ""
 
-#: includes/wplc_transfer_chats.php:455
+#: includes/wplc_transfer_chats.php:459
 msgid ""
 "Department took too long to respond, we are transferring this chat to the "
 "next available agent."
 msgstr ""
 
-#: includes/wplc_transfer_chats.php:457
+#: includes/wplc_transfer_chats.php:461
 msgid ""
 "took too long to respond, we are transferring this chat to the next "
 "available agent."
 msgstr ""
 
-#: includes/wplc_transfer_chats.php:460
+#: includes/wplc_transfer_chats.php:464
 msgid "has transferred the chat."
 msgstr ""
 
-#: includes/wplc_transfer_chats.php:483
+#: includes/wplc_transfer_chats.php:487
 msgid "User received this message"
 msgstr ""
 
-#: includes/wplc_transfer_chats.php:528
+#: includes/wplc_transfer_chats.php:533
 msgid "No agents available in"
 msgstr ""
 
-#: includes/wplc_transfer_chats.php:530
+#: includes/wplc_transfer_chats.php:535
 msgid "selected department"
 msgstr ""
 
-#: includes/wplc_transfer_chats.php:536
+#: includes/wplc_transfer_chats.php:541
 msgid "automatically transferring you to"
 msgstr ""
 
-#: includes/wplc_transfer_chats.php:538
+#: includes/wplc_transfer_chats.php:543
 msgid "the next available department"
 msgstr ""
 
-#: includes/wplc_transfer_chats.php:566
+#: includes/wplc_transfer_chats.php:571
 msgid "User has been transferred from"
 msgstr ""
 
-#: includes/wplc_transfer_chats.php:568
+#: includes/wplc_transfer_chats.php:573
 msgid "department"
 msgstr ""
 
-#: includes/wplc_transfer_chats.php:577
-msgid "to"
-msgstr ""
-
-#: includes/wplc_transfer_chats.php:580
+#: includes/wplc_transfer_chats.php:585
 msgid "as there were no agents online"
 msgstr ""
 
@@ -2116,29 +2180,25 @@ msgid ""
 "close your currently active chat sessions."
 msgstr ""
 
-#: modules/advanced_features.php:59 modules/api/public/wplc-api.php:84
-msgid "Generate New"
-msgstr ""
-
-#: modules/advanced_features.php:64
+#: modules/advanced_features.php:65
 msgid "Enable typing preview"
 msgstr ""
 
-#: modules/advanced_features.php:64
+#: modules/advanced_features.php:65
 msgid ""
 "This option enables the typing preview, which means agents will be able to "
 "see what the user is typing in realtime."
 msgstr ""
 
-#: modules/advanced_features.php:70
+#: modules/advanced_features.php:71
 msgid "Typing preview is not available when GDPR is enabled"
 msgstr ""
 
-#: modules/advanced_features.php:80
+#: modules/advanced_features.php:81
 msgid "Number of chat rings"
 msgstr ""
 
-#: modules/advanced_features.php:80
+#: modules/advanced_features.php:81
 msgid "Limit the amount of time the new chat ringer will play"
 msgstr ""
 
@@ -2158,8 +2218,8 @@ msgstr ""
 msgid "Import Settings"
 msgstr ""
 
-#: modules/advanced_tools.php:62 modules/node_server.php:876
-#: wp-live-chat-support.php:3964
+#: modules/advanced_tools.php:62 modules/node_server.php:720
+#: wp-live-chat-support.php:3661
 msgid "Chat History"
 msgstr ""
 
@@ -2211,22 +2271,21 @@ msgstr ""
 msgid "Thank you, all settings have been updated"
 msgstr ""
 
-#: modules/api/agent/wplc-api-functions.php:193
-#: modules/api/agent/wplc-api-functions.php:520
-#: modules/api/public/wplc-api-functions.php:156 modules/node_server.php:366
-#: modules/node_server.php:434
+#: modules/api/agent/wplc-api-functions.php:202
+#: modules/api/agent/wplc-api-functions.php:532
+#: modules/api/public/wplc-api-functions.php:158
 msgid "Action not set"
 msgstr ""
 
-#: modules/api/agent/wplc-api-functions.php:375
+#: modules/api/agent/wplc-api-functions.php:393
 msgid "IP Address not recorded"
 msgstr ""
 
-#: modules/api/agent/wplc-api-functions.php:1014
+#: modules/api/agent/wplc-api-functions.php:1018
 msgid "Upload error"
 msgstr ""
 
-#: modules/api/agent/wplc-api-functions.php:1017
+#: modules/api/agent/wplc-api-functions.php:1021
 msgid "Security Violation - File unsafe"
 msgstr ""
 
@@ -2257,95 +2316,105 @@ msgstr ""
 msgid "Call To Action Animation"
 msgstr ""
 
-#: modules/gdpr.php:22
+#: modules/gdpr.php:26
 msgid "Enable privacy controls"
 msgstr ""
 
-#: modules/gdpr.php:22
+#: modules/gdpr.php:26
 msgid "Disabling will disable all GDPR related options, this is not advised."
 msgstr ""
 
-#: modules/gdpr.php:26
+#: modules/gdpr.php:30
 msgid "Importance of GDPR Compliance"
 msgstr ""
 
-#: modules/gdpr.php:32
+#: modules/gdpr.php:36
 msgid "Organization name"
 msgstr ""
 
-#: modules/gdpr.php:41
+#: modules/gdpr.php:45
 msgid "Data retention purpose"
 msgstr ""
 
-#: modules/gdpr.php:44 modules/gdpr.php:345 wp-live-chat-support.php:401
+#: modules/gdpr.php:48 modules/gdpr.php:373 wp-live-chat-support.php:124
 msgid "Chat/Support"
 msgstr ""
 
-#: modules/gdpr.php:50
+#: modules/gdpr.php:54
 msgid "Data retention period"
 msgstr ""
 
-#: modules/gdpr.php:53
+#: modules/gdpr.php:57
 msgid "days"
 msgstr ""
 
-#: modules/gdpr.php:59
+#: modules/gdpr.php:63
 msgid "GDPR notice to visitors"
 msgstr ""
 
-#: modules/gdpr.php:60
+#: modules/gdpr.php:64
 msgid ""
 "Users will be asked to accept the notice shown here, in the form of a check "
 "box."
 msgstr ""
 
-#: modules/gdpr.php:90 modules/gdpr.php:101
+#: modules/gdpr.php:81
+msgid "Use a custom text for GDPR notice"
+msgstr ""
+
+#: modules/gdpr.php:82
+msgid ""
+"You can display a custom GDPR notice to your website visitors. Be sure to "
+"include all relevant informations according to GDPR directives."
+msgstr ""
+
+#: modules/gdpr.php:108 modules/gdpr.php:120
 msgid "GDPR Control"
 msgstr ""
 
-#: modules/gdpr.php:103
+#: modules/gdpr.php:122
 msgid ""
 "Search is performed on chat sessions, messages, and offline messages. Data "
 "will also be deleted automatically per your retention policy."
 msgstr ""
 
-#: modules/gdpr.php:112
+#: modules/gdpr.php:131
 msgid "Name, Email, Message"
 msgstr ""
 
-#: modules/gdpr.php:116 modules/node_server.php:218
+#: modules/gdpr.php:135 modules/node_server.php:222
 msgid "Search"
 msgstr ""
 
-#: modules/gdpr.php:129
+#: modules/gdpr.php:148
 #, php-format
 msgid "Search Results in %%TABLE%%"
 msgstr ""
 
-#: modules/gdpr.php:157
+#: modules/gdpr.php:176
 #, php-format
 msgid "Delete Chat (%%CID%%)"
 msgstr ""
 
-#: modules/gdpr.php:158
+#: modules/gdpr.php:177
 #, php-format
 msgid "Download Chat (%%CID%%)"
 msgstr ""
 
-#: modules/gdpr.php:162 wp-live-chat-support.php:4219
-#: wp-live-chat-support.php:4279
+#: modules/gdpr.php:181 wp-live-chat-support.php:3910
+#: wp-live-chat-support.php:3970
 msgid "Chat ID"
 msgstr ""
 
-#: modules/gdpr.php:183
+#: modules/gdpr.php:202
 msgid "Please perform a search using the input field above"
 msgstr ""
 
-#: modules/gdpr.php:257
+#: modules/gdpr.php:279
 msgid "Data Deleted"
 msgstr ""
 
-#: modules/gdpr.php:343
+#: modules/gdpr.php:371
 #, php-format
 msgid ""
 "I agree for my personal data to be processed and for the use of cookies in "
@@ -2353,11 +2422,11 @@ msgid ""
 "%%PURPOSE%%, for the time of %%PERIOD%% day(s) as per the GDPR."
 msgstr ""
 
-#: modules/gdpr.php:365 modules/gdpr.php:566 modules/gdpr.php:587
+#: modules/gdpr.php:398 modules/gdpr.php:609 modules/gdpr.php:631
 msgid "Privacy Policy"
 msgstr ""
 
-#: modules/gdpr.php:366
+#: modules/gdpr.php:399
 #, php-format
 msgid ""
 "We use WP Live Chat by 3CX as our live chat platform. By clicking below to "
@@ -2366,75 +2435,67 @@ msgid ""
 "accordance with their %%POLICY_LINK%%."
 msgstr ""
 
-#: modules/gdpr.php:388
+#: modules/gdpr.php:423
 #, php-format
 msgid ""
 "Please note as per the GDPR settings you have selected, all chat data will "
 "be retained for %%PERIOD%% day(s)."
 msgstr ""
 
-#: modules/gdpr.php:391
+#: modules/gdpr.php:426
 #, php-format
 msgid ""
 "After this period of time, all chat data older than %%PERIOD%% day(s), will "
 "be permanently removed from your server."
 msgstr ""
 
-#: modules/gdpr.php:395
+#: modules/gdpr.php:430
 msgid "GDPR - Data Retention"
 msgstr ""
 
-#: modules/gdpr.php:401 modules/gdpr.php:568
+#: modules/gdpr.php:433 modules/gdpr.php:611
 msgid "Privacy Settings"
 msgstr ""
 
-#: modules/gdpr.php:416
+#: modules/gdpr.php:448
 msgid "Once every 6 hours"
 msgstr ""
 
-#: modules/gdpr.php:534
+#: modules/gdpr.php:577
 msgid "Chat Ended"
 msgstr ""
 
-#: modules/gdpr.php:559
+#: modules/gdpr.php:602
 msgid ""
 "GDPR compliance has been disabled, read more about the implications of this "
 "here"
 msgstr ""
 
-#: modules/gdpr.php:560
+#: modules/gdpr.php:603
 msgid "Additionally please take a look at WP Live Chat by 3CX"
 msgstr ""
 
-#: modules/gdpr.php:561
+#: modules/gdpr.php:604
 msgid ""
 "It is highly recommended that you enable GDPR compliance to ensure your user "
 "data is regulated."
 msgstr ""
 
-#: modules/gdpr.php:564
+#: modules/gdpr.php:607
 msgid "Warning - GDPR Compliance Disabled - Action Required"
 msgstr ""
 
-#: modules/gdpr.php:565
+#: modules/gdpr.php:608
 msgid "EU GDPR"
 msgstr ""
 
-#: modules/gdpr.php:569
+#: modules/gdpr.php:612
 msgid "Dismiss & Accept Responsibility"
 msgstr ""
 
-#: modules/gdpr.php:586
+#: modules/gdpr.php:630
 #, php-format
 msgid "Please refer to our %%PRIVACY_LINK%% for information on Data Processing"
-msgstr ""
-
-#: modules/gdpr.php:634
-msgid "GDPR Compliance Enabled - Server Selection Limited to EU"
-msgstr ""
-
-#: modules/gdpr.php:666
-msgid "Pro data will also be removed as a part of this automatic process."
 msgstr ""
 
 #: modules/google_analytics.php:17
@@ -2445,251 +2506,226 @@ msgstr ""
 msgid "Enable Google Analytics Integration"
 msgstr ""
 
-#: modules/node_server.php:45
+#: modules/node_server.php:44
 msgid "Toggle user list"
 msgstr ""
 
-#: modules/node_server.php:46
+#: modules/node_server.php:45
 msgid "Toggle WordPress Menu for a full screen experience"
 msgstr ""
 
-#: modules/node_server.php:78 modules/node_server.php:182
-#: modules/node_server.php:874 modules/node_server.php:892
+#: modules/node_server.php:79 modules/node_server.php:186
+#: modules/node_server.php:718 modules/node_server.php:736
 msgid "Active visitors"
 msgstr ""
 
-#: modules/node_server.php:100 wp-live-chat-support.php:1864
-msgid "Minimize Chat"
-msgstr ""
-
-#: modules/node_server.php:109 modules/node_server.php:879
+#: modules/node_server.php:113 modules/node_server.php:723
 msgid "Invite Agent"
 msgstr ""
 
-#: modules/node_server.php:110 modules/node_server.php:880
+#: modules/node_server.php:114 modules/node_server.php:724
 msgid "Invite Department"
 msgstr ""
 
-#: modules/node_server.php:111 modules/node_server.php:881
-#: modules/node_server.php:885 wp-live-chat-support.php:4021
+#: modules/node_server.php:115 modules/node_server.php:725
+#: modules/node_server.php:729 wp-live-chat-support.php:3718
 msgid "Direct User To Page"
 msgstr ""
 
-#: modules/node_server.php:113
+#: modules/node_server.php:117
 msgid "Transcript"
 msgstr ""
 
-#: modules/node_server.php:114 modules/node_server.php:882
+#: modules/node_server.php:118 modules/node_server.php:726
 msgid "Leave chat"
 msgstr ""
 
-#: modules/node_server.php:115 modules/node_server.php:883
-#: wp-live-chat-support.php:2582
+#: modules/node_server.php:119 modules/node_server.php:727
+#: wp-live-chat-support.php:2285
 msgid "End chat"
 msgstr ""
 
-#: modules/node_server.php:126
+#: modules/node_server.php:130
 msgid "Something"
 msgstr ""
 
-#: modules/node_server.php:137 modules/node_server.php:887
+#: modules/node_server.php:141 modules/node_server.php:731
 msgid "Join chat"
 msgstr ""
 
-#: modules/node_server.php:138
+#: modules/node_server.php:142
 msgid "Type here..."
 msgstr ""
 
-#: modules/node_server.php:139
+#: modules/node_server.php:143
 msgid "bold"
 msgstr ""
 
-#: modules/node_server.php:139
+#: modules/node_server.php:143
 msgid "italics"
 msgstr ""
 
-#: modules/node_server.php:139
+#: modules/node_server.php:143
 msgid "code"
 msgstr ""
 
-#: modules/node_server.php:139
+#: modules/node_server.php:143
 msgid "preformatted"
 msgstr ""
 
-#: modules/node_server.php:159
+#: modules/node_server.php:163
 msgid "Filter the user list based on activity."
 msgstr ""
 
-#: modules/node_server.php:164 modules/node_server.php:889
+#: modules/node_server.php:168 modules/node_server.php:733
 msgid "New Visitors (3 Min)"
 msgstr ""
 
-#: modules/node_server.php:165 modules/node_server.php:890
+#: modules/node_server.php:169 modules/node_server.php:734
 msgid "Active Chats"
 msgstr ""
 
-#: modules/node_server.php:166
+#: modules/node_server.php:170
 msgid "Page URL"
 msgstr ""
 
-#: modules/node_server.php:167 modules/node_server.php:891
+#: modules/node_server.php:171 modules/node_server.php:735
 msgid "Clear Filters"
 msgstr ""
 
-#: modules/node_server.php:178
+#: modules/node_server.php:182
 msgid "Contains"
 msgstr ""
 
-#: modules/node_server.php:185 modules/node_server.php:893
-#: wp-live-chat-support.php:2372
+#: modules/node_server.php:189 modules/node_server.php:737
+#: wp-live-chat-support.php:2088
 msgid "Visitor"
 msgstr ""
 
-#: modules/node_server.php:186 modules/node_server.php:894
+#: modules/node_server.php:190 modules/node_server.php:738
 msgid "Info"
 msgstr ""
 
-#: modules/node_server.php:188 modules/node_server.php:896
+#: modules/node_server.php:192 modules/node_server.php:740
 msgid "Chat Status"
 msgstr ""
 
-#: modules/node_server.php:219 modules/node_server.php:898
+#: modules/node_server.php:223 modules/node_server.php:742
 msgid "Search Results"
 msgstr ""
 
-#: modules/node_server.php:221 modules/node_server.php:899
+#: modules/node_server.php:225 modules/node_server.php:743
 msgid "No emoji found"
 msgstr ""
 
-#: modules/node_server.php:352 modules/node_server.php:360
-#: modules/node_server.php:420 modules/node_server.php:428
-msgid "Success"
-msgstr ""
-
-#: modules/node_server.php:363 modules/node_server.php:431
-msgid "Message data is corrupt"
-msgstr ""
-
-#: modules/node_server.php:369 modules/node_server.php:437
-msgid "Message data array not set"
-msgstr ""
-
-#: modules/node_server.php:372 modules/node_server.php:440
-msgid "Chat ID is not set"
-msgstr ""
-
-#: modules/node_server.php:376 modules/node_server.php:444
-msgid "No security nonce found"
-msgstr ""
-
-#: modules/node_server.php:460
+#: modules/node_server.php:316
 msgid "Error"
 msgstr ""
 
-#: modules/node_server.php:460
+#: modules/node_server.php:316
 msgid "Only chat agents can access this page."
 msgstr ""
 
-#: modules/node_server.php:594 wp-live-chat-support.php:4675
+#: modules/node_server.php:443 wp-live-chat-support.php:4317
 msgid "Sending transcript..."
 msgstr ""
 
-#: modules/node_server.php:595
+#: modules/node_server.php:444
 msgid "Chat Transcript"
 msgstr ""
 
-#: modules/node_server.php:597 wp-live-chat-support.php:4678
+#: modules/node_server.php:446 wp-live-chat-support.php:4320
 msgid "The chat transcript has been emailed."
 msgstr ""
 
-#: modules/node_server.php:598 wp-live-chat-support.php:4679
+#: modules/node_server.php:447 wp-live-chat-support.php:4321
 msgid "There was a problem emailing the chat."
 msgstr ""
 
-#: modules/node_server.php:612
+#: modules/node_server.php:461
 msgid "Connection Error"
 msgstr ""
 
-#: modules/node_server.php:613
+#: modules/node_server.php:462
 msgid ""
 "We are having some trouble contacting the server. Please try again later."
 msgstr ""
 
-#: modules/node_server.php:651
+#: modules/node_server.php:500
 msgid "Chat is disabled in settings area, re-enable"
 msgstr ""
 
-#: modules/node_server.php:678
+#: modules/node_server.php:526
 msgid "User received notification:"
 msgstr ""
 
-#: modules/node_server.php:684 wp-live-chat-support.php:2191
+#: modules/node_server.php:532 wp-live-chat-support.php:1925
 msgid "New chat received"
 msgstr ""
 
-#: modules/node_server.php:685 wp-live-chat-support.php:2193
+#: modules/node_server.php:533 wp-live-chat-support.php:1927
 msgid ""
 "A new chat has been received. Please go the 'Live Chat' page to accept the "
 "chat"
 msgstr ""
 
-#: modules/node_server.php:797
+#: modules/node_server.php:641
 msgid "Welcome to V8 of WP Live Chat by 3CX"
 msgstr ""
 
-#: modules/node_server.php:798
+#: modules/node_server.php:642
 msgid ""
 "Did you know, this version features high speed message delivery, agent to "
 "agent chat, and a single window layout?"
 msgstr ""
 
-#: modules/node_server.php:799
+#: modules/node_server.php:643
 msgid ""
 "To activate this functionality please navigate to Live Chat -> Settings -> "
 "Advanced Features -> And enable 3CX High Performance Chat Cloud Servers."
 msgstr ""
 
-#: modules/node_server.php:802
+#: modules/node_server.php:646
 msgid "Show me!"
 msgstr ""
 
-#: modules/node_server.php:803 wp-live-chat-support.php:4646
+#: modules/node_server.php:647 wp-live-chat-support.php:4288
 msgid "Don't Show This Again"
 msgstr ""
 
-#: modules/node_server.php:870 wp-live-chat-support.php:428
+#: modules/node_server.php:714 wp-live-chat-support.php:151
 msgid "Connecting..."
 msgstr ""
 
-#: modules/node_server.php:875
+#: modules/node_server.php:719
 msgid "Agent(s) Online"
 msgstr ""
 
-#: modules/node_server.php:886
+#: modules/node_server.php:730
 msgid "Events"
 msgstr ""
 
-#: modules/node_server.php:888
+#: modules/node_server.php:732
 msgid "Filters"
 msgstr ""
 
-#: modules/node_server.php:974
+#: modules/node_server.php:817
 msgid ""
 "You can transfer chats from within a chat by clicking on the in chat menu, "
 "and selecting Transfer Chat or Transfer Department"
 msgstr ""
 
-#: modules/node_server.php:975
+#: modules/node_server.php:818
 msgid ""
 "You can share files quickly when in a chat, by simply dragging a file into "
 "the chat window!"
 msgstr ""
 
-#: modules/node_server.php:976
+#: modules/node_server.php:819
 msgid "You can now move between chats without ending/closing an open chat"
 msgstr ""
 
-#: modules/node_server.php:1031
+#: modules/node_server.php:875
 msgid "No quick responses found"
 msgstr ""
 
@@ -2721,7 +2757,7 @@ msgstr ""
 msgid "Webhooks"
 msgstr ""
 
-#: modules/webhooks_manager.php:63 wp-live-chat-support.php:3950
+#: modules/webhooks_manager.php:63 wp-live-chat-support.php:3647
 msgid "Web Hooks"
 msgstr ""
 
@@ -2781,560 +2817,558 @@ msgstr ""
 msgid "Are you sure you want to delete this webhook?"
 msgstr ""
 
-#: wp-live-chat-support.php:372
+#: wp-live-chat-support.php:92
 msgid "close"
 msgstr ""
 
-#: wp-live-chat-support.php:392
+#: wp-live-chat-support.php:114
 msgid "Thank you for chatting with us."
 msgstr ""
 
-#: wp-live-chat-support.php:417 wp-live-chat-support.php:1932
+#: wp-live-chat-support.php:140
 msgid "Questions?"
 msgstr ""
 
-#: wp-live-chat-support.php:418 wp-live-chat-support.php:1933
+#: wp-live-chat-support.php:141
 msgid "Chat with us"
 msgstr ""
 
-#: wp-live-chat-support.php:419
+#: wp-live-chat-support.php:142
 msgid "Start live chat"
 msgstr ""
 
-#: wp-live-chat-support.php:420
+#: wp-live-chat-support.php:143
 msgid "Complete the fields below to proceed."
 msgstr ""
 
-#: wp-live-chat-support.php:421
-msgid "Chat offline. Leave a message"
-msgstr ""
-
-#: wp-live-chat-support.php:422
-msgid ""
-"We are currently offline. Please leave a message and we'll get back to you "
-"shortly."
-msgstr ""
-
-#: wp-live-chat-support.php:423
-msgid "Sending message..."
-msgstr ""
-
-#: wp-live-chat-support.php:424
-msgid "Thank you for your message. We will be in contact soon."
-msgstr ""
-
-#: wp-live-chat-support.php:425
+#: wp-live-chat-support.php:144 wp-live-chat-support.php:148
 msgid "Leave a message"
 msgstr ""
 
-#: wp-live-chat-support.php:426
+#: wp-live-chat-support.php:145
+msgid "Please leave a message and we'll get back to you as soon as possible."
+msgstr ""
+
+#: wp-live-chat-support.php:146
+msgid "Sending message..."
+msgstr ""
+
+#: wp-live-chat-support.php:147
+msgid "Thank you for your message. We will be in contact soon."
+msgstr ""
+
+#: wp-live-chat-support.php:149
 msgid "Send message"
 msgstr ""
 
-#: wp-live-chat-support.php:427
+#: wp-live-chat-support.php:150
 msgid "Start Chat"
 msgstr ""
 
-#: wp-live-chat-support.php:429 wp-live-chat-support.php:2073
-#: wp-live-chat-support.php:2120
+#: wp-live-chat-support.php:152 wp-live-chat-support.php:1807
+#: wp-live-chat-support.php:1854
 msgid "Reactivating your previous chat..."
 msgstr ""
 
-#: wp-live-chat-support.php:459
+#: wp-live-chat-support.php:183
 msgid "Please click 'Start Chat' to initiate a chat with an agent"
 msgstr ""
 
-#: wp-live-chat-support.php:462
+#: wp-live-chat-support.php:184
+msgid "Guest"
+msgstr ""
+
+#: wp-live-chat-support.php:186
 msgid "No answer. Try again later."
 msgstr ""
 
-#: wp-live-chat-support.php:463
+#: wp-live-chat-support.php:187
 msgid "Welcome. How may I help you?"
 msgstr ""
 
-#: wp-live-chat-support.php:467
+#: wp-live-chat-support.php:191
 msgid "Please standby for an agent. Send your message while you wait."
 msgstr ""
 
-#: wp-live-chat-support.php:698
+#: wp-live-chat-support.php:497
 msgid ""
 "The additional WP Live Chat Support PRO plugin which you have installed is "
 "no longer needed, please uninstall it."
 msgstr ""
 
-#: wp-live-chat-support.php:989 wp-live-chat-support.php:3447
+#: wp-live-chat-support.php:764 wp-live-chat-support.php:3120
 msgid "Missed Chats"
 msgstr ""
 
-#: wp-live-chat-support.php:997 wp-live-chat-support.php:3939
+#: wp-live-chat-support.php:767 wp-live-chat-support.php:3636
 msgid "Support"
 msgstr ""
 
-#: wp-live-chat-support.php:1199
-msgid "Please Enter Your Name"
+#: wp-live-chat-support.php:964
+msgid "Please enter your name"
 msgstr ""
 
-#: wp-live-chat-support.php:1200
-msgid "Please Enter Your Email Address"
+#: wp-live-chat-support.php:965
+msgid "Please enter your email address"
 msgstr ""
 
-#: wp-live-chat-support.php:1201
+#: wp-live-chat-support.php:966
+msgid "Please enter a valid email address"
+msgstr ""
+
+#: wp-live-chat-support.php:967
 msgid "Connection to Server Lost. Please Reload This Page. Error:"
 msgstr ""
 
-#: wp-live-chat-support.php:1203
+#: wp-live-chat-support.php:969
 msgid "Please Enter a Message"
 msgstr ""
 
-#: wp-live-chat-support.php:1204
+#: wp-live-chat-support.php:970
 msgid "Disconnected, Attempting to Reconnect..."
 msgstr ""
 
-#: wp-live-chat-support.php:1251
+#: wp-live-chat-support.php:1017
 msgid "has joined."
 msgstr ""
 
-#: wp-live-chat-support.php:1252
+#: wp-live-chat-support.php:1018
 msgid "has left."
 msgstr ""
 
-#: wp-live-chat-support.php:1253
+#: wp-live-chat-support.php:1019
 msgid "has ended the chat."
 msgstr ""
 
-#: wp-live-chat-support.php:1254
+#: wp-live-chat-support.php:1020
 msgid "has disconnected."
 msgstr ""
 
-#: wp-live-chat-support.php:1255
+#: wp-live-chat-support.php:1021
 msgid "(edited)"
 msgstr ""
 
-#: wp-live-chat-support.php:1646 wp-live-chat-support.php:1665
+#: wp-live-chat-support.php:1416 wp-live-chat-support.php:1435
 msgid "Start chat"
 msgstr ""
 
-#: wp-live-chat-support.php:1911 wp-live-chat-support.php:2653
+#: wp-live-chat-support.php:1677 wp-live-chat-support.php:2356
 msgid "Send"
 msgstr ""
 
-#: wp-live-chat-support.php:2293
+#: wp-live-chat-support.php:2026
 msgid "Congratulations"
 msgstr ""
 
-#: wp-live-chat-support.php:2294
+#: wp-live-chat-support.php:2027
 msgid "You are now accepting live chat requests on your site."
 msgstr ""
 
-#: wp-live-chat-support.php:2295
+#: wp-live-chat-support.php:2028
 msgid "The live chat box has automatically been enabled."
 msgstr ""
 
-#: wp-live-chat-support.php:2296
+#: wp-live-chat-support.php:2029
 msgid "Chat notifications will start appearing once visitors send a request."
 msgstr ""
 
-#: wp-live-chat-support.php:2297
+#: wp-live-chat-support.php:2030
 #, php-format
 msgid "You may modify your chat box settings %s"
 msgstr ""
 
-#: wp-live-chat-support.php:2298
+#: wp-live-chat-support.php:2031
 msgid "Experiencing issues?"
 msgstr ""
 
-#: wp-live-chat-support.php:2298
+#: wp-live-chat-support.php:2031
 msgid "Take a look at our how-to guides."
 msgstr ""
 
-#: wp-live-chat-support.php:2299
+#: wp-live-chat-support.php:2032
 msgid "Hide"
 msgstr ""
 
-#: wp-live-chat-support.php:2352
+#: wp-live-chat-support.php:2071
 msgid "Keep this window open to get notified of new chats."
 msgstr ""
 
-#: wp-live-chat-support.php:2358
+#: wp-live-chat-support.php:2076
 msgid "Visitor(s) online"
 msgstr ""
 
-#: wp-live-chat-support.php:2375
+#: wp-live-chat-support.php:2091
 msgid "Device"
 msgstr ""
 
-#: wp-live-chat-support.php:2376
+#: wp-live-chat-support.php:2092
 msgid "Data"
 msgstr ""
 
-#: wp-live-chat-support.php:2409
+#: wp-live-chat-support.php:2113
 msgid "Chat Dashboard"
 msgstr ""
 
-#: wp-live-chat-support.php:2412
+#: wp-live-chat-support.php:2116
 msgid "Oh no!"
 msgstr ""
 
-#: wp-live-chat-support.php:2414
+#: wp-live-chat-support.php:2118
 #, php-format
 msgid "You do not have access to this page as %s."
 msgstr ""
 
-#: wp-live-chat-support.php:2414
+#: wp-live-chat-support.php:2118
 msgid "you are not a chat agent"
 msgstr ""
 
-#: wp-live-chat-support.php:2568
+#: wp-live-chat-support.php:2271
 msgid "Previous"
 msgstr ""
 
-#: wp-live-chat-support.php:2575
+#: wp-live-chat-support.php:2278
 msgid "Chat with"
 msgstr ""
 
-#: wp-live-chat-support.php:2592
+#: wp-live-chat-support.php:2295
 msgid "Starting Time:"
 msgstr ""
 
-#: wp-live-chat-support.php:2593
+#: wp-live-chat-support.php:2296
 msgid "Ending Time:"
 msgstr ""
 
-#: wp-live-chat-support.php:2613
+#: wp-live-chat-support.php:2316
 msgid "Chat initiated on:"
 msgstr ""
 
-#: wp-live-chat-support.php:2614
+#: wp-live-chat-support.php:2317
 msgid "Browser:"
 msgstr ""
 
-#: wp-live-chat-support.php:2640 wp-live-chat-support.php:2679
+#: wp-live-chat-support.php:2343 wp-live-chat-support.php:2382
 msgid "Invalid Chat ID"
 msgstr ""
 
-#: wp-live-chat-support.php:2648
+#: wp-live-chat-support.php:2351
 msgid "type here..."
 msgstr ""
 
-#: wp-live-chat-support.php:2806
+#: wp-live-chat-support.php:2504
 msgid "User has opened the chat window"
 msgstr ""
 
-#: wp-live-chat-support.php:2807
+#: wp-live-chat-support.php:2505
 msgid "User has minimized the chat window"
 msgstr ""
 
-#: wp-live-chat-support.php:2808
+#: wp-live-chat-support.php:2506
 msgid "User has maximized the chat window"
 msgstr ""
 
-#: wp-live-chat-support.php:2809
+#: wp-live-chat-support.php:2507
 msgid "The chat has been ended"
 msgstr ""
 
-#: wp-live-chat-support.php:3350
+#: wp-live-chat-support.php:3036
 msgid "Delete History"
 msgstr ""
 
-#: wp-live-chat-support.php:3367
+#: wp-live-chat-support.php:3052
 msgid "No chats available at the moment"
 msgstr ""
 
-#: wp-live-chat-support.php:3487
+#: wp-live-chat-support.php:3160
 msgid "Actions"
 msgstr ""
 
-#: wp-live-chat-support.php:3501
+#: wp-live-chat-support.php:3174
 msgid "You have not received any offline messages."
 msgstr ""
 
-#: wp-live-chat-support.php:3509
+#: wp-live-chat-support.php:3182
 msgid "Delete Message"
 msgstr ""
 
-#: wp-live-chat-support.php:3618
+#: wp-live-chat-support.php:3308
 msgid "You do not have permission to save settings."
 msgstr ""
 
-#: wp-live-chat-support.php:3884
+#: wp-live-chat-support.php:3592
 msgid "Your settings have been saved."
 msgstr ""
 
-#: wp-live-chat-support.php:3913
+#: wp-live-chat-support.php:3610
 msgid ""
 "WPLC: set_time_limit() is not enabled on this server. You may experience "
 "issues while using WP Live Chat by 3CX as a result of this. Please get in "
 "contact your host to get this function enabled."
 msgstr ""
 
-#: wp-live-chat-support.php:3919
+#: wp-live-chat-support.php:3616
 msgid ""
 "WPLC: Safe mode is enabled on this server. You may experience issues while "
 "using WP Live Chat by 3CX as a result of this. Please contact your host to "
 "get safe mode disabled."
 msgstr ""
 
-#: wp-live-chat-support.php:3942 wp-live-chat-support.php:3946
+#: wp-live-chat-support.php:3639 wp-live-chat-support.php:3643
 msgid "Plugin Features"
 msgstr ""
 
-#: wp-live-chat-support.php:3944
+#: wp-live-chat-support.php:3641
 msgid ""
 "Check out these features and get up to speed with what you can do with WP "
 "Live Chat:"
 msgstr ""
 
-#: wp-live-chat-support.php:3947
+#: wp-live-chat-support.php:3644
 msgid "Reporting"
 msgstr ""
 
-#: wp-live-chat-support.php:3948
+#: wp-live-chat-support.php:3645
 msgid "Localization"
 msgstr ""
 
-#: wp-live-chat-support.php:3956
+#: wp-live-chat-support.php:3653
 msgid "Chat FAQs"
 msgstr ""
 
-#: wp-live-chat-support.php:3958
+#: wp-live-chat-support.php:3655
 msgid ""
 "Learn quickly the ins and outs of Chat and start chatting with visitors and "
 "agents:"
 msgstr ""
 
-#: wp-live-chat-support.php:3960
+#: wp-live-chat-support.php:3657
 msgid "Chat with Visitors"
 msgstr ""
 
-#: wp-live-chat-support.php:3961
+#: wp-live-chat-support.php:3658
 msgid "Chat with Agents"
 msgstr ""
 
-#: wp-live-chat-support.php:3965
+#: wp-live-chat-support.php:3662
 msgid "Chat Invites"
 msgstr ""
 
-#: wp-live-chat-support.php:3970
+#: wp-live-chat-support.php:3667
 msgid "Settings & Customization"
 msgstr ""
 
-#: wp-live-chat-support.php:3972
+#: wp-live-chat-support.php:3669
 msgid "Use these guides to learn how to configure and customize WP Live Chat:"
 msgstr ""
 
-#: wp-live-chat-support.php:3976
+#: wp-live-chat-support.php:3673
 msgid "Agent Settings"
 msgstr ""
 
-#: wp-live-chat-support.php:3983
+#: wp-live-chat-support.php:3680
 msgid "Troubleshooting"
 msgstr ""
 
-#: wp-live-chat-support.php:3985
+#: wp-live-chat-support.php:3682
 msgid ""
 "Reference these troubleshooting guides to quickly resolve any WP Live Chat "
 "issues:"
 msgstr ""
 
-#: wp-live-chat-support.php:3987
+#: wp-live-chat-support.php:3684
 msgid "My Chat Box Is Not Showing"
 msgstr ""
 
-#: wp-live-chat-support.php:3988
+#: wp-live-chat-support.php:3685
 msgid "Not Receiving Notifications of New Chats"
 msgstr ""
 
-#: wp-live-chat-support.php:3989
+#: wp-live-chat-support.php:3686
 msgid "Check for JavaScript Errors"
 msgstr ""
 
-#: wp-live-chat-support.php:4017
+#: wp-live-chat-support.php:3714
 msgid "Initiate Chats"
 msgstr ""
 
-#: wp-live-chat-support.php:4018
+#: wp-live-chat-support.php:3715
 msgid "Multiple Chats"
 msgstr ""
 
-#: wp-live-chat-support.php:4019
+#: wp-live-chat-support.php:3716
 msgid "Add unlimited agents"
 msgstr ""
 
-#: wp-live-chat-support.php:4020
+#: wp-live-chat-support.php:3717
 msgid "Transfer Chats"
 msgstr ""
 
-#: wp-live-chat-support.php:4039
+#: wp-live-chat-support.php:3736
 #, php-format
 msgid "Thank you for using %s! Please %s on %s"
 msgstr ""
 
-#: wp-live-chat-support.php:4039
+#: wp-live-chat-support.php:3736
 msgid "rate us"
 msgstr ""
 
-#: wp-live-chat-support.php:4220 wp-live-chat-support.php:4280
-msgid "From"
-msgstr ""
-
-#: wp-live-chat-support.php:4222 wp-live-chat-support.php:4282
+#: wp-live-chat-support.php:3913 wp-live-chat-support.php:3973
 msgid "Timestamp"
 msgstr ""
 
-#: wp-live-chat-support.php:4223 wp-live-chat-support.php:4283
+#: wp-live-chat-support.php:3914 wp-live-chat-support.php:3974
 msgid "Origin"
 msgstr ""
 
-#: wp-live-chat-support.php:4228 wp-live-chat-support.php:4288
+#: wp-live-chat-support.php:3919 wp-live-chat-support.php:3979
 msgid "user"
 msgstr ""
 
-#: wp-live-chat-support.php:4230 wp-live-chat-support.php:4290
+#: wp-live-chat-support.php:3921 wp-live-chat-support.php:3981
 msgid "agent"
 msgstr ""
 
-#: wp-live-chat-support.php:4385
+#: wp-live-chat-support.php:4056
 msgid "Advanced settings"
 msgstr ""
 
-#: wp-live-chat-support.php:4392
+#: wp-live-chat-support.php:4063
 msgid "Only change these settings if you are experiencing performance issues."
 msgstr ""
 
-#: wp-live-chat-support.php:4399
+#: wp-live-chat-support.php:4070
 msgid "Website hosting type:"
 msgstr ""
 
-#: wp-live-chat-support.php:4403
+#: wp-live-chat-support.php:4074
 msgid "Custom parameters"
 msgstr ""
 
-#: wp-live-chat-support.php:4404
+#: wp-live-chat-support.php:4075
 msgid "Shared hosting - low level plan"
 msgstr ""
 
-#: wp-live-chat-support.php:4405
+#: wp-live-chat-support.php:4076
 msgid "Shared hosting - normal plan"
 msgstr ""
 
-#: wp-live-chat-support.php:4406
+#: wp-live-chat-support.php:4077
 msgid "VPS"
 msgstr ""
 
-#: wp-live-chat-support.php:4407
+#: wp-live-chat-support.php:4078
 msgid "Dedicated server"
 msgstr ""
 
-#: wp-live-chat-support.php:4413
+#: wp-live-chat-support.php:4084
 msgid "Long poll setup"
 msgstr ""
 
-#: wp-live-chat-support.php:4413
+#: wp-live-chat-support.php:4084
 msgid ""
 "Only change these if you are an experienced developer or if you have "
 "received these figures from the WP Live Chat by 3CX team."
 msgstr ""
 
-#: wp-live-chat-support.php:4418
+#: wp-live-chat-support.php:4089
 msgid "Iterations"
 msgstr ""
 
-#: wp-live-chat-support.php:4422
+#: wp-live-chat-support.php:4093
 msgid "Sleep between loops"
 msgstr ""
 
-#: wp-live-chat-support.php:4425
+#: wp-live-chat-support.php:4096
 msgid "milliseconds"
 msgstr ""
 
-#: wp-live-chat-support.php:4448
+#: wp-live-chat-support.php:4119
 msgid "Show 'Powered by' in chat box"
 msgstr ""
 
-#: wp-live-chat-support.php:4448
+#: wp-live-chat-support.php:4119
 msgid ""
 "Checking this will display a 'Powered by WP Live Chat by 3CX' caption at the "
 "bottom of your chatbox."
 msgstr ""
 
-#: wp-live-chat-support.php:4490
+#: wp-live-chat-support.php:4161
 msgid "Powered by WP Live Chat by 3CX"
 msgstr ""
 
-#: wp-live-chat-support.php:4644
+#: wp-live-chat-support.php:4286
 msgid ""
 "Browser notifications will no longer function on insecure (non-SSL) sites."
 msgstr ""
 
-#: wp-live-chat-support.php:4645
+#: wp-live-chat-support.php:4287
 msgid ""
 "Please add an SSL certificate to your site to continue receiving chat "
 "notifications in your browser."
 msgstr ""
 
-#: wp-live-chat-support.php:4658
+#: wp-live-chat-support.php:4300
 msgid ""
 "Please deactivate WP Live Chat Suport - Email Transcript plugin. Since WP "
 "Live Chat Support 8.0.05 there is build in support for Email Transcript."
 msgstr ""
 
-#: wp-live-chat-support.php:4665
+#: wp-live-chat-support.php:4307
 msgid "Email transcript to user"
 msgstr ""
 
-#: wp-live-chat-support.php:4676
+#: wp-live-chat-support.php:4318
 msgid "Sending Transcript"
 msgstr ""
 
-#: wp-live-chat-support.php:4750
+#: wp-live-chat-support.php:4381
 #, php-format
 msgid "Your chat transcript from %1$s"
 msgstr ""
 
-#: wp-live-chat-support.php:4841
+#: wp-live-chat-support.php:4472
 msgid "Chat Transcript Settings"
 msgstr ""
 
-#: wp-live-chat-support.php:4844
+#: wp-live-chat-support.php:4475
 msgid "Enable chat transcripts:"
 msgstr ""
 
-#: wp-live-chat-support.php:4852
+#: wp-live-chat-support.php:4483
 msgid "Send transcripts to:"
 msgstr ""
 
-#: wp-live-chat-support.php:4859
+#: wp-live-chat-support.php:4490
 msgid "User"
 msgstr ""
 
-#: wp-live-chat-support.php:4870
+#: wp-live-chat-support.php:4501
 msgid "Send transcripts when chat ends:"
 msgstr ""
 
-#: wp-live-chat-support.php:4878
+#: wp-live-chat-support.php:4509
 msgid "Email body"
 msgstr ""
 
-#: wp-live-chat-support.php:4888
+#: wp-live-chat-support.php:4519
 msgid "Email header"
 msgstr ""
 
-#: wp-live-chat-support.php:4897
+#: wp-live-chat-support.php:4528
 msgid "Email footer"
 msgstr ""
 
-#: wp-live-chat-support.php:4973
+#: wp-live-chat-support.php:4604
 msgid ""
 "Please note, local message encryption and local server options will be "
 "deprecated in the next major release. All encryption and message delivery "
 "will handled by our external servers in future."
 msgstr ""
 
-#: wp-live-chat-support.php:4976
+#: wp-live-chat-support.php:4607
 msgid "Deprecation Notice - Message Encryption & Local Server"
 msgstr ""
 
-#: wp-live-chat-support.php:4978
+#: wp-live-chat-support.php:4609
 msgid "Dismiss"
 msgstr ""
 

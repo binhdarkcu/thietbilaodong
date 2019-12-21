@@ -11,8 +11,8 @@
 
 <article id="post-<?php the_ID();?>" <?php post_class();?>>
 	<header class="entry-header">
-		<!-- <?php the_title('<h1 class="entry-title">', '</h1>');?> -->
-		<!-- <?php supermarket_ecommerce_edit_link(get_the_ID());?> -->
+		<?php the_title('<h1 class="entry-title">', '</h1>');?>
+		<?php supermarket_ecommerce_edit_link(get_the_ID());?>
 	</header>
 	<div class="entry-content">
 		<?php if (class_exists('woocommerce') && is_front_page()) {?>
@@ -36,9 +36,41 @@
               $product_cat_id = $product_category->term_id;
               $cat_link = get_category_link($product_cat_id);
         ?>
-            <a href="<?php echo esc_url(get_term_link($product_category)); ?>">
-              <i class="fas fa-angle-double-right"></i> <?php echo esc_html($product_category->name); ?>
+          <div class="menu-category">
+            <a class="menu-link-hover" href="<?php echo esc_url(get_term_link($product_category)); ?>">
+              <i class="fas fa-angle-double-right"></i>
+              <?php echo esc_html($product_category->name); ?>
             </a>
+            <div class="menu-div-show">
+              <?php
+                // $argProduct = array(
+                //   'orderby' => 'title',
+                //   'order' => 'ASC',
+                //   'hide_empty' => 0,
+                //   'parent' => $product_cat_id,
+                // );
+                // $products = get_terms('product', $argProduct);
+                // // $countProducts = count($products);
+                // echo esc_html($products->name);
+                $args = array(
+                  'category' => array( $product_category->name ),
+                  'orderby'  => 'name',
+              );
+              $products = wc_get_products( $args );
+              $countProducts = count($products);
+              if ($products) {
+                foreach ($products as $product) {
+                  # code...
+                  ?>
+                    <a style="color: black" class="menu-link-hover" href="<?php echo esc_url(get_term_link($product->get_slug())); ?>">
+                      <i class="fas fa-angle-double-right"></i>
+                      <?php echo esc_html($product->get_name()); ?>
+                    </a>
+                <?php }
+              }
+              ?>
+            </div>
+          </div>
 				<?php
             }
           }

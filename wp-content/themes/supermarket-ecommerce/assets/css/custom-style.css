@@ -12,12 +12,38 @@
   padding: 5px;
 }
 
-.menu-categories > a {
+.menu-categories > .menu-category a {
   display: block;
   color: white;
   padding: 5px;
   border-bottom: 1px dashed white;
 }
+
+.menu-category {
+  position: relative;
+}
+
+/**
+  * hover
+  */
+  .menu-div-show {
+    width: 200px;
+    /* height: 200px; */
+    background-color: whitesmoke;
+    display: none;
+  }
+
+  a.menu-link-hover {
+    color: black;
+  }
+  
+  a.menu-link-hover:hover + .menu-div-show {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 102.5%;
+    z-index: 999;
+  }
 
 /**
   * feature products
@@ -28,4 +54,21 @@ a.wp-block-button__link.add_to_cart_button.ajax_add_to_cart, span.wc-block-grid_
 
 figure.wp-block-embed-wordpress.wp-block-embed.is-type-wp-embed.is-provider-thiết-bị-lao-dộng.post-on-dashboard {
   display: inline-block;
+}
+
+/**
+  * float contact
+  */
+div#contact-floated {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  color: #faa61a;
+  border: 1px solid;
+  background-color: #343748;
+  padding: 20px;
+}
+
+div#contact-floated a {
+  color: #faa61a;
 }

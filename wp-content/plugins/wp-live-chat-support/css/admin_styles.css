@@ -903,3 +903,8 @@ html .ui-button.ui-state-disabled:active {
   padding: 16px;
   border: 1px dotted #aaa;
 }
+
+.wplc_error_message {
+  color: #dc3232 !important;
+  font-size: 12px !important;
+}

@@ -49,12 +49,9 @@ function wplc_init_ajax_callback()
       $action = sanitize_text_field($_POST['action']);
     }
 
-    $name = $wplc_settings['wplc_user_default_visitor_name'];
+    $name = wplc_get_user_name('', $wplc_settings);
     if (isset($_POST['name']) && !empty($_POST['name'])) {
-      $name = trim(strip_tags(sanitize_text_field($_POST['name'])));
-      if (empty($name)) {
-        $wplc_settings['wplc_user_default_visitor_name'];
-      }
+      $name = wplc_get_user_name(trim(strip_tags(sanitize_text_field($_POST['name']))), $wplc_settings);
     }
 
     $email = "no email set";
@@ -90,14 +87,24 @@ function wplc_init_ajax_callback()
     switch ($action) {
 
       case 'wplc_get_chat_box':
+        $new_user=false;
         $continue = apply_filters("wplc_version_check_continue", true);
         if ($continue === true) {
-          $outputbox = wplc_output_box_5100($cid);
+          wplc_start_session();
+          $sessid=session_id();
+          if (empty($_SESSION['browsing'])) {
+            $new_user=true;
+            $_SESSION['browsing']=1;
+          }
+          wplc_close_session();
+          wplc_output_box_5100($cid);
+          if ($new_user) {
+            do_action("wplc_log_user_on_page_after_hook", $sessid, array());
+          }
         } else {
           echo boolval($continue);
         }
         break;
-
 
       case 'wplc_call_to_server_visitor':
 

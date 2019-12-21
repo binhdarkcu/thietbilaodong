@@ -81,7 +81,8 @@ function wplc_api_settings_tab_content() {
 						<td>
 							<input style="max-width:60%; width:100%" type="text" id="wplc_secret_token_input" value="<?php echo ($secret_token === false ? __('No secret token found', 'wp-live-chat-support') : $secret_token) ?>" readonly>
 							<input type="hidden" name="wplc_new_secret_token_nonce" id="wplc_new_secret_token_nonce" value="<?php echo $new_secret_token_nonce; ?>">
-							<div class="button-secondary" id="wplc_new_secret_token_btn"><?php _e("Generate New", 'wp-live-chat-support') ?></div>
+              <div class="button-secondary" id="wplc_new_secret_token_btn"><?php _e("Generate New", 'wp-live-chat-support') ?></div>
+              <p class="wplc_error_message" id="wplc_secret_token_error"></p>
 						</td>
 					</tr>
 				</tbody>

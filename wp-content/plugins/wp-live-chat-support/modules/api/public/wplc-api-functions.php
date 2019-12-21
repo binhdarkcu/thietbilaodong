@@ -26,13 +26,7 @@ function wplc_api_end_chat(WP_REST_Request $request)
           if (wplc_check_user_request($request['chat_id'])) {
 
             if (isset($request['agent_id'])) {
-
-              $cid = $request['chat_id'];
-              if (!filter_var($request['chat_id'], FILTER_VALIDATE_INT)) {
-                /*  We need to identify if this CID is a node CID, and if so, return the WP CID */
-                $cid = wplc_return_chat_id_by_rel($cid);
-              }
-
+              $cid = wplc_return_chat_id_by_rel_or_id($request['chat_id']);
               if (wplc_change_chat_status($cid, 1, intval($request['agent_id']))) {
                 do_action("wplc_end_session_chat_id");
                 do_action('wplc_send_transcript_hook', $cid);
@@ -138,12 +132,7 @@ function wplc_api_send_message(WP_REST_Request $request)
                 if ($action == "wplc_user_send_msg") {
                   wplc_record_chat_msg("1", $chat_id, $message, false, false, $other);
                   wplc_update_active_timestamp($chat_id);
-
-
-                  $g_chat_id = intval(wplc_return_chat_id_by_rel($chat_id));
-
                   set_transient("wplc_user_active_" . wplc_get_user_ip(), 1, 60);
-
                   $return_array['response'] = "Message sent successfully";
                   $return_array['code'] = "200";
                   $return_array['data'] = array(
@@ -178,6 +167,7 @@ function wplc_api_send_message(WP_REST_Request $request)
               );
             }
           } else {
+            error_log('wplc_api_send_message tamper detected '.$request['chat_id']);
             $return_array['response'] = "'chat_id' tamper detected";
             $return_array['code'] = "401";
             $return_array['requirements'] = array(
@@ -232,12 +222,7 @@ function wplc_check_user_request($cid)
   }
   wplc_close_session();
   if (isset($sid)) {
-    if (!intval($cid)) {
-      $g_chat_id = intval(wplc_return_chat_id_by_rel($cid));
-    } else {
-      $g_chat_id = intval($cid);
-    }
-
+    $g_chat_id = wplc_return_chat_id_by_rel_or_id($cid);
     if (intval($sid) === $g_chat_id) {
       return true;
     } else {
@@ -344,11 +329,8 @@ function wplc_api_get_messages(WP_REST_Request $request)
 */
 function wplc_api_return_messages($cid, $limit, $offset, $received_via = 'u')
 {
-
-  $cid = wplc_return_chat_id_by_rel($cid);
-
+  $cid = wplc_return_chat_id_by_rel_or_id($cid);
   $messages = wplc_return_chat_messages($cid, false, true, false, false, 'array', false);
-
   if ($received_via === 'u') {
     wplc_mark_as_read_user_chat_messages($cid);
   } else {
@@ -394,9 +376,7 @@ function wplc_api_call_start_chat(WP_REST_Request $request)
       if (isset($request['server_token'])) {
 
         if (isset($request['wplc_name']) && isset($request['wplc_email']) && isset($request['session'])) {
-
-          //$cid = isset( $request['wplc_cid'] ) ? intval( $request['wplc_cid'] ) : null;
-
+          $cid = !empty($request['cid']) ? $request['cid'] : 0;
           $name = substr(strip_tags(sanitize_text_field($request['wplc_name'])), 0, 40);
           $email = substr(strip_tags(sanitize_text_field($request['wplc_email'])), 0, 40);
 
@@ -424,7 +404,7 @@ function wplc_api_call_start_chat(WP_REST_Request $request)
               'url' => $request['url'],
               'last_active_timestamp' => current_time('mysql'),
               'other' => maybe_serialize($other_data),
-              'rel' => $request['cid']
+              'rel' => $cid
             ),
             array(
               '%s',
@@ -629,15 +609,11 @@ function wplc_api_start_session(WP_REST_Request $request)
       $check_token = get_option('wplc_api_secret_token');
       if ($check_token !== false && $request['server_token'] === $check_token) {
 
-        if (isset($request['cid']) && !is_int($request['cid'])) {
-
-          $cid = wplc_return_chat_id_by_rel($request['cid']);
-
-          if ($cid !== $request['cid']) {
-
+        if (isset($request['cid'])) {
+          $cid = wplc_return_chat_id_by_rel_or_id($request['cid']);
+          if (!empty($cid)) {
             do_action("wplc_set_session_chat_id", intval($cid));
             set_transient("wplc_user_active_" . wplc_get_user_ip(), 1, 60);
-
             $return_array['response'] = "Successful";
             $return_array['code'] = "200";
             $return_array['requirements'] = array(
@@ -701,12 +677,7 @@ function wplc_api_end_session(WP_REST_Request $request)
     }
     wplc_close_session();
     if (isset($sid)) {
-      if (!intval($_POST['cid'])) {
-        $g_chat_id = intval(wplc_return_chat_id_by_rel($_POST['cid']));
-      } else {
-        $g_chat_id = intval($_POST['cid']);
-      }
-
+      $g_chat_id = wplc_return_chat_id_by_rel_or_id($_POST['cid']);
       if (intval($sid) === $g_chat_id) {
         wplc_clean_session();
       } else {

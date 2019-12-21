@@ -41,22 +41,27 @@ jQuery(document).ready(function() {
 
   jQuery(document).on("wplc_agent_online_changed", function(e) {
     if (typeof e.response !== "undefined") {
-      var reply = JSON.parse(e.response);
-      if (!!reply && reply.agents) {
-        jQuery("#wplc_ma_online_agents_label").text(wplc_choose_admin_strings.agent_online_plural);
-        if (reply.agents.length>0) { // at least one agent online
-          // agent count
-          jQuery("#wplc_ma_online_agents_circle").removeClass("wplc_red_circle");
-          jQuery("#wplc_ma_online_agents_circle").addClass("wplc_green_circle");
-          if (reply.agents.length==1) {
-            jQuery("#wplc_ma_online_agents_label").text(wplc_choose_admin_strings.agent_online_singular);
+      try {
+        var reply = JSON.parse(e.response);
+        if (!!reply && reply.agents) {
+          jQuery("#wplc_ma_online_agents_label").text(wplc_choose_admin_strings.agent_online_plural);
+          if (reply.agents.length>0) { // at least one agent online
+            // agent count
+            jQuery("#wplc_ma_online_agents_circle").removeClass("wplc_red_circle");
+            jQuery("#wplc_ma_online_agents_circle").addClass("wplc_green_circle");
+            if (reply.agents.length==1) {
+              jQuery("#wplc_ma_online_agents_label").text(wplc_choose_admin_strings.agent_online_singular);
+            }
+          } else { // no agents online
+            // agent count
+            jQuery("#wplc_ma_online_agents_circle").removeClass("wplc_green_circle");
+            jQuery("#wplc_ma_online_agents_circle").addClass("wplc_red_circle");
           }
-        } else { // no agents online
-          // agent count
-          jQuery("#wplc_ma_online_agents_circle").removeClass("wplc_green_circle");
-          jQuery("#wplc_ma_online_agents_circle").addClass("wplc_red_circle");
+          jQuery("#wplc_ma_online_agents_count").text(reply.agents.length);
         }
-        jQuery("#wplc_ma_online_agents_count").text(reply.agents.length);
+      } catch(e) {
+        // probably session expired, try force reload
+        document.location.reload();
       }
       // todo: update dropdown agent list in admin menu
     }

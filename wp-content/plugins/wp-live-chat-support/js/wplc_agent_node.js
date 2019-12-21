@@ -2787,21 +2787,18 @@ tcx_delegates = function() {
     if (tcx_check_visitor_as_per_online(data)) {
       // this visitor matches a domain from a domain that we have set to ONLINE
       visitor_list[data.chatid] = data;
-      var current_visitor_socketid = jQuery("#" + data.chatid).attr('socket');
 
       nc_update_visitor_count(data.total_visitors);
       nc_add_visitor_to_list(data);
 
       /* was this chat open and active with an agent? if yes, update the agent as to what page the user is now browsing */
-      if (typeof data.state !== "undefined" && data.state === "active") {
+      if (typeof data.state !== "undefined" && (data.state=='browsing' || data.state === "active")) {
         jQuery("#" + data.chatid).removeClass('inactive');
         jQuery("#" + data.chatid).addClass('active');
 
-        if (data.chatid === active_chatid) {
+        if (data.chatid == active_chatid) {
           jQuery(".chatInfoArea-Info1").html("from: <a href='" + wplc_safe_html(visitor_list[active_chatid].referer) + "' target='_BLANK'>" + tcx_string_limiter(wplc_safe_html(visitor_list[active_chatid].referer), 45) + "</a>");
-
         }
-
         jQuery("#vis" + data.chatid + " .init_chat").hide();
       }
 
@@ -2996,42 +2993,7 @@ tcx_delegates = function() {
  * @return {bool} True if should show
  */
 function tcx_check_visitor_as_per_online(visitor_data) {
-
-  if (typeof onlineSwitch !== 'undefined') {
-    if (typeof onlineSwitch.domainNameURIList !== 'undefined') {
-
-      if (typeof onlineSwitch.onlineDomains !== 'undefined') {
-
-        for (k in onlineSwitch.onlineDomains) {
-          // let's run through the first online domain and compare against all visitors
-          var current_domain_to_check = onlineSwitch.domainNameURIList[onlineSwitch.onlineDomains[k]];
-
-          if (visitor_data.referer.includes(current_domain_to_check)) {
-            return true;
-
-          } else {
-
-
-          }
-
-
-        }
-
-      } else {
-        return false;
-      }
-
-    } else {
-      return false;
-    }
-  } else {
-    return false;
-  }
-
-
-
-  return false;
-
+  return true;
 }
 
 /**
@@ -3041,62 +3003,6 @@ function tcx_check_visitor_as_per_online(visitor_data) {
  * @return {object} New formatted visitor list
  */
 function tcx_update_visitor_data_list_per_online(total_visitors) {
-
-  if (typeof onlineSwitch !== 'undefined') {
-    if (typeof onlineSwitch.domainNameURIList !== 'undefined') {
-
-      if (typeof onlineSwitch.onlineDomains !== 'undefined') {
-        if (Object.keys(onlineSwitch.onlineDomains).length === 0) { return {}; }
-        var new_visitor_list = {};
-
-        var cnt = 0;
-        var maxcnt = Object.keys(onlineSwitch.onlineDomains).length;
-
-
-        for (k in onlineSwitch.onlineDomains) {
-          // let's run through the first online domain and compare against all visitors
-          var current_domain_to_check = onlineSwitch.domainNameURIList[onlineSwitch.onlineDomains[k]];
-          for (l in total_visitors) {
-
-            if (total_visitors[l].referer.includes(current_domain_to_check)) {
-
-              new_visitor_list[total_visitors[l].chatid] = total_visitors[l];
-            }
-
-          }
-          cnt++;
-
-          // are we done here?
-          if (cnt >= maxcnt) {
-            // compare new visitors to old visitors so we can remove visitors that shouldnt be there.
-            for (m in total_visitors) {
-              if (typeof new_visitor_list[total_visitors[m].chatid] !== 'undefined') {
-                // this visitor must stay..
-              } else {
-                jQuery.event.trigger({ type: "tcx_remove_visitor", ndata: total_visitors[m] });
-                nc_update_visitor_count(false);
-                delete total_visitors[m];
-              }
-            }
-            return new_visitor_list;
-          }
-        }
-
-
-      } else {
-        //not online for anything
-        return {};
-
-      }
-
-    } else {
-
-      return total_visitors;
-    }
-  } else {
-
-    return total_visitors;
-  }
   return total_visitors;
 }
 

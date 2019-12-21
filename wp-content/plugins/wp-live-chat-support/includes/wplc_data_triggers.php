@@ -52,7 +52,7 @@ function wplc_mrg_get_add_trigger_content(){
 
 	if(isset($_GET['wplc_action'])){
 		if($_GET['wplc_action'] == 'edit_trigger'){
-			$wplc_submit_label = "Edit Trigger";
+			$wplc_submit_label = "Save Trigger";
 		}
 	}
 
@@ -98,8 +98,7 @@ function wplc_mrg_get_add_trigger_content(){
     $content .= 		"<td>";
     
     echo $content; //To Support TinyMCE
-    wp_editor( (isset($trigger_content["html"]) ? wplc_shortcode_filter_mrg($trigger_content["html"], true) : ""),"wplc_trigger_content",array("teeny" => false, "media_buttons" => true, "textarea_name" => "wplc_trigger_content", "textarea_rows" => 5));
-
+    wp_editor( (isset($trigger_content["html"]) ? $trigger_content["html"] : ""),"wplc_trigger_content",array("teeny" => false, "media_buttons" => true, "textarea_name" => "wplc_trigger_content", "textarea_rows" => 5));
 
     $content .= 		"</td>";
     $content .= 	"</tr>";
@@ -226,7 +225,7 @@ function wplc_mrg_trigger_admin_head(){
 
 			if(isset($_POST['wplc_trigger_content']) && $_POST['wplc_trigger_content'] !== ""){	
 				$supporter_tags = wplc_trigger_get_allowed_tags_mrg();
-				$serialized_content['html'] = wp_kses(nl2br(wplc_shortcode_filter_mrg($_POST['wplc_trigger_content'])), $supporter_tags);
+        $serialized_content['html'] = wp_kses(nl2br($_POST['wplc_trigger_content']), $supporter_tags);
 			}
 
 			$return_array["trigger_content"] = serialize($serialized_content);
@@ -475,7 +474,7 @@ function wplc_mrg_get_trigger_table(){
   			$content .= 	"<td>".$result->name."</td>";
   			$content .= 	"<td>".__(wplc_get_type_from_code_mrg($result->type), 'wp-live-chat-support')."</td>";
   			$content .= 	"<td>".(sanitize_text_field($trigger_content["pages"]) == "" ? __("All", 'wp-live-chat-support') : sanitize_text_field($trigger_content["pages"]))."</td>";
-  			$content .= 	"<td>".trim(substr(wp_filter_post_kses($trigger_content["html"]), 0, 120))."...</td>";
+  			$content .= 	"<td>".trim(substr(htmlentities($trigger_content["html"]), 0, 120))."...</td>";
   			$content .= 	"<td>";
   			$content .=			"<div class='wplc_trigger_status ".($result->status == 1 ? "wplc_trigger_enabled" : "wplc_trigger_disabled")."'>";
   			$content .=			  "<a href='?page=wplivechat-menu-triggers&wplc_action=trigger_status_change&trigger_id=".$result->id."&trigger_status=".($result->status == 1 ? "0" : "1")."&wplc_trigger_status_nonce=".$wplc_trigger_status_nonce."' title='".__("Click to change trigger status", 'wp-live-chat-support')."'>";
@@ -629,7 +628,7 @@ function wplc_filter_control_modern_theme_hovercard_content_triggers_mrg($msg) {
         if (intval($trigger_data->show_content) == 1) {
           $unserialized_content = maybe_unserialize($trigger_data->content);
           if ($unserialized_content) {
-            $msg = do_shortcode(wplc_shortcode_filter_mrg($unserialized_content['html'], true));
+            $msg = do_shortcode($unserialized_content['html'], true);
           }
         }
       }
@@ -749,28 +748,6 @@ function wplc_trigger_get_allowed_tags_mrg(){
 	        'selected' 	      => true
 		);
 	return $tags;
-}
-
-
-function wplc_shortcode_filter_mrg($content, $decode = false){
-	if($decode){
-		if(strpos($content, 'SYM34') != -1){
-			$content = str_replace("SYM34",'"',$content);
-		}
-
-		if(strpos($content, 'SYM35') != -1){
-			$content = str_replace("SYM35","'",$content);
-		}
-	}else{
-		if(strpos($content, '"') != -1){
-			$content = str_replace('\\"',"SYM34",$content);
-		}
-
-		if(strpos($content, "'") != -1){
-			$content = str_replace("\\'","SYM35",$content);
-		}
-	}
-	return $content;
 }
 
 function wplc_triggers_check_for_conflicts_mrg($triggers){

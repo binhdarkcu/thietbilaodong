@@ -9,6 +9,7 @@
 
 ?>
 		</div>
+		<?php get_template_part('tpl', 'support');?>
 		<footer id="colophon" class="site-footer" role="contentinfo">
 			<div class="container">
 				<?php get_template_part( 'template-parts/footer/footer', 'widgets' ); ?>

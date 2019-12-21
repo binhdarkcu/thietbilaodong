@@ -33,4 +33,4 @@ get_header(); ?>
 
 <?php do_action( 'supermarket_ecommerce_above_footer_page' ); ?>
 
-<?php get_footer();
+<?php get_footer(); ?>

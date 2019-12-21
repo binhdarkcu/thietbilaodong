@@ -304,7 +304,7 @@ function wplc_webhooks_add_form($force_edit = false, $webhook_id = false) {
 
   $content .=         "<tr>";
   $content .=             "<td>" . __("Target URL", 'wp-live-chat-support') . "</td>";
-  $content .=             "<td><input placeholder='http://example.com/webhook_handler' name='add_webhook_domain' value='" . $url_value . "' type='text' style='width:200px'></td>";
+  $content .=             "<td><input placeholder='http://example.com/webhook_handler' name='add_webhook_domain' value='" . $url_value . "' type='text' style='width:500px'></td>";
   $content .=         "</tr>";
 
   $content .=         "<tr>";
@@ -458,7 +458,7 @@ add_action("wp_login", "wplc_webhook_login_monitor", 10, 2);
  * Watches all login activity to track when an agent logs in
 */
 function wplc_webhook_login_monitor($user_login, $user) {
-  if (wplc_user_is_agent($user->ID)) {
+  if ($user->has_cap('wplc_ma_agent')) {
     do_action("wplc_fire_webhook", 0, array("agent_id" => $user->ID));
   }
 }

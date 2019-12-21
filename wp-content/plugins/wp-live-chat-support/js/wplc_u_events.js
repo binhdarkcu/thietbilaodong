@@ -176,11 +176,11 @@ jQuery(function() {
     var wplc_email = jQuery("#wplc_email").val().replace(/(<([^>]+)>)/ig, "");
 
     if (wplc_name.length <= 0) {
-      alert(wplc_error_messages.valid_name);
+      alert(wplc_error_messages.please_enter_name);
       return false;
     }
     if (wplc_email.length <= 0) {
-      alert(wplc_error_messages.valid_email);
+      alert(wplc_error_messages.please_enter_email);
       return false;
     }
 
@@ -189,7 +189,7 @@ jQuery(function() {
 
       //var testEmail = /^[A-Z0-9._%+-]+@([A-Z0-9-]+\.)+[A-Z]{2,4}$/i;
       if (!testEmail.test(wplc_email)) {
-        alert(wplc_error_messages.valid_email);
+        alert(wplc_error_messages.please_enter_valid_email);
         return false;
       }
     }
@@ -558,6 +558,6 @@ function open_chat(force) {
 
   if (!jQuery("#wp-live-chat-header").hasClass("active")) {
     jQuery("#wp-live-chat-header").click();
-  }        
+  }
 
 }
