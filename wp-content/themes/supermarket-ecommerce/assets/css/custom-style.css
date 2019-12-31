@@ -36,7 +36,7 @@
   a.menu-link-hover {
     color: black;
   }
-  
+
   a.menu-link-hover:hover + .menu-div-show {
     display: block;
     position: absolute;
@@ -71,4 +71,10 @@ div#contact-floated {
 
 div#contact-floated a {
   color: #faa61a;
+}
+
+.header-wrapper .header-top {
+    background-color: #f73b00;
+    font-size: 13px;
+    color: #fff;
 }

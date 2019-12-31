@@ -8,7 +8,7 @@
  */
 
 function supermarket_ecommerce_setup() {
-	
+
 	add_theme_support( 'automatic-feed-links' );
 	add_theme_support( 'woocommerce' );
 	add_theme_support( 'title-tag' );
@@ -29,7 +29,7 @@ function supermarket_ecommerce_setup() {
 	add_image_size( 'supermarket-ecommerce-thumbnail-avatar', 100, 100, true );
 
 	$GLOBALS['content_width'] = 525;
-	
+
 	register_nav_menus( array(
 		'primary' => __( 'Primary Menu', 'supermarket-ecommerce' ),
 	) );
@@ -63,7 +63,7 @@ function supermarket_ecommerce_setup() {
 	 * specifically font, colors, and column width.
  	 */
 	add_editor_style( array( 'assets/css/editor-style.css', supermarket_ecommerce_fonts_url() ) );
-	
+
 	// Theme Activation Notice
 	global $pagenow;
 
@@ -174,15 +174,16 @@ function supermarket_ecommerce_fonts_url(){
 function supermarket_ecommerce_scripts() {
 	// Add custom fonts, used in the main stylesheet.
 	wp_enqueue_style( 'supermarket-ecommerce-fonts', supermarket_ecommerce_fonts_url(), array(), null );
-	
+
 	// CUSTOM CSS
 	wp_enqueue_style( 'custom-style', get_template_directory_uri().'/assets/css/custom-style.css' );
 	wp_enqueue_style( 'custom-login', get_template_directory_uri().'/assets/css/custom-login.css' );
-	wp_enqueue_style( 'login-style', get_template_directory_uri().'/assets/css/login-style.scss' );
 
-	//Bootstarp 
-	wp_enqueue_style( 'bootstrap', get_template_directory_uri().'/assets/css/bootstrap.css' );
-	
+
+	wp_enqueue_style( 'autoptimize', get_template_directory_uri().'/assets/css/autoptimize.css' );
+
+	//Bootstarp
+
 	// Theme stylesheet.
 	wp_enqueue_style( 'supermarket-ecommerce-basic-style', get_stylesheet_uri() );
 
@@ -204,11 +205,11 @@ function supermarket_ecommerce_scripts() {
 	wp_enqueue_script( 'supermarket-ecommerce-skip-link-focus-fix', get_theme_file_uri( '/assets/js/skip-link-focus-fix.js' ), array(), '1.0', true );
 
 	$supermarket_ecommerce_l10n=array();
-	
+
 	if ( has_nav_menu( 'top' ) ) {
 		wp_enqueue_script( 'supermarket-ecommerce-navigation-jquery', get_theme_file_uri( '/assets/js/navigation.js' ), array( 'jquery' ), '1.0', true );
 		$supermarket_ecommerce_l10n['expand']         = __( 'Expand child menu', 'supermarket-ecommerce' );
-		$supermarket_ecommerce_l10n['collapse']       = __( 'Collapse child menu', 'supermarket-ecommerce' );		
+		$supermarket_ecommerce_l10n['collapse']       = __( 'Collapse child menu', 'supermarket-ecommerce' );
 	}
 
 	wp_enqueue_script( 'supermarket-ecommerce-navigation-jquery', get_theme_file_uri( '/assets/js/navigation.js' ), array( 'jquery' ), '2.1.2', true );
@@ -242,8 +243,8 @@ function supermarket_ecommerce_sanitize_dropdown_pages( $page_id, $setting ) {
 }
 
 function supermarket_ecommerce_sanitize_choices( $input, $setting ) {
-    global $wp_customize; 
-    $control = $wp_customize->get_control( $setting->id ); 
+    global $wp_customize;
+    $control = $wp_customize->get_control( $setting->id );
     if ( array_key_exists( $input, $control->choices ) ) {
         return $input;
     } else {

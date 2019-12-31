@@ -1,0 +1,57 @@
+2019-12-29T19:44:07+00:00 CRITICAL require_once(): Failed opening required '/home/u853281288/domains/dongphucsocvang.com/public_html/wp-content/plugins/wp-live-chat-support/functions.php' (include_path='.:/opt/alt/php72/usr/share/pear') in /home/u853281288/domains/dongphucsocvang.com/public_html/wp-content/plugins/wp-live-chat-support/wp-live-chat-support.php on line 297
+
+2019-12-29T19:44:08+00:00 CRITICAL require_once(): Failed opening required '/home/u853281288/domains/dongphucsocvang.com/public_html/wp-content/plugins/wp-live-chat-support/functions.php' (include_path='.:/opt/alt/php72/usr/share/pear') in /home/u853281288/domains/dongphucsocvang.com/public_html/wp-content/plugins/wp-live-chat-support/wp-live-chat-support.php on line 297
+
+2019-12-29T19:44:09+00:00 CRITICAL require_once(): Failed opening required '/home/u853281288/domains/dongphucsocvang.com/public_html/wp-content/plugins/wp-live-chat-support/functions.php' (include_path='.:/opt/alt/php72/usr/share/pear') in /home/u853281288/domains/dongphucsocvang.com/public_html/wp-content/plugins/wp-live-chat-support/wp-live-chat-support.php on line 297
+
+2019-12-29T19:44:10+00:00 CRITICAL require_once(): Failed opening required '/home/u853281288/domains/dongphucsocvang.com/public_html/wp-content/plugins/wp-live-chat-support/functions.php' (include_path='.:/opt/alt/php72/usr/share/pear') in /home/u853281288/domains/dongphucsocvang.com/public_html/wp-content/plugins/wp-live-chat-support/wp-live-chat-support.php on line 297
+
+2019-12-29T19:44:13+00:00 CRITICAL require_once(): Failed opening required '/home/u853281288/domains/dongphucsocvang.com/public_html/wp-content/plugins/wp-live-chat-support/functions.php' (include_path='.:/opt/alt/php72/usr/share/pear') in /home/u853281288/domains/dongphucsocvang.com/public_html/wp-content/plugins/wp-live-chat-support/wp-live-chat-support.php on line 297
+
+2019-12-29T19:44:13+00:00 CRITICAL require_once(): Failed opening required '/home/u853281288/domains/dongphucsocvang.com/public_html/wp-content/plugins/wp-live-chat-support/functions.php' (include_path='.:/opt/alt/php72/usr/share/pear') in /home/u853281288/domains/dongphucsocvang.com/public_html/wp-content/plugins/wp-live-chat-support/wp-live-chat-support.php on line 297
+
+2019-12-29T19:44:13+00:00 CRITICAL require_once(): Failed opening required '/home/u853281288/domains/dongphucsocvang.com/public_html/wp-content/plugins/wp-live-chat-support/functions.php' (include_path='.:/opt/alt/php72/usr/share/pear') in /home/u853281288/domains/dongphucsocvang.com/public_html/wp-content/plugins/wp-live-chat-support/wp-live-chat-support.php on line 297
+
+2019-12-29T19:44:14+00:00 CRITICAL require_once(): Failed opening required '/home/u853281288/domains/dongphucsocvang.com/public_html/wp-content/plugins/wp-live-chat-support/functions.php' (include_path='.:/opt/alt/php72/usr/share/pear') in /home/u853281288/domains/dongphucsocvang.com/public_html/wp-content/plugins/wp-live-chat-support/wp-live-chat-support.php on line 297
+
+2019-12-29T19:44:14+00:00 CRITICAL require_once(): Failed opening required '/home/u853281288/domains/dongphucsocvang.com/public_html/wp-content/plugins/wp-live-chat-support/functions.php' (include_path='.:/opt/alt/php72/usr/share/pear') in /home/u853281288/domains/dongphucsocvang.com/public_html/wp-content/plugins/wp-live-chat-support/wp-live-chat-support.php on line 297
+
+2019-12-29T19:44:41+00:00 CRITICAL require_once(): Failed opening required '/home/u853281288/domains/dongphucsocvang.com/public_html/wp-content/plugins/smart-slider-3/library/smartslider/plugins/item/button/button/item.php' (include_path='.:/opt/alt/php72/usr/share/pear') in /home/u853281288/domains/dongphucsocvang.com/public_html/wp-content/plugins/smart-slider-3/library/smartslider/libraries/renderable/layers/item/itemsFactory.php on line 23
+
+2019-12-29T19:44:41+00:00 CRITICAL require_once(): Failed opening required '/home/u853281288/domains/dongphucsocvang.com/public_html/wp-content/plugins/smart-slider-3/library/smartslider/plugins/item/button/button/item.php' (include_path='.:/opt/alt/php72/usr/share/pear') in /home/u853281288/domains/dongphucsocvang.com/public_html/wp-content/plugins/smart-slider-3/library/smartslider/libraries/renderable/layers/item/itemsFactory.php on line 23
+
+2019-12-29T19:45:11+00:00 CRITICAL require_once(): Failed opening required '/home/u853281288/domains/dongphucsocvang.com/public_html/wp-content/plugins/smart-slider-3/library/smartslider/plugins/item/button/button/item.php' (include_path='.:/opt/alt/php72/usr/share/pear') in /home/u853281288/domains/dongphucsocvang.com/public_html/wp-content/plugins/smart-slider-3/library/smartslider/libraries/renderable/layers/item/itemsFactory.php on line 23
+
+2019-12-29T19:45:20+00:00 CRITICAL require_once(): Failed opening required '/home/u853281288/domains/dongphucsocvang.com/public_html/wp-content/plugins/smart-slider-3/library/smartslider/plugins/item/button/button/item.php' (include_path='.:/opt/alt/php72/usr/share/pear') in /home/u853281288/domains/dongphucsocvang.com/public_html/wp-content/plugins/smart-slider-3/library/smartslider/libraries/renderable/layers/item/itemsFactory.php on line 23
+
+2019-12-29T19:45:37+00:00 CRITICAL require_once(): Failed opening required '/home/u853281288/domains/dongphucsocvang.com/public_html/wp-content/plugins/smart-slider-3/library/smartslider/plugins/item/button/button/item.php' (include_path='.:/opt/alt/php72/usr/share/pear') in /home/u853281288/domains/dongphucsocvang.com/public_html/wp-content/plugins/smart-slider-3/library/smartslider/libraries/renderable/layers/item/itemsFactory.php on line 23
+
+2019-12-29T19:45:41+00:00 CRITICAL require_once(): Failed opening required '/home/u853281288/domains/dongphucsocvang.com/public_html/wp-content/plugins/smart-slider-3/library/smartslider/plugins/item/button/button/item.php' (include_path='.:/opt/alt/php72/usr/share/pear') in /home/u853281288/domains/dongphucsocvang.com/public_html/wp-content/plugins/smart-slider-3/library/smartslider/libraries/renderable/layers/item/itemsFactory.php on line 23
+
+2019-12-29T19:45:41+00:00 CRITICAL require_once(): Failed opening required '/home/u853281288/domains/dongphucsocvang.com/public_html/wp-content/plugins/smart-slider-3/library/smartslider/plugins/item/button/button/item.php' (include_path='.:/opt/alt/php72/usr/share/pear') in /home/u853281288/domains/dongphucsocvang.com/public_html/wp-content/plugins/smart-slider-3/library/smartslider/libraries/renderable/layers/item/itemsFactory.php on line 23
+
+2019-12-29T19:46:11+00:00 CRITICAL require_once(): Failed opening required '/home/u853281288/domains/dongphucsocvang.com/public_html/wp-content/plugins/smart-slider-3/library/smartslider/plugins/item/button/button/item.php' (include_path='.:/opt/alt/php72/usr/share/pear') in /home/u853281288/domains/dongphucsocvang.com/public_html/wp-content/plugins/smart-slider-3/library/smartslider/libraries/renderable/layers/item/itemsFactory.php on line 23
+
+2019-12-29T19:46:20+00:00 CRITICAL require_once(): Failed opening required '/home/u853281288/domains/dongphucsocvang.com/public_html/wp-content/plugins/smart-slider-3/library/smartslider/plugins/item/button/button/item.php' (include_path='.:/opt/alt/php72/usr/share/pear') in /home/u853281288/domains/dongphucsocvang.com/public_html/wp-content/plugins/smart-slider-3/library/smartslider/libraries/renderable/layers/item/itemsFactory.php on line 23
+
+2019-12-29T19:46:41+00:00 CRITICAL require_once(): Failed opening required '/home/u853281288/domains/dongphucsocvang.com/public_html/wp-content/plugins/smart-slider-3/library/smartslider/plugins/item/button/button/item.php' (include_path='.:/opt/alt/php72/usr/share/pear') in /home/u853281288/domains/dongphucsocvang.com/public_html/wp-content/plugins/smart-slider-3/library/smartslider/libraries/renderable/layers/item/itemsFactory.php on line 23
+
+2019-12-29T19:46:41+00:00 CRITICAL require_once(): Failed opening required '/home/u853281288/domains/dongphucsocvang.com/public_html/wp-content/plugins/smart-slider-3/library/smartslider/plugins/item/button/button/item.php' (include_path='.:/opt/alt/php72/usr/share/pear') in /home/u853281288/domains/dongphucsocvang.com/public_html/wp-content/plugins/smart-slider-3/library/smartslider/libraries/renderable/layers/item/itemsFactory.php on line 23
+
+2019-12-29T19:47:11+00:00 CRITICAL require_once(): Failed opening required '/home/u853281288/domains/dongphucsocvang.com/public_html/wp-content/plugins/smart-slider-3/library/smartslider/plugins/item/button/button/item.php' (include_path='.:/opt/alt/php72/usr/share/pear') in /home/u853281288/domains/dongphucsocvang.com/public_html/wp-content/plugins/smart-slider-3/library/smartslider/libraries/renderable/layers/item/itemsFactory.php on line 23
+
+2019-12-29T19:47:20+00:00 CRITICAL require_once(): Failed opening required '/home/u853281288/domains/dongphucsocvang.com/public_html/wp-content/plugins/smart-slider-3/library/smartslider/plugins/item/button/button/item.php' (include_path='.:/opt/alt/php72/usr/share/pear') in /home/u853281288/domains/dongphucsocvang.com/public_html/wp-content/plugins/smart-slider-3/library/smartslider/libraries/renderable/layers/item/itemsFactory.php on line 23
+
+2019-12-29T19:47:41+00:00 CRITICAL require_once(): Failed opening required '/home/u853281288/domains/dongphucsocvang.com/public_html/wp-content/plugins/smart-slider-3/library/smartslider/plugins/item/button/button/item.php' (include_path='.:/opt/alt/php72/usr/share/pear') in /home/u853281288/domains/dongphucsocvang.com/public_html/wp-content/plugins/smart-slider-3/library/smartslider/libraries/renderable/layers/item/itemsFactory.php on line 23
+
+2019-12-29T19:47:41+00:00 CRITICAL require_once(): Failed opening required '/home/u853281288/domains/dongphucsocvang.com/public_html/wp-content/plugins/smart-slider-3/library/smartslider/plugins/item/button/button/item.php' (include_path='.:/opt/alt/php72/usr/share/pear') in /home/u853281288/domains/dongphucsocvang.com/public_html/wp-content/plugins/smart-slider-3/library/smartslider/libraries/renderable/layers/item/itemsFactory.php on line 23
+
+2019-12-29T19:59:33+00:00 CRITICAL Uncaught Error: Call to a member function is_manual() on boolean in /home/u853281288/domains/dongphucsocvang.com/public_html/wp-content/plugins/woocommerce/includes/admin/settings/class-wc-settings-emails.php:300
+Stack trace:
+#0 /home/u853281288/domains/dongphucsocvang.com/public_html/wp-includes/class-wp-hook.php(288): WC_Settings_Emails->email_notification_setting(Array)
+#1 /home/u853281288/domains/dongphucsocvang.com/public_html/wp-includes/class-wp-hook.php(312): WP_Hook->apply_filters('', Array)
+#2 /home/u853281288/domains/dongphucsocvang.com/public_html/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /home/u853281288/domains/dongphucsocvang.com/public_html/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-settings.php(677): do_action('woocommerce_adm...', Array)
+#4 /home/u853281288/domains/dongphucsocvang.com/public_html/wp-content/plugins/woocommerce/includes/admin/settings/class-wc-settings-emails.php(219): WC_Admin_Settings::output_fields(Array)
+#5 /home/u853281288/domains/dongph in /home/u853281288/domains/dongphucsocvang.com/public_html/wp-content/plugins/woocommerce/includes/admin/settings/class-wc-settings-emails.php on line 300
+
