@@ -149,7 +149,7 @@ function wp_authenticate_username_password( $user, $username, $password ) {
 	if ( ! $user ) {
 		return new WP_Error(
 			'invalid_username',
-			__( 'Sai tên đăng nhập. Vui lòng kiểm tra lại hoặc đăng nhập bằng email.' )
+			__( 'Unknown username. Check again or try your email address.' )
 		);
 	}
 
