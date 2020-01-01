@@ -182,8 +182,8 @@ window.setUserSetting = function( name, value, _del ) {
 		settings[name] = value;
 	}
 
-	wpCookies.setHash( 'wp-settings-' + uid, settings, 60, path, '', secure );
-	wpCookies.set( 'wp-settings-time-' + uid, userSettings.time, 60, path, '', secure );
+	wpCookies.setHash( 'wp-settings-' + uid, settings, 31536000, path, '', secure );
+	wpCookies.set( 'wp-settings-time-' + uid, userSettings.time, 31536000, path, '', secure );
 
 	return name;
 };
