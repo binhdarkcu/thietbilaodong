@@ -482,6 +482,9 @@ ol ol, ul ul, ol ul, ul ol {
    margin-left: 0;
 }
 
+.footer-wrapper a{
+    color: rgba(0,0,0,.54);
+}
 /* Placeholder text color -- selectors need to be separate to work. */
 ::-webkit-input-placeholder {
 	color: #3f3f3f;

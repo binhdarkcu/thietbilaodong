@@ -88,6 +88,15 @@ div#contact-floated a {
   color: #faa61a;
 }
 
+.footer-wrapper .widget-column .widget-title {
+    margin-top: 40px;
+    font-size: 12px;
+    font-weight: 700;
+    color: rgba(0,0,0,.54);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
 .header-wrapper .header-top {
     background-color: #f73b00;
     font-size: 13px;
