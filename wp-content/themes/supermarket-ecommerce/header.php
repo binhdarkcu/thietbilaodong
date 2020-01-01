@@ -136,15 +136,16 @@
 					  <div class="dgwt-wcas-search-wrapp dgwt-wcas-is-detail-box woocommerce dgwt-wcas-has-submit" data-wcas-context="7c8b">
 						 <form class="dgwt-wcas-search-form" role="search" action="https://store.vietfriend.info/" method="get">
 							<div class="dgwt-wcas-sf-wrapp">
-							   <label class="screen-reader-text">Products search</label> <input type="search" class="dgwt-wcas-search-input" name="s" value="" placeholder="Tìm sản phẩm, thương hiệu, và tên shop..." autocomplete="off">
-							   <div class="dgwt-wcas-preloader" style="right: 80px;"></div>
-							   <button type="submit" class="dgwt-wcas-search-submit">
-								  <svg version="1.1" class="dgwt-wcas-ico-magnifier" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 51.539 51.361" enable-background="new 0 0 51.539 51.361" xml:space="preserve">
-									 <path d="M51.539,49.356L37.247,35.065c3.273-3.74,5.272-8.623,5.272-13.983c0-11.742-9.518-21.26-21.26-21.26
-										S0,9.339,0,21.082s9.518,21.26,21.26,21.26c5.361,0,10.244-1.999,13.983-5.272l14.292,14.292L51.539,49.356z M2.835,21.082
-										c0-10.176,8.249-18.425,18.425-18.425s18.425,8.249,18.425,18.425S31.436,39.507,21.26,39.507S2.835,31.258,2.835,21.082z"></path>
-								  </svg>
-							   </button>
+							   <label class="screen-reader-text">Products search</label>
+
+							   <?php get_product_search_form()?>
+							   <div class="search-svg"><svg version="1.1" class="dgwt-wcas-ico-magnifier" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 51.539 51.361" enable-background="new 0 0 51.539 51.361" xml:space="preserve">
+							      <path d="M51.539,49.356L37.247,35.065c3.273-3.74,5.272-8.623,5.272-13.983c0-11.742-9.518-21.26-21.26-21.26
+							         S0,9.339,0,21.082s9.518,21.26,21.26,21.26c5.361,0,10.244-1.999,13.983-5.272l14.292,14.292L51.539,49.356z M2.835,21.082
+							         c0-10.176,8.249-18.425,18.425-18.425s18.425,8.249,18.425,18.425S31.436,39.507,21.26,39.507S2.835,31.258,2.835,21.082z"></path>
+							   </svg></div>
+							   <div class="dgwt-wcas-preloader" style="right: 80px;">
+							   </div>
 							   <input type="hidden" name="post_type" value="product"> <input type="hidden" name="dgwt_wcas" value="1">
 							</div>
 						 </form>
@@ -166,7 +167,7 @@
 				</div>
 				<div class="col-2 col-sm-2 col-md-2 col-lg-2">
 				   <div class="header-cart">
-					  <a href="https://store.vietfriend.info/gio-hang/" class="cart-btn" id="cart-mini-btn"> <i class="fa fa-shopping-basket icon-font" aria-hidden="true"> Giỏ hàng </i> <span class="number-badge">0</span> </a>
+					  <a href="<?php if(function_exists('wc_get_cart_url')){ echo esc_url(wc_get_cart_url()); } ?>" class="cart-btn" id="cart-mini-btn"> <i class="fa fa-shopping-basket icon-font" aria-hidden="true"> Giỏ hàng </i> <span class="number-badge"><?php echo wp_kses_data( WC()->cart->get_cart_contents_count() );?></span> </a>
 					  <div class="cart-popup">
 						 <div id="mini-cart-box">
 							<div class="cart-mini-container">
@@ -182,78 +183,6 @@
 			 </div>
 		  </div>
 	   </div>
-	</header>
-
-	<header id="header">
-		<div class="search-bar">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-3 col-md-12">
-						<div class="logo">
-					        <?php if( has_custom_logo() ){ supermarket_ecommerce_the_custom_logo();
-					           }else{ ?>
-					          <h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-					          <?php $description = get_bloginfo( 'description', 'display' );
-					          if ( $description || is_customize_preview() ) : ?>
-					            <p class="site-description"><?php echo esc_html($description); ?></p>
-					        <?php endif; }?>
-					    </div>
-					</div>
-					<?php if(class_exists('woocommerce')){ ?>
-						<div class="col-lg-6 col-md-7">
-				        	<?php get_product_search_form()?>
-				      	</div>
-				      	<div class="col-lg-2 col-md-3">
-				      		<div class="acc-btn">
-					            <?php if(class_exists('woocommerce')){ ?>
-						            <?php if ( is_user_logged_in() ) { ?>
-						              <a href="<?php echo esc_url( get_permalink( get_option('woocommerce_myaccount_page_id') ) ); ?>" ><?php esc_html_e('Tài khoản của tôi','supermarket-ecommerce'); ?></a>
-						            <?php }
-						            else { ?>
-						              <a href="<?php echo esc_url( get_permalink( get_option('woocommerce_myaccount_page_id') ) ); ?>" ><?php esc_html_e('Đăng nhập/Đăng ký','supermarket-ecommerce'); ?></a>
-						            <?php } ?>
-						        <?php }?>
-				        	</div>
-				      	</div>
-						<div class="col-lg-1 col-md-2">
-						    <div class="cart_icon">
-						        <a class="cart-contents" href="<?php if(function_exists('wc_get_cart_url')){ echo esc_url(wc_get_cart_url()); } ?>"><i class="fas fa-shopping-basket"></i></a>
-					            <li class="cart_box">
-					              <span class="cart-value"> <?php echo wp_kses_data( WC()->cart->get_cart_contents_count() );?></span>
-					            </li>
-						    </div>
-					    </div>
-					<?php } ?>
-				</div>
-			</div>
-		</div>
-		<div class="menu-section">
-			<div class="container">
-				<div class="main-top">
-				   <div class="row">
-				      	<div class="col-lg-12 col-md-12">
-							<div class="toggle-menu responsive-menu">
-					            <button onclick="resMenu_open()" role="tab"><i class="fas fa-bars"></i><span class="screen-reader-text"><?php esc_html_e('Open Menu','supermarket-ecommerce'); ?></span></button>
-					        </div>
-							<div id="sidelong-menu" class="nav sidenav">
-				                <nav id="primary-site-navigation" class="nav-menu" role="navigation" aria-label="<?php esc_attr_e( 'Top Menu', 'supermarket-ecommerce' ); ?>">
-				                  <a href="javascript:void(0)" class="closebtn responsive-menu" onclick="resMenu_close()"><i class="fas fa-times"></i><span class="screen-reader-text"><?php esc_html_e('Close Menu','supermarket-ecommerce'); ?></span></a>
-				                  <?php
-				                    wp_nav_menu( array(
-				                      'theme_location' => 'primary',
-				                      'container_class' => 'main-menu-navigation clearfix' ,
-				                      'menu_class' => 'clearfix',
-				                      'items_wrap' => '<ul id="%1$s" class="%2$s mobile_nav">%3$s</ul>',
-				                      'fallback_cb' => 'wp_page_menu',
-				                    ) );
-				                  ?>
-				                </nav>
-				            </div>
-						</div>
-				    </div>
-				</div>
-			</div>
-		</div>
 	</header>
 
 	<div class="site-content-contain">
