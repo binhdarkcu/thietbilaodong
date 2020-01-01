@@ -1,0 +1,4 @@
+2020-01-01T16:53:31+00:00 CRITICAL syntax error, unexpected end of file in /Users/baoch/Desktop/workspace/freelance_project/thietbilaodong_fe/thietbilaodong/wp-content/themes/supermarket-ecommerce/template-parts/page/content-page.php on line 109
+
+2020-01-01T18:07:08+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in /Users/baoch/Desktop/workspace/freelance_project/thietbilaodong_fe/thietbilaodong/wp-includes/template.php on line 658
+

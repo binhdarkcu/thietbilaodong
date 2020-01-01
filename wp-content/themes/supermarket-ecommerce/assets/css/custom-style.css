@@ -78,14 +78,14 @@ div#contact-floated {
   top: 50%;
   left: 0;
   z-index: 2;
-  color: #faa61a;
-  border: 1px solid;
-  background-color: #343748;
+  color: whitesmoke;
+  border: none;
+  background-color: #ff531e;
   padding: 20px;
 }
 
 div#contact-floated a {
-  color: #faa61a;
+  color: whitesmoke;
 }
 
 .footer-wrapper .widget-column .widget-title {
