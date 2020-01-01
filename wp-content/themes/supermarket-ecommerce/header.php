@@ -21,7 +21,6 @@
 <body <?php body_class(); ?>>
 
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content" alt="<?php esc_html_e( 'Skip to content', 'supermarket-ecommerce' ); ?>"><?php esc_html_e( 'Skip to content', 'supermarket-ecommerce' ); ?></a>
 	<header class="header-wrapper">
 	   <div class="header-top">
 		  <div class="container">
@@ -36,7 +35,6 @@
 						   <!--Check loggedin or not-->
 						   <a class="profile-url" href="<?php echo esc_url( get_permalink( get_option('woocommerce_myaccount_page_id') ) ); ?>">
 								 <div class="avatar-border">
-									<noscript><img class="avatar user-avatar" src="https://store.vietfriend.info/wp-content/themes/friendstore/assets/images/noavatar.png" alt="Guest"></noscript>
 									<img class="avatar user-avatar ls-is-cached lazyloaded" src="https://store.vietfriend.info/wp-content/themes/friendstore/assets/images/noavatar.png" data-src="https://store.vietfriend.info/wp-content/themes/friendstore/assets/images/noavatar.png" alt="Guest">
 								 </div>
 							   <?php if ( is_user_logged_in() ) { ?>
