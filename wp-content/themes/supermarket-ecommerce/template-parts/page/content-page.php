@@ -17,7 +17,7 @@
 	<div class="entry-content">
 		<?php if (class_exists('woocommerce') && is_front_page()) {?>
     <div class="row">
-      <div class="col-lg-9 col-md-8">
+      <div class="col-lg-6 col-md-8">
         <?php echo do_shortcode('[smartslider3 slider=2]'); ?>
       </div>
       </div>
