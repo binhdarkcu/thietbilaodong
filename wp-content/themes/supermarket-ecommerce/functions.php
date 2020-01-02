@@ -302,3 +302,27 @@ require get_parent_theme_file_path( '/inc/getting-started/getting-started.php' )
 function is_login_page() {
     return in_array($GLOBALS['pagenow'], array('wp-login.php', 'wp-register.php', 'my-account.php'));
 }
+
+/* Custom Post Type Start */
+function create_posttype() {
+  $supports = array(
+    'title', // post title
+    'thumbnail', // featured images
+    );
+	register_post_type( 'ads',
+  // CPT Options
+  
+	array(
+	  'labels' => array(
+	   'name' => __( 'ads' ),
+	   'singular_name' => __( 'Advertisments' )
+	  ),
+	  'public' => true,
+	  'has_archive' => false,
+	  'rewrite' => array('slug' => 'ads'),
+	 )
+	);
+	}
+	// Hooking up our function to theme setup
+	add_action( 'init', 'create_posttype' );
+	
