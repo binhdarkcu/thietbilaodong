@@ -262,6 +262,11 @@ function supermarket_ecommerce_sanitize_choices( $input, $setting ) {
 // define('SUPERMARKET_ECOMMERCE_SUPPORT','https://wordpress.org/support/theme/supermarket-ecommerce/','supermarket-ecommerce');
 // define('SUPERMARKET_ECOMMERCE_CREDIT','https://www.luzuk.com/themes/free-wordpress-ecommerce-theme/','supermarket-ecommerce');
 
+define('TEMPLATE_PATH',get_bloginfo('template_url'));
+define('HOME_URL',get_home_url());
+define('BlOG_NAME',get_bloginfo('blog_name'));
+define('SLOGAN', get_bloginfo('description'));
+
 if ( ! function_exists( 'supermarket_ecommerce_credit' ) ) {
 	function supermarket_ecommerce_credit(){
 		// echo "<a href=".esc_url(SUPERMARKET_ECOMMERCE_CREDIT)." target='_blank'>".esc_html__('Ecommerce WordPress Theme','supermarket-ecommerce')."</a>";

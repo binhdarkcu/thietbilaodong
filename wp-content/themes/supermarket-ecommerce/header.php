@@ -165,7 +165,7 @@
             <div class="col-10 col-sm-10 col-md-7 col-lg-8">
               <div class="header-search">
                 <div class="dgwt-wcas-search-wrapp dgwt-wcas-is-detail-box woocommerce dgwt-wcas-has-submit" data-wcas-context="7c8b">
-                  <form class="dgwt-wcas-search-form" role="search" action="https://store.vietfriend.info/" method="get">
+                  <form class="dgwt-wcas-search-form" role="search" action="<?php echo HOME_URL; ?>" method="get">
                     <div class="dgwt-wcas-sf-wrapp">
                       <label class="screen-reader-text">Products search</label>
 
