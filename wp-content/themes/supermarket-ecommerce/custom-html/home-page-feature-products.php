@@ -9,7 +9,7 @@
 
 ?>
 <?php
-  $category = '/product-category/danh-muc/';
+  $sanPham = '/product-category/san-pham/';
   $url = get_home_url();
 ?>
 <div data-vc-full-width="true" data-vc-full-width-init="true" data-vc-stretch-content="true" class="vc_row wpb_row vc_row-fluid vc_row-no-padding"
@@ -21,10 +21,10 @@
           <div class="container">
             <div class="section-header">
               <div class="title-wrap">
-                <h3 class="title">Danh mục</h3>
+                <h3 class="title">Sản phẩm mới</h3>
               </div>
               <div class="actions">
-                <a class="link" href="<?php echo $url.$category?>">Xem tất cả
+                <a class="link" href="<?php echo $url.$sanPham?>">Xem tất cả
                   <i class="fa fa-angle-right" aria-hidden="true"></i>
                 </a>
               </div>
@@ -33,33 +33,29 @@
               <div class="layout-grid grid-style-2 columns-8">
                 <?php
                 $args = array(
-                    //'number'     => $number,
-                    'orderby' => 'title',
-                    'order' => 'ASC',
-                    'hide_empty' => 0,
-                    'parent' => 18,
-                    'number' => 8,
-                    //'include'    => $ids
+                  'category' => array( 'Sản phẩm' ),
+                  'orderby'  => 'modified',
+                  'order' => 'DESC',
+                  'limit' => 8,
                 );
-                $product_categories = get_terms('product_cat', $args);
-                $count = count($product_categories);
-                if ($count > 0) {
-                    foreach ($product_categories as $product_category) {
-                        $product_cat_id = $product_category->term_id;
-                        $cat_link = get_category_link($product_cat_id);
+                $products = wc_get_products( $args );
+                $countProducts = count($products);
+                if ($products) {
+                  foreach ($products as $product) {
                         ?>
                         <div class="item">
-                          <a href="<?php echo esc_url(get_term_link($product_category)); ?>" class="item-link" title="<?php $product_category->name?>">
+                          <a href="<?php echo esc_url(get_permalink( $product->get_id() )); ?>" class="item-link" title="<?php $product->get_name(); ?>">
                             <div class="item-thumbnail">
-                              <noscript>
+                              <!-- <noscript>
                                 <img class="image" src="https://store.vietfriend.info/wp-content/uploads/2019/05/dien-thoai-thiet-bi.png"
-                                  alt="<?php $product_category->name?>" />
+                                  alt="<?php $product->get_name(); ?>" />
                               </noscript>
                               <img class="image lazyloaded" src="https://store.vietfriend.info/wp-content/uploads/2019/05/dien-thoai-thiet-bi.png"
-                                data-src="https://store.vietfriend.info/wp-content/uploads/2019/05/dien-thoai-thiet-bi.png" alt="<?php $product_category->name?>">
+                                data-src="https://store.vietfriend.info/wp-content/uploads/2019/05/dien-thoai-thiet-bi.png" alt="<?php $product_category->name?>"> -->
+                                <?php echo $product->get_image()?>
                             </div>
                             <div class="item-info">
-                              <h2 class="item-title"><?php echo esc_html($product_category->name)?></h2>
+                              <h2 class="item-title"><?php echo esc_html( $product->get_name() ); ?></h2>
                             </div>
                           </a>
                         </div>

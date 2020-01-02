@@ -83,15 +83,15 @@ if ( ! defined( 'ABSPATH' ) ) {
 					<thead>
 						<tr>
 							<th class="wc-shipping-zone-method-sort"></th>
-							<th class="wc-shipping-zone-method-title"><?php esc_html_e( 'Title', 'woocommerce' ); ?></th>
-							<th class="wc-shipping-zone-method-enabled"><?php esc_html_e( 'Enabled', 'woocommerce' ); ?></th>
-							<th class="wc-shipping-zone-method-description"><?php esc_html_e( 'Description', 'woocommerce' ); ?></th>
+							<th class="wc-shipping-zone-method-title"><?php esc_html_e( 'Tiêu đề', 'woocommerce' ); ?></th>
+							<th class="wc-shipping-zone-method-enabled"><?php esc_html_e( 'Kích hoạt', 'woocommerce' ); ?></th>
+							<th class="wc-shipping-zone-method-description"><?php esc_html_e( 'Mô tả', 'woocommerce' ); ?></th>
 						</tr>
 					</thead>
 					<tfoot>
 						<tr>
 							<td colspan="4">
-								<button type="submit" class="button wc-shipping-zone-add-method" value="<?php esc_attr_e( 'Add shipping method', 'woocommerce' ); ?>"><?php esc_html_e( 'Add shipping method', 'woocommerce' ); ?></button>
+								<button type="submit" class="button wc-shipping-zone-add-method" value="<?php esc_attr_e( 'Add shipping method', 'woocommerce' ); ?>"><?php esc_html_e( 'Thêm phương thức giao hàng', 'woocommerce' ); ?></button>
 							</td>
 						</tr>
 					</tfoot>

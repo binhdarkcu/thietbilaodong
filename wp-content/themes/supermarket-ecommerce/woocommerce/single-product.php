@@ -50,16 +50,6 @@ get_header( 'shop' ); ?>
 				do_action( 'woocommerce_after_main_content' );
 			?>
 		</div>
-		<!-- <div class="col-lg-4 col-md-4">
-			<?php
-				/**
-				 * woocommerce_sidebar hook.
-				 *
-				 * @hooked woocommerce_get_sidebar - 10
-				 */
-				do_action( 'woocommerce_sidebar' );
-			?>
-		</div> -->
 	</div>
 </div>
 

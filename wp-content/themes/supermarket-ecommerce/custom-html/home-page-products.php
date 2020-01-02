@@ -9,7 +9,7 @@
 
 ?>
 <?php 
-  $arrayCategoriesName = array('Áo thun', 'Quần áo bảo hộ', 'Dụng cụ thi công');
+  $arrayCategoriesName = array('Áo thun', 'Quần áo bảo hộ lao động', 'Dụng cụ thi công');
   foreach ($arrayCategoriesName as $categoryName) {
 ?>
 <div data-vc-full-width="true" data-vc-full-width-init="true" data-vc-stretch-content="true" class="vc_row wpb_row vc_row-fluid vc_row-no-padding" style="position: relative; left: -345px; box-sizing: border-box; width: 1920px;">
@@ -24,7 +24,7 @@
                 <h3 class="title"><?php echo esc_html($categoryName); ?></h3>
               </div>
               <div class="actions">
-                <a class="link" href="<?php echo get_permalink( wc_get_page_id( 'san-pham' ) ); ?>">Xem tất cả
+                <a class="link" href="<?php echo get_permalink( wc_get_page_id( 'danh-muc' ) ); ?>">Xem tất cả
                   <i class="fa fa-angle-right" aria-hidden="true"></i>
                 </a>
               </div>
@@ -36,7 +36,7 @@
                     $args = array(
                       'category' => array( $categoryName ),
                       'orderby'  => 'name',
-                      'number' => 12,
+                      'limit' => 12,
                     );
                     $products = wc_get_products( $args );
                     $countProducts = count($products);
@@ -70,7 +70,7 @@
                       </div>
                       <div class="lower-padding">
                         <div class="text-name">
-                          <a style="color: black" class="menu-link-hover" href="<?php echo esc_url(get_term_link($product->get_slug())); ?>">
+                          <a style="color: black" class="menu-link-hover" href="<?php echo esc_url(get_permalink( $product->get_id() )); ?>">
                             <?php echo esc_html($product->get_name()); ?>
                           </a>
                         </div>
