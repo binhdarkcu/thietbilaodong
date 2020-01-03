@@ -9,9 +9,18 @@
     margin-left: 16px;
 }
 
+.product-section.product-section .products{
+    width: 100%;
+    display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-ms-flex-wrap: wrap;
+flex-wrap: wrap;
+}
 ol, ul {
     margin-left: 0!important;
 }
+
 
 .product-section .btn-gap, .product-section .spacer {
     -webkit-box-flex: 1;

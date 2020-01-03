@@ -45,27 +45,11 @@
                         ?>
                 <div class="post-item">
                   <div class="item-wrapper product type-product status-publish first instock product_cat-may-anh-may-quay-phim has-post-thumbnail sale shipping-taxable purchasable product-type-variable has-default-attributes">
-                    <div data-action="alg-wc-wl-toggle" class="alg-wc-wl-btn add alg-wc-wl-thumb-btn alg-wc-wl-thumb-btn-abs alg-wc-wl-thumb-btn-loop"
-                      style="left: 17px; top: 17px; right: auto; bottom: auto; display: block;">
-                      <div class="alg-wc-wl-view-state alg-wc-wl-view-state-add">
-                        <i class="fa fa-heart" aria-hidden="true"></i>
-                      </div>
-                      <div class="alg-wc-wl-view-state alg-wc-wl-view-state-remove">
-                        <i class="fa fa-heart" aria-hidden="true"></i>
-                      </div>
-                      <i class="loading fa fa-refresh fa-spin fa-fw"></i>
-                    </div>
+                    
                     <div class="card full shadow">
                         <a style="color: black" class="menu-link-hover" href="<?php echo esc_url(get_permalink( $product->get_id() )); ?>">
                           <div class="cover-img">
                             <div class="background">
-                              <!-- <noscript>
-                                <img class="image" src="<?php echo $product->get_image()?>" alt="<?php echo esc_html($product->get_name()); ?>"
-                                  onerror="this.onerror=null;this.src='https://store.vietfriend.info/wp-content/uploads/woocommerce-placeholder.png';"
-                                />
-                              </noscript>
-                              <img class="image lazyloaded" src="<?php echo $product->get_image()?>" data-src="<?php echo $product->get_image()?>"
-                                alt="Camera thể thao SJCam SJ7 Star 4K Wifi 123" onerror="this.onerror=null;this.src='https://store.vietfriend.info/wp-content/uploads/woocommerce-placeholder.png';"> -->
                                   <?php echo $product->get_image()?>
                             </div>
                           </div>
