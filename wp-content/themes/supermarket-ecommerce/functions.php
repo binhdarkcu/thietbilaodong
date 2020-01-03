@@ -319,10 +319,12 @@ function create_posttype() {
 	  ),
 	  'public' => true,
 	  'has_archive' => false,
-	  'rewrite' => array('slug' => 'ads'),
+    'rewrite' => array('slug' => 'ads'),
+    'supports' => $supports,
 	 )
 	);
 	}
 	// Hooking up our function to theme setup
 	add_action( 'init', 'create_posttype' );
 	
+	add_theme_support('post-thumbnails',array('post','page','ads'));
