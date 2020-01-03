@@ -5,10 +5,22 @@
     padding: 8px;
 }
 
+.woocommerce .woocommerce-form-login .woocommerce-form-login__rememberme {
+    margin-left: 16px;
+}
+
+ol, ul {
+    margin-left: 0!important;
+}
+
 .product-section .btn-gap, .product-section .spacer {
     -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
+}
+
+.custom-col-5 {
+    float: left;
 }
 
 .product-section .post-item {

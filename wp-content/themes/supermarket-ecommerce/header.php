@@ -35,7 +35,7 @@
                 <span class="text menu-close">Đóng</span>
               </div>
             </a>
-            <a class="navbar-brand d-block d-md-none mr-auto" href="https://store.vietfriend.info">
+            <a class="navbar-brand d-block d-md-none mr-auto" href="<?php echo HOME_URL;?>">
               <img src="https://store.vietfriend.info/wp-content/themes/friendstore/assets/images/logo-light-mobile.png" class="logo-header-mobile"
                 alt="Friendstore" data-no-lazy="1"> </a>
             <div class="profile-top order-lg-last">
@@ -86,7 +86,7 @@
 					         ?>
                     <li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children">
                       <span class="toggle" data-menu="menu-item-145"></span>
-                      <a href="https://store.vietfriend.info/thoi-trang-nam/">
+                      <a href="<?php echo $cat_link;?>">
                         <?php echo esc_html($product_category->name); ?>
                       </a>
                       <ul class="sub-menu">
@@ -157,7 +157,7 @@
           <div class="row">
             <div class="col-sm-12 col-md-3 col-lg-2 d-none d-md-block">
               <div class="header-logo">
-                <a href="https://store.vietfriend.info" title="Trang chủ">
+                <a href="<?php echo HOME_URL;?>" title="Trang chủ">
                   <img src="https://store.vietfriend.info/wp-content/themes/friendstore/assets/images/logo-light.png" class="logo-header-desktop"
                     alt="Friendstore" data-no-lazy="1"> </a>
               </div>

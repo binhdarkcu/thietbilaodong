@@ -40,14 +40,11 @@ function registerSwitch()
 
 <div class="u-columns col2-set" id="customer_login">
 
-	<div class="u-column1 col-1">
+
 
 <?php endif;?> -->
-		<div class="btn-group" role="group" aria-label="Login / Register">
-			<button name="loginSwitch" type="button" class="<?php if ($isRegister === 1) {echo "";} else {echo "woocommerce-button button woocommerce-form-login__submit";}?>" onClick="<?php $isRegister = false;?>"><?php esc_html_e('Đăng nhập', 'woocommerce');?></button>
-			<button name="registerSwitch" type="button" class="<?php if ($isRegister !== 1) {echo "";} else {echo "woocommerce-button button woocommerce-form-login__submit";}?>" onClick="<?php $isRegister = true;?>"><?php esc_html_e('Đăng ký', 'woocommerce');?></button>
-		</div>
-
+<div class="u-column1 col-6 custom-col-5">
+		<h2><?php esc_html_e( 'Đăng nhập', 'woocommerce' ); ?></h2>
 		<form class="woocommerce-form woocommerce-form-login login" method="post">
 
 			<?php do_action('woocommerce_login_form_start');?>
@@ -77,14 +74,14 @@ function registerSwitch()
 			<?php do_action('woocommerce_login_form_end');?>
 
 		</form>
-
+    </div>
 <?php if ($isRegister == true): ?>
 
 	<!-- </div> -->
 
-	<!-- <div class="u-column2 col-2"> -->
+	<div class="u-column2 col-6 custom-col-5">
 
-		<!-- <h2><?php esc_html_e('Register', 'woocommerce');?></h2> -->
+		<h2><?php esc_html_e( 'Đăng Ký', 'woocommerce' ); ?></h2>
 
 		<form method="post" class="woocommerce-form woocommerce-form-register register" <?php do_action('woocommerce_register_form_tag');?> >
 
@@ -125,7 +122,7 @@ function registerSwitch()
 
 		</form>
 
-	<!-- </div> -->
+	 </div>
 
 <!-- </div> -->
 <?php endif;?>
