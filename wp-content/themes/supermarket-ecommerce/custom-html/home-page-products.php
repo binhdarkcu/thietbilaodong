@@ -8,7 +8,7 @@
  */
 
 ?>
-<?php 
+<?php
   $arrayCategoriesName = array('Áo thun', 'Quần áo bảo hộ lao động', 'Dụng cụ thi công');
   foreach ($arrayCategoriesName as $categoryName) {
 ?>
@@ -31,7 +31,7 @@
             </div>
             <!--section-->
             <div class="section-content bg-none list-posts-inner">
-              <div class="layout-grid grid-style-1 columns-6">
+              <div class="layout-grid grid-style-1 columns-6 product-section">
                 <?php
                     $args = array(
                       'category' => array( $categoryName ),
@@ -56,58 +56,52 @@
                       <i class="loading fa fa-refresh fa-spin fa-fw"></i>
                     </div>
                     <div class="card full shadow">
-                      <div class="cover-img">
-                        <div class="background">
-                          <!-- <noscript>
-                            <img class="image" src="<?php echo $product->get_image()?>" alt="<?php echo esc_html($product->get_name()); ?>"
-                              onerror="this.onerror=null;this.src='https://store.vietfriend.info/wp-content/uploads/woocommerce-placeholder.png';"
-                            />
-                          </noscript>
-                          <img class="image lazyloaded" src="<?php echo $product->get_image()?>" data-src="<?php echo $product->get_image()?>"
-                            alt="Camera thể thao SJCam SJ7 Star 4K Wifi 123" onerror="this.onerror=null;this.src='https://store.vietfriend.info/wp-content/uploads/woocommerce-placeholder.png';"> -->
-                              <?php echo $product->get_image()?>
-                        </div>
-                      </div>
-                      <div class="lower-padding">
-                        <div class="text-name">
-                          <a style="color: black" class="menu-link-hover" href="<?php echo esc_url(get_permalink( $product->get_id() )); ?>">
-                            <?php echo esc_html($product->get_name()); ?>
-                          </a>
-                        </div>
-                        <div class="price">
-                          <div class="original-price"><?php echo esc_html($product->get_regular_price()); ?>&nbsp;
-                            <span class="currency-symbol">₫</span>
-                          </div>
-                          <div class="price-gap"></div>
-                          <div class="current-price"><?php echo esc_html($product->get_price()); ?>&nbsp;
-                            <span class="currency-symbol">₫</span>
-                          </div>
-                          <div class="spacer"></div>
-                        </div>
-                        <div class="extra-badge-wrapper"></div>
-                        <div>
-                          <div class="section-actions">
-                            <div class="btn-likes">
-                              <i class="fa fa-heart-o" aria-hidden="true"></i>
-                              <div class="text">1</div>
+                        <a style="color: black" class="menu-link-hover" href="<?php echo esc_url(get_permalink( $product->get_id() )); ?>">
+                          <div class="cover-img">
+                            <div class="background">
+                              <!-- <noscript>
+                                <img class="image" src="<?php echo $product->get_image()?>" alt="<?php echo esc_html($product->get_name()); ?>"
+                                  onerror="this.onerror=null;this.src='https://store.vietfriend.info/wp-content/uploads/woocommerce-placeholder.png';"
+                                />
+                              </noscript>
+                              <img class="image lazyloaded" src="<?php echo $product->get_image()?>" data-src="<?php echo $product->get_image()?>"
+                                alt="Camera thể thao SJCam SJ7 Star 4K Wifi 123" onerror="this.onerror=null;this.src='https://store.vietfriend.info/wp-content/uploads/woocommerce-placeholder.png';"> -->
+                                  <?php echo $product->get_image()?>
                             </div>
-                            <div class="btn-gap"></div>
-                            <div class="btn-comments">
-                              <div class="rating">
-                                <span class="rating-count">Chưa có đánh giá</span>
+                          </div>
+                          <div class="lower-padding item-padding-8">
+                            <div class="text-name">
+                              <h4 class="product-name">
+                                <?php echo esc_html($product->get_name()); ?>
+                            </h4>
+                            </div>
+                            <div class="price">
+                              <div class="original-price"><?php echo esc_html($product->get_regular_price()); ?>&nbsp;
+                                <span class="currency-symbol">₫</span>
+                              </div>
+                              <div class="price-gap"></div>
+                              <div class="current-price"><?php echo esc_html($product->get_price()); ?>&nbsp;
+                                <span class="currency-symbol">₫</span>
+                              </div>
+                              <div class="spacer"></div>
+                            </div>
+                            <div class="extra-badge-wrapper"></div>
+                            <div>
+                              <div class="section-actions">
+                                <div class="btn-likes">
+                                  <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                  <div class="text">1</div>
+                                </div>
+                                <div class="btn-gap"></div>
+                                <div class="btn-comments">
+                                  <div class="rating">
+                                    <span class="rating-count">Chưa có đánh giá</span>
+                                  </div>
+                                </div>
                               </div>
                             </div>
                           </div>
-                          <div class="badge-wrapper">
-                            <div class="badge fixed-width promotion">
-                              <div class="label-wrapper">
-                                <span class="off-label">Giảm</span>
-                                <span class="percent"><?php echo esc_html($product->get_sale_price()); ?></span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -118,8 +112,8 @@
           </div>
         </div>
       </div>
-    </div>    
-  </div>    
+    </div>
+  </div>
 </div>
 <div class="vc_row-full-width vc_clearfix"></div>
 <?php }?>

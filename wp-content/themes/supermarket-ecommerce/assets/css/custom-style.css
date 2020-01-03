@@ -1,7 +1,50 @@
 /**
   * File css custom
   */
+.item-padding-8 {
+    padding: 8px;
+}
 
+.product-section .btn-gap, .product-section .spacer {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+.product-section .post-item {
+    margin-bottom: 4px;
+}
+
+.product-section .item-wrapper .item-padding-8{
+    min-height: 106px;
+}
+
+.product-section .post-item .product-name{
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+.product-section .section-actions {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 5px;
+}
+
+.product-section .section-actions .btn-likes, .product-section .section-actions .btn-comments {
+    font-size: 13px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: rgba(0,0,0,.26);
+    cursor: pointer;
+}
+.product-section .section-actions .btn-likes .text{
+    margin-left: 3px;
+}
 /**
   * Dashboard menu
   */
