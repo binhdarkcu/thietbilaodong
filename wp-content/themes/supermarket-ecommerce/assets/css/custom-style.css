@@ -166,3 +166,8 @@ div#contact-floated a {
     font-size: 13px;
     color: #fff;
 }
+
+
+li.product-category.product {
+  margin-right: 0 !important;
+}

@@ -22,16 +22,29 @@
                   <?php echo do_shortcode('[metaslider id="662"]'); ?>
                 </div>
                 <div class="right-wrapper"  style="width: 30%">
-                  <a href="#" class="right-banner" target="_blank" rel="noopener noreferrer">
+
+                  <?php
+                    $custom_post_type = new WP_Query( array(
+                      'post_type'      => 'ads',
+                      'post_status'    => 'publish',
+                      'posts_per_page' => 2,
+                    ) );
+
+                    while ( $custom_post_type->have_posts() ) : $custom_post_type->the_post();
+
+                    ?> <a href="<?php echo get_post_type_archive_link( $custom_post_type ); ?>" class="right-banner" target="_blank" rel="noopener noreferrer">
+                    <div class="full-height light-background">
+                      <div class="right-banner-image" style="background-image: url(<?php echo the_post_thumbnail_url(); ?>);"></div>
+                    </div>
+                  </a><?php
+                    endwhile;
+                  ?>
+
+                  <!-- <a href="#" class="right-banner" target="_blank" rel="noopener noreferrer">
                     <div class="full-height light-background">
                       <div class="right-banner-image" style="background-image: url(https://store.vietfriend.info/wp-content/uploads/2019/05/slider-banner-8.png);"></div>
                     </div>
-                  </a>
-                  <a href="#" class="right-banner" target="_blank" rel="noopener noreferrer">
-                    <div class="full-height light-background">
-                      <div class="right-banner-image" style="background-image: url(https://store.vietfriend.info/wp-content/uploads/2019/05/slider-banner-7.jpg);"></div>
-                    </div>
-                  </a>
+                  </a> -->
                 </div>
               </div>
             </div>
