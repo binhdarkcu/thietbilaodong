@@ -37,6 +37,17 @@ mark.count {
     text-transform: capitalize;
 }
 
+.woocommerce-pagination.berocket_pagination {
+    display: table!important;
+    margin: 0 auto!important;
+    width: 100%;
+
+}
+.woocommerce-pagination.berocket_pagination .page-numbers li.next a.next.page-numbers{
+    background: #ff541e;
+    color: #fff!important;
+}
+
 .woocommerce-tabs h2, .related.products h2 {
     font-size: 18px;
 }
