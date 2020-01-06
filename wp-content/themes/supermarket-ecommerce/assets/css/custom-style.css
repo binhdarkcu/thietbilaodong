@@ -43,7 +43,8 @@ mark.count {
     width: 100%;
 
 }
-.woocommerce-pagination.berocket_pagination .page-numbers li.next a.next.page-numbers{
+.woocommerce-pagination.berocket_pagination .page-numbers li.next a.next.page-numbers,
+.woocommerce-pagination.berocket_pagination ul li a.prev{
     background: #ff541e;
     color: #fff!important;
 }
