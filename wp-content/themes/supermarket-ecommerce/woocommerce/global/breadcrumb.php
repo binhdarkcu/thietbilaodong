@@ -29,7 +29,8 @@ if ( ! empty( $breadcrumb ) ) {
 		echo $before;
 
 		if ( ! empty( $crumb[1] ) && sizeof( $breadcrumb ) !== $key + 1 ) {
-			echo '<a href="' . esc_url( $crumb[1] ) . '">' . esc_html( $crumb[0] ) . '</a>';
+			$homePage = $crumb[0] === 'Home' ? 'Trang Chủ' : esc_html( $crumb[0] );
+			echo '<a href="' . esc_url( $crumb[1] ) . '">' . $homePage . '</a>';
 		} else {
 			echo esc_html( $crumb[0] );
 		}

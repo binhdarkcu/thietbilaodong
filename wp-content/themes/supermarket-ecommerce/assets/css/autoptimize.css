@@ -52167,7 +52167,7 @@ span.spinner .spinner-input {
 
 .header-wrapper .header-top .frnavbar-collapse .navbar-nav .menu-item:hover {
 	background-color: #ea3800;
-	z-index: 1
+	z-index: 100;
 }
 
 .header-wrapper .header-top .frnavbar-collapse .navbar-nav .menu-item.menu-item-has-children {
