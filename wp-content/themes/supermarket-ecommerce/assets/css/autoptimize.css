@@ -51424,7 +51424,11 @@ span.spinner .spinner-input {
 .layout-grid .item {
 	width: 100% !important
 }
-
+@media (min-width:350px) {
+	div#contact-floated {
+		display: none;
+	}
+}
 @media (min-width:350px) {
 	.layout-grid.columns-6 .post-item,
 	.layout-grid.columns-6 .item,
@@ -52265,6 +52269,9 @@ span.spinner .spinner-input {
 		position: relative;
 		left: auto;
 		top: auto
+	}
+	.header-wrapper .header-top .frnavbar-collapse .navbar-nav .menu-item.menu-item-has-children .sub-menu.opened {
+		display: block;
 	}
 }
 

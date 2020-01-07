@@ -66,7 +66,7 @@
               <ul class="navbar-nav has-separator mr-auto">
                 <li id="menu-item-151" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-151">
                   <span class="toggle" data-menu="menu-item-151"></span>
-                  <a href="#danh-muc">Danh mục</a>
+                  <a id="danh-muc-link" href="#danh-muc">Danh mục</a>
                   <ul class="sub-menu">
                     <?php
 					           $args = array(

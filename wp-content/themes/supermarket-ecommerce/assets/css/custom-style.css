@@ -59,7 +59,9 @@ ol, ul {
     width: 25%;
     float: none;
 }
-
+.header-wrapper .header-top .frnavbar-collapse.opened {
+    display: block;
+}
 mark.count {
     background: #ff541e!important;
 }
