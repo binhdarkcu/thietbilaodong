@@ -284,3 +284,7 @@ span.wc-block-grid__product-onsale {
 li.product-category.product {
   margin-right: 0 !important;
 }
+
+ul.berocket_aapf_widget.berocket_style_none.roundpcs.pcs {
+  display: block !important;
+}

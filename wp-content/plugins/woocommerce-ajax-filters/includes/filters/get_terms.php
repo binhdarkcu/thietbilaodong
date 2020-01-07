@@ -47,6 +47,7 @@ class BeRocket_AAPF_get_terms {
             'meta_query_limit'      => array(),
             'depth'                 => 0,
             'operator'              => 'OR',
+            'parent'                => 18,
             'additional_tax_query'  => false,
         ), $additional), $args);
         if( empty($args['taxonomy']) || is_array($args['taxonomy']) ) {
@@ -56,7 +57,7 @@ class BeRocket_AAPF_get_terms {
         if( empty($terms) || is_wp_error($terms) || empty($args['taxonomy']) || is_array($args['taxonomy']) ) {
             return $terms;
         }
-        $terms = apply_filters("berocket_aapf_get_terms_filter_after", $terms, $args, $additional);
+        // $terms = apply_filters("berocket_aapf_get_terms_filter_after", $terms, $args, $additional);
         return $terms;
     }
     public static function get_terms_for_all_pages($args = array(), $additional = array()) {
