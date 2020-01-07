@@ -312,19 +312,28 @@ function create_posttype() {
 	register_post_type( 'ads',
   // CPT Options
   
-	array(
-	  'labels' => array(
-	   'name' => __( 'ads' ),
-	   'singular_name' => __( 'Advertisments' )
-	  ),
-	  'public' => true,
-	  'has_archive' => false,
-    'rewrite' => array('slug' => 'ads'),
-    'supports' => $supports,
-	 )
-	);
-	}
-	// Hooking up our function to theme setup
-	add_action( 'init', 'create_posttype' );
+        array(
+        'labels' => array(
+        'name' => __( 'ads' ),
+        'singular_name' => __( 'Advertisments' )
+        ),
+        'public' => true,
+        'has_archive' => false,
+        'rewrite' => array('slug' => 'ads'),
+        'supports' => $supports,
+        )
+    );
+}
+// Hooking up our function to theme setup
+add_action( 'init', 'create_posttype' );
+
+add_theme_support('post-thumbnails',array('post','page','ads'));
+
+// add_action('wp_head','jason_add_gpp_gallery');
+// function jason_add_gpp_gallery() {
+//     if ( is_single() && 'your_post_type' == get_post_type() ) ){
+//         remove_shortcode('gallery', 'gallery_shortcode');
+//         add_shortcode('gallery', 'gpp_gallery_shortcode');
+//     }
+// }
 	
-	add_theme_support('post-thumbnails',array('post','page','ads'));
