@@ -36,7 +36,7 @@
               </div>
             </a>
             <a class="navbar-brand d-block d-md-none mr-auto" href="<?php echo HOME_URL;?>">
-              <img src="https://store.vietfriend.info/wp-content/themes/friendstore/assets/images/logo-light-mobile.png" class="logo-header-mobile"
+              <img src="<?php echo TEMPLATE_PATH ?>/assets/images/logo.png" class="logo-header-mobile"
                 alt="Friendstore" data-no-lazy="1"> </a>
             <div class="profile-top order-lg-last">
               <div class="dropdown">
@@ -158,8 +158,8 @@
             <div class="col-sm-12 col-md-3 col-lg-2 d-none d-md-block">
               <div class="header-logo">
                 <a href="<?php echo HOME_URL;?>" title="Trang chủ">
-                  <img src="https://store.vietfriend.info/wp-content/themes/friendstore/assets/images/logo-light.png" class="logo-header-desktop"
-                    alt="Friendstore" data-no-lazy="1"> </a>
+                  <img src="<?php echo TEMPLATE_PATH ?>/assets/images/logo.png" class="logo-header-desktop"
+                    alt="Đồng phục sóc vàng" data-no-lazy="1"> </a>
               </div>
             </div>
             <div class="col-10 col-sm-10 col-md-7 col-lg-8">
