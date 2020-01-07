@@ -146,6 +146,10 @@ header.woocommerce-products-header {
 .product-section .section-actions .btn-likes .text{
     margin-left: 3px;
 }
+a:focus, input:focus, textarea:focus, button:focus, .woocommerce form .form-row input.input-text:focus, .woocommerce form .form-row textarea:focus {
+    border: none!important;
+    outline: none;
+}
 /**
   * Dashboard menu
   */
