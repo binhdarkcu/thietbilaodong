@@ -25,6 +25,10 @@ ol, ul {
     color: #ff541e!important;
 }
 
+#mini-cart-box .cart-mini-container .woocommerce-mini-cart__empty-message {
+    text-align: center;
+}
+
 mark.count {
     background: #ff541e!important;
 }

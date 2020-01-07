@@ -224,10 +224,7 @@
                 <div class="cart-popup">
                   <div id="mini-cart-box">
                     <div class="cart-mini-container">
-                      <div class="empty-content cart-empty">
-                        <div class="icon"></div>
-                        <div class="text">Chưa có sản phẩm trong giỏ hàng.</div>
-                      </div>
+                      <?php woocommerce_mini_cart(); ?>
                     </div>
                   </div>
                 </div>
