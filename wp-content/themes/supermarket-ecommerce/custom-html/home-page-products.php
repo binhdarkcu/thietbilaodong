@@ -12,7 +12,7 @@
   $arrayCategoriesName = array('Áo thun', 'Quần áo bảo hộ lao động', 'Dụng cụ thi công');
   foreach ($arrayCategoriesName as $categoryName) {
 ?>
-<div data-vc-full-width="true" data-vc-full-width-init="true" data-vc-stretch-content="true" class="vc_row wpb_row vc_row-fluid vc_row-no-padding" style="position: relative; left: -345px; box-sizing: border-box; width: 1920px;">
+<div data-vc-full-width="true" data-vc-full-width-init="true" data-vc-stretch-content="true" class="vc_row wpb_row vc_row-fluid vc_row-no-padding">
   <div class="wpb_column vc_column_container vc_col-sm-12">
     <div class="vc_column-inner">
       <div class="wpb_wrapper">
@@ -45,7 +45,7 @@
                         ?>
                 <div class="post-item">
                   <div class="item-wrapper product type-product status-publish first instock product_cat-may-anh-may-quay-phim has-post-thumbnail sale shipping-taxable purchasable product-type-variable has-default-attributes">
-                    
+
                     <div class="card full shadow">
                         <a style="color: black" class="menu-link-hover" href="<?php echo esc_url(get_permalink( $product->get_id() )); ?>">
                           <div class="cover-img">
