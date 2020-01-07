@@ -19,7 +19,7 @@ flex-wrap: wrap;
 }
 ol, ul {
     margin-left: 0!important;
-    list-style-type: none;
+    list-style-type: none!important;
 }
 
 .woocommerce div.product p.price, .woocommerce div.product span.price {
@@ -52,7 +52,7 @@ ol, ul {
     right: 15px;
     top: 50%;
     font-size: 32px;
-    margin-top: -16px;
+    margin-top: -8px;
 }
 
 #mini-cart-box  .woocommerce-mini-cart-item.mini_cart_item img {
