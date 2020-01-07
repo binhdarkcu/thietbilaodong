@@ -31,7 +31,8 @@ ol, ul {
 }
 
 #mini-cart-box .woocommerce-mini-cart-item.mini_cart_item {
-    position: relative;
+    osition: relative;
+    border-bottom: 1px solid #ccc;
 }
 #mini-cart-box .woocommerce-mini-cart-item.mini_cart_item a{
     display: inline;
@@ -42,8 +43,8 @@ ol, ul {
 #mini-cart-box .woocommerce-mini-cart__buttons .checkout {
     margin-left: 8px!important;
 }
-.woocommerce-mini-cart-item.mini_cart_item .quantity {
-
+#mini-cart-box .total {
+    margin-top: 16px;
 }
 
 #mini-cart-box .woocommerce-mini-cart-item.mini_cart_item a.remove {
