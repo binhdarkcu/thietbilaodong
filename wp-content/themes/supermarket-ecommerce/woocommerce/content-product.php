@@ -50,7 +50,7 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 		  	   <a class="button product_type_simple add_to_cart_button ajax_add_to_cart" href="<?php echo $product->add_to_cart_url() ?>">Thêm vào giỏ hàng</a>
 		  	  </div>
 			<div class="extra-badge-wrapper"></div>
-			<?php do_action( 'woocommerce_after_shop_loop_item' );?>
+			<!-- <?php do_action( 'woocommerce_after_shop_loop_item' );?> -->
 		  </div>
 
 
