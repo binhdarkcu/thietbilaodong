@@ -71,19 +71,25 @@ do_action( 'woocommerce_before_mini_cart' ); ?>
 	</ul>
 
 	<p class="woocommerce-mini-cart__total total">
-		<?php
+
+		<strong>Tổng cộng</strong>: <?php
+                echo apply_filters( 'woocommerce_cart_item_subtotal', WC()->cart->get_product_subtotal( $_product, $cart_item['quantity'] ), $cart_item, $cart_item_key );
 		/**
 		 * Hook: woocommerce_widget_shopping_cart_total.
 		 *
 		 * @hooked woocommerce_widget_shopping_cart_subtotal - 10
 		 */
-		do_action( 'woocommerce_widget_shopping_cart_total' );
+		//do_action( 'woocommerce_widget_shopping_cart_total' );
 		?>
 	</p>
 
 	<?php do_action( 'woocommerce_widget_shopping_cart_before_buttons' ); ?>
 
-	<p class="woocommerce-mini-cart__buttons buttons"><?php do_action( 'woocommerce_widget_shopping_cart_buttons' ); ?></p>
+	<p class="woocommerce-mini-cart__buttons buttons">
+		<a href="<?php echo wc_get_cart_url();?>">Giỏ hàng</a> |
+		<a href="<?php echo wc_get_checkout_url();?>">Thanh toán</a>
+
+	</p>
 
 	<?php do_action( 'woocommerce_widget_shopping_cart_after_buttons' ); ?>
 
