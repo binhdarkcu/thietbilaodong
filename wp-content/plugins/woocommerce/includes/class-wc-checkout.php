@@ -236,9 +236,9 @@ class WC_Checkout {
 				'order_comments' => array(
 					'type'        => 'textarea',
 					'class'       => array( 'notes' ),
-					'label'       => __( 'Order notes', 'woocommerce' ),
+					'label'       => __( 'Ghi chú đơn hàng', 'woocommerce' ),
 					'placeholder' => esc_attr__(
-						'Notes about your order, e.g. special notes for delivery.',
+						'ví dụ: tòa nhà, văn phòng,...',
 						'woocommerce'
 					),
 				),
@@ -248,7 +248,7 @@ class WC_Checkout {
 		if ( 'no' === get_option( 'woocommerce_registration_generate_username' ) ) {
 			$this->fields['account']['account_username'] = array(
 				'type'        => 'text',
-				'label'       => __( 'Account username', 'woocommerce' ),
+				'label'       => __( 'Tên đăng nhập', 'woocommerce' ),
 				'required'    => true,
 				'placeholder' => esc_attr__( 'Username', 'woocommerce' ),
 			);
@@ -257,7 +257,7 @@ class WC_Checkout {
 		if ( 'no' === get_option( 'woocommerce_registration_generate_password' ) ) {
 			$this->fields['account']['account_password'] = array(
 				'type'        => 'password',
-				'label'       => __( 'Create account password', 'woocommerce' ),
+				'label'       => __( 'Tạo tài khoản', 'woocommerce' ),
 				'required'    => true,
 				'placeholder' => esc_attr__( 'Password', 'woocommerce' ),
 			);
