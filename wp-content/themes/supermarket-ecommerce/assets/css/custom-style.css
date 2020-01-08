@@ -21,6 +21,9 @@ ol, ul {
     margin-left: 0!important;
     list-style-type: none!important;
 }
+.spacer {
+    height: 5px;
+}
 
 .woocommerce div.product p.price, .woocommerce div.product span.price {
     color: #ff541e!important;

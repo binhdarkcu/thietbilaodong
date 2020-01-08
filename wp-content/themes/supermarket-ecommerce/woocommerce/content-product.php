@@ -28,26 +28,32 @@ if ( empty( $product ) || ! $product->is_visible() ) {
   <div class="item-wrapper product type-product status-publish first instock product_cat-may-anh-may-quay-phim has-post-thumbnail sale shipping-taxable purchasable product-type-variable has-default-attributes">
 
 	<div class="card full shadow">
-		<a style="color: black" class="menu-link-hover" href="<?php echo esc_url(get_permalink( $product->get_id() )); ?>">
+
 		  <div class="cover-img">
 			<div class="background">
-				  <?php echo $product->get_image()?>
+				  <a style="color: black" class="menu-link-hover" href="<?php echo esc_url(get_permalink( $product->get_id() )); ?>"><?php echo $product->get_image()?> </a>
 			</div>
 		  </div>
 		  <div class="lower-padding item-padding-8">
 			<div class="text-name">
 			  <h4 class="product-name">
-				<?php echo esc_html($product->get_name()); ?>
+				  <a style="color: black" class="menu-link-hover" href="<?php echo esc_url(get_permalink( $product->get_id() )); ?>">
+					<?php echo esc_html($product->get_name()); ?>
+				</a>
 			</h4>
 			</div>
 			<div class="price">
 			 <?php do_action( 'woocommerce_after_shop_loop_item_title' );?>
 			  <div class="spacer"></div>
 			</div>
+			<div class="add-to-cart">
+		  	   <a class="button product_type_simple add_to_cart_button ajax_add_to_cart" href="<?php echo $product->add_to_cart_url() ?>">Thêm vào giỏ hàng</a>
+		  	  </div>
 			<div class="extra-badge-wrapper"></div>
 			<?php do_action( 'woocommerce_after_shop_loop_item' );?>
 		  </div>
-	  </a>
+
+
 	</div>
   </div>
 </li>

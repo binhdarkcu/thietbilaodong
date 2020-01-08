@@ -314,7 +314,7 @@ function create_posttype() {
     );
 	register_post_type( 'ads',
   // CPT Options
-  
+
         array(
         'labels' => array(
         'name' => __( 'ads' ),
@@ -341,17 +341,17 @@ function my_filter_berocket_widget_terms ( $terms ) {
   print_r($terms);
       return $terms;
   }
-  
+
   add_filter( 'berocket_aapf_widget_terms', 'my_filter_berocket_widget_terms' );
-// add_action('wp_ajax_myfilter', 'categories_filter_function'); // wp_ajax_{ACTION HERE} 
+// add_action('wp_ajax_myfilter', 'categories_filter_function'); // wp_ajax_{ACTION HERE}
 // add_action('wp_ajax_nopriv_myfilter', 'categories_filter_function');
- 
+
 // function categories_filter_function(){
 // 	$args = array(
 // 		'orderby' => 'date', // we will sort posts by date
 // 		'order'	=> $_POST['date'] // ASC or DESC
 // 	);
- 
+
 // 	// for taxonomies / categories
 // 	if( isset( $_POST['categoryfilter'] ) )
 // 		$args['tax_query'] = array(
@@ -361,11 +361,11 @@ function my_filter_berocket_widget_terms ( $terms ) {
 // 				'terms' => $_POST['categoryfilter']
 // 			)
 // 		);
- 
+
 // 	// create $args['meta_query'] array if one of the following fields is filled
 // 	// if( isset( $_POST['price_min'] ) && $_POST['price_min'] || isset( $_POST['price_max'] ) && $_POST['price_max'] || isset( $_POST['featured_image'] ) && $_POST['featured_image'] == 'on' )
 // 		// $args['meta_query'] = array( 'relation'=>'AND' ); // AND means that all conditions of meta_query should be true
- 
+
 // 	// if both minimum price and maximum price are specified we will use BETWEEN comparison
 // 	// if( isset( $_POST['price_min'] ) && $_POST['price_min'] && isset( $_POST['price_max'] ) && $_POST['price_max'] ) {
 // 		// $args['meta_query'][] = array(
@@ -383,7 +383,7 @@ function my_filter_berocket_widget_terms ( $terms ) {
 // 		// 		'type' => 'numeric',
 // 		// 		'compare' => '>'
 // 		// 	);
- 
+
 // 		// if only max price is set
 // 		// if( isset( $_POST['price_max'] ) && $_POST['price_max'] )
 // 		// 	$args['meta_query'][] = array(
@@ -393,8 +393,8 @@ function my_filter_berocket_widget_terms ( $terms ) {
 // 		// 		'compare' => '<'
 // 		// 	);
 // 	// }
- 
- 
+
+
 // 	// if post thumbnail is set
 // 	// if( isset( $_POST['featured_image'] ) && $_POST['featured_image'] == 'on' )
 // 	// 	$args['meta_query'][] = array(
@@ -402,7 +402,7 @@ function my_filter_berocket_widget_terms ( $terms ) {
 // 	// 		'compare' => 'EXISTS'
 // 	// 	);
 // 	// if you want to use multiple checkboxed, just duplicate the above 5 lines for each checkbox
- 
+
 // 	$query = new WP_Query( $args );
 //     echo '<p>' . $_POST['categories'] . '</p>';
 //     echo '<p>' . $_POST['categoryfilter'] . '</p>';
@@ -414,7 +414,7 @@ function my_filter_berocket_widget_terms ( $terms ) {
 // 	else :
 // 		echo 'No posts found';
 // 	endif;
- 
+
 // 	die();
 // }
 
@@ -425,4 +425,24 @@ function my_filter_berocket_widget_terms ( $terms ) {
 //         add_shortcode('gallery', 'gpp_gallery_shortcode');
 //     }
 // }
-	
+
+
+add_filter( 'wc_add_to_cart_message_html', 'custom_add_to_cart_message_html', 10, 2 );
+function custom_add_to_cart_message_html( $message, $products ) {
+    $count = 0;
+    foreach ( $products as $product_id => $qty ) {
+        $count += $qty;
+    }
+    // The custom message is just below
+    $added_text = sprintf( _n("%s Sản phẩm %s", "%s Sản phẩm %s", $count, "woocommerce" ),
+        $count, __("đã được thêm vào giỏ hàng.", "woocommerce") );
+
+    // Output success messages
+    if ( 'yes' === get_option( 'woocommerce_cart_redirect_after_add' ) ) {
+        $return_to = apply_filters( 'woocommerce_continue_shopping_redirect', wc_get_raw_referer() ? wp_validate_redirect( wc_get_raw_referer(), false ) : wc_get_page_permalink( 'shop' ) );
+        $message   = sprintf( '<a href="%s" class="button wc-forward">%s</a> %s', esc_url( $return_to ), esc_html__( 'Continue shopping', 'woocommerce' ), esc_html( $added_text ) );
+    } else {
+        $message   = sprintf( '<a href="%s" style="margin-left: 8px!important;" class="button wc-forward">%s</a> %s', esc_url( wc_get_page_permalink( 'cart' ) ), esc_html__( 'Xem giỏ hàng', 'woocommerce' ), esc_html( $added_text ) );
+    }
+    return $message;
+}

@@ -556,7 +556,7 @@ th {
 	text-align: left;
 }
 tbody, td, th {
-    
+
 }
 
 td {
@@ -1514,7 +1514,6 @@ h3.entry-title a {
 .prev.page-numbers:hover,
 .next.page-numbers:focus,
 .next.page-numbers:hover {
-    background: #343748;
     color: #fff;
     cursor: pointer;
 }
@@ -3142,7 +3141,6 @@ object {
 		margin-right: 5px;
 	}
 	.page-numbers:hover{
-		background: #faa61a;
 		color: #fff !important;
 	}
 	.page-numbers.current{
