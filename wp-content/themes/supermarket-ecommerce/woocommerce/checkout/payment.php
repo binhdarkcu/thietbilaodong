@@ -39,9 +39,9 @@ if ( ! is_ajax() ) {
 		<noscript>
 			<?php
 			/* translators: $1 and $2 opening and closing emphasis tags respectively */
-			printf( esc_html__( 'Since your browser does not support JavaScript, or it is disabled, please ensure you click the %1$sUpdate Totals%2$s button before placing your order. You may be charged more than the amount stated above if you fail to do so.', 'woocommerce' ), '<em>', '</em>' );
+			printf( esc_html__( 'Vì trình duyệt của bạn không hỗ trợ JavaScript hoặc bị tắt, vui lòng đảm bảo bạn nhấp vào nút %1$sTạm tínhs%2$s trước khi đặt hàng. Bạn có thể bị tính phí nhiều hơn số tiền nêu trên nếu bạn không làm như vậy.', 'woocommerce' ), '<em>', '</em>' );
 			?>
-			<br/><button type="submit" class="button alt" name="woocommerce_checkout_update_totals" value="<?php esc_attr_e( 'Update totals', 'woocommerce' ); ?>"><?php esc_html_e( 'Update totals', 'woocommerce' ); ?></button>
+			<br/><button type="submit" class="button alt" name="woocommerce_checkout_update_totals" value="<?php esc_attr_e( 'Update totals', 'woocommerce' ); ?>"><?php esc_html_e( 'Cập nhật tổng giá', 'woocommerce' ); ?></button>
 		</noscript>
 
 		<?php wc_get_template( 'checkout/terms.php' ); ?>

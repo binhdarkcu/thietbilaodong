@@ -291,3 +291,7 @@ li.product-category.product {
 ul.berocket_aapf_widget.berocket_style_none.roundpcs.pcs {
   display: block !important;
 }
+
+.wplc-color-bg-1 {
+    background-color: #ff351e !important;
+}

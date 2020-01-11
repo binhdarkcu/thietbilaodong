@@ -9,8 +9,16 @@
 
 ?>
 <?php
+  $url = get_home_url();
+  $urlProductCategory = '/product-category/danh-muc/';
+  $urlProduct = 'ao-thun/';
   $arrayCategoriesName = array('Áo thun', 'Quần áo bảo hộ lao động', 'Dụng cụ thi công');
   foreach ($arrayCategoriesName as $categoryName) {
+    if ($categoryName === 'Quần áo bảo hộ lao động') {
+      $urlProduct = 'quan-ao-bao-ho-lao-dong/';
+    } else if ($categoryName === 'Dụng cụ thi công') {
+      $urlProduct = 'dung-cu-thi-cong/';
+    }
 ?>
 <div data-vc-full-width="true" data-vc-full-width-init="true" data-vc-stretch-content="true" class="vc_row wpb_row vc_row-fluid vc_row-no-padding">
   <div class="wpb_column vc_column_container vc_col-sm-12">
@@ -24,7 +32,7 @@
                 <h3 class="title"><?php echo esc_html($categoryName); ?></h3>
               </div>
               <div class="actions">
-                <a class="link" href="<?php echo get_permalink( wc_get_page_id( 'danh-muc' ) ); ?>">Xem tất cả
+                <a class="link" href="<?php echo $url.$urlProductCategory.$urlProduct ?>">Xem tất cả
                   <i class="fa fa-angle-right" aria-hidden="true"></i>
                 </a>
               </div>
