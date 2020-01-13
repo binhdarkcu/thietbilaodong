@@ -354,3 +354,11 @@ function custom_add_to_cart_message_html( $message, $products ) {
 
 add_filter( 'auto_update_plugin', '__return_false' );
 add_filter( 'auto_update_theme', '__return_false' );
+
+add_action( 'after_setup_theme', 'yourtheme_setup' );
+ 
+function yourtheme_setup() {
+add_theme_support( 'wc-product-gallery-zoom' );
+add_theme_support( 'wc-product-gallery-lightbox' );
+add_theme_support( 'wc-product-gallery-slider' );
+}
