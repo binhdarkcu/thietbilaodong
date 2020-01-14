@@ -51424,7 +51424,7 @@ span.spinner .spinner-input {
 .layout-grid .item {
 	width: 100% !important
 }
-@media (min-width:350px) {
+@media (max-width: 500px) {
 	div#contact-floated {
 		display: none;
 	}

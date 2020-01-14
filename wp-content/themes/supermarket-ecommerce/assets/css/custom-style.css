@@ -233,6 +233,7 @@ div#contact-floated {
   border: none;
   background-color: #ff531e;
   padding: 20px;
+  display: block;
 }
 
 div#contact-floated a {
