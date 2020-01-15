@@ -228,7 +228,7 @@ div#contact-floated {
   position: fixed;
   top: 50%;
   left: 0;
-  z-index: 2;
+  z-index: 1000000;
   color: whitesmoke;
   border: none;
   background-color: #ff531e;
@@ -238,6 +238,13 @@ div#contact-floated {
 
 div#contact-floated a {
   color: whitesmoke;
+}
+
+.woocommerce-terms-and-conditions-wrapper {
+    width: 100%;
+}
+.woocommerce-privacy-policy-text {
+    text-align: left;
 }
 
 .wc-block-grid__product-price, .wc-block-grid__product-rating, .wc-block-grid__product-title {
@@ -298,62 +305,62 @@ ul.berocket_aapf_widget.berocket_style_none.roundpcs.pcs {
 }
 
 /* WooCommerce 3.0 Gallery */
- 
+
 .woocommerce-product-gallery {
     position: relative;
     margin-bottom: 3em
     }
-     
+
     .woocommerce-product-gallery figure {
     margin: 0
     }
-     
+
     .woocommerce-product-gallery .woocommerce-product-gallery__image:nth-child(n+2) {
     width: 25%;
     display: inline-block
     }
-     
+
     .woocommerce-product-gallery .flex-control-thumbs li {
     list-style: none;
     float: left;
     cursor: pointer
     }
-     
+
     .woocommerce-product-gallery .flex-control-thumbs img {
     opacity: .5
     }
-     
+
     .woocommerce-product-gallery .flex-control-thumbs img.flex-active,.woocommerce-product-gallery .flex-control-thumbs img:hover {
     opacity: 1
     }
-     
+
     .woocommerce-product-gallery img {
     display: block
     }
-     
+
     .woocommerce-product-gallery--columns-3 .flex-control-thumbs li {
     width: 33.3333%
     }
-     
+
     .woocommerce-product-gallery--columns-4 .flex-control-thumbs li {
     width: 25%
     }
-     
+
     .woocommerce-product-gallery--columns-5 .flex-control-thumbs li {
     width: 20%
     }
-     
+
     .woocommerce-product-gallery__trigger {
     position: absolute;
     top: 1em;
     right: 1em;
     z-index: 99;
     }
-     
+
     a.woocommerce-product-gallery__trigger {
     text-decoration: none;
     }
-     
+
     .single-product div.product .woocommerce-product-gallery .woocommerce-product-gallery__trigger {
     position: absolute;
     top: .875em;
@@ -367,18 +374,18 @@ ul.berocket_aapf_widget.berocket_style_none.roundpcs.pcs {
     text-indent: -999px;
     overflow: hidden;
     }
-     
+
     .single-product div.product .woocommerce-product-gallery .woocommerce-product-gallery__trigger {
     background-color: #169fda;
     color: #ffffff;
     }
-     
+
     .single-product div.product .woocommerce-product-gallery .woocommerce-product-gallery__trigger:hover {
     background-color: #1781ae;
     border-color: #1781ae;
     color: #ffffff;
     }
-     
+
     .single-product div.product .woocommerce-product-gallery .woocommerce-product-gallery__trigger:before {
     font: normal normal normal 1em/1 FontAwesome;
     font-size: inherit;

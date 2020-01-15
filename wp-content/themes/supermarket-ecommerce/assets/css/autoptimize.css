@@ -8312,7 +8312,7 @@ p.demo_store a {
 .woocommerce a.button.alt,
 .woocommerce button.button.alt,
 .woocommerce input.button.alt {
-	background-color: #a46497;
+	background-color: #ff531e;
 	color: #fff;
 	-webkit-font-smoothing: antialiased
 }
@@ -9063,7 +9063,7 @@ p.demo_store a {
 
 .woocommerce form .form-row .select2-container {
 	width: 100%;
-	line-height: 2em
+	/* line-height: 2em; */
 }
 
 .woocommerce form .form-row.woocommerce-invalid label {
@@ -49086,7 +49086,7 @@ th {
 }
 
 body {
-	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-family: Arial, sans-serif;
 	color: #333;
 	line-height: 20px;
 	font-size: 14px;
@@ -58566,18 +58566,22 @@ span.spinner .spinner-input {
 .woocommerce-checkout form.checkout .form-row select,
 .woocommerce-checkout form.checkout .form-row .input-text,
 .woocommerce-checkout form.checkout .form-row .select2-container--default .select2-selection--single {
-	height: auto !important;
+	height: 32px !important;
 	min-height: auto;
 	font-size: inherit;
 	padding: 9px 15px;
 	border-radius: 3px;
-	border: 1px solid #d7d7d7 !important
+	border: 1px solid #d7d7d7 !important;
+}
+
+.woocommerce-page.woocommerce-checkout form.checkout .form-row textarea {
+	height: auto!important;
 }
 
 .woocommerce-checkout form.checkout .form-row .select2-container--default .select2-selection--single .select2-selection__rendered {
-	line-height: normal !important;
+	line-height: 32px!important;
 	padding-left: 0;
-	padding-right: 5px
+	padding-right: 5px;
 }
 
 .woocommerce-checkout form.checkout .form-row .select2-container {
