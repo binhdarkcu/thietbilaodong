@@ -130,7 +130,7 @@
                 </li>
                 <li class="menu-item social-top">
                   <span class="label">Kết nối</span>
-                  <a href="<?php echo esc_url( get_theme_mod( 'supermarket_ecommerce_facebook_url','' ) ); ?>" target="_blank">
+                  <a href="<?php echo get_field('facebook_url', 'option'); ?>" target="_blank">
                     <i class="fa fa-facebook-official" aria-hidden="true"></i>
                   </a>
                   <a href="<?php echo esc_url( get_theme_mod( 'supermarket_ecommerce_you_tube_url','' ) ); ?>" target="_blank">
@@ -144,7 +144,7 @@
               <ul class="navbar-nav">
 
                 <li class="menu-item">
-                  <a href="#">
+                  <a href="<?php echo HOME_URL?>/ho-tro">
                     <i class="fa fa-question-circle-o" aria-hidden="true"></i> Trợ giúp</a>
                 </li>
               </ul>
@@ -158,7 +158,7 @@
             <div class="col-sm-12 col-md-3 col-lg-2 d-none d-md-block">
               <div class="header-logo">
                 <a href="<?php echo HOME_URL;?>" title="Trang chủ">
-                  <img src="<?php echo TEMPLATE_PATH ?>/assets/images/logo.png" class="logo-header-desktop"
+                  <img src="<?php echo get_field('logo_header', 'option'); ?>" class="logo-header-desktop"
                     alt="Đồng phục sóc vàng" data-no-lazy="1"> </a>
               </div>
             </div>

@@ -311,7 +311,7 @@ function create_posttype() {
     );
 	register_post_type( 'ads',
   // CPT Options
-  
+
 	array(
 	  'labels' => array(
 	   'name' => __( 'ads' ),
@@ -326,7 +326,7 @@ function create_posttype() {
 	}
 	// Hooking up our function to theme setup
 	add_action( 'init', 'create_posttype' );
-	
+
 	add_theme_support('post-thumbnails',array('post','page','ads'));
 
 
@@ -356,9 +356,28 @@ add_filter( 'auto_update_plugin', '__return_false' );
 add_filter( 'auto_update_theme', '__return_false' );
 
 add_action( 'after_setup_theme', 'yourtheme_setup' );
- 
+
 function yourtheme_setup() {
 add_theme_support( 'wc-product-gallery-zoom' );
 add_theme_support( 'wc-product-gallery-lightbox' );
 add_theme_support( 'wc-product-gallery-slider' );
+}
+
+
+if( function_exists('acf_add_options_page') ) {
+   acf_add_options_page(array(
+    'page_title'  => 'Tùy chỉnh',
+    'menu_title' => 'Tùy chỉnh',
+    'menu_slug'  => 'theme-general-settings'
+   ));
+     acf_add_options_sub_page(array(
+      'page_title'  => 'Header',
+      'menu_title' => 'Header',
+      'parent_slug' => 'theme-general-settings',
+     ));
+   acf_add_options_sub_page(array(
+    'page_title'  => 'Footer',
+    'menu_title' => 'Footer',
+    'parent_slug' => 'theme-general-settings',
+     ));
 }
