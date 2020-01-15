@@ -44,8 +44,8 @@
                 <!--Check loggedin or not-->
                 <a class="profile-url" href="<?php echo esc_url( get_permalink( get_option('woocommerce_myaccount_page_id') ) ); ?>">
                   <div class="avatar-border">
-                    <img class="avatar user-avatar ls-is-cached lazyloaded" src="https://store.vietfriend.info/wp-content/themes/friendstore/assets/images/noavatar.png"
-                      data-src="https://store.vietfriend.info/wp-content/themes/friendstore/assets/images/noavatar.png" alt="Guest">
+                    <img class="avatar user-avatar ls-is-cached lazyloaded" src="<?php echo get_field('no_avatar', 'option'); ?>"
+                      data-src="<?php echo get_field('no_avatar', 'option'); ?>" alt="Guest">
                   </div>
                   <?php if ( is_user_logged_in() ) { ?>
                   <span>
@@ -66,7 +66,7 @@
               <ul class="navbar-nav has-separator mr-auto">
                 <li id="menu-item-151" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-151">
                   <span class="toggle" data-menu="menu-item-151"></span>
-                  <a id="danh-muc-link" href="#danh-muc">Danh mục</a>
+                  <a id="danh-muc-link" href="<?php echo get_category_link( 18 ); ?>">Danh mục</a>
                   <ul class="sub-menu">
                     <?php
 					           $args = array(
@@ -130,13 +130,13 @@
                 </li>
                 <li class="menu-item social-top">
                   <span class="label">Kết nối</span>
-                  <a href="<?php echo get_field('facebook_url', 'option'); ?>" target="_blank">
+                  <a href="<?php echo get_field('url_facebook', 'option'); ?>" target="_blank">
                     <i class="fa fa-facebook-official" aria-hidden="true"></i>
                   </a>
-                  <a href="<?php echo esc_url( get_theme_mod( 'supermarket_ecommerce_you_tube_url','' ) ); ?>" target="_blank">
+                  <a href="<?php echo get_field('url_youtube', 'option'); ?>" target="_blank">
                     <i class="fa fa-youtube-play" aria-hidden="true"></i>
                   </a>
-                  <a href="#" target="_blank">
+                  <a href="<?php echo get_field('url_google', 'option'); ?>" target="_blank">
                     <i class="fa fa-google-plus-official" aria-hidden="true"></i>
                   </a>
                 </li>
