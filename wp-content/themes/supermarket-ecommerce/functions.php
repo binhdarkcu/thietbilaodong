@@ -365,19 +365,24 @@ add_theme_support( 'wc-product-gallery-slider' );
 
 
 if( function_exists('acf_add_options_page') ) {
-   acf_add_options_page(array(
-    'page_title'  => 'Tùy chỉnh',
-    'menu_title' => 'Tùy chỉnh',
-    'menu_slug'  => 'theme-general-settings'
-   ));
-     acf_add_options_sub_page(array(
-      'page_title'  => 'Header',
-      'menu_title' => 'Header',
-      'parent_slug' => 'theme-general-settings',
-     ));
-   acf_add_options_sub_page(array(
-    'page_title'  => 'Footer',
-    'menu_title' => 'Footer',
-    'parent_slug' => 'theme-general-settings',
-     ));
+	acf_add_options_page(array(
+		'page_title'  => 'Tùy chỉnh',
+		'menu_title' => 'Tùy chỉnh',
+		'menu_slug'  => 'theme-general-settings'
+	));
+	acf_add_options_sub_page(array(
+		'page_title'  => 'Logo và liên kết',
+		'menu_title' => 'Logo và liên kết',
+		'parent_slug' => 'theme-general-settings',
+	));
+   	acf_add_options_sub_page(array(
+		'page_title'  => 'Liên hệ',
+		'menu_title' => 'Liên hệ',
+		'parent_slug' => 'theme-general-settings',
+    ));
+   	acf_add_options_sub_page(array(
+		'page_title'  => 'Footer',
+		'menu_title' => 'Footer',
+		'parent_slug' => 'theme-general-settings',
+    ));
 }
