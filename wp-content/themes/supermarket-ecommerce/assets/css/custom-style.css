@@ -261,6 +261,10 @@ span.wc-block-grid__product-onsale {
     display: none;
 }
 
+#wp-live-chat-header {
+    background: url(../images/0-chat-png-hd.png) no-repeat center;
+    background-size: 75%;
+}
 .woocommerce  .related.products .products.columns-4 li.post-item{
     width: 24%;
     display: inline-block;
