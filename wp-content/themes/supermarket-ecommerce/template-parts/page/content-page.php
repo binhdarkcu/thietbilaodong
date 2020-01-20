@@ -17,10 +17,12 @@
 	<div class="entry-content">
 		<?php if (is_front_page()) {?>
       <?php get_template_part( 'custom-html/home', 'page' ); ?>
-    <?php }?>
-		<?php the_post_thumbnail();?>
+    <?php } else { 
+      the_post_thumbnail();
+    ?>
 		<p><?php the_content(); ?></p>
     <?php
+    }
       wp_link_pages(
         array(
               'before' => '<div class="page-links">' . __('Pages:', 'supermarket-ecommerce'),

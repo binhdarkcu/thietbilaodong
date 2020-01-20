@@ -50,12 +50,20 @@
                         <div class="item">
                           <a href="<?php echo esc_url(get_term_link($product_category)); ?>" class="item-link" title="<?php $product_category->name?>">
                             <div class="item-thumbnail">
+                              <?php
+                                    $thumbnail_id = get_term_meta( $product_category->term_id, 'thumbnail_id', true );
+                                    if ($thumbnail_id == 0) {
+                                      $image = 'wp-content/uploads/woocommerce-placeholder-300x300.png';
+                                    } else {
+                                      $image = wp_get_attachment_url( $thumbnail_id );
+                                    }
+                              ?>
                               <noscript>
-                                <img class="image" src="https://store.vietfriend.info/wp-content/uploads/2019/05/dien-thoai-thiet-bi.png"
+                                <img class="image" src="<?php echo $image ?>"
                                   alt="<?php $product_category->name?>" />
                               </noscript>
-                              <img class="image lazyloaded" src="https://store.vietfriend.info/wp-content/uploads/2019/05/dien-thoai-thiet-bi.png"
-                                data-src="https://store.vietfriend.info/wp-content/uploads/2019/05/dien-thoai-thiet-bi.png" alt="<?php $product_category->name?>">
+                              <img class="image lazyloaded" src="<?php echo $image ?>"
+                                data-src="$image" alt="<?php $product_category->name?>" style="width: 129px; height: 129px;">
                             </div>
                             <div class="item-info">
                               <h2 class="item-title"><?php echo esc_html($product_category->name)?></h2>
