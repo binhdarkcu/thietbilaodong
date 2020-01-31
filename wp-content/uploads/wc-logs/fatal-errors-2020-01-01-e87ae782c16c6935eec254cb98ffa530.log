@@ -1,0 +1,73 @@
+2020-01-01T14:16:11+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp7\htdocs\Quan\Backend\wp-includes\wp-db.php on line 2030
+
+2020-01-01T14:17:22+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp7\htdocs\Quan\Backend\wp-content\plugins\ultimate-member\includes\core\class-files.php on line 5
+
+2020-01-01T14:56:21+00:00 CRITICAL Uncaught Error: Class 'WC_AJAX' not found in C:\xampp7\htdocs\Quan\Backend\wp-content\plugins\woocommerce\includes\class-wc-frontend-scripts.php:540
+Stack trace:
+#0 C:\xampp7\htdocs\Quan\Backend\wp-content\plugins\woocommerce\includes\class-wc-frontend-scripts.php(436): WC_Frontend_Scripts::get_script_data('wc-cart-fragmen...')
+#1 C:\xampp7\htdocs\Quan\Backend\wp-content\plugins\woocommerce\includes\class-wc-frontend-scripts.php(605): WC_Frontend_Scripts::localize_script('wc-cart-fragmen...')
+#2 C:\xampp7\htdocs\Quan\Backend\wp-includes\class-wp-hook.php(288): WC_Frontend_Scripts::localize_printed_scripts('')
+#3 C:\xampp7\htdocs\Quan\Backend\wp-includes\class-wp-hook.php(312): WP_Hook->apply_filters(NULL, Array)
+#4 C:\xampp7\htdocs\Quan\Backend\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#5 C:\xampp7\htdocs\Quan\Backend\wp-includes\script-loader.php(2621): do_action('wp_print_script...')
+#6 C:\xampp7\htdocs\Quan\Backend\wp-includes\class-wp-hook.php(288): wp_print_head_scripts('')
+#7 C:\xampp7\htdo in C:\xampp7\htdocs\Quan\Backend\wp-content\plugins\woocommerce\includes\class-wc-frontend-scripts.php on line 540
+
+2020-01-01T14:56:30+00:00 CRITICAL Uncaught Error: Call to undefined function wc_load_webhooks() in C:\xampp7\htdocs\Quan\Backend\wp-content\plugins\woocommerce\includes\class-woocommerce.php:730
+Stack trace:
+#0 C:\xampp7\htdocs\Quan\Backend\wp-content\plugins\woocommerce\includes\class-woocommerce.php(561): WooCommerce->load_webhooks()
+#1 C:\xampp7\htdocs\Quan\Backend\wp-includes\class-wp-hook.php(288): WooCommerce->init('')
+#2 C:\xampp7\htdocs\Quan\Backend\wp-includes\class-wp-hook.php(312): WP_Hook->apply_filters(NULL, Array)
+#3 C:\xampp7\htdocs\Quan\Backend\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#4 C:\xampp7\htdocs\Quan\Backend\wp-settings.php(523): do_action('init')
+#5 C:\xampp7\htdocs\Quan\Backend\wp-config.php(93): require_once('C:\\xampp7\\htdoc...')
+#6 C:\xampp7\htdocs\Quan\Backend\wp-load.php(37): require_once('C:\\xampp7\\htdoc...')
+#7 C:\xampp7\htdocs\Quan\Backend\wp-admin\admin-ajax.php(22): require_once('C:\\xampp7\\htdoc...')
+#8 {main}
+  thrown in C:\xampp7\htdocs\Quan\Backend\wp-content\plugins\woocommerce\includes\class-woocommerce.php on line 730
+
+2020-01-01T14:58:17+00:00 CRITICAL Class 'ActionScheduler_wpPostStore' not found in C:\xampp7\htdocs\Quan\Backend\wp-content\plugins\woocommerce-admin\src\Overrides\WPPostStore.php on line 13
+
+2020-01-01T14:58:27+00:00 CRITICAL Uncaught Error: Class 'ActionScheduler_wpCommentLogger' not found in C:\xampp7\htdocs\Quan\Backend\wp-content\plugins\woocommerce\includes\libraries\action-scheduler\classes\ActionScheduler_Logger.php:16
+Stack trace:
+#0 C:\xampp7\htdocs\Quan\Backend\wp-content\plugins\woocommerce\includes\libraries\action-scheduler\classes\ActionScheduler.php(24): ActionScheduler_Logger::instance()
+#1 C:\xampp7\htdocs\Quan\Backend\wp-content\plugins\woocommerce\includes\libraries\action-scheduler\classes\ActionScheduler.php(96): ActionScheduler::logger()
+#2 C:\xampp7\htdocs\Quan\Backend\wp-content\plugins\woocommerce\includes\libraries\action-scheduler\action-scheduler.php(44): ActionScheduler::init('C:\\xampp7\\htdoc...')
+#3 C:\xampp7\htdocs\Quan\Backend\wp-content\plugins\woocommerce\includes\libraries\action-scheduler\classes\ActionScheduler_Versions.php(59): action_scheduler_initialize_2_dot_2_dot_5()
+#4 C:\xampp7\htdocs\Quan\Backend\wp-includes\class-wp-hook.php(286): ActionScheduler_Versions::initialize_latest_version() in C:\xampp7\htdocs\Quan\Backend\wp-content\plugins\woocommerce\includes\libraries\action-scheduler\classes\ActionScheduler_Logger.php on line 16
+
+2020-01-01T15:01:15+00:00 CRITICAL Uncaught Exception: Invalid data store. in C:\xampp7\htdocs\Quan\Backend\wp-content\plugins\woocommerce\includes\class-wc-data-store.php:101
+Stack trace:
+#0 C:\xampp7\htdocs\Quan\Backend\wp-content\plugins\woocommerce\includes\class-wc-data-store.php(139): WC_Data_Store->__construct('customer')
+#1 C:\xampp7\htdocs\Quan\Backend\wp-content\plugins\woocommerce\includes\class-wc-customer.php(99): WC_Data_Store::load('customer')
+#2 C:\xampp7\htdocs\Quan\Backend\wp-content\plugins\woocommerce\includes\class-woocommerce.php(742): WC_Customer->__construct(1, true)
+#3 C:\xampp7\htdocs\Quan\Backend\wp-content\plugins\woocommerce\includes\wc-core-functions.php(2278): WooCommerce->initialize_cart()
+#4 C:\xampp7\htdocs\Quan\Backend\wp-content\plugins\woocommerce\includes\class-woocommerce.php(558): wc_load_cart()
+#5 C:\xampp7\htdocs\Quan\Backend\wp-includes\class-wp-hook.php(288): WooCommerce->init('')
+#6 C:\xampp7\htdocs\Quan\Backend\wp-includes\class-wp-hook.php(312): WP_Hook->apply_filters(NULL, Array)
+#7 C:\xampp7\htd in C:\xampp7\htdocs\Quan\Backend\wp-content\plugins\woocommerce\includes\class-wc-data-store.php on line 101
+
+2020-01-01T15:01:30+00:00 CRITICAL Uncaught Error: Class 'WC_Widget_Price_Filter' not found in C:\xampp7\htdocs\Quan\Backend\wp-includes\class-wp-widget-factory.php:71
+Stack trace:
+#0 C:\xampp7\htdocs\Quan\Backend\wp-includes\widgets.php(115): WP_Widget_Factory->register('WC_Widget_Price...')
+#1 C:\xampp7\htdocs\Quan\Backend\wp-content\plugins\woocommerce\includes\wc-widget-functions.php(39): register_widget('WC_Widget_Price...')
+#2 C:\xampp7\htdocs\Quan\Backend\wp-includes\class-wp-hook.php(288): wc_register_widgets('')
+#3 C:\xampp7\htdocs\Quan\Backend\wp-includes\class-wp-hook.php(312): WP_Hook->apply_filters(NULL, Array)
+#4 C:\xampp7\htdocs\Quan\Backend\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#5 C:\xampp7\htdocs\Quan\Backend\wp-includes\widgets.php(1765): do_action('widgets_init')
+#6 C:\xampp7\htdocs\Quan\Backend\wp-includes\class-wp-hook.php(288): wp_widgets_init('')
+#7 C:\xampp7\htdocs\Quan\Backend\wp-includes\class-wp-hook.php(312): WP_Hook->apply_filters(NULL, Array)
+#8 C:\xampp7\htdocs\Quan\Backend\wp-includes\plugin.php in C:\xampp7\htdocs\Quan\Backend\wp-includes\class-wp-widget-factory.php on line 71
+
+2020-01-01T15:01:31+00:00 CRITICAL Uncaught Error: Class 'WC_Widget_Recent_Reviews' not found in C:\xampp7\htdocs\Quan\Backend\wp-includes\class-wp-widget-factory.php:71
+Stack trace:
+#0 C:\xampp7\htdocs\Quan\Backend\wp-includes\widgets.php(115): WP_Widget_Factory->register('WC_Widget_Recen...')
+#1 C:\xampp7\htdocs\Quan\Backend\wp-content\plugins\woocommerce\includes\wc-widget-functions.php(48): register_widget('WC_Widget_Recen...')
+#2 C:\xampp7\htdocs\Quan\Backend\wp-includes\class-wp-hook.php(288): wc_register_widgets('')
+#3 C:\xampp7\htdocs\Quan\Backend\wp-includes\class-wp-hook.php(312): WP_Hook->apply_filters(NULL, Array)
+#4 C:\xampp7\htdocs\Quan\Backend\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#5 C:\xampp7\htdocs\Quan\Backend\wp-includes\widgets.php(1765): do_action('widgets_init')
+#6 C:\xampp7\htdocs\Quan\Backend\wp-includes\class-wp-hook.php(288): wp_widgets_init('')
+#7 C:\xampp7\htdocs\Quan\Backend\wp-includes\class-wp-hook.php(312): WP_Hook->apply_filters(NULL, Array)
+#8 C:\xampp7\htdocs\Quan\Backend\wp-includes\plugin.p in C:\xampp7\htdocs\Quan\Backend\wp-includes\class-wp-widget-factory.php on line 71
+
