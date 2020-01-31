@@ -346,7 +346,7 @@ template {
 label {
 	color: #3f3f3f;
 	display: block;
-	font-weight: 800;
+	font-weight: 400;
 	margin-bottom: 0.5em;
 }
 
@@ -556,7 +556,7 @@ th {
 	text-align: left;
 }
 tbody, td, th {
-    border: 1px solid;
+
 }
 
 td {
@@ -628,8 +628,6 @@ a .nav-title,
 /* Fixes linked images */
 .entry-content a img,
 .widget a img {
-	-webkit-box-shadow: 0 0 0 8px #fff;
-	box-shadow: 0 0 0 8px #fff;
 }
 
 .post-navigation a:focus .icon,
@@ -1516,7 +1514,6 @@ h3.entry-title a {
 .prev.page-numbers:hover,
 .next.page-numbers:focus,
 .next.page-numbers:hover {
-    background: #343748;
     color: #fff;
     cursor: pointer;
 }
@@ -1952,23 +1949,38 @@ body:not(.supermarket-ecommerce-front-page) .entry-header {
 .form-submit {
 	text-align: right;
 }
+#contact-floated .contact-info {
+	margin-bottom: 8px;
+}
+#contact-floated .contact-info .name{
+	font-size: 14px;
+}
+#contact-floated .contact-info .phone{
+	font-size: 16px;
+}
 /*-------- Widgets ----------*/
 #secondary {
 	padding: 1em 0 2em;
 }
 #sidebar .widget li{
-    border-bottom: 1px solid #bbb;
+    border-bottom: 0 solid #bbb;
+}
+#sidebar .berocket_term_depth_1 label {
+	padding-left: 0;
 }
 #sidebar .widget li:last-child {
     border: none;
 }
 #sidebar .widget {
-    padding: 15px;
+    padding: 0;
     margin-bottom: 30px;
     border:1px dashed #e4e4e4;
 }
 #sidebar .widget:hover{
-	border:1px solid #faa61a;
+	border: none solid #faa61a;
+}
+#sidebar .berocket_aapf_widget_show.show_button.mobile_hide {
+	opacity: 0;
 }
 h2.widget-title {
     font-size: 24px;
@@ -3144,7 +3156,6 @@ object {
 		margin-right: 5px;
 	}
 	.page-numbers:hover{
-		background: #faa61a;
 		color: #fff !important;
 	}
 	.page-numbers.current{

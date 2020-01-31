@@ -8,11 +8,16 @@
 jQuery(function($){
  "use strict";
    jQuery('.main-menu-navigation > ul').superfish({
-     delay:       500,                            
-     animation:   {opacity:'show',height:'show'},  
-     speed:       'fast'                        
+     delay:       500,
+     animation:   {opacity:'show',height:'show'},
+     speed:       'fast'
    });
-
+   jQuery('.lines-button').click(function(){
+       jQuery('#topmenu').toggleClass('opened')
+   })
+   jQuery('#danh-muc-link').click(function(){
+       jQuery('.sub-menu').toggleClass('opened')
+   })
 });
 
 function resMenu_open() {
@@ -29,6 +34,6 @@ function resMenu_close() {
 	    $("button.product-btn").click(function(){
 	        $(".product-cat").toggle();
 	    });
-	});	
-	
+	});
+
 })( jQuery );

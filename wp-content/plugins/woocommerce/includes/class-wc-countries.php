@@ -628,21 +628,21 @@ class WC_Countries {
 
 		$fields = array(
 			'first_name' => array(
-				'label'        => __( 'First name', 'woocommerce' ),
+				'label'        => __( 'Tên', 'woocommerce' ),
 				'required'     => true,
 				'class'        => array( 'form-row-first' ),
 				'autocomplete' => 'given-name',
 				'priority'     => 10,
 			),
 			'last_name'  => array(
-				'label'        => __( 'Last name', 'woocommerce' ),
+				'label'        => __( 'Họ', 'woocommerce' ),
 				'required'     => true,
 				'class'        => array( 'form-row-last' ),
 				'autocomplete' => 'family-name',
 				'priority'     => 20,
 			),
 			'company'    => array(
-				'label'        => __( 'Company name', 'woocommerce' ),
+				'label'        => __( 'Công ty', 'woocommerce' ),
 				'class'        => array( 'form-row-wide' ),
 				'autocomplete' => 'organization',
 				'priority'     => 30,
@@ -650,16 +650,16 @@ class WC_Countries {
 			),
 			'country'    => array(
 				'type'         => 'country',
-				'label'        => __( 'Country', 'woocommerce' ),
+				'label'        => __( 'Quốc gia', 'woocommerce' ),
 				'required'     => true,
 				'class'        => array( 'form-row-wide', 'address-field', 'update_totals_on_change' ),
 				'autocomplete' => 'country',
 				'priority'     => 40,
 			),
 			'address_1'  => array(
-				'label'        => __( 'Street address', 'woocommerce' ),
+				'label'        => __( 'Địa chỉ', 'woocommerce' ),
 				/* translators: use local order of street name and house number. */
-				'placeholder'  => esc_attr__( 'House number and street name', 'woocommerce' ),
+				'placeholder'  => esc_attr__( 'Số nhà, đường', 'woocommerce' ),
 				'required'     => true,
 				'class'        => array( 'form-row-wide', 'address-field' ),
 				'autocomplete' => 'address-line1',

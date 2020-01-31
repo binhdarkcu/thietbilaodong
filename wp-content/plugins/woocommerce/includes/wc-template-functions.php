@@ -1353,12 +1353,12 @@ if ( ! function_exists( 'woocommerce_catalog_ordering' ) ) {
 		$catalog_orderby_options = apply_filters(
 			'woocommerce_catalog_orderby',
 			array(
-				'menu_order' => __( 'Default sorting', 'woocommerce' ),
-				'popularity' => __( 'Sort by popularity', 'woocommerce' ),
-				'rating'     => __( 'Sort by average rating', 'woocommerce' ),
-				'date'       => __( 'Sort by latest', 'woocommerce' ),
-				'price'      => __( 'Sort by price: low to high', 'woocommerce' ),
-				'price-desc' => __( 'Sort by price: high to low', 'woocommerce' ),
+				'menu_order' => __( 'Mặc định', 'woocommerce' ),
+				'popularity' => __( 'Sắp xếp theo mức độ phổ biến', 'woocommerce' ),
+				'rating'     => __( 'Sắp xếp theo xếp hạng trung bình', 'woocommerce' ),
+				'date'       => __( 'Sắp xếp theo mới nhất', 'woocommerce' ),
+				'price'      => __( 'Sắp xếp theo giá: thấp đến cao', 'woocommerce' ),
+				'price-desc' => __( 'Sắp xếp theo giá: cao xuống thấp', 'woocommerce' ),
 			)
 		);
 
@@ -1733,7 +1733,7 @@ if ( ! function_exists( 'woocommerce_default_product_tabs' ) ) {
 		// Description tab - shows product content.
 		if ( $post->post_content ) {
 			$tabs['description'] = array(
-				'title'    => __( 'Description', 'woocommerce' ),
+				'title'    => __( 'Mô tả', 'woocommerce' ),
 				'priority' => 10,
 				'callback' => 'woocommerce_product_description_tab',
 			);
@@ -1742,7 +1742,7 @@ if ( ! function_exists( 'woocommerce_default_product_tabs' ) ) {
 		// Additional information tab - shows attributes.
 		if ( $product && ( $product->has_attributes() || apply_filters( 'wc_product_enable_dimensions_display', $product->has_weight() || $product->has_dimensions() ) ) ) {
 			$tabs['additional_information'] = array(
-				'title'    => __( 'Additional information', 'woocommerce' ),
+				'title'    => __( 'Thông tin thêm', 'woocommerce' ),
 				'priority' => 20,
 				'callback' => 'woocommerce_product_additional_information_tab',
 			);
@@ -1752,7 +1752,7 @@ if ( ! function_exists( 'woocommerce_default_product_tabs' ) ) {
 		if ( comments_open() ) {
 			$tabs['reviews'] = array(
 				/* translators: %s: reviews count */
-				'title'    => sprintf( __( 'Reviews (%d)', 'woocommerce' ), $product->get_review_count() ),
+				'title'    => sprintf( __( 'Đánh giá (%d)', 'woocommerce' ), $product->get_review_count() ),
 				'priority' => 30,
 				'callback' => 'comments_template',
 			);

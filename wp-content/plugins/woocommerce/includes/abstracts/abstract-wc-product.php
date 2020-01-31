@@ -780,7 +780,7 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	public function set_catalog_visibility( $visibility ) {
 		$options = array_keys( wc_get_product_visibility_options() );
 		if ( ! in_array( $visibility, $options, true ) ) {
-			$this->error( 'product_invalid_catalog_visibility', __( 'Invalid catalog visibility option.', 'woocommerce' ) );
+			$this->error( 'product_invalid_catalog_visibility', __( 'Danh mục không hợp lệ.', 'woocommerce' ) );
 		}
 		$this->set_prop( 'catalog_visibility', $visibility );
 	}
@@ -1816,7 +1816,7 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @return string
 	 */
 	public function single_add_to_cart_text() {
-		return apply_filters( 'woocommerce_product_single_add_to_cart_text', __( 'Add to cart', 'woocommerce' ), $this );
+		return apply_filters( 'woocommerce_product_single_add_to_cart_text', __( 'Thêm vào giỏ', 'woocommerce' ), $this );
 	}
 
 	/**
@@ -1825,7 +1825,7 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @return string
 	 */
 	public function add_to_cart_text() {
-		return apply_filters( 'woocommerce_product_add_to_cart_text', __( 'Read more', 'woocommerce' ), $this );
+		return apply_filters( 'woocommerce_product_add_to_cart_text', __( 'Xem thêm', 'woocommerce' ), $this );
 	}
 
 	/**
@@ -1836,7 +1836,7 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 */
 	public function add_to_cart_description() {
 		/* translators: %s: Product title */
-		return apply_filters( 'woocommerce_product_add_to_cart_description', sprintf( __( 'Read more about &ldquo;%s&rdquo;', 'woocommerce' ), $this->get_name() ), $this );
+		return apply_filters( 'woocommerce_product_add_to_cart_description', sprintf( __( 'Xem thêm về &ldquo;%s&rdquo;', 'woocommerce' ), $this->get_name() ), $this );
 	}
 
 	/**
@@ -1999,11 +1999,11 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 */
 	protected function get_availability_text() {
 		if ( ! $this->is_in_stock() ) {
-			$availability = __( 'Out of stock', 'woocommerce' );
+			$availability = __( 'Hết hàng', 'woocommerce' );
 		} elseif ( $this->managing_stock() && $this->is_on_backorder( 1 ) ) {
-			$availability = $this->backorders_require_notification() ? __( 'Available on backorder', 'woocommerce' ) : '';
+			$availability = $this->backorders_require_notification() ? __( 'Cho phép đặt hàng', 'woocommerce' ) : '';
 		} elseif ( ! $this->managing_stock() && $this->is_on_backorder( 1 ) ) {
-			$availability = __( 'Available on backorder', 'woocommerce' );
+			$availability = __( 'ho phép đặt hàng', 'woocommerce' );
 		} elseif ( $this->managing_stock() ) {
 			$availability = wc_format_stock_for_display( $this );
 		} else {

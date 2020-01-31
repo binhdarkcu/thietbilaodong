@@ -1,0 +1,16 @@
+2020-01-03T18:46:28+00:00 CRITICAL Uncaught Error: Call to undefined function callTheSlider() in /Users/baoch/Desktop/workspace/freelance_project/thietbilaodong_fe/thietbilaodong/wp-content/themes/supermarket-ecommerce/custom-html/home-page-banner.php:25
+Stack trace:
+#0 /Users/baoch/Desktop/workspace/freelance_project/thietbilaodong_fe/thietbilaodong/wp-includes/template.php(724): require()
+#1 /Users/baoch/Desktop/workspace/freelance_project/thietbilaodong_fe/thietbilaodong/wp-includes/template.php(671): load_template('/Users/baoch/De...', false)
+#2 /Users/baoch/Desktop/workspace/freelance_project/thietbilaodong_fe/thietbilaodong/wp-includes/general-template.php(168): locate_template(Array, true, false)
+#3 /Users/baoch/Desktop/workspace/freelance_project/thietbilaodong_fe/thietbilaodong/wp-content/themes/supermarket-ecommerce/custom-html/home-page.php(12): get_template_part('custom-html/hom...', 'banner')
+#4 /Users/baoch/Desktop/workspace/freelance_project/thietbilaodong_fe/thietbilaodong/wp-includes/template.php(724): require('/Users/baoch/De in /Users/baoch/Desktop/workspace/freelance_project/thietbilaodong_fe/thietbilaodong/wp-content/themes/supermarket-ecommerce/custom-html/home-page-banner.php on line 25
+
+2020-01-03T19:28:51+00:00 CRITICAL Uncaught Error: Call to undefined method WP_Term::get_id() in /Users/baoch/Desktop/workspace/freelance_project/thietbilaodong_fe/thietbilaodong/wp-content/themes/supermarket-ecommerce/woocommerce/content-product_cat.php:26
+Stack trace:
+#0 /Users/baoch/Desktop/workspace/freelance_project/thietbilaodong_fe/thietbilaodong/wp-content/plugins/woocommerce/includes/wc-core-functions.php(249): include()
+#1 /Users/baoch/Desktop/workspace/freelance_project/thietbilaodong_fe/thietbilaodong/wp-content/plugins/woocommerce/includes/wc-template-functions.php(2444): wc_get_template('content-product...', Array)
+#2 /Users/baoch/Desktop/workspace/freelance_project/thietbilaodong_fe/thietbilaodong/wp-content/plugins/woocommerce/includes/wc-template-functions.php(2335): woocommerce_output_product_categories(Array)
+#3 /Users/baoch/Desktop/workspace/freelance_project/thietbilaodong_fe/thietbilaodong/wp-includes/class-wp-hook.php(288): woocommerce_maybe_show_product_subcategories('<ul class="prod...')
+#4 /Users/baoch/Desktop/workspa in /Users/baoch/Desktop/workspace/freelance_project/thietbilaodong_fe/thietbilaodong/wp-content/themes/supermarket-ecommerce/woocommerce/content-product_cat.php on line 26
+

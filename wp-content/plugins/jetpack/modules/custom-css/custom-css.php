@@ -63,7 +63,7 @@ class Jetpack_Custom_CSS {
 		// Short-circuit WP if this is a CSS stylesheet request
 		if ( isset( $_GET['custom-css'] ) ) {
 			header( 'Content-Type: text/css', true, 200 );
-			header( 'Expires: ' . gmdate( 'D, d M Y H:i:s', time() + 60) . ' GMT' ); // 1 year
+			header( 'Expires: ' . gmdate( 'D, d M Y H:i:s', time() + 31536000) . ' GMT' ); // 1 year
 			Jetpack_Custom_CSS::print_css();
 			exit;
 		}

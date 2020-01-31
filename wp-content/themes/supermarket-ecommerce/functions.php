@@ -262,6 +262,11 @@ function supermarket_ecommerce_sanitize_choices( $input, $setting ) {
 // define('SUPERMARKET_ECOMMERCE_SUPPORT','https://wordpress.org/support/theme/supermarket-ecommerce/','supermarket-ecommerce');
 // define('SUPERMARKET_ECOMMERCE_CREDIT','https://www.luzuk.com/themes/free-wordpress-ecommerce-theme/','supermarket-ecommerce');
 
+define('TEMPLATE_PATH',get_bloginfo('template_url'));
+define('HOME_URL',get_home_url());
+define('BlOG_NAME',get_bloginfo('blog_name'));
+define('SLOGAN', get_bloginfo('description'));
+
 if ( ! function_exists( 'supermarket_ecommerce_credit' ) ) {
 	function supermarket_ecommerce_credit(){
 		// echo "<a href=".esc_url(SUPERMARKET_ECOMMERCE_CREDIT)." target='_blank'>".esc_html__('Ecommerce WordPress Theme','supermarket-ecommerce')."</a>";
@@ -296,4 +301,88 @@ require get_parent_theme_file_path( '/inc/getting-started/getting-started.php' )
 
 function is_login_page() {
     return in_array($GLOBALS['pagenow'], array('wp-login.php', 'wp-register.php', 'my-account.php'));
+}
+
+/* Custom Post Type Start */
+function create_posttype() {
+  $supports = array(
+    'title', // post title
+    'thumbnail', // featured images
+    );
+	register_post_type( 'ads',
+  // CPT Options
+
+	array(
+	  'labels' => array(
+	   'name' => __( 'ads' ),
+	   'singular_name' => __( 'Advertisments' )
+	  ),
+	  'public' => true,
+	  'has_archive' => false,
+    'rewrite' => array('slug' => 'ads'),
+    'supports' => $supports,
+	 )
+	);
+	}
+	// Hooking up our function to theme setup
+	add_action( 'init', 'create_posttype' );
+
+	add_theme_support('post-thumbnails',array('post','page','ads'));
+
+
+
+add_filter( 'wc_add_to_cart_message_html', 'custom_add_to_cart_message_html', 10, 2 );
+function custom_add_to_cart_message_html( $message, $products ) {
+    $count = 0;
+    foreach ( $products as $product_id => $qty ) {
+        $count += $qty;
+    }
+    // The custom message is just below
+    $added_text = sprintf( _n("%s Sản phẩm %s", "%s Sản phẩm %s", $count, "woocommerce" ),
+        $count, __("đã được thêm vào giỏ hàng.", "woocommerce") );
+
+    // Output success messages
+    if ( 'yes' === get_option( 'woocommerce_cart_redirect_after_add' ) ) {
+        $return_to = apply_filters( 'woocommerce_continue_shopping_redirect', wc_get_raw_referer() ? wp_validate_redirect( wc_get_raw_referer(), false ) : wc_get_page_permalink( 'shop' ) );
+        $message   = sprintf( '<a href="%s" class="button wc-forward">%s</a> %s', esc_url( $return_to ), esc_html__( 'Continue shopping', 'woocommerce' ), esc_html( $added_text ) );
+    } else {
+        $message   = sprintf( '<a href="%s" style="margin-left: 8px!important;" class="button wc-forward">%s</a> %s', esc_url( wc_get_page_permalink( 'cart' ) ), esc_html__( 'Xem giỏ hàng', 'woocommerce' ), esc_html( $added_text ) );
+    }
+    return $message;
+}
+
+
+add_filter( 'auto_update_plugin', '__return_false' );
+add_filter( 'auto_update_theme', '__return_false' );
+
+add_action( 'after_setup_theme', 'yourtheme_setup' );
+
+function yourtheme_setup() {
+add_theme_support( 'wc-product-gallery-zoom' );
+add_theme_support( 'wc-product-gallery-lightbox' );
+add_theme_support( 'wc-product-gallery-slider' );
+}
+
+
+if( function_exists('acf_add_options_page') ) {
+	acf_add_options_page(array(
+		'page_title'  => 'Tùy chỉnh',
+		'menu_title' => 'Tùy chỉnh',
+		'menu_slug'  => 'theme-general-settings'
+	));
+	acf_add_options_sub_page(array(
+		'page_title'  => 'Logo và liên kết',
+		'menu_title' => 'Logo và liên kết',
+		'parent_slug' => 'theme-general-settings',
+	));
+   	acf_add_options_sub_page(array(
+		'page_title'  => 'Liên hệ',
+		'menu_title' => 'Liên hệ',
+		'parent_slug' => 'theme-general-settings',
+    ));
+   	acf_add_options_sub_page(array(
+		'page_title'  => 'Footer',
+		'menu_title' => 'Footer',
+		'parent_slug' => 'theme-general-settings',
+    ));
 }

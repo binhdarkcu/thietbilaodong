@@ -181,8 +181,8 @@ class FoW_Ultility {
         $fields["{$type}_email"]['class'] = array('form-row-wide');
         $fields["{$type}_address_1"]['class'] = array('form-row-wide');
 
-        $fields["{$type}_first_name"]['label'] = __('Full Name', 'friendstore-for-woocommerce');
-        $fields["{$type}_phone"]['label'] = wcl10n__('Phone', 'woocommerce');
+        $fields["{$type}_first_name"]['label'] = __('Họ và tên', 'friendstore-for-woocommerce');
+        $fields["{$type}_phone"]['label'] = wcl10n__('Số điện thoại', 'woocommerce');
         $fields["{$type}_email"]['label'] = wcl10n__('Email', 'woocommerce');
 
         unset($fields["{$type}_last_name"]);

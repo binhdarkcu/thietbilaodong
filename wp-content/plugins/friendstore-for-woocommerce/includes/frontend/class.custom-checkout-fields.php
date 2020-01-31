@@ -43,21 +43,21 @@ if (!class_exists('FoW_Custom_Checkout_Fields')) {
         function fsw_woocommerce_default_address_fields($fields) {
             if (!can_shipping_vietnam()) return $fields;
 
-            $fields['first_name']['label'] = esc_html__('Full Name', 'friendstore-for-woocommerce');
+            $fields['first_name']['label'] = esc_html__('Họ và tên', 'friendstore-for-woocommerce');
             unset($fields['last_name']);
 
-            $fields['state']['label'] = esc_html__('Province/City', 'friendstore-for-woocommerce');
-            $fields['state']['placeholder'] = esc_html__('Select Province/City', 'friendstore-for-woocommerce');
+            $fields['state']['label'] = esc_html__('Tỉnh / Thành phố', 'friendstore-for-woocommerce');
+            $fields['state']['placeholder'] = esc_html__('Hà nội, Hồ chí minh, Đà nẵng', 'friendstore-for-woocommerce');
             $fields['state']['required'] = true;
             $fields['state']['priority'] = 70;
 
-            $fields['city']['label'] = esc_html__('District', 'friendstore-for-woocommerce');
-            $fields['city']['placeholder'] = esc_html__('Select District', 'friendstore-for-woocommerce');
+            $fields['city']['label'] = esc_html__('Quận', 'friendstore-for-woocommerce');
+            $fields['city']['placeholder'] = esc_html__('1, 2, 3, 4, 5, Phú nhuận, Bình thạnh,...', 'friendstore-for-woocommerce');
             $fields['city']['required'] = true;
             $fields['city']['priority'] = 80;
 
-            $fields['address_2']['label'] = esc_html__('Commune/Ward', 'friendstore-for-woocommerce');
-            $fields['address_2']['placeholder'] = esc_html__('Select Commune/Ward', 'friendstore-for-woocommerce');
+            $fields['address_2']['label'] = esc_html__('Phường / xã', 'friendstore-for-woocommerce');
+            $fields['address_2']['placeholder'] = esc_html__('1, 2, 3, ...', 'friendstore-for-woocommerce');
             $fields['address_2']['required'] = true;
             $fields['address_2']['priority'] = 90;
 
