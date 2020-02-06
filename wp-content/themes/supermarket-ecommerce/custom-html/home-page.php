@@ -9,10 +9,12 @@
 
 ?>
 
-<?php get_template_part( 'custom-html/home-page', 'banner' ); ?>
+<?php get_template_part('custom-html/home-page', 'banner');?>
 <div class="vc_row-full-width vc_clearfix"></div>
-<?php get_template_part( 'custom-html/home-page', 'categories' ); ?>
+<?php get_template_part('custom-html/home-page', 'categories');?>
 <div class="vc_row-full-width vc_clearfix"></div>
-<?php get_template_part( 'custom-html/home-page-feature', 'products' ); ?>
+<?php get_template_part('custom-html/home-page-feature', 'products');?>
 <div class="vc_row-full-width vc_clearfix"></div>
-<?php get_template_part( 'custom-html/home-page', 'products' ); ?>
+<?php get_template_part('custom-html/home-page', 'products');?>
+<div class="vc_row-full-width vc_clearfix"></div>
+<?php get_template_part('custom-html/home-page', 'news');?>
