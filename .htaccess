@@ -1,15 +1,19 @@
 
 # BEGIN WordPress
-# The directives (lines) between `BEGIN WordPress` and `END WordPress` are
-# dynamically generated, and should only be modified via WordPress filters.
-# Any changes to the directives between these markers will be overwritten.
+# Các nội dung nằm giữa `BEGIN WordPress` và `END WordPress` được tạo ra tự động, và chỉ nên được thay đổi thông qua các filter của WordPress. Mọi thay đổi tới thành phần này có thể sẽ bị mất và ghi đè.
 <IfModule mod_rewrite.c>
 RewriteEngine On
-RewriteBase /thietbilaodong/
+RewriteBase /
 RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /thietbilaodong/index.php [L]
+RewriteRule . /index.php [L]
 </IfModule>
 
 # END WordPress
+# DO NOT REMOVE THIS LINE AND THE LINES BELOW SSL_REDIRECT:dongphucsocvang.com
+RewriteEngine on
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP_HOST} ^dongphucsocvang.com$
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+# DO NOT REMOVE THIS LINE AND THE LINES ABOVE SSL_REDIRECT:dongphucsocvang.com
