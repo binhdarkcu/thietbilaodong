@@ -305,6 +305,7 @@ class BeRocket_aapf_variations_tables {
         return $terms;
     }
     function get_terms_all($args) {
+        //WPML Compatibility Part
         $languages = apply_filters('wpml_active_languages', array());
         $wpml_active_languages = apply_filters('wpml_current_language', NULL);
         if( is_array($languages) && count($languages) && $wpml_active_languages != NULL ) {
@@ -317,6 +318,10 @@ class BeRocket_aapf_variations_tables {
                 }
             }
             do_action( 'wpml_switch_language', $wpml_active_languages );
+        } elseif( function_exists('pll_current_language') ) {
+            //Polylang Compatibility Part
+            $args['lang'] = '';
+            $terms = get_terms($args);
         } else {
             $terms = get_terms($args);
         }

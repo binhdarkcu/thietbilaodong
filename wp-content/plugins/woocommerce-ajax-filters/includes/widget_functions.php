@@ -801,7 +801,12 @@ class BeRocket_AAPF_Widget_functions {
                 ceil(apply_filters('berocket_price_filter_widget_max_amount', apply_filters('berocket_price_slider_widget_max_amount', apply_filters( 'woocommerce_price_filter_widget_max_amount', $query_string->max_price )), $query_string->max_price))
             );
         }
-
+        if( BeRocket_AAPF::$debug_mode ) {
+            BeRocket_AAPF::$error_log['7_price_range'] = array(
+                'price_range'   => $price_range,
+                'sql'           => $query_string,
+            );
+        }
         return apply_filters( 'berocket_aapf_get_price_range', $price_range );
     }
 

@@ -152,7 +152,7 @@ class BeRocket_AAPF_compat_woocommerce_variation {
                 'join_close_1'  => ') as max_filtered_post ON max_filtered_post.ID = filtered_post.ID AND max_filtered_post.max_meta_count = filtered_post.meta_count',
                 'join_open_2'   => 'LEFT JOIN (',
                 'subquery_3'    => array(
-                    'select'        => 'SELECT %1$s .id as id, COALESCE(stock_table_init.out_of_stock_init1, "0") as out_of_stock_init',
+                    'select'        => 'SELECT %1$s .id as id, IF(%1$s.post_status = "private", 1, COALESCE(stock_table_init.out_of_stock_init1, "0")) as out_of_stock_init',
                     'from'          => 'FROM %1$s',
                     'join_open'     => 'LEFT JOIN (',
                     'subquery'      => array(

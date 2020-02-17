@@ -598,7 +598,7 @@ $custom_taxonomies = array_combine($custom_taxonomies, $custom_taxonomies);
         jQuery('.color_image_checked_'+jQuery(this).val()).show();
     });
     jQuery(document).ready(function() {
-        jQuery('.colorpicker_field').each(function (i,o){
+        jQuery('.br_colorpicker_field').each(function (i,o){
             jQuery(o).css('backgroundColor', '#'+jQuery(o).data('color'));
             jQuery(o).colpick({
                 layout: 'hex',

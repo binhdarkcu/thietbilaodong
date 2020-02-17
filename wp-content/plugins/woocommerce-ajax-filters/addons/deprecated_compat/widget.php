@@ -1654,11 +1654,7 @@ class BeRocket_AAPF_Widget extends WP_Widget {
     function form( $instance ) {
         $BeRocket_AAPF = BeRocket_AAPF::getInstance();
         $BeRocket_AAPF->register_admin_scripts();
-        wp_enqueue_script( 'berocket_aapf_widget-admin-colorpicker', plugins_url( '../js/colpick.js', __FILE__ ), array( 'jquery' ), BeRocket_AJAX_filters_version );
         wp_enqueue_script( 'berocket_aapf_widget-admin' );
-
-        wp_register_style( 'berocket_aapf_widget-colorpicker-style', plugins_url( '../css/colpick.css', __FILE__ ), "", BeRocket_AJAX_filters_version );
-        wp_enqueue_style( 'berocket_aapf_widget-colorpicker-style' );
 
         wp_register_style( 'berocket_aapf_widget-style-admin', plugins_url('../css/admin.css', __FILE__), "", BeRocket_AJAX_filters_version );
         wp_enqueue_style( 'berocket_aapf_widget-style-admin' );

@@ -23,7 +23,7 @@ var berocket_admin_filter_types_by_attr = {
         $('.get_shortcode').click( function ( event ) {
             event.preventDefault();
             $form = $(this).parents('form');
-            var params = $( '.colorpicker_field_input, .berocket_image_value' );
+            var params = $( '.br_colorpicker_field_input, .berocket_image_value' );
             var attr = $( '#berocket_sc_attribute' );
             var type = $( '#berocket_sc_type' );
             if ( params.length > 0 ) {
@@ -477,17 +477,19 @@ var berocket_admin_filter_types_by_attr = {
             }
         });
 
-        $('.colorpicker_field, .colorpicker_field_sc').each(function (i,o){
-            $(o).css('backgroundColor', '#'+$(o).data('color'));
-            $(o).colpick({
-                layout: 'hex',
-                submit: 0,
-                color: '#'+$(o).data('color'),
-                onChange: function(hsb,hex,rgb,el,bySetColor) {
-                    $(el).removeClass('colorpicker_removed');
-                    $(el).css('backgroundColor', '#'+hex).next().val(hex).trigger('change');
-                }
-            })
+        $('.br_colorpicker_field').each(function (i,o){
+            if( typeof($(o).colpick) != 'undefined' ) {
+                $(o).css('backgroundColor', '#'+$(o).data('color'));
+                $(o).colpick({
+                    layout: 'hex',
+                    submit: 0,
+                    color: '#'+$(o).data('color'),
+                    onChange: function(hsb,hex,rgb,el,bySetColor) {
+                        $(el).removeClass('colorpicker_removed');
+                        $(el).css('backgroundColor', '#'+hex).next().val(hex).trigger('change');
+                    }
+                })
+            }
         });
 
         $(document).on('click', '.theme_default', function (event) {
@@ -499,8 +501,8 @@ var berocket_admin_filter_types_by_attr = {
         $(document).on('click', '.all_theme_default', function (event) {
             event.preventDefault();
             $table = $(this).parents('table');
-            $table.find('.colorpicker_field').css('backgroundColor', '#000000').colpickSetColor('#000000');
-            $table.find('.colorpicker_field').next().val('');
+            $table.find('.br_colorpicker_field').css('backgroundColor', '#000000').colpickSetColor('#000000');
+            $table.find('.br_colorpicker_field').next().val('');
             $table.find('select').val("");
             $table.find('input[type=text]').val("");
         });

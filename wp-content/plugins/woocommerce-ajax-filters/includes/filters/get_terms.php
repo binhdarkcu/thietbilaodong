@@ -47,7 +47,6 @@ class BeRocket_AAPF_get_terms {
             'meta_query_limit'      => array(),
             'depth'                 => 0,
             'operator'              => 'OR',
-            'parent'                => 18,
             'additional_tax_query'  => false,
         ), $additional), $args);
         if( empty($args['taxonomy']) || is_array($args['taxonomy']) ) {
@@ -57,7 +56,7 @@ class BeRocket_AAPF_get_terms {
         if( empty($terms) || is_wp_error($terms) || empty($args['taxonomy']) || is_array($args['taxonomy']) ) {
             return $terms;
         }
-        // $terms = apply_filters("berocket_aapf_get_terms_filter_after", $terms, $args, $additional);
+        $terms = apply_filters("berocket_aapf_get_terms_filter_after", $terms, $args, $additional);
         return $terms;
     }
     public static function get_terms_for_all_pages($args = array(), $additional = array()) {
@@ -152,7 +151,7 @@ class BeRocket_AAPF_get_terms {
         if( ! isset(self::$prepared_data['wc_query_data']) ) {
             self::$prepared_data['wc_query_data'] = array();
         }
-        if( ! isset(self::$prepared_data['wc_query_data']['post__in']) || ! isset(self::$prepared_data['wc_query_data']['post__not_in']) ) {
+        if( $additional['force_query'] || ! isset(self::$prepared_data['wc_query_data']['post__in']) || ! isset(self::$prepared_data['wc_query_data']['post__not_in']) ) {
             global $wp_query, $br_wc_query, $br_aapf_wc_footer_widget;
 
             $post__in = ( isset($wp_query->query_vars['post__in']) ? $wp_query->query_vars['post__in'] : array() );
@@ -178,7 +177,6 @@ class BeRocket_AAPF_get_terms {
             }
             self::$prepared_data['wc_query_data']['post__in'] = apply_filters('berocket_aapf_get_attribute_values_post__in_outside', $post__in);
             self::$prepared_data['wc_query_data']['post__not_in'] = apply_filters('berocket_aapf_get_attribute_values_post__not_in_outside', $post__not_in);
-            remove_filter('berocket_aapf_get_terms_filter_after', array(__CLASS__, 'prepared_data'), 1, 3);
         }
         return $terms;
     }
