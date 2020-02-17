@@ -203,6 +203,11 @@ class BeRocket_AAPF extends BeRocket_Framework {
         if ( ! function_exists('is_network_admin') || ! is_network_admin() ) {
             if( $this->check_framework_version() ) {
                 if ( $this->init_validation() ) {
+                    if(! empty($_GET['settings-updated']) ) {
+                        wp_cache_delete($this->values[ 'settings_name' ], 'berocket_framework_option');
+                        delete_option( 'rewrite_rules' );
+                        flush_rewrite_rules();
+                    }
                     $last_version = get_option('br_filters_version');
                     if( $last_version === FALSE ) $last_version = 0;
                     if ( version_compare($last_version, BeRocket_AJAX_filters_version, '<') ) {
@@ -262,9 +267,6 @@ class BeRocket_AAPF extends BeRocket_Framework {
                             new BeRocket_AAPF_addon_page_same_as_filter($option['page_same_as_filter']);
                         }
                         add_action('plugins_loaded', array($this, 'plugins_loaded'));
-                    }
-                    if ( ! empty($option['products_per_page']) && ! br_is_plugin_active( 'list-grid' ) && ! br_is_plugin_active( 'List_Grid' ) && ! br_is_plugin_active( 'more-products' ) && ! br_is_plugin_active( 'Load_More_Products' ) ) {
-                        add_filter( 'loop_shop_per_page', array($this, 'products_per_page_set'), 9999 );
                     }
                     if( ! empty($option['products_only']) ) {
                         add_filter('woocommerce_is_filtered', array($this, 'woocommerce_is_filtered'));
@@ -359,10 +361,8 @@ class BeRocket_AAPF extends BeRocket_Framework {
             wp_dequeue_style( 'font-awesome' );
         }
         global $wp_query;
-        if ( ! is_admin() ) {
-            if(!session_id()) {
-                session_start();
-            }
+        if ( ! is_admin() && ! wp_doing_cron() && ! wp_doing_ajax() && ! session_id() ) {
+            session_start();
         }
     }
     public function plugins_loaded() {
@@ -381,6 +381,10 @@ class BeRocket_AAPF extends BeRocket_Framework {
         if( defined( 'WCJ_PLUGIN_FILE' ) ) {
             include(plugin_dir_path( __FILE__ ) . "includes/compatibility/woojetpack.php");
         }
+        $option = $this->get_option();
+        if ( ! empty($option['products_per_page']) ) {
+            add_filter( 'loop_shop_per_page', array($this, 'products_per_page_set'), 9999 );
+        }
     }
     public function register_admin_scripts(){
         wp_enqueue_script( 'brjsf-ui');
@@ -389,7 +393,6 @@ class BeRocket_AAPF extends BeRocket_Framework {
     }
     public function admin_settings( $tabs_info = array(), $data = array() ) {
         wp_enqueue_script( 'berocket_aapf_widget-admin' );
-        add_filter('brfr_data_ajax_filters', array($this, 'admin_settings_additional'));
         parent::admin_settings(
             array(
                 'General' => array(
@@ -794,7 +797,7 @@ class BeRocket_AAPF extends BeRocket_Framework {
                                 "name"      => "out_of_stock_variable_reload",
                                 "value"     => '1',
                                 "class"     => "out_of_stock_variable_reload",
-                                'label_for' => __('Use it for attributes values to display more correct count with option Reload amount of products', 'BeRocket_AJAX_domain') . '<br>',
+                                'label_for' => __('Use it for attributes values to display more correct count', 'BeRocket_AJAX_domain') . '<br>',
                             ),
                             'out_of_stock_variable_single' => array(
                                 "type"      => "checkbox",
@@ -963,12 +966,6 @@ class BeRocket_AAPF extends BeRocket_Framework {
                 ),
             )
         );
-    }
-    public function admin_settings_additional($data) {
-        if ( br_is_plugin_active( 'list-grid' ) || br_is_plugin_active( 'List_Grid' ) || br_is_plugin_active( 'more-products' ) || br_is_plugin_active( 'Load_More_Products' ) ) {
-            unset($data['General']['products_per_page']);
-        }
-        return $data;
     }
     public function section_setup_wizard ( $item, $options ) {
         $html = '';
@@ -1797,12 +1794,25 @@ jQuery(document).on('change', '.br_selected_area_show', br_selected_area_show);
         }
         $query_vars['post__not_in'] = array_merge($query_vars['post__not_in'], apply_filters('berocket_add_out_of_stock_variable', array(), $custom_terms, berocket_isset($_POST['limits_arr'])));
         $query_vars['post__in'] = apply_filters( 'loop_shop_post_in', $query_vars['post__in']);
+        $query_vars['post__in'] = array_diff($query_vars['post__in'], $query_vars['post__not_in']);
         if ( br_woocommerce_version_check('3.6') && ! empty($_POST['price']) ) {
             $query_vars['berocket_price'] = $_POST['price'];
         }
         $query_vars['berocket_filtered'] = true;
+        $br_query_vars = $query_vars;
+        foreach($br_query_vars['tax_query'] as $i => $tax_query_val) {
+            if( ! empty($tax_query_val['taxonomy']) ) {
+                $br_query_vars['tax_query'][$i] = array(
+                    $tax_query_val,
+                );
+            }
+        }
         global $br_wc_query, $br_aapf_wc_footer_widget;
-        $br_wc_query = $query_vars;
+        $query_vars['tax_query'] = array(
+            $query_vars['tax_query'],
+            'relation' => 'AND'
+        );
+        $br_wc_query = new WP_Query($query_vars);
         add_action( 'wp_footer', array( $this, 'wp_footer_widget'), 99999 );
         $br_aapf_wc_footer_widget = true;
         $query_vars = apply_filters('berocket_filters_query_vars_already_filtered', $query_vars, berocket_isset($_POST['terms']), berocket_isset($_POST['limits_arr']));
@@ -2789,13 +2799,6 @@ jQuery(document).on('change', '.br_selected_area_show', br_selected_area_show);
                 }
             }
         }
-    }
-    public function save_settings_callback( $settings ) {
-        $options = $this->get_option();
-        delete_option( 'rewrite_rules' );
-        flush_rewrite_rules(true);
-
-        return parent::save_settings_callback( $settings );
     }
 }
 

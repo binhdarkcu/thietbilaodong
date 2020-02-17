@@ -856,7 +856,7 @@ ul.berocket_aapf_widget li.berocket_tag_cloud_element > span label
 .berocket_child_parent_sample{
     display: none;
 }
-.berocket_widget_color_pick .colorpicker_field{
+.berocket_widget_color_pick .br_colorpicker_field{
     width: 2em;
     height: 2em;
     border: 1px solid #333;

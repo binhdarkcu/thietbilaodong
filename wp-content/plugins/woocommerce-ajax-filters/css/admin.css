@@ -4,15 +4,15 @@
 .berocket_aapf_advanced_settings_subcategory{float: right;position: relative;top: 3px;}
 .berocket_aapf_output_limitations{display: none;}
 
-.colorpicker_field, .colorpicker_field_sc{width: 30px; height: 30px; margin: 0 auto; border: 1px solid black; position: relative!important;}
+.br_colorpicker_field{width: 30px; height: 30px; margin: 0 auto; border: 1px solid black; position: relative!important;}
 
-.colorpicker_field .fa-times {
+.br_colorpicker_field .fa-times {
     position: absolute;
     top: 0;
     right: 0;
     text-shadow: 0px 0px 1px white, 0px 0px 1px white, 0px 0px 1px white, 0px 0px 1px white, 0px 0px 1px white;
 }
-td.colorpicker_field.colorpicker_removed:after {
+td.br_colorpicker_field.colorpicker_removed:after {
     content: " ";
     display: block;
     position: absolute;

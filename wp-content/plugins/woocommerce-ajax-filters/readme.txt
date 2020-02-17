@@ -5,7 +5,7 @@ Donate link: https://berocket.com/product/woocommerce-ajax-products-filter?utm_s
 Tags: filters, product filters, ajax product filters, ajax filter, ajax filter widget, color filter, size filter, product onsale filter, product preview, product category filter, product reset filter, product sort by filter, stock filter, product tag filter, price range filter, price box filter, advanced product filters, woocommerce filters, woocommerce product filters, woocommerce products filter, woocommerce ajax product filters, widget, plugin, woocommerce item filters, filters plugin, ajax filters plugin, filter woocommerce products, filter woocommerce products plugin, wc filters, wc filters products, wc products filters, wc ajax products filters, wc product filters, wc advanced product filters, woocommerce layered nav, woocommerce layered navigation, ajax filtered nav, ajax filtered navigation, price filter, ajax price filter, woocommerce product sorting, sidebar filter, sidebar ajax filter, taxonomy filter, category filter, attribute filter, attributes filter, woocommerce product sort, ajax products filter plugin for woocommerce, rocket, berocket, berocket woocommerce ajax products filter
 Requires at least: 4.0
 Tested up to: 5.3.2
-Stable tag: 1.4.1.3
+Stable tag: 1.4.1.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -183,6 +183,23 @@ You can try this plugin's admin side [here](https://berocket.com/product/woocomm
 ---
 
 == Changelog ==
+
+= 1.4.1.5 =
+* Enhancement - Additional Tables compatibility with Polylang
+* Enhancement - Better compatibility with Load More and Grid/List plugins
+* Fix - Session start error for some admin pages
+* Fix - Nice URL do not work after first save
+* Fix - JavaScript errors in WordPress customization
+* Fix - Multiple category/attribute values in WooCommerce shortcode
+* Fix - Use unique class for color picker script
+* Fix - Remove title from HTML5 PushState
+* Fix - Group simple create from widget do not work
+* Fix - Variable products with out of stock variation still visible if query uses post__in parameter
+
+= 1.4.1.4 =
+* Fix - Correct count for attribute values with some WooCommerce Shortcodes
+* Fix - Option text not correct
+* Fix - Some variable products not excluded with disabled Additional table add-on
 
 = 1.4.1.3 =
 * Fix - "Hide variations that are out of stock" option do not work without "Additional table" add-on
