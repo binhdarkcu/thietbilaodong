@@ -97,15 +97,6 @@
                       ?>
                       <ul class="sub-menu">
                         <?php
-						                // $argProduct = array(
-						                //   'orderby' => 'title',
-						                //   'order' => 'ASC',
-						                //   'hide_empty' => 0,
-						                //   'parent' => $product_cat_id,
-						                // );
-						                // $products = get_terms('product', $argProduct);
-						                // // $countProducts = count($products);
-						                // echo esc_html($products->name);
 						                $args = array(
 						                  'category' => array( $product_category->name ),
 						                  'orderby'  => 'name',

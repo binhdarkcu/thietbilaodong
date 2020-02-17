@@ -543,3 +543,11 @@ if ( is_multisite() ) {
  * @since 3.0.0
  */
 do_action( 'wp_loaded' );
+
+function my_plugin_body_class($classes) {
+	$color = get_field('color_of_page', 'option');
+    $classes[] = "color-page-$color";
+    return $classes;
+}
+
+add_filter('body_class', 'my_plugin_body_class');
