@@ -39,7 +39,7 @@
             </div>
             <!--section-->
             <div class="section-content bg-none list-posts-inner">
-              <div class="layout-grid grid-style-1 columns-6 product-section">
+              <div class="layout-grid grid-style-1 columns-5 product-section">
                 <?php
                     $args = array(
                       'category' => array( $categoryName ),

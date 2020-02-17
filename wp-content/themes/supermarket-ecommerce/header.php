@@ -15,6 +15,9 @@
 <head>
   <meta charset="<?php bloginfo( 'charset' ); ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="<?php echo TEMPLATE_PATH ?>/assets/images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="<?php echo TEMPLATE_PATH ?>/assets/images/favicon.ico" type="image/x-icon">
+
   <link rel="profile" href="<?php echo esc_url( __( 'http://gmpg.org/xfn/11', 'supermarket-ecommerce' ) ); ?>">
   <?php wp_head(); ?>
   <link rel="stylesheet" id="alg-font-awesome-css" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css"

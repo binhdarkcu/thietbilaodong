@@ -29,7 +29,7 @@
               </div>
             </div>
             <div class="section-content bg-white list-categories-inner">
-              <div class="layout-grid grid-style-2 columns-8">
+              <div class="layout-grid grid-style-2 columns-5">
                 <?php
                 $args = array(
                   'category' => array( 'Sản phẩm' ),

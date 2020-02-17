@@ -371,6 +371,11 @@ if( function_exists('acf_add_options_page') ) {
 		'menu_slug'  => 'theme-general-settings'
 	));
 	acf_add_options_sub_page(array(
+		'page_title'  => 'Màu Sắc',
+		'menu_title' => 'Màu Sắc',
+		'parent_slug' => 'theme-general-settings',
+	));
+	acf_add_options_sub_page(array(
 		'page_title'  => 'Logo và liên kết',
 		'menu_title' => 'Logo và liên kết',
 		'parent_slug' => 'theme-general-settings',

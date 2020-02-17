@@ -226,7 +226,7 @@ figure.wp-block-embed-wordpress.wp-block-embed.is-type-wp-embed.is-provider-thiá
   */
 div#contact-floated {
   position: fixed;
-  top: 50%;
+  top: 162px;
   left: 0;
   z-index: 1000000;
   color: whitesmoke;
