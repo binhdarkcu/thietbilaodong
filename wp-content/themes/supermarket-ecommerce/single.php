@@ -147,7 +147,7 @@ get_header(); ?>
 		        </div>
 	    	<?php }else if($layout_option == 'Grid Layout'){ ?>
 		    	<div class="row">
-			    	<div id="" class="content_area col-lg-8 col-md-8">
+			    	<div id="" class="content_area col-lg-12 col-md-12">
 						<section id="post_section">
 							<div class="row">
 								<?php
@@ -171,7 +171,7 @@ get_header(); ?>
 							</div>
 						</section>
 					</div>
-					<div id="sidebar" class="col-lg-4 col-md-4"><?php dynamic_sidebar('sidebar-1'); ?></div>	
+					<!-- <div id="sidebar" class="col-lg-4 col-md-4"><?php dynamic_sidebar('sidebar-1'); ?></div>	 -->
 				</div>		
 			<?php } else { ?>
 				<div class="row">

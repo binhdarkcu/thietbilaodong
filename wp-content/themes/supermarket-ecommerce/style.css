@@ -662,7 +662,7 @@ a .nav-title,
 /* --------- MENUS CSS --------- */
 #sidelong-menu {
   display: inline;
-  background: #faa61a;
+  background: #ff531e;
 }
 ul.list_nav {
   margin: 0 auto;
@@ -688,7 +688,7 @@ ul.list_nav {
 }
 .nav-menu ul li a:active,
 .nav-menu ul li a:hover{
-	background: #faa61a;
+	background: #ff531e;
 	color: #fff;
 }
 .nav-menu ul ul{
@@ -704,7 +704,7 @@ ul.list_nav {
 .nav-menu ul ul a{
   color: #fff;
   padding: 10px;
-  background: #faa61a;
+  background: #ff531e;
   transition: all 0.5s ease 0s;
 }
 .nav-menu ul ul a:hover{
@@ -747,7 +747,7 @@ ul.list_nav {
 
 /* Top Header */
 .social-icons i:hover{
-	color: #faa61a;
+	color: #ff531e;
 }
 .social-icons i{
 	margin: 0 15px;
@@ -766,7 +766,7 @@ ul.list_nav {
 }
 .email i{
 	margin-right: 5px;
-	color: #faa61a;
+	color: #ff531e;
 }
 .acc-btn {
 	text-align: right;
@@ -797,7 +797,7 @@ ul.list_nav {
     font-weight: bold;
 }
 .logo h1 a{
-color: #faa61a;
+color: #ff531e;
 }
 
 /* --------------------------search bar---------------------------- */
@@ -820,7 +820,7 @@ color: #faa61a;
 }
 .search-bar button[type="submit"]{
   padding: 10px 25px;
-  background: url(assets/images/search.png) no-repeat scroll 14px #faa61a;
+  background: url(assets/images/search.png) no-repeat scroll 14px #ff531e;
   text-indent: -9999px;
   border: none;
   border-radius: 5px;
@@ -830,7 +830,7 @@ color: #faa61a;
 button.product-btn {
   width: 100%;
   border: none;
-  background: #faa61a;
+  background: #ff531e;
   padding: 14px 0;
   cursor: pointer;
   font-size: 17px;
@@ -880,7 +880,7 @@ span.cart-value {
   top: 0;
   color: #fff;
   font-weight: bold;
-  background: #faa61a;
+  background: #ff531e;
   font-size: 15px;
   border-radius: 50%;
   width: 25px;
@@ -906,7 +906,7 @@ li.cart_box {
     text-align: center;
 }
 .article_content:hover{
-	border: 1px solid #faa61a;
+	border: 1px solid #ff531e;
 }
 .article_content:hover h3{
 	color: #343748;
@@ -924,7 +924,7 @@ li.cart_box {
 .metabox1{
    padding: 4px 10px;
    border: 4px double #fff;
-   background: #faa61a;
+   background: #ff531e;
 }
 .article_content .metabox i,
 .article_content .metabox span,
@@ -948,7 +948,7 @@ li.cart_box {
     font-weight: bold;
     font-size: 15px;
     padding: 12px 25px;
-    background: #faa61a;
+    background: #ff531e;
 }
 .article_content  .read-btn a:hover{
 	background: #343748;
@@ -967,7 +967,7 @@ li.cart_box {
 }
 #slider .carousel-control-next-icon i:hover,
 #slider .carousel-control-prev-icon i:hover{
-	color:#faa61a;
+	color:#ff531e;
 }
 #slider .carousel-item-next,#slider .carousel-item-prev,#slider .carousel-item.active {
   display: block !important;
@@ -1020,7 +1020,7 @@ li.cart_box {
     background: #ffc801;
 }
 #slider .read-btn a:hover{
-	background: #faa61a;
+	background: #ff531e;
 	color: #fff;
 }
 .slide-post{
@@ -1032,7 +1032,7 @@ li.cart_box {
 }
 .slide-post h4{
 	text-transform: uppercase;
-	color: #faa61a;
+	color: #ff531e;
 	letter-spacing: 0px;
 	font-weight: 600;
 }
@@ -1119,7 +1119,7 @@ a.showcoupon,
     border-top-color: #343748;
 }
 .woocommerce span.onsale{
-	background: #faa61a;
+	background: #ff531e;
 	color: #fff;
 	padding: 0;
 }
@@ -1130,7 +1130,7 @@ a.showcoupon,
     text-align: center;
 }
 .products li:hover{
-	border:1px solid #faa61a;
+	border:1px solid #ff531e;
 }
 h2.woocommerce-loop-product__title,
 .woocommerce div.product .product_title {
@@ -1141,7 +1141,7 @@ h2.woocommerce-loop-product__title,
 }
 .woocommerce ul.products li.product .price,
 .woocommerce div.product p.price, .woocommerce div.product span.price {
-    color: #faa61a;
+    color: #ff531e;
     font-size: 15px;
     margin: 10px 0;
 }
@@ -1149,7 +1149,7 @@ h2.woocommerce-loop-product__title,
 	margin-bottom: 5px;
 }
 .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button,.woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt{
-	background: #faa61a;
+	background: #ff531e;
 	border-radius: 0;
 	color: #fff;
     font-size: 16px;
@@ -1173,7 +1173,7 @@ nav.woocommerce-MyAccount-navigation ul {
     list-style: none;
 }
 nav.woocommerce-MyAccount-navigation ul li {
-    background: #faa61a !important;
+    background: #ff531e !important;
     padding: 12px;
     margin-bottom: 10px;
 }
@@ -1825,7 +1825,7 @@ body:not(.supermarket-ecommerce-front-page) .entry-header {
 	color: #343748;
 }
 .site-footer button.search-submit{
-	background-color: #faa61a;
+	background-color: #ff531e;
     font-weight: normal;
     letter-spacing: 1px;
     right: 0;
@@ -1833,11 +1833,11 @@ body:not(.supermarket-ecommerce-front-page) .entry-header {
     width: 100%;
 }
 .site-footer .tagcloud a:hover{
-	background-color:#faa61a !important;
+	background-color:#ff531e !important;
 }
 .copyright {
    padding: 15px 0px;
-   border-top:2px solid #faa61a;
+   border-top:2px solid #ff531e;
    text-align: center;
 }
 .copyright p{
@@ -1977,7 +1977,7 @@ body:not(.supermarket-ecommerce-front-page) .entry-header {
     border:1px dashed #e4e4e4;
 }
 #sidebar .widget:hover{
-	border: none solid #faa61a;
+	border: none solid #ff531e;
 }
 #sidebar .berocket_aapf_widget_show.show_button.mobile_hide {
 	opacity: 0;
@@ -1994,7 +1994,7 @@ h2.widget-title {
     font-size: 20px;
     font-weight: bold;
     text-align: center;
-    background: #faa61a;
+    background: #ff531e;
     color: #fff;
     letter-spacing: 1px;
     padding: 10px 0 10px 0px;
@@ -2010,11 +2010,11 @@ h2.widget-title {
     color: #3a3a3a;
 }
 #sidebar .tagcloud a:hover{
-	background-color:#faa61a;
+	background-color:#ff531e;
 	color: #fff;
 }
 #sidebar button.search-submit{
-	background-color: #faa61a;
+	background-color: #ff531e;
     background-image: none;
     color: #fff;
     font-size: 16px;
@@ -2645,7 +2645,7 @@ object {
     background: none !important;
   }
   .nav-menu .current_page_item > a, .nav-menu .current-menu-item > a, .nav-menu .current_page_ancestor > a {
-    color: #faa61a;
+    color: #ff531e;
     background: #fff !important;
   }
   .sf-arrows .sf-with-ul:after{
@@ -2686,7 +2686,7 @@ object {
     border-bottom: 1px solid #fff;
   }
   .nav-menu ul li a:hover{
-	color: #faa61a;
+	color: #ff531e;
     background: #fff !important;
   }
   .sf-arrows .sf-with-ul:after:active ul{

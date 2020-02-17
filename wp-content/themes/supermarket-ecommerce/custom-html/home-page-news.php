@@ -6,7 +6,8 @@
  * @since 1.0
  * @version 0.1
  */
-
+$baiviet = '/bai-viet/';
+$url = get_home_url();
 ?>
 
 <div data-vc-full-width="true" data-vc-full-width-init="true" data-vc-stretch-content="true" class="vc_row wpb_row vc_row-fluid vc_row-no-padding">
@@ -17,12 +18,12 @@
           <div class="container">
             <div class="section-header">
               <div class="title-wrap">
-                <h3 class="title">Tin tức</h3>
+                <h3 class="title"><a class="link" href="<?php echo $url.$baiviet; ?>">Tin tức</a></h3>
               </div>
               <div class="actions">
-                <!-- <a class="link" href="<?php echo get_permalink( $result->ID ); ?>">Xem tất cả
+                <a class="link" href="<?php echo $url.$baiviet; ?>">Xem tất cả
                   <i class="fa fa-angle-right" aria-hidden="true"></i>
-                </a> -->
+                </a>
               </div>
             </div>
             <div class="section-content bg-white list-categories-inner">
@@ -37,15 +38,22 @@
                 );
                 $result = new WP_Query($args);
                 if ($result->have_posts()): ?>
-                <?php while ($result->have_posts()): $result->the_post();?>
-                  <div class="item">
-                          <a href="<?php echo get_permalink( $post->ID ); ?>" class="item-link" title="<?php the_title(); ?>">
-                            
-                            <div class="item-info">
-                              <h2 class="item-title"><?php echo esc_html(the_title())?></h2>
-                            </div>
-                          </a>
+                  <?php while ($result->have_posts()): $result->the_post();?>
+                    <?php $url = wp_get_attachment_url( get_post_thumbnail_id($post_id) ); ?>
+                    <div class="item">
+                      <?php
+                        if ($url) {
+                          ?> <img src="<?php echo $url ;?>" alt="" /> <?php
+                        } else {
+                          ?> <img src="https://upload.wikimedia.org/wikipedia/commons/a/ac/No_image_available.svg" alt="no post" /> <?php
+                        }
+                      ?>
+                      <a href="<?php echo get_permalink( $post->ID ); ?>" class="item-link" title="<?php the_title(); ?>">
+                        <div class="item-info">
+                          <h2 class="item-title"><?php echo esc_html(the_title())?></h2>
                         </div>
+                      </a>
+                    </div>
                   <?php endwhile;?>
                 <?php endif;
                 wp_reset_postdata();?>
