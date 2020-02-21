@@ -27,8 +27,8 @@ $sub_header_top_color = get_field('sub_header_top_color', 'option');
                 </a>
               </div>
             </div>
-            <div class="section-content bg-white list-categories-inner">
-              <div class="layout-grid grid-style-2 columns-4">
+            <div class="section-content bg-white">
+              <div class="layout-grid grid-style-2 columns-1">
                 <?php
                 $args = array(
                   'post_type' => 'post',
@@ -41,17 +41,19 @@ $sub_header_top_color = get_field('sub_header_top_color', 'option');
                 if ($result->have_posts()): ?>
                   <?php while ($result->have_posts()): $result->the_post();?>
                     <?php $url = wp_get_attachment_url( get_post_thumbnail_id($post_id) ); ?>
+                      <a href="<?php echo get_permalink( $post->ID ); ?>" class="item-link" title="<?php the_title(); ?>">
+
                     <div class="item">
                       <?php
                         if ($url) {
-                          ?> <img src="<?php echo $url ;?>" alt="" /> <?php
+                          ?> <img src="<?php echo $url ;?>" alt="" class="image-news"/> <?php
                         } else {
-                          ?> <img src="https://upload.wikimedia.org/wikipedia/commons/a/ac/No_image_available.svg" alt="no post" /> <?php
+                          ?> <img src="https://upload.wikimedia.org/wikipedia/commons/a/ac/No_image_available.svg" alt="no post" class="image-news" /> <?php
                         }
                       ?>
-                      <a href="<?php echo get_permalink( $post->ID ); ?>" class="item-link" title="<?php the_title(); ?>">
-                        <div class="item-info">
-                          <h2 class="item-title"><?php echo esc_html(the_title())?></h2>
+                        <div class="item-info item-news">
+                          <h2 class="item-title tilte-news"><?php echo esc_html(the_title())?></h2>
+                          <h10 class="item-short-description"><?php echo esc_html(get_the_excerpt())?></h10>
                         </div>
                       </a>
                     </div>

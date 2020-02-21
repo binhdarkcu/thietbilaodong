@@ -74,7 +74,7 @@
                 <li id="menu-item-151" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-151">
                   <span class="toggle" data-menu="menu-item-151"></span>
                   <a id="danh-muc-link" href="javascript:void(0)">Danh mục</a>
-                  <ul class="sub-menu">
+                  <ul class="sub-menu" style="background-color: <?php if (!empty($header_top_color)) echo $header_top_color ?>">
                     <?php
 					           $args = array(
 					               //'number'     => $number,
@@ -91,7 +91,7 @@
 					               $product_cat_id = $product_category->term_id;
 					               $cat_link = get_category_link($product_cat_id);
 					         ?>
-                    <li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children" style="background-color: <?php if (!empty($header_top_color)) echo $header_top_color ?>">
                       <span class="toggle" data-menu="menu-item-145"></span>
                       <a href="<?php echo $cat_link;?>">
                         <?php echo esc_html($product_category->name); ?>
@@ -99,7 +99,7 @@
                       <?php
                         if($product_category->count > 0) {
                       ?>
-                      <ul class="sub-menu">
+                      <ul class="sub-menu" style="background-color: <?php if (!empty($header_top_color)) echo $header_top_color ?>">
                         <?php
 						                $args = array(
 						                  'category' => array( $product_category->name ),
@@ -111,7 +111,7 @@
 						                foreach ($products as $product) {
 						                  # code...
 						                  ?>
-                        <li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat">
+                        <li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat" style="background-color: <?php if (!empty($header_top_color)) echo $header_top_color ?>">
                           <a href="<?php echo esc_url(get_term_link($product->get_slug())); ?>">
                             <?php echo esc_html($product->get_name()); ?>
                           </a>

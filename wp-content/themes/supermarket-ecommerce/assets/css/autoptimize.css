@@ -59748,3 +59748,26 @@ span.spinner .spinner-input {
 .tooltipster-sidetip.tooltipster-noir.tooltipster-right .tooltipster-arrow-uncropped {
 	left: -11px
 }
+img.image-news {
+    float: left;
+    height: 120px;
+    width: 10%;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+.item-info.item-news {
+    width: 90%;
+    float: left;
+}
+h2.item-title.tilte-news {
+    float: left;
+	font-weight: bold;
+	width: 100%;
+    text-align: left;
+}
+h10.item-short-description {
+    text-align: left;
+    float: left;
+    width: 100%;
+    padding-left: 1%;
+}
