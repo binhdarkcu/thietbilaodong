@@ -23,12 +23,16 @@
   <link rel="stylesheet" id="alg-font-awesome-css" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css"
     type="text/css" media="all">
 </head>
-
-<body <?php body_class(); ?>>
+<?php 
+  $bg_color = get_field('color_of_page', 'option');
+  $header_top_color = get_field('header_top_color', 'option');
+  $sub_header_top_color = get_field('sub_header_top_color', 'option');
+?>
+<body <?php body_class(); ?> style="background-color: <?php if (!empty($bg_color)) echo $bg_color ?>">
 
   <div id="page" class="site">
     <header class="header-wrapper">
-      <div class="header-top">
+      <div class="header-top color-<?php echo $header_top_color ?>" style="background-color: <?php if (!empty($header_top_color)) echo $header_top_color ?>">
         <div class="container">
           <nav class="navbar navbar-expand-lg navbar-dark">
             <a href="javascript:void(0)" class="frnavbar-btn mobile-visible" data-menu-id="topmenu">
@@ -151,7 +155,7 @@
           </nav>
         </div>
       </div>
-      <div class="header-main">
+      <div class="header-main color-<?php echo $sub_header_top_color ?>" style="background-color: <?php if (!empty($sub_header_top_color)) echo $sub_header_top_color ?>">
         <div class="container">
           <div class="row">
             <div class="col-sm-12 col-md-3 col-lg-2 d-none d-md-block">
@@ -216,7 +220,7 @@
               <div class="header-cart">
                 <a href="<?php if(function_exists('wc_get_cart_url')){ echo esc_url(wc_get_cart_url()); } ?>" class="cart-btn" id="cart-mini-btn">
                   <i class="fa fa-shopping-basket icon-font" aria-hidden="true"> Giỏ hàng </i>
-                  <span class="number-badge">
+                  <span class="number-badge" style="color: <?php if (!empty($sub_header_top_color)) echo $sub_header_top_color ?>; border-color: <?php if (!empty($sub_header_top_color)) echo $sub_header_top_color ?>;">
                     <?php echo wp_kses_data( WC()->cart->get_cart_contents_count() );?>
                   </span>
                 </a>

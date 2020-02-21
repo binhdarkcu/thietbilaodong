@@ -8,6 +8,7 @@
  */
 $baiviet = '/bai-viet/';
 $url = get_home_url();
+$sub_header_top_color = get_field('sub_header_top_color', 'option');
 ?>
 
 <div data-vc-full-width="true" data-vc-full-width-init="true" data-vc-stretch-content="true" class="vc_row wpb_row vc_row-fluid vc_row-no-padding">
@@ -16,12 +17,12 @@ $url = get_home_url();
       <div class="wpb_wrapper">
         <div class="section section-list-categories taxonomy-product_cat">
           <div class="container">
-            <div class="section-header">
+            <div class="section-header" style="border-bottom: 3px solid <?php if (!empty($sub_header_top_color)) echo $sub_header_top_color ?>;">
               <div class="title-wrap">
-                <h3 class="title"><a class="link" href="<?php echo $url.$baiviet; ?>">Tin tức</a></h3>
+                <h3 class="title"><a class="link" href="<?php echo $url.$baiviet; ?>" style="color: <?php if (!empty($sub_header_top_color)) echo $sub_header_top_color ?>">Tin tức</a></h3>
               </div>
               <div class="actions">
-                <a class="link" href="<?php echo $url.$baiviet; ?>">Xem tất cả
+                <a class="link" href="<?php echo $url.$baiviet; ?>" style="color: <?php if (!empty($sub_header_top_color)) echo $sub_header_top_color ?>">Xem tất cả
                   <i class="fa fa-angle-right" aria-hidden="true"></i>
                 </a>
               </div>

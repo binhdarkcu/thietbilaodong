@@ -1,4 +1,6 @@
-<div id="contact-floated">
+<?php $contact_float_color = get_field('contact_float_color', 'option'); ?>
+
+<div id="contact-floated" style="background-color: <?php if (!empty($contact_float_color)) echo $contact_float_color ?>">
     <a href="javascript:void" class="toggleSupport"><i class="fas fa-arrow-left"></i><i class="fas fa-arrow-right"></i></a>
   <h3><?php echo esc_html_e(get_field('name_form_support', 'option')); ?></h3>
   <div class="contact-info">

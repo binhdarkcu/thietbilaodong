@@ -11,6 +11,7 @@
 <?php
   $url = get_home_url();
   $urlProductCategory = '/product-category/danh-muc/';
+  $sub_header_top_color = get_field('sub_header_top_color', 'option');
   $urlProduct = 'ao-thun/';
   $arrayCategoriesName = array('Áo thun', 'Quần áo bảo hộ lao động', 'Dụng cụ thi công');
   foreach ($arrayCategoriesName as $categoryName) {
@@ -27,12 +28,12 @@
         <div class="section section-list-posts">
           <div class="container">
             <!--section-->
-            <div class="section-header">
+            <div class="section-header" style="border-bottom: 3px solid <?php if (!empty($sub_header_top_color)) echo $sub_header_top_color ?>;">
               <div class="title-wrap">
                 <h3 class="title"><?php echo esc_html($categoryName); ?></h3>
               </div>
               <div class="actions">
-                <a class="link" href="<?php echo $url.$urlProductCategory.$urlProduct ?>">Xem tất cả
+                <a class="link" href="<?php echo $url.$urlProductCategory.$urlProduct ?>" style="color: <?php if (!empty($sub_header_top_color)) echo $sub_header_top_color ?>">Xem tất cả
                   <i class="fa fa-angle-right" aria-hidden="true"></i>
                 </a>
               </div>
