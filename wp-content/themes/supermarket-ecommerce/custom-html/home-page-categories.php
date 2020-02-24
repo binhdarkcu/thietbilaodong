@@ -34,8 +34,8 @@
                 <?php
                 $args = array(
                     //'number'     => $number,
-                    'orderby' => 'title',
-                    'order' => 'ASC',
+//                    'orderby' => 'title',
+//                    'order' => 'ASC',
                     'hide_empty' => 0,
                     'parent' => 18,
                     'number' => 8,
