@@ -12,6 +12,11 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?> class="no-js no-svg">
 
+<?php 
+  $bg_color = get_field('color_of_page', 'option');
+  $header_top_color = get_field('header_top_color', 'option');
+  $sub_header_top_color = get_field('sub_header_top_color', 'option');
+?>
 <head>
   <meta charset="<?php bloginfo( 'charset' ); ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -22,12 +27,25 @@
   <?php wp_head(); ?>
   <link rel="stylesheet" id="alg-font-awesome-css" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css"
     type="text/css" media="all">
+  <style>
+    ::selection {
+      background: <?php echo $sub_header_top_color ?> !important;
+      color: #fff;
+    }
+    ul li a:active,
+    ul li a:hover,
+    #danh-muc-link:hover,
+    #danh-muc-link:active,
+    #menu-item-151:hover,
+    #menu-item-151:active,
+    .menu-item.social-top:hover,
+    .menu-item.social-top:active,
+    .social-icons i:hover {
+      background: <?php echo $sub_header_top_color ?> !important;
+      color: #fff;
+    }
+  </style>
 </head>
-<?php 
-  $bg_color = get_field('color_of_page', 'option');
-  $header_top_color = get_field('header_top_color', 'option');
-  $sub_header_top_color = get_field('sub_header_top_color', 'option');
-?>
 <body <?php body_class(); ?> style="background-color: <?php if (!empty($bg_color)) echo $bg_color ?>">
 
   <div id="page" class="site">
@@ -78,8 +96,8 @@
                     <?php
 					           $args = array(
 					               //'number'     => $number,
-					               'orderby' => 'title',
-					               'order' => 'ASC',
+					              //  'orderby' => 'title',
+					              //  'order' => 'ASC',
 					               'hide_empty' => 0,
 					               'parent' => 18,
 					               //'include'    => $ids
@@ -101,19 +119,20 @@
                       ?>
                       <ul class="sub-menu" style="background-color: <?php if (!empty($header_top_color)) echo $header_top_color ?>">
                         <?php
-						                $args = array(
-						                  'category' => array( $product_category->name ),
-						                  'orderby'  => 'name',
+						              $args1 = array(
+                            'parent' => $product_cat_id,
 						              );
-						              $products = wc_get_products( $args );
-						              $countProducts = count($products);
-						              if ($products) {
-						                foreach ($products as $product) {
-						                  # code...
+                          $sub_cats = get_terms('product_cat', $args1);
+						              $countProducts = count($sub_cats);
+						              if ($sub_cats) {
+                            foreach ($sub_cats as $sub_cat) {
+                              $sub_cat_id = $sub_cat->term_id;
+                              $sub_cat_link = get_category_link($sub_cat_id);
+                              # code...
 						                  ?>
                         <li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat" style="background-color: <?php if (!empty($header_top_color)) echo $header_top_color ?>">
-                          <a href="<?php echo esc_url(get_term_link($product->get_slug())); ?>">
-                            <?php echo esc_html($product->get_name()); ?>
+                          <a href="<?php echo esc_url($sub_cat_link); ?>">
+                            <?php echo esc_html($sub_cat->name); ?>
                           </a>
                         </li>
                         <?php }
